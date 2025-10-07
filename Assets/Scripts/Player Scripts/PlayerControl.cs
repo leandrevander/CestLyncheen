@@ -11,14 +11,18 @@ namespace Player_Scripts
         public InputActionReference move;
         public SpriteRenderer spriteRenderer;
 
+        
+        [SerializeField] private Animator animatorPlayer;
+
         private void Update()
         {
             _moveDirection = move.action.ReadValue<Vector2>();
-        
+            animatorPlayer.SetFloat("Velocity", _moveDirection.magnitude);
+            
             if (_moveDirection.x > 0.01f)
-                spriteRenderer.flipX = true;
-            else if (_moveDirection.x < -0.01f)
                 spriteRenderer.flipX = false;
+            else if (_moveDirection.x < -0.01f)
+                spriteRenderer.flipX = true;
         }
 
         private void FixedUpdate()
