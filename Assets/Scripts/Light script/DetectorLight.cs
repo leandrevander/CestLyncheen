@@ -17,7 +17,8 @@ public class DetectorLight : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Physics2D.queriesHitTriggers = true;  
+        Physics2D.queriesHitTriggers = true;
+        player = GameObject.FindGameObjectWithTag("Player");
         
     }
 
@@ -29,9 +30,7 @@ public class DetectorLight : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        //Debug.Log("Trigger object: " + other.name + " | Tag: " + other.tag);
-
-        if (other.CompareTag("Zombie"))
+        if (other.CompareTag("Ennemi"))
         {
             
             
@@ -49,7 +48,12 @@ public class DetectorLight : MonoBehaviour
                 iaZombie = cibleZombie.GetComponent<IAZombie>();
 
                 Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE LOL CACA PROUT DIEU MERCI");
-                //iaZombie.isHitten = true;
+                iaZombie.IsHitten = true;
+            }
+            else
+            {
+                iaZombie = cibleZombie.GetComponent<IAZombie>();
+                iaZombie.IsHitten = false;
             }
                
                
