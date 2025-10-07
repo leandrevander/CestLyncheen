@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3003708863182785048}
   - component: {fileID: 1231058800784128399}
   - component: {fileID: 2714838272066381473}
-  - component: {fileID: 8089881414729580686}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Untagged
@@ -201,17 +200,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4148744656340378214, guid: c65c6855b0f50be41813d7fc6ab1148c, type: 3}
   agent: {fileID: 4802170594088426450}
-  IsHitten: 1
+  IsHitten: 0
   HealthZombie: 5
---- !u!114 &8089881414729580686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3646075403676202942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27226925a5ff7d447b6ca60e03c4bf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
