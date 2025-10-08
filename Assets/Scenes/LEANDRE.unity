@@ -591,6 +591,10 @@ PrefabInstance:
       value: Player v2
       objectReference: {fileID: 0}
     - target: {fileID: 4188147537373883014, guid: ff2565cdfd0d9c84ba8c727cf9b1791a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188147537373883014, guid: ff2565cdfd0d9c84ba8c727cf9b1791a, type: 3}
       propertyPath: maxDistance
       value: 10
       objectReference: {fileID: 0}
@@ -1062,6 +1066,14 @@ PrefabInstance:
     - target: {fileID: 1016960224359112005, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714838272066381473, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
+      propertyPath: pvperdu
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714838272066381473, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
+      propertyPath: HealthZombie
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3646075403676202942, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
       propertyPath: m_Name

@@ -10,6 +10,9 @@ public class IAZombie : MonoBehaviour
     public bool IsHitten = false;
     public int HealthZombie = 5;
     private Spawner  spawner;
+    private Coroutine coroutine;
+    public int pvperdu;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +26,7 @@ public class IAZombie : MonoBehaviour
     IEnumerator PerteDePv()
     {
         
-        HealthZombie --;
+        HealthZombie = HealthZombie - pvperdu;
         if (HealthZombie <= 0)
         {
             Destroy(gameObject);
@@ -31,6 +34,7 @@ public class IAZombie : MonoBehaviour
         Debug.Log("PV perdu");
         IsHitten = false;
         yield return new WaitForSeconds(1);
+        coroutine = null;
     }
     // Update is called once per frame
     void Update()
@@ -39,9 +43,9 @@ public class IAZombie : MonoBehaviour
         {
             agent.destination = player.transform.position;
         }
-        if (IsHitten)
+        if (IsHitten && coroutine == null)
         {
-             StartCoroutine (PerteDePv());
+             coroutine = StartCoroutine (PerteDePv());
         }
         
         
