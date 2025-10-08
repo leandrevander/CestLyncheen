@@ -17,6 +17,11 @@ namespace Player_Scripts
     
         public void UpdateHealth()
         {
+            /*if (playerHealth <= 0)
+            {
+                
+            }*/
+            
             for (int i = 0; i < hearts.Length; i++)
             {
                 if (i < playerHealth)
