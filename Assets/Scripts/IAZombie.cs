@@ -69,9 +69,11 @@ public class IAZombie : MonoBehaviour
             Debug.Log("zombie spawn à un autre endroit");
         }
 
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player") && playerHealth.peutPrendreDesDegats)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            StartCoroutine(playerHealth.Damage());
+            Debug.Log("ça marche");
+            playerHealth.playerhitten = true;
+
         }
     }
 }    
