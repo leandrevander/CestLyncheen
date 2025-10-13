@@ -14,6 +14,11 @@ public class IAZombie : MonoBehaviour
     private Coroutine coroutine;
     public int pvperdu;
     private PlayerHealth playerHealth;
+    public SpriteRenderer spriteRenderer;
+    public float proximity;
+    public GameObject proximityLight;
+    
+    [SerializeField] private Animator animatorPlayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,6 +50,20 @@ public class IAZombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if ((player.transform.position.x - gameObject.transform.position.x < proximity &&
+            player.transform.position.x - gameObject.transform.position.x > -proximity) && (player.transform.position.y - gameObject.transform.position.y < proximity &&
+            player.transform.position.y - gameObject.transform.position.y > -proximity))
+        {
+            animatorPlayer.Play("Warning");
+            proximityLight.SetActive(true);
+        }
+        else
+        {
+            animatorPlayer.Play("Chase");
+            proximityLight.SetActive(false);
+        }
+        
         if (player != null && agent.isOnNavMesh)
         {
             agent.destination = player.transform.position;
@@ -55,6 +74,10 @@ public class IAZombie : MonoBehaviour
             coroutine = StartCoroutine(PerteDePv());
         }
 
+        if (player.transform.position.x - gameObject.transform.position.x > 0f)
+            spriteRenderer.flipX = false;
+        else if (player.transform.position.x - gameObject.transform.position.x < 0f)
+            spriteRenderer.flipX = true;
 
 
     }

@@ -10,7 +10,6 @@ namespace Player_Scripts
         private Vector2 _moveDirection;
         public InputActionReference move;
         public SpriteRenderer spriteRenderer;
-
         
         [SerializeField] private Animator animatorPlayer;
 
