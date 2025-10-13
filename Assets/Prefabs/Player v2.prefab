@@ -229,7 +229,7 @@ Animator:
   m_GameObject: {fileID: 4005725445269530590}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f57bdf4534f9abe4cbe4351751a5925a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3f5179b7787ab77409f6c8acc9621a0f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -285,12 +285,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5414671503596471563, guid: 15dec2591eb2f0840a1be09519a2edc5, type: 3}
-  m_Color: {r: 0.7924528, g: 0.6416444, b: 0.35510856, a: 1}
+  m_Sprite: {fileID: -5653878121705019575, guid: f3932f4277a71f24a8c2634a45e06cc4, type: 3}
+  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.24, y: 3.151538}
+  m_Size: {x: 2.86, y: 2.9914598}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -330,8 +330,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.064026654, y: 1.37043}
-  m_Size: {x: 1.2975501, y: 2.901826}
+  m_Offset: {x: -0.031787813, y: 0.83973753}
+  m_Size: {x: 1.0738195, y: 1.7566888}
   m_Direction: 0
 --- !u!114 &4188147537373883014
 MonoBehaviour:
@@ -345,9 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e6a2ab59fad6c4eaa64c6abc1b943a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 3646075403676202942, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
+  enemyprefab: {fileID: 3342766363712070149, guid: c89e841bfe3ee524ca6baeedfe3d238e, type: 3}
   spawnTimer: 0
-  spawnInterval: 2
+  spawnInterval: 0.7
   minDistance: 10
   maxDistance: 10
   distanceSpawn: 0
