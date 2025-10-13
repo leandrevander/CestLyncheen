@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3003708863182785048}
   - component: {fileID: 1231058800784128399}
   - component: {fileID: 2714838272066381473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ennemi
-  m_TagString: Untagged
+  m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1231058800784128399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68425d3163dba984faa597c3250c5339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4148744656340378214, guid: c65c6855b0f50be41813d7fc6ab1148c, type: 3}
+  player: {fileID: 0}
   agent: {fileID: 4802170594088426450}
   IsHitten: 0
   HealthZombie: 5
