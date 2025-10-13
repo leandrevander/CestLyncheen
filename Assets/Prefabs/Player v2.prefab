@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1363356523730859958}
   - component: {fileID: 5910528717103946045}
   m_Layer: 0
-  m_Name: Light 2D (1)
+  m_Name: LightJoueur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,6 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 4
+  invincible: 0
+  playerhitten: 0
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -284,7 +286,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 5414671503596471563, guid: 15dec2591eb2f0840a1be09519a2edc5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7924528, g: 0.6416444, b: 0.35510856, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
