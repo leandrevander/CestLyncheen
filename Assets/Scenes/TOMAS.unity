@@ -836,6 +836,14 @@ PrefabInstance:
       propertyPath: 'hearts.Array.data[3]'
       value: 
       objectReference: {fileID: 342658598}
+    - target: {fileID: 3060889482827869760, guid: ff2565cdfd0d9c84ba8c727cf9b1791a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5414671503596471563, guid: 15dec2591eb2f0840a1be09519a2edc5, type: 3}
+    - target: {fileID: 3060889482827869760, guid: ff2565cdfd0d9c84ba8c727cf9b1791a, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4005725445269530590, guid: ff2565cdfd0d9c84ba8c727cf9b1791a, type: 3}
       propertyPath: m_Name
       value: Player

@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 6ef0c037a140c8247afa9091fbc66ca8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6871677503687413453
+    second: SeagullSpritesheet_0
+  - first:
+      213: 5138704874817435031
+    second: SeagullSpritesheet_1
+  - first:
+      213: 2920611099711537579
+    second: SeagullSpritesheet_2
+  - first:
+      213: 741387804306049803
+    second: SeagullSpritesheet_3
+  - first:
+      213: -8203054354346821926
+    second: SeagullSpritesheet_4
+  - first:
+      213: -6745325654280242942
+    second: SeagullSpritesheet_5
+  - first:
+      213: 517672819288956275
+    second: SeagullSpritesheet_6
+  - first:
+      213: -4612321425724378250
+    second: SeagullSpritesheet_7
+  - first:
+      213: -2477490385592426930
+    second: SeagullSpritesheet_8
+  - first:
+      213: 6892774361334430925
+    second: SeagullSpritesheet_9
+  - first:
+      213: 7562098049870498546
+    second: SeagullSpritesheet_10
+  - first:
+      213: 552801904448413600
+    second: SeagullSpritesheet_11
+  - first:
+      213: -7028942849993287
+    second: SeagullSpritesheet_12
+  - first:
+      213: 7896872271157334201
+    second: SeagullSpritesheet_13
+  - first:
+      213: -4195787487625894152
+    second: SeagullSpritesheet_14
+  - first:
+      213: 5477824832561103173
+    second: SeagullSpritesheet_15
+  - first:
+      213: -7036308458849727830
+    second: SeagullSpritesheet_16
+  - first:
+      213: -299503598783790136
+    second: SeagullSpritesheet_17
+  - first:
+      213: -4746466160389611969
+    second: SeagullSpritesheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeagullSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 205
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5352889, y: 0.020379385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcec45a284a1d5f50800000000000000
+      internalID: 6871677503687413453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 205
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5535959, y: 0.035500843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795bf0d8bd8505740800000000000000
+      internalID: 5138704874817435031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 205
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5595078, y: 0.012571971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba18e553258188820800000000000000
+      internalID: 2920611099711537579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 205
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5570503, y: 0.039388802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b087ca740f94a00800000000000000
+      internalID: 741387804306049803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 165
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5567604, y: 0.041187286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6bfefb685e82e80800000000000000
+      internalID: -8203054354346821926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 164
+        width: 72
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209fb424e0ac362a0800000000000000
+      internalID: -6745325654280242942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 164
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.55333066, y: 0.049355824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dd797bfa42f2700800000000000000
+      internalID: 517672819288956275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 163
+        width: 72
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67376c5b91ebdffb0800000000000000
+      internalID: -4612321425724378250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 138
+        width: 26
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5589434, y: 0.17565481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e5150ee9f2e9dd0800000000000000
+      internalID: -2477490385592426930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 139
+        width: 72
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc324c13cd08af50800000000000000
+      internalID: 6892774361334430925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 141
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5600856, y: 0.039344788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa84335c18f1f860800000000000000
+      internalID: 7562098049870498546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 140
+        width: 72
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af9ec93762fba700800000000000000
+      internalID: 552801904448413600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 77
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b59746b63707eff0800000000000000
+      internalID: -7028942849993287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 97
+        width: 24
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4954141, y: 0.03859828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b017febd73579d60800000000000000
+      internalID: 7896872271157334201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 95
+        width: 73
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6a70f928195c5c0800000000000000
+      internalID: -4195787487625894152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 97
+        width: 24
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49127898, y: 0.029058976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5414e9699a4250c40800000000000000
+      internalID: 5477824832561103173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 69
+        width: 61
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa8f249cb20a5e90800000000000000
+      internalID: -7036308458849727830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 71
+        width: 25
+        height: 10
+      alignment: 9
+      pivot: {x: 0.53042203, y: 0.028453827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c38a815013f7dbf0800000000000000
+      internalID: -299503598783790136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 69
+        width: 25
+        height: 11
+      alignment: 9
+      pivot: {x: 0.53356814, y: 0.02105921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e909bcc2a212eb0800000000000000
+      internalID: -4746466160389611969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b30d3413ff259ec4e842c284294023af
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SeagullSpritesheet_0: 6871677503687413453
+      SeagullSpritesheet_1: 5138704874817435031
+      SeagullSpritesheet_10: 7562098049870498546
+      SeagullSpritesheet_11: 552801904448413600
+      SeagullSpritesheet_12: -7028942849993287
+      SeagullSpritesheet_13: 7896872271157334201
+      SeagullSpritesheet_14: -4195787487625894152
+      SeagullSpritesheet_15: 5477824832561103173
+      SeagullSpritesheet_16: -7036308458849727830
+      SeagullSpritesheet_17: -299503598783790136
+      SeagullSpritesheet_18: -4746466160389611969
+      SeagullSpritesheet_2: 2920611099711537579
+      SeagullSpritesheet_3: 741387804306049803
+      SeagullSpritesheet_4: -8203054354346821926
+      SeagullSpritesheet_5: -6745325654280242942
+      SeagullSpritesheet_6: 517672819288956275
+      SeagullSpritesheet_7: -4612321425724378250
+      SeagullSpritesheet_8: -2477490385592426930
+      SeagullSpritesheet_9: 6892774361334430925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
