@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 15dec2591eb2f0840a1be09519a2edc5
+guid: be78ea7f99e61a2458452e5fe75cb367
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5414671503596471563
-    second: V1 Player_0
+      213: -5553099190077220193
+    second: SnailSpritesheet_0
   - first:
-      213: -3588252774122719533
-    second: V1 Player_1
+      213: -8350027371657082391
+    second: SnailSpritesheet_1
   - first:
-      213: -3367310518547991702
-    second: V1 Player_2
+      213: -4163797006893172340
+    second: SnailSpritesheet_2
   - first:
-      213: -7762239071517533639
-    second: V1 Player_3
+      213: -631158866654555587
+    second: SnailSpritesheet_3
   - first:
-      213: 5999553735483051102
-    second: V1 Player_4
+      213: -7778282851056768391
+    second: SnailSpritesheet_4
   - first:
-      213: -2648281377230952868
-    second: V1 Player_5
+      213: -1657266237698248759
+    second: SnailSpritesheet_5
   - first:
-      213: 3973355359982993132
-    second: V1 Player_6
+      213: 1587545339180337249
+    second: SnailSpritesheet_6
   - first:
-      213: -8985934510132606776
-    second: V1 Player_7
-  - first:
-      213: -6556181466104329724
-    second: V1 Player_8
-  - first:
-      213: -2034519349534328159
-    second: V1 Player_9
+      213: -8015535347409401777
+    second: SnailSpritesheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,221 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: V1 Player_0
+      name: SnailSpritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 420
-        width: 324
-        height: 315
+        x: 139
+        y: 1089
+        width: 122
+        height: 82
       alignment: 9
-      pivot: {x: 0.4623081, y: 0.02508235}
+      pivot: {x: 0.5477141, y: 0.028887494}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b054c4b5b07c42b40800000000000000
-      internalID: 5414671503596471563
+      spriteID: f9a10fc45bd6fe2b0800000000000000
+      internalID: -5553099190077220193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_1
+      name: SnailSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 369
-        y: 419
-        width: 324
-        height: 315
+        x: 344
+        y: 1089
+        width: 127
+        height: 82
       alignment: 9
-      pivot: {x: 0.5298392, y: 0.025082447}
+      pivot: {x: 0.5166674, y: 0.035340846}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d6fa120d17f33ec0800000000000000
-      internalID: -3588252774122719533
+      spriteID: 9e94797885ebe1c80800000000000000
+      internalID: -8350027371657082391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_2
+      name: SnailSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 766
-        y: 410
-        width: 324
-        height: 315
+        x: 569
+        y: 1089
+        width: 132
+        height: 82
       alignment: 9
-      pivot: {x: 0.49057686, y: 0.05577441}
+      pivot: {x: 0.5120267, y: 0.028887494}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a63b2859ce8e441d0800000000000000
-      internalID: -3367310518547991702
+      spriteID: c893c47dea83736c0800000000000000
+      internalID: -4163797006893172340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_3
+      name: SnailSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 406
-        width: 324
-        height: 315
+        x: 764
+        y: 1089
+        width: 127
+        height: 82
       alignment: 9
-      pivot: {x: 0.5125638, y: 0.0654666}
+      pivot: {x: 0.53125143, y: 0.028887494}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93a1a88c0bcf64490800000000000000
-      internalID: -7762239071517533639
+      spriteID: d329734da5cad37f0800000000000000
+      internalID: -631158866654555587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_4
+      name: SnailSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 29
-        width: 324
-        height: 315
+        x: 139
+        y: 919
+        width: 127
+        height: 82
       alignment: 9
-      pivot: {x: 0.46073762, y: 0.036389887}
+      pivot: {x: 0.55568963, y: 0.037121285}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5cc55ed552b24350800000000000000
-      internalID: 5999553735483051102
+      spriteID: 97aaf3445fcfd0490800000000000000
+      internalID: -7778282851056768391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_5
+      name: SnailSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 383
-        y: 24
-        width: 324
-        height: 315
+        x: 359
+        y: 919
+        width: 132
+        height: 87
       alignment: 9
-      pivot: {x: 0.47487196, y: 0.0476974}
+      pivot: {x: 0.5339342, y: 0.08811162}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c56eddc5e1a6f3bd0800000000000000
-      internalID: -2648281377230952868
+      spriteID: 9cf6fbb23253009e0800000000000000
+      internalID: -1657266237698248759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_6
+      name: SnailSpritesheet_6
       rect:
         serializedVersion: 2
-        x: 772
-        y: 20
-        width: 324
-        height: 315
+        x: 574
+        y: 909
+        width: 132
+        height: 92
       alignment: 9
-      pivot: {x: 0.46387848, y: 0.057389673}
+      pivot: {x: 0.5482224, y: 0.13868448}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cee3e2ee5a1342730800000000000000
-      internalID: 3973355359982993132
+      spriteID: 168cba62318180610800000000000000
+      internalID: 1587545339180337249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V1 Player_7
+      name: SnailSpritesheet_7
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 23
-        width: 324
-        height: 315
+        x: 779
+        y: 919
+        width: 132
+        height: 87
       alignment: 9
-      pivot: {x: 0.46544883, y: 0.042851366}
+      pivot: {x: 0.5321484, y: 0.08269212}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c84f9c2c2c8b4380800000000000000
-      internalID: -8985934510132606776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: V1 Player_8
-      rect:
-        serializedVersion: 2
-        x: 1564
-        y: 30
-        width: 324
-        height: 315
-      alignment: 9
-      pivot: {x: 0.4575964, y: 0.029928347}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40a0ad551b3c305a0800000000000000
-      internalID: -6556181466104329724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: V1 Player_9
-      rect:
-        serializedVersion: 2
-        x: 1926
-        y: 21
-        width: 324
-        height: 315
-      alignment: 9
-      pivot: {x: 0.51884556, y: 0.07354327}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1aaf8525e6fe3c3e0800000000000000
-      internalID: -2034519349534328159
+      spriteID: f484315d11913c090800000000000000
+      internalID: -8015535347409401777
       vertices: []
       indices: 
       edges: []
@@ -350,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8fe19ffc022a145458062887f0220351
+    spriteID: 6d44380921026cc47902b988c5685ee8
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      V1 Player_0: 5414671503596471563
-      V1 Player_1: -3588252774122719533
-      V1 Player_2: -3367310518547991702
-      V1 Player_3: -7762239071517533639
-      V1 Player_4: 5999553735483051102
-      V1 Player_5: -2648281377230952868
-      V1 Player_6: 3973355359982993132
-      V1 Player_7: -8985934510132606776
-      V1 Player_8: -6556181466104329724
-      V1 Player_9: -2034519349534328159
+      SnailSpritesheet_0: -5553099190077220193
+      SnailSpritesheet_1: -8350027371657082391
+      SnailSpritesheet_2: -4163797006893172340
+      SnailSpritesheet_3: -631158866654555587
+      SnailSpritesheet_4: -7778282851056768391
+      SnailSpritesheet_5: -1657266237698248759
+      SnailSpritesheet_6: 1587545339180337249
+      SnailSpritesheet_7: -8015535347409401777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
