@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3003708863182785048}
   - component: {fileID: 1231058800784128399}
   - component: {fileID: 2714838272066381473}
+  - component: {fileID: 6447943406386190159}
   m_Layer: 8
   m_Name: Ennemi
   m_TagString: Ennemi
@@ -101,7 +102,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -201,4 +202,20 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 4802170594088426450}
   IsHitten: 0
-  HealthZombie: 5
+  HealthZombie: 6
+  pvperdu: 3
+--- !u!114 &6447943406386190159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646075403676202942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0211c81c746be4c9f5dbc7a9d2a7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDamage: 1
+  _playerHealth: {fileID: 0}
+  player: {fileID: 0}
