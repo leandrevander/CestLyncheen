@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamage: 1
   _playerHealth: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
 --- !u!95 &5312053910916296469
 Animator:
   serializedVersion: 7
