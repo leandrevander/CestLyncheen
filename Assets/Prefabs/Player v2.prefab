@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e6a2ab59fad6c4eaa64c6abc1b943a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 3646075403676202942, guid: dfda87b119548414b94271b2d6afe4e3, type: 3}
+  enemyprefab: {fileID: 7115899278753535276, guid: 70a4a95bb31a7f64c9374bc25efdfa5f, type: 3}
   spawnTimer: 0
   spawnInterval: 2
   minDistance: 10
