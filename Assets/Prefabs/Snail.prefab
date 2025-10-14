@@ -286,7 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68425d3163dba984faa597c3250c5339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
+  player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   agent: {fileID: 4838597392707036171}
   IsHitten: 0
   HealthZombie: 6
@@ -308,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  _playerHealth: {fileID: 0}
+  _playerHealth: {fileID: 3909622598296724519, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
 --- !u!95 &5312053910916296469
 Animator:
