@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class IAZombie : MonoBehaviour
 {
+    public GameObject experiencepointPrefab;
     public GameObject player;
     public NavMeshAgent agent;
     public bool IsHitten = false;
@@ -39,6 +40,7 @@ public class IAZombie : MonoBehaviour
         if (HealthZombie <= 0)
         {
             Destroy(gameObject);
+            Instantiate(experiencepointPrefab, transform.position, transform.rotation);
         }
 
         Debug.Log("PV perdu");
