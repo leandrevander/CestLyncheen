@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TOMAS.unity
-    guid: 6396a3a3a42f941488467582eed86e62
+    path: Assets/Scenes/FirstProto.unity
+    guid: 9297e37d91161bc42b6c6c302eb5767f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

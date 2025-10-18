@@ -11,12 +11,34 @@ namespace Player_Scripts
         public InputActionReference move;
         public SpriteRenderer spriteRenderer;
         
+        public InputActionReference look;
+        
+        public LightRotation playerLight;
+        
+        public Vector2 _lookDirection;
+        
+        
         [SerializeField] private Animator animatorPlayer;
-
+        
+        private void OnEnable()
+        {
+            move.action.Enable();
+            look.action.Enable();
+        }
+        
+        private void OnDisable()
+        {
+            move.action.Disable();
+            look.action.Disable();
+        }
+        
         private void Update()
         {
             _moveDirection = move.action.ReadValue<Vector2>();
             animatorPlayer.SetFloat("Velocity", _moveDirection.magnitude);
+            
+            _lookDirection = look.action.ReadValue<Vector2>();
+            playerLight.UpdateLook(_lookDirection);
             
             if (_moveDirection.x > 0.01f)
                 spriteRenderer.flipX = false;
