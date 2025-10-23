@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class Experience : MonoBehaviour
 {
     public int level = 1;
@@ -13,12 +14,14 @@ public class Experience : MonoBehaviour
     public float ExpGrowMultiplier = 1.2f;
     public TMP_Text CurrentLevelText;
     public Slider  expSlider;
-
+    public UpgradeMenu upgradeMenu;
+  
 
 
     void start()
     {
         UpdateUI();
+       
     }
     
     
@@ -38,6 +41,7 @@ public class Experience : MonoBehaviour
         Debug.Log("You level up !");
         CurrentExp -=  XpToNextLevel;
         XpToNextLevel = Mathf.RoundToInt(XpToNextLevel * ExpGrowMultiplier);
+        upgradeMenu.UpgradeMenuOpen();
     }
 
     private void OnEnable()
