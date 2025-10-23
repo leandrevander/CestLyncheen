@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: be898f50066dda84f99222dc55b2b1d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7172239275417384166
+    second: SharkWarning_0
+  - first:
+      213: 6058339969377099912
+    second: SharkWarning_1
+  - first:
+      213: 1782997253582413116
+    second: SharkWarning_2
+  - first:
+      213: -7865818300388503474
+    second: SharkWarning_3
+  - first:
+      213: -2403252202403181262
+    second: SharkWarning_4
+  - first:
+      213: -2153955515108123094
+    second: SharkWarning_5
+  - first:
+      213: 5013565278169355333
+    second: SharkWarning_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SharkWarning_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 59
+        width: 365
+        height: 154
+      alignment: 9
+      pivot: {x: 0.47574547, y: 0.34191272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4bb5fee99e88360800000000000000
+      internalID: 7172239275417384166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 45
+        width: 365
+        height: 154
+      alignment: 9
+      pivot: {x: 0.47574547, y: 0.39221355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880e54b8a1c831450800000000000000
+      internalID: 6058339969377099912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 45
+        width: 365
+        height: 154
+      alignment: 9
+      pivot: {x: 0.47574547, y: 0.39221355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dd64f2e8a7eb810800000000000000
+      internalID: 1782997253582413116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 411
+        width: 229
+        height: 111
+      alignment: 9
+      pivot: {x: 0.48972982, y: 0.19630638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4093914eeff6d290800000000000000
+      internalID: -7865818300388503474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 266
+        width: 229
+        height: 111
+      alignment: 9
+      pivot: {x: 0.48972982, y: 0.19630638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d451adadee5aed0800000000000000
+      internalID: -2403252202403181262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 265
+        width: 229
+        height: 111
+      alignment: 9
+      pivot: {x: 0.48972982, y: 0.19630638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e9cf30fdc9b12e0800000000000000
+      internalID: -2153955515108123094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_6
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 268
+        width: 240
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5027954, y: 0.16805562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5445487be03c39540800000000000000
+      internalID: 5013565278169355333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkWarning_7
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 273
+        width: 240
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5027954, y: 0.16805562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee745ea0fe752334997e6dfef0e41ed6
+      internalID: -1579647101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ede99bd0f6691d94e83a5f13bf129d7a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SharkWarning_0: 7172239275417384166
+      SharkWarning_1: 6058339969377099912
+      SharkWarning_2: 1782997253582413116
+      SharkWarning_3: -7865818300388503474
+      SharkWarning_4: -2403252202403181262
+      SharkWarning_5: -2153955515108123094
+      SharkWarning_6: 5013565278169355333
+      SharkWarning_7: -1579647101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
