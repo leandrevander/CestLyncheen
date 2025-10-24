@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: 5c5845be8afb66b4ca2e810f19e53041
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5383796270703938684
+    second: SeagullAttack_0
+  - first:
+      213: -9186682494158175100
+    second: SeagullAttack_1
+  - first:
+      213: -2475727216141244172
+    second: SeagullAttack_2
+  - first:
+      213: 6285860957959263264
+    second: SeagullAttack_3
+  - first:
+      213: 3750390138630856513
+    second: SeagullAttack_4
+  - first:
+      213: 6440655581337770665
+    second: SeagullAttack_5
+  - first:
+      213: 5568966691009517698
+    second: SeagullAttack_6
+  - first:
+      213: -5190856730372882729
+    second: SeagullAttack_7
+  - first:
+      213: 2379154292873884992
+    second: SeagullAttack_8
+  - first:
+      213: 2199627045596977846
+    second: SeagullAttack_9
+  - first:
+      213: -4242705845437995770
+    second: SeagullAttack_10
+  - first:
+      213: -3239968997037366370
+    second: SeagullAttack_11
+  - first:
+      213: -67292975891368283
+    second: SeagullAttack_12
+  - first:
+      213: 124422487980568452
+    second: SeagullAttack_13
+  - first:
+      213: 3254859570085374958
+    second: SeagullAttack_14
+  - first:
+      213: -1274688222049366308
+    second: SeagullAttack_15
+  - first:
+      213: 7394454544259168327
+    second: SeagullAttack_16
+  - first:
+      213: -6161797879137131711
+    second: SeagullAttack_17
+  - first:
+      213: 8863363137815119208
+    second: SeagullAttack_18
+  - first:
+      213: -3060685164879346959
+    second: SeagullAttack_19
+  - first:
+      213: -8078565928790173042
+    second: SeagullAttack_20
+  - first:
+      213: 5152531641557381505
+    second: SeagullAttack_21
+  - first:
+      213: 2173586061989659843
+    second: SeagullAttack_22
+  - first:
+      213: 4394221299533136832
+    second: SeagullAttack_23
+  - first:
+      213: -6038788642370407246
+    second: SeagullAttack_24
+  - first:
+      213: -6553032381675273763
+    second: SeagullAttack_25
+  - first:
+      213: 4239882882245579283
+    second: SeagullAttack_26
+  - first:
+      213: -6539595122187462126
+    second: SeagullAttack_27
+  - first:
+      213: -8607247893357206050
+    second: SeagullAttack_28
+  - first:
+      213: 8836241235050710111
+    second: SeagullAttack_29
+  - first:
+      213: -859907614539189246
+    second: SeagullAttack_30
+  - first:
+      213: 2879474670517985752
+    second: SeagullAttack_31
+  - first:
+      213: -4392103617285631905
+    second: SeagullAttack_32
+  - first:
+      213: 8037127487651001573
+    second: SeagullAttack_33
+  - first:
+      213: 7859570991462538923
+    second: SeagullAttack_34
+  - first:
+      213: 1363033607038425557
+    second: SeagullAttack_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeagullAttack_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 164
+        width: 560
+        height: 99
+      alignment: 9
+      pivot: {x: 0.9176758, y: 0.4552535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c81620f2617ba40800000000000000
+      internalID: 5383796270703938684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullAttack_1
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 160
+        width: 560
+        height: 99
+      alignment: 9
+      pivot: {x: 0.94931793, y: 0.43735513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4840767d1f8528080800000000000000
+      internalID: -9186682494158175100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullAttack_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 19
+        width: 560
+        height: 99
+      alignment: 9
+      pivot: {x: 0.94298923, y: 0.43735495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f86221c63374add0800000000000000
+      internalID: -2475727216141244172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullAttack_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 26
+        width: 560
+        height: 99
+      alignment: 9
+      pivot: {x: 0.95089984, y: 0.47315225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02498a2cc3ddb3750800000000000000
+      internalID: 6285860957959263264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2b15a46cc5c0ca44fa646d75c4f4cf5b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SeagullAttack_0: 5383796270703938684
+      SeagullAttack_1: -9186682494158175100
+      SeagullAttack_10: -4242705845437995770
+      SeagullAttack_11: -3239968997037366370
+      SeagullAttack_12: -67292975891368283
+      SeagullAttack_13: 124422487980568452
+      SeagullAttack_14: 3254859570085374958
+      SeagullAttack_15: -1274688222049366308
+      SeagullAttack_16: 7394454544259168327
+      SeagullAttack_17: -6161797879137131711
+      SeagullAttack_18: 8863363137815119208
+      SeagullAttack_19: -3060685164879346959
+      SeagullAttack_2: -2475727216141244172
+      SeagullAttack_20: -8078565928790173042
+      SeagullAttack_21: 5152531641557381505
+      SeagullAttack_22: 2173586061989659843
+      SeagullAttack_23: 4394221299533136832
+      SeagullAttack_24: -6038788642370407246
+      SeagullAttack_25: -6553032381675273763
+      SeagullAttack_26: 4239882882245579283
+      SeagullAttack_27: -6539595122187462126
+      SeagullAttack_28: -8607247893357206050
+      SeagullAttack_29: 8836241235050710111
+      SeagullAttack_3: 6285860957959263264
+      SeagullAttack_30: -859907614539189246
+      SeagullAttack_31: 2879474670517985752
+      SeagullAttack_32: -4392103617285631905
+      SeagullAttack_33: 8037127487651001573
+      SeagullAttack_34: 7859570991462538923
+      SeagullAttack_35: 1363033607038425557
+      SeagullAttack_4: 3750390138630856513
+      SeagullAttack_5: 6440655581337770665
+      SeagullAttack_6: 5568966691009517698
+      SeagullAttack_7: -5190856730372882729
+      SeagullAttack_8: 2379154292873884992
+      SeagullAttack_9: 2199627045596977846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
