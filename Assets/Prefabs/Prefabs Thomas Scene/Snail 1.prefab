@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 8339217246629159458}
   - component: {fileID: 5312053910916296469}
   - component: {fileID: 1635789006161524969}
+  - component: {fileID: 3016817454069801208}
   m_Layer: 8
   m_Name: Snail 1
   m_TagString: Ennemi
@@ -186,7 +187,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3342766363712070149}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 2.5
@@ -227,7 +228,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &7314406167015641696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,3 +388,17 @@ MonoBehaviour:
     - rid: 2401051123242762351
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!114 &3016817454069801208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342766363712070149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f755f372acf92534ebabbdddb89659a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wM: {fileID: 0}
+  ennemi_Rigidbody2D: {fileID: 8383139914318889556}

@@ -295,6 +295,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2950418394412113012}
   proximity: 4
   proximityLight: {fileID: 2857550254564169334}
+  ampouleScript: {fileID: 0}
   animatorPlayer: {fileID: 5312053910916296469}
 --- !u!114 &8339217246629159458
 MonoBehaviour:
