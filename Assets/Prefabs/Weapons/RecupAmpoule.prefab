@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7564731060538339432
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4437829149449620560}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.1180143, y: 0.85507584, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponsManager: {fileID: 0}
-  ampoule: {fileID: 0}
-  ampouleScript: {fileID: 0}
+  ampoule: {fileID: 1424538326097015079, guid: 8b442033bd85db9498171858df981593, type: 3}
+  ampouleScript: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
   recupAmpoule: {fileID: 4437829149449620560}
   nombreAmpoule: 0

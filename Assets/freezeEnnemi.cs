@@ -1,38 +1,46 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class freezeEnnemi : MonoBehaviour
 {
-    public WeaponsManager wM;
-    public Rigidbody2D ennemi_Rigidbody2D;
+    public WeaponsManager weaponsManager;
+    public GameObject     PrefabEnnemi;
+    public NavMeshAgent   ennemi_NavMeshAgent;
+
+    public static float speed = 2.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        wM = GameObject.Find("WeaponsManager").GetComponent<WeaponsManager>();
-        ennemi_Rigidbody2D = GetComponent<Rigidbody2D>();
+        ennemi_NavMeshAgent = GetComponent<NavMeshAgent>();
+        ennemi_NavMeshAgent.speed = speed;
+        
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
+        while (weaponsManager.nombreAppareillePhoto >= 1)
         {
-            while (wM.nombreAppareillePhoto >= 1)
-                if (other.gameObject.CompareTag("Ennemi"))
-                {
+            if (other.gameObject.CompareTag("Ennemi"))
+            {
 
-                    Debug.Log("Courroutune Flash lancé");
-                    StartCoroutine(FreezeDuration());
-                    Debug.Log("Courroutune Freeze lancé");
+                Debug.Log("Courroutune Flash lancï¿½");
+                StartCoroutine(FreezeDuration());
+                Debug.Log("Courroutune Freeze lancï¿½");
 
-                }
+            }
         }
     }
     public IEnumerator FreezeDuration()
 
     {
-        Debug.Log("Couroutine Freeze appelé");
-        ennemi_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
-        Debug.Log("Ennemi gelé ! Enfin je crois...");
-        yield return new WaitForSeconds(wM.freezeDuration);
-        ennemi_Rigidbody2D.constraints = RigidbodyConstraints2D.None;
-        Debug.Log("Ennemi dégelé ! Normalement...");
+        Debug.Log("Couroutine Freeze appelï¿½");
+        ennemi_NavMeshAgent       = GetComponent<NavMeshAgent>();
+        ennemi_NavMeshAgent.speed = speed;
+        speed                     = 0f;
+        Debug.Log("Ennemi gelï¿½ ! Enfin je crois...");
+        yield return new WaitForSeconds(weaponsManager.freezeDuration);
+        speed = 2.5f;
+        Debug.Log("Ennemi dï¿½gelï¿½ ! Normalement...");
     }
 }

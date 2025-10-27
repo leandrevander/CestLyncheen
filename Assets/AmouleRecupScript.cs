@@ -4,7 +4,7 @@ public class AmpouleRecupScript : MonoBehaviour
 {
     public WeaponsManager weaponsManager;
     public GameObject ampoule;
-    public Ampoule ampouleScript;
+    public Bulb ampouleScript;
     public GameObject recupAmpoule;
     public int nombreAmpoule = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

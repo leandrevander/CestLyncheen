@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class WeaponsManager : MonoBehaviour
 {
     public GameObject ampoule;
-    public Ampoule ampouleScript;
+    public Bulb ampouleScript;
     public GameObject recupAmpoule;
     public int nombreAmpoule = 0;
     public GameObject AppareillePhoto;
@@ -44,38 +44,29 @@ public class WeaponsManager : MonoBehaviour
         }
     }
     public IEnumerator Flash()
-    {   while (nombreAppareillePhoto >= 1)
-        {
-            Debug.Log("Flash !");
-            AppareillePhoto.SetActive(false);
-            Debug.Log("L'appareil photo est en recharge...");
-            yield return new WaitForSeconds(2);
-            AppareillePhoto.SetActive(true);
-            Debug.Log("Vous pouvez réutiliser l'appareil photo !");
-            yield return new WaitForSeconds(2);
-            AppareillePhoto.SetActive(false);
-            Debug.Log("Appareille Photo Utilisé !");
-        }
-
-
-
-
-    }
-
-
-
-    public void OnTriggerEnter2D(Collider2D other)
-    {
+    
         {
             while (nombreAppareillePhoto >= 1)
-                if (other.gameObject.CompareTag("Ennemi"))
-                {
-                    StartCoroutine(freeze.FreezeDuration());
-                    Debug.Log("Courroutune Freeze lancé");
+            {
+                Debug.Log("Flash !");
+                AppareillePhoto.SetActive(false);
+                Debug.Log("L'appareil photo est en recharge...");
+                yield return new WaitForSeconds(2);
+                AppareillePhoto.SetActive(true);
+                Debug.Log("Vous pouvez réutiliser l'appareil photo !");
+                yield return new WaitForSeconds(2);
+                AppareillePhoto.SetActive(false);
+                Debug.Log("Appareille Photo Utilisé !");
 
-                }
+            }
+
+
+
         }
-    }
+
+
+
+    
     
     
 

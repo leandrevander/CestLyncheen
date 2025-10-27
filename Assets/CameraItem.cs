@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AppreillePhoto : MonoBehaviour
+public class CameraItem : MonoBehaviour
 
 {
     public WeaponsManager weaponsManager;
