@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 8339217246629159458}
   - component: {fileID: 5312053910916296469}
   - component: {fileID: 1635789006161524969}
+  - component: {fileID: 8503354195457008611}
   m_Layer: 8
   m_Name: Snail
   m_TagString: Ennemi
@@ -289,12 +290,10 @@ MonoBehaviour:
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
   player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   agent: {fileID: 4838597392707036171}
-  IsHitten: 0
-  HealthZombie: 6
-  pvperdu: 3
   spriteRenderer: {fileID: 2950418394412113012}
   proximity: 4
   proximityLight: {fileID: 2857550254564169334}
+  ampouleScript: {fileID: 0}
   animatorPlayer: {fileID: 5312053910916296469}
 --- !u!114 &8339217246629159458
 MonoBehaviour:
@@ -386,3 +385,19 @@ MonoBehaviour:
     - rid: 2401051123242762351
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!114 &8503354195457008611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342766363712070149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsHitten: 0
+  HealthZombie: 5
+  pvperdu: 1
+  experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}

@@ -13,11 +13,7 @@ public class SharkAI : MonoBehaviour
     private Spawner spawner;
     public GameObject experiencepointPrefab;
     
-    [Header("Damage To Shark")]
-    public bool IsHitten = false;
-    public int HealthZombie = 5;
-    private Coroutine coroutine;
-    public int pvperdu;
+    
     
     [Header("Damage To Player")]
     private PlayerHealth playerHealth;
@@ -65,10 +61,7 @@ public class SharkAI : MonoBehaviour
         
         //Debug.Log(state);
         
-        if (IsHitten && coroutine == null)
-        {
-            coroutine = StartCoroutine(PerteDePv());
-        }
+        
         
     }
 
@@ -186,21 +179,7 @@ public class SharkAI : MonoBehaviour
     
     //Scripts Léandre
 
-    IEnumerator PerteDePv()
-    {
-
-        HealthZombie = HealthZombie - pvperdu;
-        if (HealthZombie <= 0)
-        {
-            Destroy(gameObject);
-            Instantiate(experiencepointPrefab, transform.position, transform.rotation);
-        }
-
-        //Debug.Log("PV perdu");
-        IsHitten = false;
-        yield return new WaitForSeconds(1);
-        coroutine = null;
-    }
+    
     
     private void OnTriggerStay2D(Collider2D other)
     {

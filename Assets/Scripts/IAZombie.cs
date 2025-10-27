@@ -9,11 +9,9 @@ public class IAZombie : MonoBehaviour
     public GameObject experiencepointPrefab;
     public GameObject player;
     public NavMeshAgent agent;
-    public bool IsHitten = false;
-    public int HealthZombie = 5;
+    
     private Spawner spawner;
-    private Coroutine coroutine;
-    public int pvperdu;
+    
     private PlayerHealth playerHealth;
     public SpriteRenderer spriteRenderer;
     public float proximity;
@@ -35,21 +33,7 @@ public class IAZombie : MonoBehaviour
 
     }
 
-    IEnumerator PerteDePv()
-    {
-
-        HealthZombie = HealthZombie - pvperdu;
-        if (HealthZombie <= 0)
-        {
-            Destroy(gameObject);
-            Instantiate(experiencepointPrefab, transform.position, transform.rotation);
-        }
-
-        Debug.Log("PV perdu");
-        IsHitten = false;
-        yield return new WaitForSeconds(1);
-        coroutine = null;
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -73,10 +57,7 @@ public class IAZombie : MonoBehaviour
             agent.destination = player.transform.position;
         }
 
-        if (IsHitten && coroutine == null)
-        {
-            coroutine = StartCoroutine(PerteDePv());
-        }
+        
 
         if (player.transform.position.x - gameObject.transform.position.x > 0f)
             spriteRenderer.flipX = false;

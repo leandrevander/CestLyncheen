@@ -99,9 +99,10 @@ GameObject:
   - component: {fileID: 357537091256243206}
   - component: {fileID: 605525104347999854}
   - component: {fileID: 9128184689915839147}
+  - component: {fileID: 4158459981722930259}
   m_Layer: 8
   m_Name: Shark
-  m_TagString: Untagged
+  m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,9 +217,6 @@ MonoBehaviour:
   animator: {fileID: 5314019934948862175}
   proximityLight: {fileID: 886088858263443430}
   experiencepointPrefab: {fileID: 0}
-  IsHitten: 0
-  HealthZombie: 5
-  pvperdu: 1
   waitDistance: 5
   angle: 0
   waitSpeed: 0.9
@@ -323,3 +321,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.102559, y: 2.2461367}
   m_EdgeRadius: 0
+--- !u!114 &4158459981722930259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6962682548767142865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsHitten: 0
+  HealthZombie: 5
+  pvperdu: 1
+  experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}

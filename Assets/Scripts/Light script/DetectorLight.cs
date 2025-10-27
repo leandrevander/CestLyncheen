@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class DetectorLight : MonoBehaviour
 {
-    private Transform cibleZombie;
-    public GameObject player;
-    private float zombieDistance;
-    private float distance;
-    private IAZombie iaZombie;
-    public LayerMask raycastMask;
+    private Transform     cibleZombie;
+    public  GameObject    player;
+    private float         zombieDistance;
+    private float         distance;
+    EnemyHealthManagement enemyHealth;
+    public  LayerMask     raycastMask;
     
 
 
@@ -42,18 +42,20 @@ public class DetectorLight : MonoBehaviour
             
             Debug.DrawRay(player.transform.position, direction * distance, Color.red);
             
-            if (hit.collider !=null && hit.collider == other) 
+            if (hit.collider !=null && hit.collider == other)
             {
 
-                iaZombie = cibleZombie.GetComponent<IAZombie>();
+                enemyHealth = cibleZombie.GetComponent<EnemyHealthManagement>();
 
                 Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE LOL CACA PROUT DIEU MERCI");
-                iaZombie.IsHitten = true;
+                enemyHealth.IsHitten = true;
+                
             }
             else
             {
-                iaZombie = cibleZombie.GetComponent<IAZombie>();
-                iaZombie.IsHitten = false;
+                enemyHealth          = cibleZombie.GetComponent<EnemyHealthManagement>();
+                enemyHealth.IsHitten = false;
+                
             }
                
                
