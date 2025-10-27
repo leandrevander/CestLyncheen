@@ -72,14 +72,14 @@ public class WeaponsManager : MonoBehaviour
 
     public void UpgradeAmpoule()
     {
-        if  (nombreAmpoule >= 1)
+        if  (nombreAmpoule > 1)
         {
             
             nombreAmpoule += 1;
             Debug.Log("Vous avez " + nombreAmpoule + " ampoules.");
             
         }
-        else if  (nombreAmpoule >= 0)
+        else if  (nombreAmpoule == 0)
         {
             ampoule.SetActive(true);
             nombreAmpoule += 1;

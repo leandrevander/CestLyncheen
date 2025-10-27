@@ -16,7 +16,7 @@ public class AmpouleRecupScript : MonoBehaviour
     {
        
         {
-
+            ampoule.SetActive(true);
             weaponsManager.UpgradeAmpoule();
             Destroy(gameObject);
         }

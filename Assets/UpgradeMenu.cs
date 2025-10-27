@@ -54,7 +54,10 @@ public class UpgradeMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            UpgradeMenuClose();
+        }
 
 
     }
@@ -81,6 +84,8 @@ public class UpgradeMenu : MonoBehaviour
         Time.timeScale = 1f;
 
     }
+
+ 
     public void Upgrade1Seclect()
     {
         if (levelupgrade1 >= 3)

@@ -24,7 +24,7 @@ public class WinMenu : MonoBehaviour
             if (gamepad.buttonSouth.wasPressedThisFrame)
             {
                 Time.timeScale = 1f;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("FirstProto");
             }
         }
     }
