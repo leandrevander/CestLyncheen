@@ -16,7 +16,7 @@ public class IAZombie : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public float proximity;
     public GameObject proximityLight;
-    public Ampoule ampouleScript;
+    public Bulb ampouleScript;
    
     
     [SerializeField] private Animator animatorPlayer;
