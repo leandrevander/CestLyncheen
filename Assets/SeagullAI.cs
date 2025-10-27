@@ -35,6 +35,18 @@ public class SeagullAI : MonoBehaviour
     public float attackTimerReset = 30;
     public bool timerIsRunning = false;
     public bool attackTimerIsOver = false;
+
+    [Header("Attack State")] 
+    public GameObject warningArrow;
+    private bool arrowInstantiated;
+    public bool warningOver;
+    private Vector2 freezePosition;
+    public GameObject dashTarget;
+    public float dashSpeed = 22f;
+    public float dashAcceleration = 22f;
+    public float agentSpeedReset = 3.5f;
+    public float agentAccelerationReset = 8;
+    public float endDashDistance = 10f;
     
     
     enum SeagullState {Chasing, Waiting, Attacking}
@@ -163,6 +175,8 @@ public class SeagullAI : MonoBehaviour
                 timerIsRunning = false;
                 attackTimer = 0;
                 attackTimerIsOver = true;
+                freezePosition = transform.position;
+                
                 stateComplete = true;
             }
         }
@@ -171,8 +185,65 @@ public class SeagullAI : MonoBehaviour
 
     void UpdateAttacking()
     {
+        animator.Play("Warning");
+        proximityLight.SetActive(true);
+
+        if (warningOver == false)
+        {
+            transform.position = freezePosition;
+        }
+
+        if (arrowInstantiated == false)
+        {
+           float angle = Mathf.Atan2(player.transform.position.y - gameObject.transform.position.y, player.transform.position.x - gameObject.transform.position.x) * Mathf.Rad2Deg;
+           Quaternion rotation = Quaternion.Euler(0,0,angle);
+           Instantiate(warningArrow, player.transform.position, rotation, transform);
+           
+           arrowInstantiated = true; 
+        }
+
+        dashTarget = transform.GetChild(1).gameObject; 
+        //Debug.Log("cible est " + dashTarget);
+        
+        if (warningOver)
+        {
+            agent.speed = dashSpeed;
+            agent.acceleration = dashAcceleration;
+            agent.autoBraking = false;
+            
+            if (player != null && agent.isOnNavMesh)
+            {
+                agent.destination = dashTarget.transform.position;
+            }
+            
+            float distance = Vector3.Distance(player.transform.position, transform.position);
+
+            if (distance > endDashDistance)
+            {
+                endAttack();
+            }
+            
+        }
         
     }
+
+    void endAttack()
+    {
+        animator.Play("Flying");
+        proximityLight.SetActive(false);
+        arrowInstantiated = false;
+        warningOver = false;
+        attackTimerIsOver =  false;
+        attackTimer = attackTimerReset;
+        agent.speed = agentSpeedReset;
+        agent.acceleration = agentAccelerationReset;
+        agent.autoBraking = true;
+        Destroy(transform.GetChild(1).gameObject);
+        
+        stateComplete = true;
+    }
+    
+    
     
     
 
