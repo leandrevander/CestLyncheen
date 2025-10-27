@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 1562379136417275706}
   - component: {fileID: 7484838000335732666}
   - component: {fileID: 2873556452400675857}
+  - component: {fileID: 370224863039234518}
   m_Layer: 0
   m_Name: Seagull
   m_TagString: Untagged
@@ -303,3 +304,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0344906, y: 0.49676418}
   m_EdgeRadius: 0
+--- !u!114 &370224863039234518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917319842684498884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsHitten: 0
+  HealthZombie: 5
+  pvperdu: 2
+  experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}

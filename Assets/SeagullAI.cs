@@ -138,11 +138,12 @@ public class SeagullAI : MonoBehaviour
         if (player != null && agent.isOnNavMesh)
         {
             agent.destination = player.transform.position;
+
         }
-        
+                            
         if ((player.transform.position.x - gameObject.transform.position.x < waitDistance &&
              player.transform.position.x - gameObject.transform.position.x > -waitDistance) && (player.transform.position.y - gameObject.transform.position.y < waitDistance &&
-                player.transform.position.y - gameObject.transform.position.y > -waitDistance))
+                                                                                                player.transform.position.y - gameObject.transform.position.y > -waitDistance))
         {
             stateComplete = true;
         }
