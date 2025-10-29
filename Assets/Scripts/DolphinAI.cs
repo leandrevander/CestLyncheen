@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class DolphinAI : MonoBehaviour
 {
     public GameObject player;
-    private Spawner spawner;
+    private DolphinSpawner spawner;
     public GameObject experiencepointPrefab;
     public SpriteRenderer spriteRenderer;
     public float destroyDistance = 80f;
@@ -33,7 +33,7 @@ public class DolphinAI : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        spawner = GameObject.FindWithTag("Player").GetComponent<Spawner>();
+        spawner = GameObject.FindWithTag("Player").GetComponent<DolphinSpawner>();
         playerHealth = player.GetComponent<PlayerHealth>();
         
         dashRight = false;

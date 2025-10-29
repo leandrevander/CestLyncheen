@@ -10,7 +10,7 @@ public class SharkAI : MonoBehaviour
     public NavMeshAgent agent;
     public Animator animator;
     public GameObject proximityLight;
-    private Spawner spawner;
+    private SharkSpawner spawner;
     public GameObject experiencepointPrefab;
     
     
@@ -42,7 +42,7 @@ public class SharkAI : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        spawner = GameObject.FindWithTag("Player").GetComponent<Spawner>();
+        spawner = GameObject.FindWithTag("Player").GetComponent<SharkSpawner>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         playerHealth = player.GetComponent<PlayerHealth>();

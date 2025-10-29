@@ -4,13 +4,13 @@ using Player_Scripts;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class IAZombie : MonoBehaviour
+public class SnailAI : MonoBehaviour
 {
     public GameObject experiencepointPrefab;
     public GameObject player;
     public NavMeshAgent agent;
     
-    private Spawner spawner;
+    private SnailSpawner spawner;
     
     private PlayerHealth playerHealth;
     public SpriteRenderer spriteRenderer;
@@ -25,7 +25,7 @@ public class IAZombie : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        spawner = GameObject.FindWithTag("Player").GetComponent<Spawner>();
+        spawner = GameObject.FindWithTag("Player").GetComponent<SnailSpawner>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;

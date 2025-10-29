@@ -17,7 +17,7 @@ public class Bulb : MonoBehaviour
     public NavMeshAgent     agent;
     public Coroutine        coroutine;
     public GameObject       PrefabEnnemi;
-    public IAZombie         iaZombie;
+    public EnemyHealthManagement         enemyHealthManagement;
     public int              levelAmpoule = 1;
     public CircleCollider2D bulbl1;
     public CircleCollider2D bulbl2;
@@ -32,7 +32,7 @@ public class Bulb : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        IAZombie iaZombie = GetComponent<IAZombie>();
+        enemyHealthManagement = GetComponent<EnemyHealthManagement>();
     }
     public void OnTrigger2D(Collider2D other)
     {

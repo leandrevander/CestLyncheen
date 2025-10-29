@@ -10,7 +10,7 @@ public class SeagullAI : MonoBehaviour
     public NavMeshAgent agent;
     public Animator animator;
     public GameObject proximityLight;
-    private Spawner spawner;
+    private SeagullSpawner spawner;
     public GameObject experiencepointPrefab;
     public SpriteRenderer spriteRenderer;
     
@@ -58,7 +58,7 @@ public class SeagullAI : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        spawner = GameObject.FindWithTag("Player").GetComponent<Spawner>();
+        spawner = GameObject.FindWithTag("Player").GetComponent<SeagullSpawner>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         playerHealth = player.GetComponent<PlayerHealth>();

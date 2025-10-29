@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SharkSpawner : MonoBehaviour
 {
     public GameObject enemyprefab;
 
