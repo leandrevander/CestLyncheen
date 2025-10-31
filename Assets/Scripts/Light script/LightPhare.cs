@@ -8,6 +8,8 @@ public class LightPhare : MonoBehaviour
 
     public GeneratorSystem generator1;
     public GeneratorSystem generator2;
+    public GeneratorSystem generator3;
+    public GeneratorSystem generator4;
     public int             generatorsNumber;
     
     public  int              totalPercentage;
@@ -62,7 +64,7 @@ public class LightPhare : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalPercentage = generator1.percentage +  generator2.percentage;
+        totalPercentage = generator1.percentage +  generator2.percentage + generator3.percentage + generator4.percentage;
 
         if (totalPercentage >= level1)
         {
