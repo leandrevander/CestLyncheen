@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7527199246214434206
 Transform:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ampoule: {fileID: 1424538326097015079}
-  PVperdu: 5
+  PVperdu: 2
   HealthZombie: 5
   player: {fileID: 0}
   IsHittenByBull: 0
@@ -125,6 +125,15 @@ MonoBehaviour:
   PrefabEnnemi: {fileID: 3342766363712070149, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
   iaZombie: {fileID: 890554524286874530, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
   levelAmpoule: 1
+  bulbl1: {fileID: 0}
+  bulbl2: {fileID: 0}
+  bulbl3: {fileID: 0}
+  bulb: {fileID: 0}
+  bulbLight: {fileID: 0}
+  rangeIncrease: 1.5
+  minRange: 0
+  maxRangeOuter: 3.8
+  maxRangeInner: 3
 --- !u!58 &6710340570152979846
 CircleCollider2D:
   m_ObjectHideFlags: 0

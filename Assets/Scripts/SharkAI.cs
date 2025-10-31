@@ -10,14 +10,10 @@ public class SharkAI : MonoBehaviour
     public NavMeshAgent agent;
     public Animator animator;
     public GameObject proximityLight;
-    private Spawner spawner;
+    private SharkSpawner spawner;
     public GameObject experiencepointPrefab;
     
-    [Header("Damage To Shark")]
-    public bool IsHitten = false;
-    public int HealthZombie = 5;
-    private Coroutine coroutine;
-    public int pvperdu;
+    
     
     [Header("Damage To Player")]
     private PlayerHealth playerHealth;
@@ -46,7 +42,7 @@ public class SharkAI : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        spawner = GameObject.FindWithTag("Player").GetComponent<Spawner>();
+        spawner = GameObject.FindWithTag("Player").GetComponent<SharkSpawner>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         playerHealth = player.GetComponent<PlayerHealth>();
@@ -65,10 +61,7 @@ public class SharkAI : MonoBehaviour
         
         //Debug.Log(state);
         
-        if (IsHitten && coroutine == null)
-        {
-            coroutine = StartCoroutine(PerteDePv());
-        }
+        
         
     }
 
@@ -114,17 +107,18 @@ public class SharkAI : MonoBehaviour
 
     void UpdateChasing()
     {
-        
+
         if (player != null && agent.isOnNavMesh)
         {
             agent.destination = player.transform.position;
-        }
-        
-        if ((player.transform.position.x - gameObject.transform.position.x < waitDistance &&
-             player.transform.position.x - gameObject.transform.position.x > -waitDistance) && (player.transform.position.y - gameObject.transform.position.y < waitDistance &&
-                player.transform.position.y - gameObject.transform.position.y > -waitDistance))
-        {
-            stateComplete = true;
+
+
+            if ((player.transform.position.x - gameObject.transform.position.x < waitDistance &&
+                 player.transform.position.x - gameObject.transform.position.x > -waitDistance) && (player.transform.position.y - gameObject.transform.position.y < waitDistance &&
+                                                                                                    player.transform.position.y - gameObject.transform.position.y > -waitDistance))
+            {
+                stateComplete = true;
+            }
         }
     }
 
@@ -186,21 +180,7 @@ public class SharkAI : MonoBehaviour
     
     //Scripts Léandre
 
-    IEnumerator PerteDePv()
-    {
-
-        HealthZombie = HealthZombie - pvperdu;
-        if (HealthZombie <= 0)
-        {
-            Destroy(gameObject);
-            Instantiate(experiencepointPrefab, transform.position, transform.rotation);
-        }
-
-        //Debug.Log("PV perdu");
-        IsHitten = false;
-        yield return new WaitForSeconds(1);
-        coroutine = null;
-    }
+    
     
     private void OnTriggerStay2D(Collider2D other)
     {

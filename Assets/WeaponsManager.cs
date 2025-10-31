@@ -1,22 +1,29 @@
 using System.Collections;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WeaponsManager : MonoBehaviour
 {
     public GameObject ampoule;
-    public Ampoule ampouleScript;
+    public Bulb ampouleScript;
     public GameObject recupAmpoule;
     public int nombreAmpoule = 0;
     public GameObject AppareillePhoto;
-   public int nombreAppareillePhoto = 0;
+    public int nombreAppareillePhoto = 0;
     public GameObject RecupAppareillePhoto;
     public GameObject PrefabEnnemi;
+    public Rigidbody2D ennemi_Rigidbody2D;
+    public float freezeDuration = 2f;
+    public NavMeshAgent ennemi_NavMesh;
+    public freezeEnnemi freeze;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        ennemi_Rigidbody2D = PrefabEnnemi.GetComponent<Rigidbody2D>();
     }
     public void AgmentationDuNiveauAppareillePhoto()
     {
@@ -37,36 +44,42 @@ public class WeaponsManager : MonoBehaviour
         }
     }
     public IEnumerator Flash()
-    {   while (nombreAppareillePhoto >= 1)
+    
         {
-            Debug.Log("Flash !");
-            AppareillePhoto.SetActive(false);
-            Debug.Log("L'appareil photo est en recharge...");
-            yield return new WaitForSeconds(2);
-            AppareillePhoto.SetActive(true);
-            PrefabEnnemi.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            Debug.Log("Vous pouvez réutiliser l'appareil photo !");
-            yield return new WaitForSeconds(2);
-            PrefabEnnemi.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            AppareillePhoto.SetActive(false);
-            Debug.Log("Appareille Photo Utilisé !");
+            while (nombreAppareillePhoto >= 1)
+            {
+                Debug.Log("Flash !");
+                AppareillePhoto.SetActive(false);
+                Debug.Log("L'appareil photo est en recharge...");
+                yield return new WaitForSeconds(2);
+                AppareillePhoto.SetActive(true);
+                Debug.Log("Vous pouvez réutiliser l'appareil photo !");
+                yield return new WaitForSeconds(2);
+                AppareillePhoto.SetActive(false);
+                Debug.Log("Appareille Photo Utilisé !");
+
+            }
+
+
+
         }
 
 
 
-
-    }
+    
+    
+    
 
     public void UpgradeAmpoule()
     {
-        if  (nombreAmpoule >= 1)
+        if  (nombreAmpoule > 1)
         {
             
             nombreAmpoule += 1;
             Debug.Log("Vous avez " + nombreAmpoule + " ampoules.");
             
         }
-        else if  (nombreAmpoule >= 0)
+        else if  (nombreAmpoule == 0)
         {
             ampoule.SetActive(true);
             nombreAmpoule += 1;
@@ -75,9 +88,11 @@ public class WeaponsManager : MonoBehaviour
 
         }
     }
+
     // Update is called once per frame
     void Update()
     {
         
     }
 }
+

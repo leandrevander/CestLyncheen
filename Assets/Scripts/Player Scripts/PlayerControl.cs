@@ -51,5 +51,6 @@ namespace Player_Scripts
             rb.linearVelocity = new Vector2(x: _moveDirection.x, y: _moveDirection.y) * moveSpeed;
         }
     }
+    
 }
 
