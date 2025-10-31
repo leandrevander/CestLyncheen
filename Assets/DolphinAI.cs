@@ -47,12 +47,12 @@ public class DolphinAI : MonoBehaviour
              player.transform.position.x - gameObject.transform.position.x > -proximity) && (player.transform.position.y - gameObject.transform.position.y < proximity &&
                 player.transform.position.y - gameObject.transform.position.y > -proximity))
         {
-            //animatorPlayer.Play("Warning");
+            animator.Play("Warning");
             proximityLight.SetActive(true);
         }
         else
         {
-            //animatorPlayer.Play("Chase");
+            animator.Play("Normal");
             proximityLight.SetActive(false);
         }
         
