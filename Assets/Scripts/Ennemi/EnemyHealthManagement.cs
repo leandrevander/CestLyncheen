@@ -9,8 +9,13 @@ public class EnemyHealthManagement : MonoBehaviour
     public  bool       IsHitten     = false;
     public  int        HealthZombie = 5;
     public  int        pvperdu;
-    private Coroutine  coroutine;
+    public Coroutine  coroutine;
     public  GameObject experiencepointPrefab;
+    public bool freezeEnnemi = false;
+    public freezeEnnemi scirptFreeze;
+    public Coroutine freezeCoroutine;
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +29,11 @@ public class EnemyHealthManagement : MonoBehaviour
         {
             coroutine = StartCoroutine(PerteDePv());
         }
+        if (freezeEnnemi && freezeCoroutine == null)
+        {
+            coroutine = StartCoroutine(scirptFreeze.FreezeDuration());
+        }
+        
     }
     
     IEnumerator PerteDePv()
@@ -41,4 +51,5 @@ public class EnemyHealthManagement : MonoBehaviour
         yield return new WaitForSeconds(1);
         coroutine = null;
     }
+
 }

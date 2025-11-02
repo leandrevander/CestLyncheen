@@ -8,6 +8,7 @@ public class freezeEnnemi : MonoBehaviour
     public WeaponsManager weaponsManager;
     public GameObject     PrefabEnnemi;
     public NavMeshAgent   ennemi_NavMeshAgent;
+    public EnemyHealthManagement enemyHealthManagement;
 
     public static float speed = 2.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,9 +25,9 @@ public class freezeEnnemi : MonoBehaviour
             if (other.gameObject.CompareTag("Ennemi"))
             {
 
-                Debug.Log("Courroutune Flash lanc�");
+                Debug.Log("Courroutune Flash lancé");
                 StartCoroutine(FreezeDuration());
-                Debug.Log("Courroutune Freeze lanc�");
+                Debug.Log("Courroutune Freeze lancé");
 
             }
         }
@@ -34,13 +35,16 @@ public class freezeEnnemi : MonoBehaviour
     public IEnumerator FreezeDuration()
 
     {
-        Debug.Log("Couroutine Freeze appel�");
-        ennemi_NavMeshAgent       = GetComponent<NavMeshAgent>();
+        Debug.Log("Couroutine Freeze appelé");
         ennemi_NavMeshAgent.speed = speed;
         speed                     = 0f;
-        Debug.Log("Ennemi gel� ! Enfin je crois...");
+        Debug.Log("Ennemi gelé ! Enfin je crois...");
         yield return new WaitForSeconds(weaponsManager.freezeDuration);
         speed = 2.5f;
-        Debug.Log("Ennemi d�gel� ! Normalement...");
+        Debug.Log("Ennemi dégelé ! Normalement...");
+        yield return new WaitForSeconds(1);
+        enemyHealthManagement.freezeEnnemi = false;
+        yield return new WaitForSeconds(1);
+        enemyHealthManagement.freezeCoroutine = null;
     }
 }

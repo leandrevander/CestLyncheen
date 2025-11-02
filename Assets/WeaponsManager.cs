@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.IO.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -16,8 +17,11 @@ public class WeaponsManager : MonoBehaviour
     public Rigidbody2D ennemi_Rigidbody2D;
     public float freezeDuration = 2f;
     public NavMeshAgent ennemi_NavMesh;
-    public freezeEnnemi freeze;
-
+    public bool StreetLampRecup = false;
+    public GameObject prefabStreetLamp;
+    public Coroutine streetLampCoroutine;
+    public int numberOfStreetLamps = 0;
+    public StreetLamp streetLampScript;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -89,10 +93,17 @@ public class WeaponsManager : MonoBehaviour
         }
     }
 
+   
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (StreetLampRecup == true && streetLampCoroutine == null && (numberOfStreetLamps == 0))
+        {
+            Instantiate(prefabStreetLamp, transform.position, transform.rotation);
+            numberOfStreetLamps += 1;
+            streetLampCoroutine = StartCoroutine(streetLampScript.StreetLampSpwan());
+        }
     }
 }
 
