@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: 5a2fba6a3a9bd044e948baf7d886be10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4020531383458689965
+    second: FinalHitpointSpritesheet_0
+  - first:
+      213: -6825647462975269659
+    second: FinalHitpointSpritesheet_1
+  - first:
+      213: -6665773744389958439
+    second: FinalHitpointSpritesheet_2
+  - first:
+      213: -3219125607161892120
+    second: FinalHitpointSpritesheet_3
+  - first:
+      213: 5156303921084949637
+    second: FinalHitpointSpritesheet_4
+  - first:
+      213: 1282080654411187943
+    second: FinalHitpointSpritesheet_5
+  - first:
+      213: 2475565037117553450
+    second: FinalHitpointSpritesheet_6
+  - first:
+      213: -5322498006041804389
+    second: FinalHitpointSpritesheet_7
+  - first:
+      213: -8209160547799952364
+    second: FinalHitpointSpritesheet_8
+  - first:
+      213: -4636905961275229058
+    second: FinalHitpointSpritesheet_9
+  - first:
+      213: 8971453139963048339
+    second: FinalHitpointSpritesheet_10
+  - first:
+      213: 6160748736267667513
+    second: FinalHitpointSpritesheet_11
+  - first:
+      213: 7253334104289697584
+    second: FinalHitpointSpritesheet_12
+  - first:
+      213: -147971392375448587
+    second: FinalHitpointSpritesheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 464
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da37d57ddfbcbc730800000000000000
+      internalID: 4020531383458689965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 464
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e41057dbcd6641a0800000000000000
+      internalID: -6825647462975269659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 464
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4d284a81a6e73a0800000000000000
+      internalID: -6665773744389958439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 464
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e270c1e05e5353d0800000000000000
+      internalID: -3219125607161892120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 249
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584e832d81fde8740800000000000000
+      internalID: 5156303921084949637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 249
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6449bff8ddac110800000000000000
+      internalID: 1282080654411187943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 249
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bb4cff849fa5220800000000000000
+      internalID: 2475565037117553450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalHitpointSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 249
+        width: 138
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5177875, y: 0.5023858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9147286340b226b0800000000000000
+      internalID: -5322498006041804389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d256161f66ab3204f92253425b6c36a3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FinalHitpointSpritesheet_0: 4020531383458689965
+      FinalHitpointSpritesheet_1: -6825647462975269659
+      FinalHitpointSpritesheet_10: 8971453139963048339
+      FinalHitpointSpritesheet_11: 6160748736267667513
+      FinalHitpointSpritesheet_12: 7253334104289697584
+      FinalHitpointSpritesheet_13: -147971392375448587
+      FinalHitpointSpritesheet_2: -6665773744389958439
+      FinalHitpointSpritesheet_3: -3219125607161892120
+      FinalHitpointSpritesheet_4: 5156303921084949637
+      FinalHitpointSpritesheet_5: 1282080654411187943
+      FinalHitpointSpritesheet_6: 2475565037117553450
+      FinalHitpointSpritesheet_7: -5322498006041804389
+      FinalHitpointSpritesheet_8: -8209160547799952364
+      FinalHitpointSpritesheet_9: -4636905961275229058
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

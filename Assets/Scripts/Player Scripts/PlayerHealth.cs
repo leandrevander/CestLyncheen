@@ -12,7 +12,7 @@ namespace Player_Scripts
         private Coroutine coroutine;
         
 
-        [SerializeField] private Image[] hearts;
+        [SerializeField] private Animator[] hearts;
     
     
         private void Start()
@@ -27,7 +27,7 @@ namespace Player_Scripts
             if (playerhitten && coroutine == null && invincible == false)
             {
                 coroutine = StartCoroutine(Damage());
-                Debug.Log("les conditions sont reunis");
+                Debug.Log("les conditions sont reunies");
             }
         }
         
@@ -60,11 +60,11 @@ namespace Player_Scripts
             {
                 if (i < playerHealth)
                 {
-                    hearts[i].color = Color.red;
+                    hearts[i].Play("Hitpoint Full");
                 }
                 else
                 {
-                    hearts[i].color = Color.black;
+                    hearts[i].Play("Hitpoint Empty");
                 }
             }
         }

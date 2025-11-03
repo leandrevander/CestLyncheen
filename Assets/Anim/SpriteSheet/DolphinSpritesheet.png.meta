@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: b6bd1ce2278ec5b468898c0c6c4f684e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6343950795574957140
+    second: DolphinSpritesheet_0
+  - first:
+      213: 3478278370031571375
+    second: DolphinSpritesheet_1
+  - first:
+      213: -7346939446599072621
+    second: DolphinSpritesheet_2
+  - first:
+      213: -3718836989750350038
+    second: DolphinSpritesheet_3
+  - first:
+      213: -1311017944917129919
+    second: DolphinSpritesheet_4
+  - first:
+      213: 3070590761294006469
+    second: DolphinSpritesheet_5
+  - first:
+      213: 600722090097274961
+    second: DolphinSpritesheet_6
+  - first:
+      213: -1081352014822319524
+    second: DolphinSpritesheet_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DolphinSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 225
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.34478724, y: 0.25313744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4545dca03ad3a0850800000000000000
+      internalID: 6343950795574957140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 223
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3928292, y: 0.26685226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa118a3bfb3554030800000000000000
+      internalID: 3478278370031571375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 230
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3854381, y: 0.25313744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3944823cf7d6a0a90800000000000000
+      internalID: -7346939446599072621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3928292, y: 0.23942283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fe8580679046cc0800000000000000
+      internalID: -3718836989750350038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 27
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3891336, y: 0.239423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1454d0b00245ecde0800000000000000
+      internalID: -1311017944917129919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 31
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3558737, y: 0.24399444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c88689570eec9a20800000000000000
+      internalID: 3070590761294006469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 27
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3410917, y: 0.23027994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1507af4ee81365800800000000000000
+      internalID: 600722090097274961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DolphinSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 23
+        width: 167
+        height: 135
+      alignment: 9
+      pivot: {x: 0.38543847, y: 0.26685196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5adc5f52144ef0f0800000000000000
+      internalID: -1081352014822319524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6f34004c123a2a346b8f1e6f827a302c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DolphinSpritesheet_0: 6343950795574957140
+      DolphinSpritesheet_1: 3478278370031571375
+      DolphinSpritesheet_2: -7346939446599072621
+      DolphinSpritesheet_3: -3718836989750350038
+      DolphinSpritesheet_4: -1311017944917129919
+      DolphinSpritesheet_5: 3070590761294006469
+      DolphinSpritesheet_6: 600722090097274961
+      DolphinSpritesheet_7: -1081352014822319524
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

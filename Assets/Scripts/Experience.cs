@@ -15,13 +15,17 @@ public class Experience : MonoBehaviour
     public TMP_Text CurrentLevelText;
     public Slider  expSlider;
     public UpgradeMenu upgradeMenu;
+    public Animator barAnimation;
+    public Animator fillAnimation;
   
 
 
     void start()
     {
         UpdateUI();
-       
+        
+        fillAnimation.Play("Fill Anim");
+        barAnimation.Play("Bar Anim");
     }
     
     
