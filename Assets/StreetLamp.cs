@@ -39,7 +39,7 @@ public class StreetLamp : MonoBehaviour
 
         yield return new WaitForSeconds(10);
         weaponsManager.numberOfStreetLamps -= 1;
-        Destroy(prefabStreetLamp);
+        Destroy(gameObject);
 
     }
     IEnumerator HitByStreetLamp()

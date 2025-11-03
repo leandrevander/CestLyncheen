@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0211c81c746be4c9f5dbc7a9d2a7b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDamage: 1
+  enemyDamage: 0
   _playerHealth: {fileID: 8631513515323498994, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
   player: {fileID: 2332736682381214428, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
 --- !u!95 &5312053910916296469
@@ -418,5 +418,6 @@ MonoBehaviour:
   HealthZombie: 5
   pvperdu: 1
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  freezeEnnemi: 0
-  scirptFreeze: {fileID: 1859991982089589140}
+  freezeEnnemi: 1
+  scriptFreeze: {fileID: 1859991982089589140}
+  weaponsManager: {fileID: 7013058843571962186, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}

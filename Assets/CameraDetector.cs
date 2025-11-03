@@ -51,7 +51,7 @@ public class CameraDectector : MonoBehaviour
 
                 ennemi_NavMeshAgent = cibleZombie.GetComponent<NavMeshAgent>();
                 ennemyFrezze.freezeEnnemi = true;
-                Debug.Log("J'ai mal au crane.");
+                Debug.Log("Ennemi detecté");
                
 
             }

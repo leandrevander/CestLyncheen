@@ -9,7 +9,7 @@ public class freezeEnnemi : MonoBehaviour
     public GameObject     PrefabEnnemi;
     public NavMeshAgent   ennemi_NavMeshAgent;
     public EnemyHealthManagement enemyHealthManagement;
-
+    
     public static float speed = 2.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
@@ -18,20 +18,7 @@ public class freezeEnnemi : MonoBehaviour
         ennemi_NavMeshAgent.speed = speed;
         
     }
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        while (weaponsManager.nombreAppareillePhoto >= 1)
-        {
-            if (other.gameObject.CompareTag("Ennemi"))
-            {
-
-                Debug.Log("Courroutune Flash lancé");
-                StartCoroutine(FreezeDuration());
-                Debug.Log("Courroutune Freeze lancé");
-
-            }
-        }
-    }
+    
     public IEnumerator FreezeDuration()
 
     {

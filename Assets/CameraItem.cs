@@ -17,6 +17,7 @@ public class CameraItem : MonoBehaviour
             
             weaponsManager.AgmentationDuNiveauAppareillePhoto();
             Destroy(gameObject);
+            weaponsManager.haveCamera = true;
         }
 
 
