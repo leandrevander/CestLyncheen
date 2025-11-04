@@ -49,7 +49,7 @@ public class CameraDectector : MonoBehaviour
             if (hit.collider != null && hit.collider == other)
             {
 
-                ennemi_NavMeshAgent = cibleZombie.GetComponent<NavMeshAgent>();
+                ennemyFrezze = cibleZombie.GetComponent<EnemyHealthManagement>();
                 ennemyFrezze.freezeEnnemi = true;
                 Debug.Log("Ennemi detecté");
                
@@ -57,7 +57,7 @@ public class CameraDectector : MonoBehaviour
             }
             else
             {
-                ennemi_NavMeshAgent = cibleZombie.GetComponent<NavMeshAgent>();
+                ennemyFrezze              = cibleZombie.GetComponent<EnemyHealthManagement>();
                 ennemyFrezze.freezeEnnemi = false;
 
             }
