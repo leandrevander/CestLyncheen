@@ -50,7 +50,7 @@ public class StreetLamp : MonoBehaviour
             enemyHealthManagement.HealthZombie = enemyHealthManagement.HealthZombie - hitpoint;
             if (enemyHealthManagement.HealthZombie <= 0)
             {
-                Destroy(gameObject);
+                
             }
             Debug.Log("PV perdu");
             IsHittenByStreetLamp = false;
