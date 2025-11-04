@@ -10,6 +10,7 @@ public class DetectorLight : MonoBehaviour
     EnemyHealthManagement enemyHealth;
     public  LayerMask     raycastMask;
     
+    
 
 
 
@@ -49,6 +50,7 @@ public class DetectorLight : MonoBehaviour
 
                 Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE LOL CACA PROUT DIEU MERCI");
                 enemyHealth.IsHitten = true;
+                
                 
             }
             else

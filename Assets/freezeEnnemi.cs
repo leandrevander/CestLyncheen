@@ -24,15 +24,19 @@ public class freezeEnnemi : MonoBehaviour
     {
         Debug.Log("Couroutine Freeze appelé");
         speed                     = 0f;
-        ennemi_NavMeshAgent.speed = speed;
         Debug.Log("Ennemi gelé ! Enfin je crois...");
-        yield return new WaitForSeconds(50f);
+        yield return new WaitForSeconds(2f);
         speed                     = 2.5f;
-        ennemi_NavMeshAgent.speed = speed;
+        
         Debug.Log("Ennemi dégelé ! Normalement...");
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeEnnemi = false;
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeCoroutine = null;
+    }
+
+    void Update()
+    {
+        ennemi_NavMeshAgent.speed = speed;
     }
 }

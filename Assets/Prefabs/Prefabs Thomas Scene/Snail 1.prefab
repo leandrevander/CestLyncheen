@@ -418,6 +418,8 @@ MonoBehaviour:
   HealthZombie: 5
   pvperdu: 1
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  freezeEnnemi: 1
+  freezeEnnemi: 0
   scriptFreeze: {fileID: 1859991982089589140}
   weaponsManager: {fileID: 7013058843571962186, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
+  ennemi_NavMeshAgent: {fileID: 4838597392707036171}
+  speed: 2.5
