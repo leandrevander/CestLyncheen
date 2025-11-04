@@ -28,10 +28,6 @@ public class freezeEnnemi : MonoBehaviour
         Debug.Log("Ennemi gelé ! Enfin je crois...");
         yield return new WaitForSeconds(2f);
         speed                     = 2.5f;
-<<<<<<< HEAD
-        
-=======
->>>>>>> b8abfa4 (GlowStick fini)
         Debug.Log("Ennemi dégelé ! Normalement...");
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeEnnemi = false;
