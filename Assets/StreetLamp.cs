@@ -7,19 +7,19 @@ using UnityEngine.AI;
 using UnityEngine.Rendering.Universal;
 public class StreetLamp : MonoBehaviour
 {
-    public int PVperdu = 1;
     public GameObject player;
-    public bool IsHittenByStreetLamp = false;
-    public GameObject recupStreetLamp;
+    public bool IsHittenByGlowStick = false;
+    public GameObject recupGlowStick;
     public Coroutine coroutine;
     public EnemyHealthManagement enemyHealthManagement;
-    public int levelStreetLamp = 1;
+    public int levelGlowStick = 1;
     public Light2D bulbLight;
     public NavMeshAgent agent;
     public int hitpoint = 1;
     public WeaponsManager weaponsManager;
-    public Coroutine streetLampCoroutine;
-    public GameObject prefabStreetLamp;
+    public Coroutine GlowStickCoroutine;
+    public GameObject prefabGlowStick;
+    public GameObject prefabEnnemi;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,33 +29,25 @@ public class StreetLamp : MonoBehaviour
     {
         if (other.CompareTag("Ennemi"))
         {
-            IsHittenByStreetLamp = true;
+            IsHittenByGlowStick = true;
+            Debug.Log("Lampadaire");
 
         }
     }
-   public IEnumerator StreetLampSpwan()
-    {
-        Debug.Log("Street Lamp Spawned");
-
-        yield return new WaitForSeconds(10);
-        weaponsManager.numberOfStreetLamps -= 1;
-        Destroy(gameObject);
-
-    }
-    IEnumerator HitByStreetLamp()
+   
+    IEnumerator HitByGlowStick()
 
     {
-        if (IsHittenByStreetLamp == true)
+        if (IsHittenByGlowStick == true)
         {
             enemyHealthManagement.HealthZombie = enemyHealthManagement.HealthZombie - hitpoint;
             if (enemyHealthManagement.HealthZombie <= 0)
             {
-                
+                Destroy(prefabEnnemi);
             }
             Debug.Log("PV perdu");
-            IsHittenByStreetLamp = false;
+            IsHittenByGlowStick = false;
             yield return new WaitForSeconds(1);
-            
             coroutine = null;
 
 
@@ -65,10 +57,10 @@ public class StreetLamp : MonoBehaviour
     public void Update()
 
     {
-        if (IsHittenByStreetLamp == true)
+        if (IsHittenByGlowStick == true)
         {
 
-            coroutine = StartCoroutine(HitByStreetLamp());
+            coroutine = StartCoroutine(HitByGlowStick());
         }
 
         if (player != null && agent.isOnNavMesh)

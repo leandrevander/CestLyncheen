@@ -10,6 +10,7 @@ public class freezeEnnemi : MonoBehaviour
     public NavMeshAgent   ennemi_NavMeshAgent;
     public EnemyHealthManagement enemyHealthManagement;
     
+    
     public static float speed = 2.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()

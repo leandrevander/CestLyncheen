@@ -14,7 +14,7 @@ public class StreetLampRecup : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
 
-            weaponsManager.StreetLampRecup = true;
+            weaponsManager.GlowStickRecup = true;
             Destroy(gameObject);
             
         }

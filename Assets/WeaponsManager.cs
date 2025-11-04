@@ -17,11 +17,11 @@ public class WeaponsManager : MonoBehaviour
     public Rigidbody2D  ennemi_Rigidbody2D;
     public float        freezeDuration = 20f;
     public NavMeshAgent ennemi_NavMesh;
-    public bool         StreetLampRecup = false;
-    public GameObject   prefabStreetLamp;
-    public Coroutine    streetLampCoroutine;
-    public int          numberOfStreetLamps = 0;
-    public StreetLamp   streetLampScript;
+    public bool         GlowStickRecup = false;
+    public GameObject   prefabGlowStick;
+    public Coroutine    GlowStickCoroutine;
+    public int          numberOfGlowStick = 0;
+    public StreetLamp   glowStickScript;
     public bool         haveCamera = false;
     public GameObject   glowStickDestroy;
 
@@ -65,15 +65,7 @@ public class WeaponsManager : MonoBehaviour
 
             }
 
-
-
         }
-
-
-
-    
-    
-    
 
     public void UpgradeAmpoule()
     {
@@ -93,17 +85,27 @@ public class WeaponsManager : MonoBehaviour
 
         }
     }
+    public IEnumerator GlowStickSpwan()
+    {
+        Debug.Log("Street Lamp Spawned");
+        yield return new WaitForSeconds(10f);
+        Debug.Log("Street Lamp fin de la coroutine");
+        numberOfGlowStick = 0;
+        Debug.Log("Street Lamp -1");
+        Destroy(glowStickDestroy);
+        Debug.Log("Street Lamp detruit");
+        GlowStickCoroutine = null;
 
-   
-
+    }
+    
     // Update is called once per frame
     void Update()
     {
-        if (StreetLampRecup == true && streetLampCoroutine == null && (numberOfStreetLamps == 0))
+        if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0))
         {
-              var glowStickDestroy = Instantiate(prefabStreetLamp, transform.position, transform.rotation);
-            numberOfStreetLamps += 1;
-            streetLampCoroutine = StartCoroutine(streetLampScript.StreetLampSpwan());
+               glowStickDestroy = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+            numberOfGlowStick += 1;
+            GlowStickCoroutine = StartCoroutine(GlowStickSpwan());
         }
     }
 }

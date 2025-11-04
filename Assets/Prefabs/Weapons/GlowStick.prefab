@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8940694495901544124}
   - component: {fileID: 1133498758613206797}
   m_Layer: 0
-  m_Name: StreetLamp
+  m_Name: GlowStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3507916467900487534}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -191,17 +191,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce543580cc9132b4f8acefe84ef1f01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PVperdu: 1
-  player: {fileID: 0}
-  IsHittenByStreetLamp: 0
-  recupStreetLamp: {fileID: 6508920562428985812, guid: ccfec7129b5b3064ca7433d568152bae, type: 3}
+  player: {fileID: 2332736682381214428, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
+  IsHittenByGlowStick: 0
+  recupGlowStick: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
   enemyHealthManagement: {fileID: 9121328070474421733, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
-  levelStreetLamp: 1
+  levelGlowStick: 1
   bulbLight: {fileID: 1437836356141875780}
   agent: {fileID: 4838597392707036171, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
   hitpoint: 1
   weaponsManager: {fileID: 7013058843571962186, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
-  prefabStreetLamp: {fileID: 3507916467900487534}
+  prefabGlowStick: {fileID: 3507916467900487534}
+  prefabEnnemi: {fileID: 3342766363712070149, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
 --- !u!114 &1133498758613206797
 MonoBehaviour:
   m_ObjectHideFlags: 0
