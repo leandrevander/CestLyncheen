@@ -34,10 +34,11 @@ public class SharkSpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        float angleDegre = Random.Range(0f, 360f);
-        float angleRad = angleDegre * Mathf.Deg2Rad;
-        float distanceSpawn = Random.Range(minDistance, maxDistance);
-        Vector2 SpawnPosition = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + localisation;
         Instantiate(enemyprefab, SpawnPosition, Quaternion.identity);
         
         
