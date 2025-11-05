@@ -65,8 +65,8 @@ public class Bulb : MonoBehaviour
         if (IsHittenByBull == true)
         {
 
-            coroutine = StartCoroutine(PerteDePv());
-            if (HealthZombie <= 0)
+            enemyHealthManagement.HealthZombie = enemyHealthManagement.HealthZombie - PVperdu;
+            if (enemyHealthManagement.HealthZombie <= 0)
             {
                 Destroy(PrefabEnnemi);
             }

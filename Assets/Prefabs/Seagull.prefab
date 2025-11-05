@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7484838000335732666}
   - component: {fileID: 2873556452400675857}
   - component: {fileID: 370224863039234518}
+  - component: {fileID: 6233807531265403916}
   m_Layer: 0
   m_Name: Seagull
   m_TagString: Untagged
@@ -320,3 +321,24 @@ MonoBehaviour:
   HealthZombie: 5
   pvperdu: 2
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
+  freezeEnnemi: 0
+  scriptFreeze: {fileID: 0}
+  weaponsManager: {fileID: 0}
+  ennemi_NavMeshAgent: {fileID: 0}
+  speed: 2.5
+--- !u!114 &6233807531265403916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917319842684498884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f755f372acf92534ebabbdddb89659a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponsManager: {fileID: 0}
+  PrefabEnnemi: {fileID: 0}
+  ennemi_NavMeshAgent: {fileID: 0}
+  enemyHealthManagement: {fileID: 0}
