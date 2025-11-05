@@ -31,7 +31,7 @@ public class freezeEnnemi : MonoBehaviour
 <<<<<<< HEAD
         
 =======
->>>>>>> b8abfa4 (GlowStick fini)
+>>>>>>> origin/Thomas.T
         Debug.Log("Ennemi dégelé ! Normalement...");
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeEnnemi = false;

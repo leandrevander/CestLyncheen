@@ -59,6 +59,10 @@ public class CameraDectector : MonoBehaviour
 =======
                 ennemyFrezze = cibleZombie.GetComponent<EnemyHealthManagement>();
                 ennemyFrezze.freezeEnnemi = true;
+>>>>>>> origin/Thomas.T
+=======
+                ennemyFrezze = cibleZombie.GetComponent<EnemyHealthManagement>();
+                ennemyFrezze.freezeEnnemi = true;
 >>>>>>> b8abfa4 (GlowStick fini)
                 Debug.Log("Ennemi detecté");
                
