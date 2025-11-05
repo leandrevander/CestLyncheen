@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7527199246214434206}
   - component: {fileID: 6634811695313054905}
-  - component: {fileID: 5571240159308856993}
   - component: {fileID: 9051430638688716571}
   - component: {fileID: 6710340570152979846}
   m_Layer: 0
@@ -87,22 +86,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &5571240159308856993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424538326097015079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91daba0e52152304684c25a7ebbb13dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 768
 --- !u!114 &9051430638688716571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +106,7 @@ MonoBehaviour:
   recupAmpoule: {fileID: 0}
   agent: {fileID: 4838597392707036171, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
   PrefabEnnemi: {fileID: 3342766363712070149, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
-  iaZombie: {fileID: 890554524286874530, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
+  enemyHealthManagement: {fileID: 0}
   levelAmpoule: 1
   bulbl1: {fileID: 0}
   bulbl2: {fileID: 0}

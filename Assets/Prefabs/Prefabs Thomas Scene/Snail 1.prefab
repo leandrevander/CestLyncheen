@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 8339217246629159458}
   - component: {fileID: 5312053910916296469}
   - component: {fileID: 1635789006161524969}
-  - component: {fileID: 1859991982089589140}
   - component: {fileID: 9121328070474421733}
   m_Layer: 8
   m_Name: Snail 1
@@ -386,22 +385,6 @@ MonoBehaviour:
     - rid: 2401051123242762351
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
---- !u!114 &1859991982089589140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3342766363712070149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f755f372acf92534ebabbdddb89659a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponsManager: {fileID: 7013058843571962186, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
-  PrefabEnnemi: {fileID: 3342766363712070149}
-  ennemi_NavMeshAgent: {fileID: 4838597392707036171}
-  enemyHealthManagement: {fileID: 9121328070474421733}
 --- !u!114 &9121328070474421733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +402,7 @@ MonoBehaviour:
   pvperdu: 1
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
   freezeEnnemi: 0
-  scriptFreeze: {fileID: 1859991982089589140}
+  scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 7013058843571962186, guid: 619e5b6d6897d014c90f2c4ce5d2e3b8, type: 3}
   ennemi_NavMeshAgent: {fileID: 4838597392707036171}
   speed: 2.5

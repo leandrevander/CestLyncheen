@@ -34,12 +34,12 @@ public class Bulb : MonoBehaviour
     {
         enemyHealthManagement = GetComponent<EnemyHealthManagement>();
     }
-    public void OnTrigger2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Ennemi"))
         {
-            PrefabEnnemi = other.gameObject;
-            IsHittenByBull = true;
+            enemyHealthManagement                = other.GetComponent<EnemyHealthManagement>();
+            enemyHealthManagement.IsHittenByBull = true;
             
         }
     }
@@ -59,46 +59,10 @@ public class Bulb : MonoBehaviour
 
     }
 
-    IEnumerator PerteDePv()
-        
-    {
-        if (IsHittenByBull == true)
-        {
-
-            enemyHealthManagement.HealthZombie = enemyHealthManagement.HealthZombie - PVperdu;
-            if (enemyHealthManagement.HealthZombie <= 0)
-            {
-                Destroy(PrefabEnnemi);
-            }
-            Debug.Log("PV perdu");
-            IsHittenByBull = false;
-            yield return new WaitForSeconds(1);
-            coroutine = null;
-        }
+   
     }
-    public void RayonAmpoule()
-    {
-        StartCoroutine(PerteDePv());
-    }// Update is called once per frame
-    void Update()
+   
     
-        {
-
-            
-            if (player != null && agent.isOnNavMesh)
-            {
-                agent.destination = player.transform.position;
-            }
-
-            if (IsHittenByBull && coroutine == null)
-            {
-                coroutine = StartCoroutine(PerteDePv());
-            }
-
-           
-
-
-        }
+      
     
-    
-}
+
