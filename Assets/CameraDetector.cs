@@ -53,15 +53,25 @@ public class CameraDectector : MonoBehaviour
             { 
                 enemyHealth = other.GetComponent<EnemyHealthManagement>(); 
 
+<<<<<<< HEAD
                 
                 enemyHealth.freezeEnnemi = true;
+=======
+                ennemyFrezze = cibleZombie.GetComponent<EnemyHealthManagement>();
+                ennemyFrezze.freezeEnnemi = true;
+>>>>>>> origin/Thomas.T
                 Debug.Log("Ennemi detecté");
                
 
             }
             else
             {
+<<<<<<< HEAD
                 enemyHealth.freezeEnnemi = false;
+=======
+                ennemyFrezze              = cibleZombie.GetComponent<EnemyHealthManagement>();
+                ennemyFrezze.freezeEnnemi = false;
+>>>>>>> origin/Thomas.T
 
             }
 
