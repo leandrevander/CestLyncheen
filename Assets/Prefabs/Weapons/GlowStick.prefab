@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce543580cc9132b4f8acefe84ef1f01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealthManagement: {fileID: 9121328070474421733, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
+  enemyHealthManagement: {fileID: 0}
 --- !u!114 &8630325671797685985
 MonoBehaviour:
   m_ObjectHideFlags: 0

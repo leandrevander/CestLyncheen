@@ -8,24 +8,27 @@ using UnityEngine.AI;
 public class EnemyHealthManagement : MonoBehaviour
 {
     public  bool           IsHitten     = false;
+    public bool IsHittenByBull = false;
+    public bool IsHitByGlowStick = false;
+    public bool freezeEnnemi = false;
     public  int            HealthZombie = 5;
     public  int            pvperdu;
+    public int hitpoint = 1;
+    public int hitByBulb = 1;
     public  Coroutine      coroutine;
     public  GameObject     experiencepointPrefab;
-    public  bool           freezeEnnemi = false;
     public  freezeEnnemi   scriptFreeze;
     public  Coroutine      freezeCoroutine;
     public  WeaponsManager weaponsManager;
     private GameObject     player;
     public  NavMeshAgent   ennemi_NavMeshAgent;
     public  float          speed            = 2.5f;
-    public  bool           IsHitByGlowStick = false;
-    public  int            hitpoint         = 1;
     public  Coroutine      glowStickCoroutine;
     public Coroutine      bulbCoroutine;
-    public  bool           IsHittenByBull = false;
+    
+   
 
-    public int HitByBull = 1;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -105,7 +108,7 @@ public class EnemyHealthManagement : MonoBehaviour
         IEnumerator HitByGlowStick()
 
         {
-            if (IsHitByGlowStick = true)
+            if (IsHitByGlowStick == true)
             {
                 HealthZombie = HealthZombie - hitpoint;
                 if (HealthZombie <= 0)
@@ -128,7 +131,7 @@ public class EnemyHealthManagement : MonoBehaviour
             if (IsHittenByBull == true)
             {
 
-                HealthZombie = HealthZombie - HitByBull;
+                HealthZombie = HealthZombie - hitByBulb;
                 if (HealthZombie <= 0)
                 {
                     Destroy(gameObject);
@@ -137,7 +140,7 @@ public class EnemyHealthManagement : MonoBehaviour
                 Debug.Log("PV perdu");
                 IsHittenByBull = false;
                 yield return new WaitForSeconds(1);
-                coroutine = null;
+                bulbCoroutine = null;
             }
         }
 

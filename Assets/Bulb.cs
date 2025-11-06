@@ -8,15 +8,6 @@ using UnityEngine.Rendering.Universal;
 public class Bulb : MonoBehaviour
 {
     public GameObject ampoule;
-    
-    public int              PVperdu      = 1;
-    public int              HealthZombie = 5;
-    public GameObject       player;
-    public bool             IsHittenByBull = false;
-    public GameObject       recupAmpoule;
-    public NavMeshAgent     agent;
-    public Coroutine        coroutine;
-    public GameObject       PrefabEnnemi;
     public EnemyHealthManagement         enemyHealthManagement;
     public int              levelAmpoule = 1;
     public CircleCollider2D bulbl1;
@@ -30,26 +21,23 @@ public class Bulb : MonoBehaviour
     public float maxRangeInner = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        enemyHealthManagement = GetComponent<EnemyHealthManagement>();
-    }
+
     public void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Ennemi"))
         {
             enemyHealthManagement                = other.GetComponent<EnemyHealthManagement>();
             enemyHealthManagement.IsHittenByBull = true;
-            
+
         }
     }
-    
+
     public void  BulbLevel2()
     {
         bulbLight.pointLightOuterRadius = 5;
         bulbLight.pointLightInnerRadius = 4;
-        
-        
+
+
 
     }
     public void  BulbLevel4()
@@ -59,10 +47,7 @@ public class Bulb : MonoBehaviour
 
     }
 
-   
+
     }
-   
-    
-      
     
 
