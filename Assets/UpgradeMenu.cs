@@ -111,7 +111,7 @@ public class UpgradeMenu : MonoBehaviour
         {
             
             levelupgrade2++; 
-            bulbScript.PVperdu = 2;
+            
             LevelUpgrade2.text = "Level :" + levelupgrade2;
             UpgradeMenuClose();
             
@@ -131,7 +131,7 @@ public class UpgradeMenu : MonoBehaviour
         {
             
             levelupgrade2++;
-            bulbScript.PVperdu = 3;
+           
             LevelUpgrade2.text = "Level :" + levelupgrade2;
             UpgradeMenuClose();
         }
