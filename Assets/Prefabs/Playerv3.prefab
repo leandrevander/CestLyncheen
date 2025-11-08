@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 557723251424640034}
   - component: {fileID: 9109803538789591313}
   - component: {fileID: 1260202817415598146}
+  - component: {fileID: 1744457959565130628}
   m_Layer: 6
   m_Name: Playerv3
   m_TagString: Player
@@ -327,6 +328,35 @@ MonoBehaviour:
   minDistance: 15
   maxDistance: 15
   distanceSpawn: 0
+--- !u!114 &1744457959565130628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917718945100678893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8ebaac4c838cc4e9f6988bf5f7da76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ampoule: {fileID: 0}
+  ampouleScript: {fileID: 0}
+  recupAmpoule: {fileID: 0}
+  nombreAmpoule: 0
+  AppareillePhoto: {fileID: 0}
+  nombreAppareillePhoto: 0
+  RecupAppareillePhoto: {fileID: 0}
+  PrefabEnnemi: {fileID: 0}
+  ennemi_Rigidbody2D: {fileID: 0}
+  freezeDuration: 20
+  ennemi_NavMesh: {fileID: 0}
+  GlowStickRecup: 0
+  prefabGlowStick: {fileID: 0}
+  numberOfGlowStick: 0
+  glowStickScript: {fileID: 0}
+  haveCamera: 0
+  glowStickDestroy: {fileID: 0}
 --- !u!1 &7663034145965627516
 GameObject:
   m_ObjectHideFlags: 0

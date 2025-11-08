@@ -131,7 +131,7 @@ public class UpgradeMenu : MonoBehaviour
         {
             
             levelupgrade2++;
-           
+            
             LevelUpgrade2.text = "Level :" + levelupgrade2;
             UpgradeMenuClose();
         }

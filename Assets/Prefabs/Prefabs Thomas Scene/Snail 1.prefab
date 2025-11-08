@@ -399,7 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsHitten: 0
   HealthZombie: 5
-  pvperdu: 1
+  pvperdu: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
   freezeEnnemi: 0
   scriptFreeze: {fileID: 0}

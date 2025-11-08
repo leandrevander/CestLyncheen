@@ -31,8 +31,10 @@ public class freezeEnnemi : MonoBehaviour
         Debug.Log("Ennemi dégelé ! Normalement...");
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeEnnemi = false;
+
         yield return new WaitForSeconds(1);
         enemyHealthManagement.freezeCoroutine = null;
+
     }
 
     void Update()

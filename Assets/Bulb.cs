@@ -21,7 +21,7 @@ public class Bulb : MonoBehaviour
     public float maxRangeInner = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    
     public void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Ennemi"))
