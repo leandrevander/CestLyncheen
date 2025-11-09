@@ -31,23 +31,44 @@ public class Bulb : MonoBehaviour
 
         }
     }
+    private void Start()
+    {
+        bulbLight = bulb.GetComponent<Light2D>();
+        bulbLight.enabled = true;
+        bulbl1 = bulb.GetComponent<CircleCollider2D>();
+
+    }
 
     public void  BulbLevel2()
     {
+
+       
+
+
+    }
+    public void BulbLevel3()
+    {
         bulbLight.pointLightOuterRadius = 5;
         bulbLight.pointLightInnerRadius = 4;
-
+        bulbl1.radius = 5f;
 
 
     }
     public void  BulbLevel4()
     {
+        
+
+    }
+    public void BulbLevel5()
+    {
         bulbLight.pointLightOuterRadius = 6;
         bulbLight.pointLightInnerRadius = 5;
+        bulbl1.radius = 6f;
+
 
     }
 
 
-    }
+}
     
 

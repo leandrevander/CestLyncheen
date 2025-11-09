@@ -9,46 +9,56 @@ using Random = UnityEngine.Random;
 
 public class UpgradeMenu : MonoBehaviour
 {
-    public TMP_Text      Upgrade1;
-    public TMP_Text      Upgrade2;
-    public TMP_Text      Upgrade3;
-    public Experience    experience;
-    public GameObject    upgradeMenu;
-    public Button        upgrade1button;
-    public Button        upgrade2button;
-    public Button        upgrade3button;
-    public TMP_Text      LevelUpgrade1;
-    public TMP_Text      LevelUpgrade2;
-    public TMP_Text      LevelUpgrade3;
-    public int           levelupgrade1 = 1;
-    public int           levelupgrade2 = 1;
-    public int           levelupgrade3 = 1;
-    public int           randomUpgradeCase1;
-    public int           randomUpgradeCase2;
-    public int           randomUpgradeCase3;
-    public GameObject [] mesUpgrades;
-    public Vector2       emplacement1;
-    public Vector2       emplacement2;
-    public Vector2       emplacement3;
-    public GameObject    Case1;
-    public GameObject    Case2;
-    public GameObject    Case3;
-    public PlayerControl playerControl; 
+    public TMP_Text Upgrade1;
+    public TMP_Text Upgrade2;
+    public TMP_Text Upgrade3;
+    public Experience experience;
+    public GameObject upgradeMenu;
+    public Button upgrade1button;
+    public Button upgrade2button;
+    public Button upgrade3button;
+    public Button upgrade4button;
+    public TMP_Text LevelUpgrade4;
+    public TMP_Text LevelUpgrade1;
+    public TMP_Text LevelUpgrade2;
+    public TMP_Text LevelUpgrade3;
+    public TMP_Text describleTextUpgrade1;
+    public TMP_Text describleTextUpgrade2;
+    public TMP_Text describleTextUpgrade3;
+    public TMP_Text describleTextUpgrade4;
+    public int levelupgrade1 = 1;
+    public int levelupgrade2 = 1;
+    public int levelupgrade3 = 1;
+    public int levelupgrade4 = 1;
+    public int randomUpgradeCase1;
+    public int randomUpgradeCase2;
+    public int randomUpgradeCase3;
+    public GameObject[] mesUpgrades;
+    public Vector2 emplacement1;
+    public Vector2 emplacement2;
+    public Vector2 emplacement3;
+    public GameObject Case1;
+    public GameObject Case2;
+    public GameObject Case3;
+    public PlayerControl playerControl;
     public float Multiplier = 1.2f;
     public Bulb bulbScript;
     public Light2D bulb;
-    public WeaponsManager  weaponsManager;
-    
-    
+    public WeaponsManager weaponsManager;
+    public EnemyHealthManagement enemyHealthManagement;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      emplacement1       = Case1.transform.position;
-      emplacement2       = Case2.transform.position;
-      emplacement3       = Case3.transform.position;
-      LevelUpgrade1.text = "Level " + levelupgrade1;
-      LevelUpgrade2.text = "Locked";
+        emplacement1 = Case1.transform.position;
+        emplacement2 = Case2.transform.position;
+        emplacement3 = Case3.transform.position;
+        LevelUpgrade1.text = "Level " + levelupgrade1;
+        LevelUpgrade2.text = "Locked";
+        LevelUpgrade3.text = "Locked";
+        LevelUpgrade4.text = "Locked";
     }
 
     // Update is called once per frame
@@ -62,10 +72,11 @@ public class UpgradeMenu : MonoBehaviour
 
     }
     public void UpgradeMenuOpen()
-    { upgradeMenu.SetActive(true);
+    {
+        upgradeMenu.SetActive(true);
         Time.timeScale = 0f;
-        
-                {
+
+        {
             randomUpgradeCase1 = Random.Range(0, mesUpgrades.Length);
             Instantiate(mesUpgrades[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
             randomUpgradeCase2 = Random.Range(0, mesUpgrades.Length);
@@ -80,104 +91,227 @@ public class UpgradeMenu : MonoBehaviour
         Debug.Log(mesUpgrades[randomUpgradeCase3]);
     }
     public void UpgradeMenuClose()
-    { upgradeMenu.SetActive(false);
+    {
+        upgradeMenu.SetActive(false);
         Time.timeScale = 1f;
 
     }
 
- 
-    public void Upgrade1Seclect()
+
+    public void SpeedUpgrade()
     {
         if (levelupgrade1 >= 3)
         {
             LevelUpgrade1.text = "Max Level";
             upgrade1button.interactable = false;
-            
-            
+
+
 
         }
         else
         {
-            
-            levelupgrade1++;  
+
+            levelupgrade1++;
             playerControl.moveSpeed = Mathf.RoundToInt(playerControl.moveSpeed * Multiplier);
-            LevelUpgrade1.text      = "Level " + levelupgrade1;
+            LevelUpgrade1.text = "Level " + levelupgrade1;
             UpgradeMenuClose();
         }
     }
-    public void Upgrade2Seclect()
+    public void BulbUpgrade()
     {
-        if ((levelupgrade2 == 0 && ( weaponsManager.nombreAmpoule) > 0)) 
+        if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
         {
-            
-            levelupgrade2++; 
-            
-            LevelUpgrade2.text = "Level :" + levelupgrade2;
-            UpgradeMenuClose();
-            
-        }
-        else if  ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
-        {
-            
+            describleTextUpgrade2.text = "Increase damage to your enemies.";
             levelupgrade2++;
-            bulb.GetComponent<CircleCollider2D>() .enabled = false;
-            bulb.GetComponent<CircleCollider2D>() .enabled = true;
-            LevelUpgrade2.text                             = "Level :" + levelupgrade2;
-            bulb.GetComponent<Light2D>(); 
-            bulbScript.BulbLevel2();
-            UpgradeMenuClose();
-        }
-        else if ((levelupgrade2 == 2) && ( weaponsManager.nombreAmpoule > 0))
-        {
-            
-            levelupgrade2++;
-            
+            weaponsManager.hitByBulb = 2;
             LevelUpgrade2.text = "Level :" + levelupgrade2;
             UpgradeMenuClose();
         }
-        else if  ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
+        else if ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
         {
-            
+            describleTextUpgrade2.text = "Increase the bulb's range.";
             levelupgrade2++;
-            bulb.GetComponent<CircleCollider2D>() .enabled = false;
-            bulb.GetComponent<CircleCollider2D>() .enabled = true;
-            bulbScript.BulbLevel4();
-            LevelUpgrade2.text                             = "Max Level";
-            upgrade2button.interactable                    = false;
+            LevelUpgrade2.text = "Level :" + levelupgrade2;
+            bulbScript.BulbLevel3();
             UpgradeMenuClose();
         }
-        else if ((levelupgrade2 == 0 && ( weaponsManager.nombreAmpoule) <= 0)) 
+        else if ((levelupgrade2 == 2) && (weaponsManager.nombreAmpoule > 0))
         {
-            LevelUpgrade2.text          = "Locked";
-            
+            describleTextUpgrade2.text = "Increase damage to your enemies.";
+            levelupgrade2++;
+            weaponsManager.hitByBulb = 3;
+            LevelUpgrade2.text = "Level :" + levelupgrade2;
+            UpgradeMenuClose();
         }
-    }
-    public void Upgrade3Seclect()
-    {
+        else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
+        {
+            describleTextUpgrade2.text = "Increase the bulb's range.";
+            levelupgrade2++;
+            bulbScript.BulbLevel5();
+            LevelUpgrade2.text = "Level :" + levelupgrade2;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade2 == 4) && (weaponsManager.nombreAmpoule > 0))
+        {
+            LevelUpgrade2.text = "Max Level";
+            upgrade2button.interactable = false;
+            UpgradeMenuClose();
+        }
         
-        if (levelupgrade3 >= 4)
+        else if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) <= 0))
+        {
+            LevelUpgrade2.text = "Locked";
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void CameraUpgrade()
+    {
+        if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
+        {
+            LevelUpgrade3.text = "Level :" + levelupgrade3;
+            describleTextUpgrade3.text = "Being the camera’s range.";
+            levelupgrade3++;
+            // augmente la porté de l'appareil photo ( le raycast )
+            
+            UpgradeMenuClose();
+
+        }
+        else if ((levelupgrade3 == 1) && (weaponsManager.haveCamera == true))
+        {
+            describleTextUpgrade3.text = "Increase the duration of the stun.";
+            enemyHealthManagement.FrezzeDuration = 3f;
+            LevelUpgrade3.text = "Level :" + levelupgrade3;
+            // augmente la durée du Stun
+            levelupgrade3++;
+            
+            
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade3 == 2) && (weaponsManager.haveCamera == true))
+        {
+            describleTextUpgrade3.text = "Being the camera’s range.";
+            // Agmente la porté de l'appareil photo ( le raycast )
+            LevelUpgrade3.text = "Level :" + levelupgrade3;
+            levelupgrade3++;
+            
+           
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
+        {
+            describleTextUpgrade3.text = "Increase the duration of the stun.";
+            LevelUpgrade3.text = "Level :" + levelupgrade3;
+            levelupgrade3++;
+            enemyHealthManagement.FrezzeDuration = 4f; // augmente la durée du Stun
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
         {
             LevelUpgrade3.text = "Max Level";
             upgrade3button.interactable = false;
-        }
-        else
-        {
-            levelupgrade3++;
-            LevelUpgrade3.text = "Level " + levelupgrade3;
             UpgradeMenuClose();
+        }
+        else if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == false)))
+        {
+            LevelUpgrade3.text = "Locked";
+
         }
     }
 
-    void FixedUpdate()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void GlowStickUpgrade()
     {
-        if (weaponsManager.nombreAmpoule > 0)
+        if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
         {
-            upgrade2button.interactable = true;
-            
+            describleTextUpgrade4.text = "Place 2 GlowSticks instead of 1.";
+            LevelUpgrade4.text = "Level :" + levelupgrade4;
+            levelupgrade4++;
+            UpgradeMenuClose();
         }
-        else if (weaponsManager.nombreAmpoule == 0)
+        else if ((levelupgrade4 == 1) && (weaponsManager.GlowStickRecup == true))
         {
-            upgrade2button.interactable = false;
+            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
+            weaponsManager.GlowStickDuration = 12.5f;// augmente la durée des glowstick
+            LevelUpgrade4.text = "Level :" + levelupgrade4;
+            levelupgrade4++;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade4 == 2) && (weaponsManager.GlowStickRecup == true))
+        {
+            describleTextUpgrade4.text = "Place 3 GlowSticks instead of 1.";
+            // dépose 3 glowstick au lieu de 1
+            LevelUpgrade4.text = "Level :" + levelupgrade4;
+            levelupgrade4++;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade4 == 3) && (weaponsManager.GlowStickRecup == true))
+        {
+            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
+            weaponsManager.GlowStickDuration = 15f; // augmente la durée des glowstick
+            LevelUpgrade4.text = "Level :" + levelupgrade4;
+            levelupgrade4++;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade4 == 4) && (weaponsManager.GlowStickRecup == true))
+        {
+            describleTextUpgrade4.text = "Increase damage of the glowStick.";
+            weaponsManager.hitpoint = 2; // augmente les dégats des glowstick
+            LevelUpgrade4.text = "Level :" + levelupgrade4;
+            levelupgrade4++;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade4 == 5) && (weaponsManager.GlowStickRecup == true))
+        {
+            LevelUpgrade4.text = "Max Level";
+            upgrade4button.interactable = false;
+            UpgradeMenuClose();
+        }
+        else if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == false)))
+        {
+            LevelUpgrade4.text = "Locked";
+
         }
     }
 }
