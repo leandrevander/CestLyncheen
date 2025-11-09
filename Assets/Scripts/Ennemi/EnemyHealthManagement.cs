@@ -13,8 +13,7 @@ public class EnemyHealthManagement : MonoBehaviour
     public bool freezeEnnemi = false;
     public  int            HealthZombie = 5;
     public  int            pvperdu;
-    public int hitpoint = 1;
-    public int hitByBulb = 1;
+  
     public  Coroutine      coroutine;
     public  GameObject     experiencepointPrefab;
     public  freezeEnnemi   scriptFreeze;
@@ -25,10 +24,12 @@ public class EnemyHealthManagement : MonoBehaviour
     public  float          speed            = 2.5f;
     public  Coroutine      glowStickCoroutine;
     public Coroutine      bulbCoroutine;
-    
-   
+    public  float          FrezzeDuration   = 2f;
 
-    
+
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -94,7 +95,7 @@ public class EnemyHealthManagement : MonoBehaviour
             Debug.Log("Couroutine Freeze appelé");
             ennemi_NavMeshAgent.isStopped = true;
             Debug.Log("Ennemi gelé ! Enfin je crois...");
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(FrezzeDuration);
             ennemi_NavMeshAgent.isStopped = false;
             ennemi_NavMeshAgent.speed     = 2.5f;
 
@@ -110,7 +111,7 @@ public class EnemyHealthManagement : MonoBehaviour
         {
             if (IsHitByGlowStick == true)
             {
-                HealthZombie = HealthZombie - hitpoint;
+                HealthZombie = HealthZombie - weaponsManager.hitpoint;
                 if (HealthZombie <= 0)
 
                 {
@@ -131,7 +132,7 @@ public class EnemyHealthManagement : MonoBehaviour
             if (IsHittenByBull == true)
             {
 
-                HealthZombie = HealthZombie - hitByBulb;
+                HealthZombie = HealthZombie - weaponsManager.hitByBulb;
                 if (HealthZombie <= 0)
                 {
                     Destroy(gameObject);

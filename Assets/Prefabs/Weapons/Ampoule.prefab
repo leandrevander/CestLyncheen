@@ -99,13 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ampoule: {fileID: 1424538326097015079}
-  PVperdu: 2
-  HealthZombie: 5
-  player: {fileID: 0}
-  IsHittenByBull: 0
-  recupAmpoule: {fileID: 0}
-  agent: {fileID: 4838597392707036171, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
-  PrefabEnnemi: {fileID: 3342766363712070149, guid: 2419b707834f8cd4394a40ec8eb80f44, type: 3}
   enemyHealthManagement: {fileID: 0}
   levelAmpoule: 1
   bulbl1: {fileID: 0}
