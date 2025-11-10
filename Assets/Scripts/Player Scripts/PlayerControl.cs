@@ -16,6 +16,8 @@ namespace Player_Scripts
         public LightRotation playerLight;
         
         public Vector2 _lookDirection;
+
+        public Transform cameraGO;
         
         
         [SerializeField] private Animator animatorPlayer;
@@ -39,11 +41,21 @@ namespace Player_Scripts
             
             _lookDirection = look.action.ReadValue<Vector2>();
             playerLight.UpdateLook(_lookDirection);
-            
+
             if (_moveDirection.x > 0.01f)
-                spriteRenderer.flipX = false;
+            {
+                spriteRenderer.flipX   = false;
+                cameraGO.localRotation = Quaternion.Euler(0.0f, 0.0f, -90f);
+            }
+                
+                
+            
             else if (_moveDirection.x < -0.01f)
-                spriteRenderer.flipX = true;
+            {
+                spriteRenderer.flipX   = true;
+                cameraGO.localRotation = Quaternion.Euler(0.0f, 0.0f, 90f);
+            }
+            
         }
 
         private void FixedUpdate()

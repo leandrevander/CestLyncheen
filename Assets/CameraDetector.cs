@@ -7,13 +7,10 @@ using UnityEngine.AI;
 public class CameraDectector : MonoBehaviour
 {
     private Transform cibleZombie;
-    public GameObject cibleEnnemi;
     public GameObject player;
     private float zombieDistance;
     private float distance;
-    public EnemyHealthManagement ennemyFrezze;
     public LayerMask raycastMask;
-    public NavMeshAgent ennemi_NavMeshAgent;
     EnemyHealthManagement enemyHealth;
 
 
