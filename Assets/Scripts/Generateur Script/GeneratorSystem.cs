@@ -27,7 +27,7 @@ public class GeneratorSystem : MonoBehaviour
     public TextMeshProUGUI textPercentage;
 
     public Color color;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -41,9 +41,10 @@ public class GeneratorSystem : MonoBehaviour
     void Start()
     {
         sliderGO.SetActive(false);
+        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (playerOnZone && coroutineW == null)
