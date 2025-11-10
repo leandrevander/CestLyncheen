@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 4b8c5abbd063e8340b87ddb923db5d12
+guid: 182a582b03906c84dab4430405a71599
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7391219787846697175
-    second: XpBarFillSpritesheet_0
-  - first:
-      213: 1226239429362139506
-    second: XpBarFillSpritesheet_1
-  - first:
-      213: -2311084670014359863
-    second: XpBarFillSpritesheet_2
-  - first:
-      213: 4545189710843321503
-    second: XpBarFillSpritesheet_3
+      213: 1521496456940248136
+    second: XPFillV3Simple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: XpBarFillSpritesheet_0
+      name: XPFillV3Simple_0
       rect:
         serializedVersion: 2
-        x: 279
-        y: 574
-        width: 1717
-        height: 92
+        x: 23
+        y: 29
+        width: 2624
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92f3f8863cc1d6990800000000000000
-      internalID: -7391219787846697175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: XpBarFillSpritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 414
-        width: 1717
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27145bc934a740110800000000000000
-      internalID: 1226239429362139506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: XpBarFillSpritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 234
-        width: 1717
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c671fdbcb06defd0800000000000000
-      internalID: -2311084670014359863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: XpBarFillSpritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 59
-        width: 1717
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9c9397e5f1c31f30800000000000000
-      internalID: 4545189710843321503
+      spriteID: 84c50f267f07d1510800000000000000
+      internalID: 1521496456940248136
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      XpBarFillSpritesheet_0: -7391219787846697175
-      XpBarFillSpritesheet_1: 1226239429362139506
-      XpBarFillSpritesheet_2: -2311084670014359863
-      XpBarFillSpritesheet_3: 4545189710843321503
+      XPFillV3Simple_0: 1521496456940248136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
