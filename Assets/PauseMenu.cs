@@ -1,9 +1,13 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    [Header("UI")]
+    public EventSystem eventSystem;
+    public GameObject resumeButton;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +21,7 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
+            eventSystem.SetSelectedGameObject(resumeButton);
         }
 
     }

@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class WeaponsManager : MonoBehaviour
 {
@@ -36,6 +38,13 @@ public class WeaponsManager : MonoBehaviour
     public   GameObject   bulbDescription;
     public   GameObject   glowStickDescription;
     public int hitByLighthouse = 1;
+    
+    [Header("UI")]
+    public EventSystem eventSystem;
+    public GameObject buttonBulbDescription;
+    public GameObject buttonCameraDescription;
+
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,6 +67,7 @@ public class WeaponsManager : MonoBehaviour
             nombreAppareillePhoto += 1;
             Debug.Log("Vous avez d�bloquer l'appareil photo !");
             cameraDescription.SetActive(true);
+            eventSystem.SetSelectedGameObject(buttonCameraDescription);
             Time.timeScale = 0f;
             StartCoroutine(Flash());
         }
@@ -93,6 +103,7 @@ public class WeaponsManager : MonoBehaviour
         else if  (nombreAmpoule == 0)
         {
             ampoule.SetActive(true);
+            eventSystem.SetSelectedGameObject(buttonBulbDescription);
             nombreAmpoule += 1;
             Debug.Log("Vous avez d�bloquer l'ampoule !");
             

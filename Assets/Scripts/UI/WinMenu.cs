@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class WinMenu : MonoBehaviour
 {
     public GameObject winMenuUI;
     private Gamepad gamepad;
+    [Header("UI")]
+    public EventSystem eventSystem;
+    public GameObject retryButton;
 
     public bool win;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,11 +25,7 @@ public class WinMenu : MonoBehaviour
         {
             Time.timeScale = 0f;
             winMenuUI.SetActive(true);
-            if (gamepad.buttonSouth.wasPressedThisFrame)
-            {
-                Time.timeScale = 1f;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("FirstProto");
-            }
+            eventSystem.SetSelectedGameObject(retryButton);
         }
     }
 }

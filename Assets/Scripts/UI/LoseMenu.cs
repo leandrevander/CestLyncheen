@@ -1,17 +1,19 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 
 public class LoseMenu : MonoBehaviour
 {
     public  GameObject loseMenuUI;
-    private Gamepad    gamepad;
     GameObject         player;
+    [Header("UI")]
+    public EventSystem eventSystem;
+    public GameObject retryButton;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     { 
-        gamepad = Gamepad.current;
         loseMenuUI.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -23,11 +25,7 @@ public class LoseMenu : MonoBehaviour
         {
             Time.timeScale = 0f;
             loseMenuUI.SetActive(true);
-            if (gamepad.buttonSouth.wasPressedThisFrame)
-            {
-                Time.timeScale = 1f;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("FirstProto");
-            }
+            eventSystem.SetSelectedGameObject(retryButton);
         }
     }
 }

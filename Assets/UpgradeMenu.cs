@@ -3,50 +3,64 @@ using JetBrains.Annotations;
 using Player_Scripts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class UpgradeMenu : MonoBehaviour
 {
-    public TMP_Text Upgrade1;
-    public TMP_Text Upgrade2;
-    public TMP_Text Upgrade3;
-    public Experience experience;
-    public GameObject upgradeMenu;
-    public Button upgrade1button;
-    public Button upgrade2button;
-    public Button upgrade3button;
-    public Button upgrade4button;
-    public TMP_Text LevelUpgrade4;
-    public TMP_Text LevelUpgrade1;
-    public TMP_Text LevelUpgrade2;
-    public TMP_Text LevelUpgrade3;
-    public TMP_Text describleTextUpgrade1;
-    public TMP_Text describleTextUpgrade2;
-    public TMP_Text describleTextUpgrade3;
-    public TMP_Text describleTextUpgrade4;
-    public int levelupgrade1 = 1;
-    public int levelupgrade2 = 1;
-    public int levelupgrade3 = 1;
-    public int levelupgrade4 = 1;
-    public int randomUpgradeCase1;
-    public int randomUpgradeCase2;
-    public int randomUpgradeCase3;
-    public GameObject[] mesUpgrades;
-    public Vector2 emplacement1;
-    public Vector2 emplacement2;
-    public Vector2 emplacement3;
-    public GameObject Case1;
-    public GameObject Case2;
-    public GameObject Case3;
-    public PlayerControl playerControl;
-    public float Multiplier = 1.2f;
-    public Bulb bulbScript;
-    public Light2D bulb;
-    public WeaponsManager weaponsManager;
+    public TMP_Text              Upgrade1;
+    public TMP_Text              Upgrade2;
+    public TMP_Text              Upgrade3;
+    public Experience            experience;
+    public GameObject            upgradeMenu;
+    public Button                upgrade1button;
+    public Button                upgrade2button;
+    public Button                upgrade3button;
+    public Button                upgrade4button;
+    public TMP_Text              LevelUpgrade4;
+    public TMP_Text              LevelUpgrade1;
+    public TMP_Text              LevelUpgrade2;
+    public TMP_Text              LevelUpgrade3;
+    public TMP_Text              describleTextUpgrade1;
+    public TMP_Text              describleTextUpgrade2;
+    public TMP_Text              describleTextUpgrade3;
+    public TMP_Text              describleTextUpgrade4;
+    public int                   levelupgrade1 = 1;
+    public int                   levelupgrade2 = 1;
+    public int                   levelupgrade3 = 1;
+    public int                   levelupgrade4 = 1;
+    public int                   randomUpgradeCase1;
+    public int                   randomUpgradeCase2;
+    public int                   randomUpgradeCase3;
+    public GameObject[]          mesUpgrades;
+    public Vector2               emplacement1;
+    public Vector2               emplacement2;
+    public Vector2               emplacement3;
+    public GameObject            Case1;
+    public GameObject            Case2;
+    public GameObject            Case3;
+    public GameObject            upgradeCase1;
+    public GameObject            upgradeCase2;
+    public GameObject            upgradeCase3;
+    public PlayerControl         playerControl;
+    public float                 Multiplier = 1.2f;
+    public Bulb                  bulbScript;
+    public Light2D               bulb;
+    public WeaponsManager        weaponsManager;
     public EnemyHealthManagement enemyHealthManagement;
-
+    
+    [Header("UI")]
+    public EventSystem eventSystem;
+    public GameObject speedUpgrade;
+    public GameObject bulbUpgrade;
+    public GameObject cameraUpgrade;
+    public GameObject glowstickUpgrade;
+    private GameObject firstButtonInUpgradeMenu;
+    
+    
+    
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -79,11 +93,18 @@ public class UpgradeMenu : MonoBehaviour
 
         {
             randomUpgradeCase1 = Random.Range(0, mesUpgrades.Length);
-            Instantiate(mesUpgrades[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
+            upgradeCase1 = Instantiate(mesUpgrades[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
             randomUpgradeCase2 = Random.Range(0, mesUpgrades.Length);
-            Instantiate(mesUpgrades[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
+            upgradeCase2 = Instantiate(mesUpgrades[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
             randomUpgradeCase3 = Random.Range(0, mesUpgrades.Length);
-            Instantiate(mesUpgrades[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
+            upgradeCase3 = Instantiate(mesUpgrades[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
+            speedUpgrade.SetActive(false);
+            bulbUpgrade.SetActive(false);
+            cameraUpgrade.SetActive(false);
+            glowstickUpgrade.SetActive(false);
+            firstButtonInUpgradeMenu = upgradeCase1.transform.GetChild(0).gameObject;
+            eventSystem.SetSelectedGameObject(firstButtonInUpgradeMenu);
+
         }
 
 
@@ -95,6 +116,14 @@ public class UpgradeMenu : MonoBehaviour
     {
         upgradeMenu.SetActive(false);
         Time.timeScale = 1f;
+        
+        Destroy(upgradeCase1);
+        Destroy(upgradeCase2);
+        Destroy(upgradeCase3);
+        speedUpgrade.SetActive(true);
+        bulbUpgrade.SetActive(true);
+        cameraUpgrade.SetActive(true);
+        glowstickUpgrade.SetActive(true);
 
     }
 
