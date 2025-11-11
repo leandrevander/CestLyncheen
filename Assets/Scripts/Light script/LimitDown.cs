@@ -23,8 +23,8 @@ public class LimitDown : MonoBehaviour
 	{
 		if (collision.gameObject == lightPhare)
 		{
-			lp.goUp = true;
-			lp.goDown  = false;
+			//lp.goUp = true;
+			//lp.goDown  = false;
 		}
 	}
 }

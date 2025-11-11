@@ -24,10 +24,8 @@ public class LightPhare : MonoBehaviour
     public int level3 = 50;
     public int level4 = 82;
     
-    private Vector2 directionUp = new Vector2(0, 1);
-    private Vector2 directionDown  = new Vector2(0, -1);
-    public  bool    goDown = true;
-    public  bool    goUp;
+    public PhareRotation phareRotation;
+    
     
 
 
@@ -39,26 +37,6 @@ public class LightPhare : MonoBehaviour
         level2 = 25 * generatorsNumber;
         level3 = 50 * generatorsNumber;
         level4 = 82 * generatorsNumber;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    private void FixedUpdate()
-    {
-        if (goDown)
-        {
-            rb.linearVelocity = directionDown * lightPhareSpeed;
-
-        }
-        if (goUp)
-        {
-            rb.linearVelocity = directionUp * lightPhareSpeed;
-
-        }
     }
 
     // Update is called once per frame
@@ -75,29 +53,28 @@ public class LightPhare : MonoBehaviour
                     if (totalPercentage >= level4)
                     {
                         //Debug.Log("Phare niveau 4");
-                        lightPhareSpeed    = 4;
-                        
-                        
+                        phareRotation.lighthouseRespawnDelay = 4f;
+
                     }
                     else
                     {
                         //Debug.Log("Phare niveau 3");
-                        lightPhareSpeed    = 3;
+                        phareRotation.lighthouseRespawnDelay = 8f;
                         
                     }
                 }
                 else
                 {
                     //Debug.Log("Phare niveau 2");
-                    lightPhareSpeed    = 2;
+                    phareRotation.lighthouseRespawnDelay = 12f;
                     
                 }
             }
             else
             {
                 //Debug.Log("Phare niveau 1");
-                light.enabled      = true;
-                lightPhareSpeed    = 1;
+                light.enabled                        = true;
+                phareRotation.lighthouseRespawnDelay = 16f;
                 
             }
             
@@ -105,8 +82,8 @@ public class LightPhare : MonoBehaviour
         else
         {
             //Debug.Log("Phare niveau 0");
-            light.enabled = false;
-            lightPhareSpeed = 0;
+            light.enabled                        = false;
+            phareRotation.lighthouseRespawnDelay = 1000f;
         }
     }
 }
