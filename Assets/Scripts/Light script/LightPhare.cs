@@ -19,10 +19,10 @@ public class LightPhare : MonoBehaviour
     private Light2D          light;
     
 
-    public int level1 = 10 ;
-    public int level2 = 25;
-    public int level3 = 50;
-    public int level4 = 82;
+    public float level1 = 16f;
+    public float level2 = 12f;
+    public float level3 = 8f;
+    public float level4 = 4f;
     
     public PhareRotation phareRotation;
     
@@ -53,20 +53,20 @@ public class LightPhare : MonoBehaviour
                     if (totalPercentage >= level4)
                     {
                         //Debug.Log("Phare niveau 4");
-                        phareRotation.lighthouseRespawnDelay = 4f;
+                        phareRotation.lighthouseRespawnDelay = level4;
 
                     }
                     else
                     {
                         //Debug.Log("Phare niveau 3");
-                        phareRotation.lighthouseRespawnDelay = 8f;
+                        phareRotation.lighthouseRespawnDelay = level3;
                         
                     }
                 }
                 else
                 {
                     //Debug.Log("Phare niveau 2");
-                    phareRotation.lighthouseRespawnDelay = 12f;
+                    phareRotation.lighthouseRespawnDelay = level2;
                     
                 }
             }
@@ -74,7 +74,7 @@ public class LightPhare : MonoBehaviour
             {
                 //Debug.Log("Phare niveau 1");
                 light.enabled                        = true;
-                phareRotation.lighthouseRespawnDelay = 16f;
+                phareRotation.lighthouseRespawnDelay = level1;
                 
             }
             
