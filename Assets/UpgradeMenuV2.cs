@@ -1,15 +1,14 @@
-using System;
-using JetBrains.Annotations;
-using Player_Scripts;
+﻿using Player_Scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
-public class UpgradeMenu : MonoBehaviour
+namespace DefaultNamespace
 {
-    public TMP_Text Upgrade1;
+	public class UpgradeMenuV2 : MonoBehaviour
+	{
+		public TMP_Text Upgrade1;
     public TMP_Text Upgrade2;
     public TMP_Text Upgrade3;
     public Experience experience;
@@ -314,4 +313,5 @@ public class UpgradeMenu : MonoBehaviour
 
         }
     }
+	}
 }

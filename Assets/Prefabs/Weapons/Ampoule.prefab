@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7527199246214434206
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424538326097015079}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 0.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100,12 +100,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ampoule: {fileID: 1424538326097015079}
   enemyHealthManagement: {fileID: 0}
-  levelAmpoule: 1
-  bulbl1: {fileID: 0}
-  bulbl2: {fileID: 0}
-  bulbl3: {fileID: 0}
-  bulb: {fileID: 0}
-  bulbLight: {fileID: 0}
+  levelAmpoule: 0
+  bulbl1: {fileID: 6710340570152979846}
+  bulbl2: {fileID: 6710340570152979846}
+  bulbl3: {fileID: 6710340570152979846}
+  bulb: {fileID: 1424538326097015079}
+  bulbLight: {fileID: 6634811695313054905}
   rangeIncrease: 1.5
   minRange: 0
   maxRangeOuter: 3.8

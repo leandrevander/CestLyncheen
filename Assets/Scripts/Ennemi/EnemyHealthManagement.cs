@@ -83,9 +83,11 @@ public class EnemyHealthManagement : MonoBehaviour
 
 
             Debug.Log("PV perdu");
-            IsHitten = false;
             yield return new WaitForSeconds(1);
             coroutine = null;
+            IsHitten  = false;
+
+            
         }
 
         IEnumerator FreezeDuration()

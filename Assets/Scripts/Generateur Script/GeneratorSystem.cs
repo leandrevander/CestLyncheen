@@ -15,7 +15,7 @@ public class GeneratorSystem : MonoBehaviour
     public int            cooldown = 1;
     public SpriteRenderer sprite;
     
-    public Slider         _slider;
+    
     public GameObject     sliderGO;
     
     private LightPhare _lightPhare;
@@ -50,7 +50,6 @@ public class GeneratorSystem : MonoBehaviour
         if (playerOnZone && coroutineW == null)
         {
             coroutineW    = StartCoroutine(CoroutineW());
-            _slider.value = percentage;
             sprite.color  = Color.green;
             
 
@@ -59,6 +58,7 @@ public class GeneratorSystem : MonoBehaviour
         {
             coroutineL      = StartCoroutine(CoroutineL());
             sprite.color    = Color.red;
+            
         }
 
         
@@ -76,21 +76,21 @@ public class GeneratorSystem : MonoBehaviour
                 {
                     if (percentage >= 75)
                     {
-                        fillImage.color = Color.green;
+                        textPercentage.color = Color.green;
                     }
                     else
                     {
-                        fillImage.color = Color.green;
+                        textPercentage.color = Color.green;
                     }
                 }
                 else
                 {
-                    fillImage.color = Color.yellow;
+                    textPercentage.color = Color.yellow;
                 }
             }
             else
             {
-                fillImage.color = Color.red;
+                textPercentage.color = Color.red;
             }
 
         }
