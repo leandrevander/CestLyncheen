@@ -154,8 +154,8 @@ public class EnemyHealthManagement : MonoBehaviour
         {
             if (IsHittenByLighthouse == true)
             {
-                //MOFIFIER LE HITBYBULB CAR JE PEUX PAS RIDER ME DETESTE
-                //HealthZombie = HealthZombie - weaponsManager.hitByBulb;
+     
+               HealthZombie = HealthZombie - weaponsManager.hitByLighthouse;
                 if (HealthZombie <= 0)
                 {
                     Destroy(gameObject);

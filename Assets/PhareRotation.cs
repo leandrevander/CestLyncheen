@@ -22,7 +22,7 @@ public class PhareRotation : MonoBehaviour
         
         StartCoroutine(RunCycle());
     }
-
+    
     IEnumerator RunCycle()
     {
         while (true)

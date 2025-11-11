@@ -47,9 +47,9 @@ namespace Player_Scripts
                 spriteRenderer.flipX   = false;
                 cameraGO.localRotation = Quaternion.Euler(0.0f, 0.0f, -90f);
             }
+               
                 
-                
-            
+        
             else if (_moveDirection.x < -0.01f)
             {
                 spriteRenderer.flipX   = true;

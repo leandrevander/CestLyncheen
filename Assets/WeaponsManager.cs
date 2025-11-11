@@ -30,11 +30,12 @@ public class WeaponsManager : MonoBehaviour
     public   GameObject   glowStickDestroy2;
     public   GameObject   glowStickDestroy3;
       public int          hitpoint          = 1;
-    public   int          hitByBulb         = 1;
+    public   int          hitByBulb         = 0;
     public   float        GlowStickDuration = 10f;
     public   GameObject   cameraDescription;
     public   GameObject   bulbDescription;
     public   GameObject   glowStickDescription;
+    public int hitByLighthouse = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,7 +56,7 @@ public class WeaponsManager : MonoBehaviour
         {
             AppareillePhoto.SetActive(true);
             nombreAppareillePhoto += 1;
-            Debug.Log("Vous avez débloquer l'appareil photo !");
+            Debug.Log("Vous avez dï¿½bloquer l'appareil photo !");
             cameraDescription.SetActive(true);
             Time.timeScale = 0f;
             StartCoroutine(Flash());
@@ -71,10 +72,10 @@ public class WeaponsManager : MonoBehaviour
                 Debug.Log("L'appareil photo est en recharge...");
                 yield return new WaitForSeconds(cameraDuration);
                 AppareillePhoto.SetActive(true);
-                Debug.Log("Vous pouvez réutiliser l'appareil photo !");
+                Debug.Log("Vous pouvez rï¿½utiliser l'appareil photo !");
                 yield return new WaitForSeconds(0.1f);
                 AppareillePhoto.SetActive(false);
-                Debug.Log("Appareille Photo Utilisé !");
+                Debug.Log("Appareille Photo Utilisï¿½ !");
 
             }
 
@@ -93,7 +94,7 @@ public class WeaponsManager : MonoBehaviour
         {
             ampoule.SetActive(true);
             nombreAmpoule += 1;
-            Debug.Log("Vous avez débloquer l'ampoule !");
+            Debug.Log("Vous avez dï¿½bloquer l'ampoule !");
             
 
         }
