@@ -398,6 +398,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsHitten: 0
+  IsHittenByBull: 0
+  IsHitByGlowStick: 0
+  freezeEnnemi: 0
   HealthZombie: 4
   pvperdu: 2
+  hitpoint: 1
+  hitByBulb: 1
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
+  scriptFreeze: {fileID: 0}
+  weaponsManager: {fileID: 0}
+  ennemi_NavMeshAgent: {fileID: 0}
+  speed: 2.5
+  spriteRenderer: {fileID: 2950418394412113012}

@@ -21,7 +21,7 @@ public class WeaponsManager : MonoBehaviour
     public GameObject   prefabGlowStick;
     public Coroutine    GlowStickCoroutine;
     public int          numberOfGlowStick = 0;
-    public StreetLamp   glowStickScript;
+    //public StreetLamp   glowStickScript;
     public bool         haveCamera = false;
     public GameObject   glowStickDestroy;
 

@@ -26,10 +26,8 @@ public class EnemyHealthManagement : MonoBehaviour
     public  Coroutine      glowStickCoroutine;
     public Coroutine      bulbCoroutine;
     
-   
-
+    [SerializeField] private SpriteRenderer spriteRenderer;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player         = GameObject.FindGameObjectWithTag("Player");
@@ -40,7 +38,6 @@ public class EnemyHealthManagement : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         ennemi_NavMeshAgent.speed = speed;
@@ -71,8 +68,6 @@ public class EnemyHealthManagement : MonoBehaviour
 
         IEnumerator PerteDePv()
         {
-
-
             HealthZombie = HealthZombie - pvperdu;
             if (HealthZombie <= 0)
             {
@@ -80,11 +75,13 @@ public class EnemyHealthManagement : MonoBehaviour
                 Instantiate(experiencepointPrefab, transform.position, transform.rotation);
             }
 
-
             Debug.Log("PV perdu");
-            IsHitten = false;
+            spriteRenderer.color = Color.red;
             yield return new WaitForSeconds(1);
             coroutine = null;
+            IsHitten = false;
+            spriteRenderer.color = Color.white;
+            
         }
 
         IEnumerator FreezeDuration()
