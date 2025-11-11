@@ -18,6 +18,8 @@ public class AmpouleRecupScript : MonoBehaviour
         {
             ampoule.SetActive(true);
             weaponsManager.UpgradeAmpoule();
+            weaponsManager.bulbDescription.SetActive(true);
+            Time.timeScale = 0f;
             Destroy(gameObject);
         }
 

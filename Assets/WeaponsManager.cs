@@ -1,29 +1,40 @@
 using System.Collections;
 using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
+using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class WeaponsManager : MonoBehaviour
 {
-    public GameObject   ampoule;
-    public Bulb         ampouleScript;
-    public GameObject   recupAmpoule;
-    public int          nombreAmpoule = 0;
-    public GameObject   AppareillePhoto;
-    public int          nombreAppareillePhoto = 0;
-    public GameObject   RecupAppareillePhoto;
-    public GameObject   PrefabEnnemi;
-    public Rigidbody2D  ennemi_Rigidbody2D;
-    public float        freezeDuration = 20f;
-    public NavMeshAgent ennemi_NavMesh;
-    public bool         StreetLampRecup = false;
-    public GameObject   prefabStreetLamp;
-    public Coroutine    streetLampCoroutine;
-    public int          numberOfStreetLamps = 0;
-    public StreetLamp   streetLampScript;
-    public bool         haveCamera = false;
-    public GameObject   glowStickDestroy;
+    public   GameObject   ampoule;
+    public   Bulb         ampouleScript;
+    public   GameObject   recupAmpoule;
+    public   int          nombreAmpoule = 0;
+    public   GameObject   AppareillePhoto;
+    public   int          nombreAppareillePhoto = 0;
+    public   float        cameraDuration        = 2f;
+    public   GameObject   RecupAppareillePhoto;
+    public   GameObject   PrefabEnnemi;
+    public   Rigidbody2D  ennemi_Rigidbody2D;
+    public   float        freezeDuration = 20f;
+    public   NavMeshAgent ennemi_NavMesh;
+    public   bool         GlowStickRecup = false;
+    public   GameObject   prefabGlowStick;
+    public   Coroutine    GlowStickCoroutine;
+    public   int          numberOfGlowStick = 0;
+    public   StreetLamp   glowStickScript;
+    public   UpgradeMenu  upgradeMenu;
+    public   bool         haveCamera = false;
+    public   GameObject   glowStickDestroy;
+    public   GameObject   glowStickDestroy2;
+    public   GameObject   glowStickDestroy3;
+      public int          hitpoint          = 1;
+    public   int          hitByBulb         = 1;
+    public   float        GlowStickDuration = 10f;
+    public   GameObject   cameraDescription;
+    public   GameObject   bulbDescription;
+    public   GameObject   glowStickDescription;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,6 +56,8 @@ public class WeaponsManager : MonoBehaviour
             AppareillePhoto.SetActive(true);
             nombreAppareillePhoto += 1;
             Debug.Log("Vous avez débloquer l'appareil photo !");
+            cameraDescription.SetActive(true);
+            Time.timeScale = 0f;
             StartCoroutine(Flash());
         }
     }
@@ -56,24 +69,16 @@ public class WeaponsManager : MonoBehaviour
                 Debug.Log("Flash !");
                 AppareillePhoto.SetActive(false);
                 Debug.Log("L'appareil photo est en recharge...");
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(cameraDuration);
                 AppareillePhoto.SetActive(true);
                 Debug.Log("Vous pouvez réutiliser l'appareil photo !");
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(0.1f);
                 AppareillePhoto.SetActive(false);
                 Debug.Log("Appareille Photo Utilisé !");
 
             }
 
-
-
         }
-
-
-
-    
-    
-    
 
     public void UpgradeAmpoule()
     {
@@ -93,18 +98,74 @@ public class WeaponsManager : MonoBehaviour
 
         }
     }
+    public IEnumerator GlowStickSpwanlvl1()
+    {
+        glowStickDestroy = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        numberOfGlowStick += 1;
+        Debug.Log("Street Lamp Spawned");
+        yield return new WaitForSeconds(GlowStickDuration);
+        Debug.Log("Street Lamp fin de la coroutine");
+        numberOfGlowStick = 0;
+        Debug.Log("Street Lamp -1");
+        Destroy(glowStickDestroy);
+        Debug.Log("Street Lamp detruit");
+        GlowStickCoroutine = null;
 
-   
+    }
+    public IEnumerator GlowStickSpwanlvl2()
+    {
+        glowStickDestroy = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        yield return new WaitForSeconds(1);
+        glowStickDestroy2 = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        numberOfGlowStick += 2;
+        Debug.Log("Street Lamp Spawned");
+        yield return new WaitForSeconds(GlowStickDuration);
+        Debug.Log("Street Lamp fin de la coroutine");
+        numberOfGlowStick = 0;
+        Debug.Log("Street Lamp -1");
+        Destroy(glowStickDestroy);
+        Destroy(glowStickDestroy2);
+        Debug.Log("Street Lamp detruit");
+        GlowStickCoroutine = null;
+
+    }
+    public IEnumerator GlowStickSpwanlvl4()
+    {
+        glowStickDestroy = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        yield return new WaitForSeconds(1);
+        glowStickDestroy2 = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        yield return new WaitForSeconds(1);
+        glowStickDestroy3 = Instantiate(prefabGlowStick, transform.position, transform.rotation);
+        numberOfGlowStick += 3;
+        Debug.Log("Street Lamp Spawned");
+        yield return new WaitForSeconds(GlowStickDuration);
+        Debug.Log("Street Lamp fin de la coroutine");
+        numberOfGlowStick = 0;
+        Debug.Log("Street Lamp -1");
+        Destroy(glowStickDestroy);
+        Destroy(glowStickDestroy2);
+        Destroy(glowStickDestroy3);
+        Debug.Log("Street Lamp detruit");
+        GlowStickCoroutine = null;
+
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (StreetLampRecup == true && streetLampCoroutine == null && (numberOfStreetLamps == 0))
+        if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 == 1)
         {
-              var glowStickDestroy = Instantiate(prefabStreetLamp, transform.position, transform.rotation);
-            numberOfStreetLamps += 1;
-            streetLampCoroutine = StartCoroutine(streetLampScript.StreetLampSpwan());
+            GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl1());
+        }
+        else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0 ) && (upgradeMenu.levelupgrade4 == 2 || upgradeMenu.levelupgrade4 == 3))
+        {             GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl2());
+        }
+        else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 >= 4)
+        {
+            GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl4());
         }
     }
+
 }
 
