@@ -59,6 +59,7 @@ public class UpgradeMenu : MonoBehaviour
         LevelUpgrade2.text = "Locked";
         LevelUpgrade3.text = "Locked";
         LevelUpgrade4.text = "Locked";
+        UpgradeMenuClose();
     }
 
     // Update is called once per frame
