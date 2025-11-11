@@ -13,6 +13,7 @@ public class EnemyHealthManagement : MonoBehaviour
     public bool freezeEnnemi = false;
     public  int            HealthZombie = 5;
     public  int            pvperdu;
+    public bool IsHittenByLighthouse = false;
   
     public  Coroutine      coroutine;
     public  GameObject     experiencepointPrefab;
@@ -25,6 +26,7 @@ public class EnemyHealthManagement : MonoBehaviour
     public  Coroutine      glowStickCoroutine;
     public Coroutine      bulbCoroutine;
     public  float          FrezzeDuration   = 2f;
+    public Coroutine      lighthouseCoroutine;
 
 
 
@@ -66,6 +68,11 @@ public class EnemyHealthManagement : MonoBehaviour
         {
             bulbCoroutine = StartCoroutine(HitByBulb());
         }
+        
+        if (IsHittenByLighthouse && lighthouseCoroutine == null)
+        {
+            lighthouseCoroutine = StartCoroutine(HitByLighthouse());
+        }
 
 
         return;
@@ -91,8 +98,6 @@ public class EnemyHealthManagement : MonoBehaviour
         }
 
         IEnumerator FreezeDuration()
-
-
         {
             Debug.Log("Couroutine Freeze appelé");
             ennemi_NavMeshAgent.isStopped = true;
@@ -144,6 +149,23 @@ public class EnemyHealthManagement : MonoBehaviour
                 IsHittenByBull = false;
                 yield return new WaitForSeconds(1);
                 bulbCoroutine = null;
+            }
+        }
+
+        IEnumerator HitByLighthouse()
+        {
+            if (IsHittenByLighthouse == true)
+            {
+                //MOFIFIER LE HITBYBULB CAR JE PEUX PAS RIDER ME DETESTE
+                //HealthZombie = HealthZombie - weaponsManager.hitByBulb;
+                if (HealthZombie <= 0)
+                {
+                    Destroy(gameObject);
+                }
+   
+                IsHittenByLighthouse = false;
+                yield return new WaitForSeconds(1);
+                lighthouseCoroutine = null;
             }
         }
 
