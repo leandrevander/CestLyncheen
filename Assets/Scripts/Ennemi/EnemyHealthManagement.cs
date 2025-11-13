@@ -24,9 +24,10 @@ public class EnemyHealthManagement : MonoBehaviour
     public  NavMeshAgent   ennemi_NavMeshAgent;
     public  float          speed            = 2.5f;
     public  Coroutine      glowStickCoroutine;
-    public Coroutine      bulbCoroutine;
+    public  Coroutine      bulbCoroutine;
     public  float          FrezzeDuration   = 2f;
-    public Coroutine      lighthouseCoroutine;
+    public  Coroutine      lighthouseCoroutine;
+    public  float          speedSeagull = 3.5f;
 
 
 
@@ -39,14 +40,23 @@ public class EnemyHealthManagement : MonoBehaviour
         weaponsManager = player.GetComponent<WeaponsManager>();
 
         ennemi_NavMeshAgent       = GetComponent<NavMeshAgent>();
-        ennemi_NavMeshAgent.speed = speed;
+        if (ennemi_NavMeshAgent != null)
+        {
+            ennemi_NavMeshAgent.speed = speed;
+
+        }
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        ennemi_NavMeshAgent.speed = speed;
+        if (ennemi_NavMeshAgent != null)
+        {
+            ennemi_NavMeshAgent.speed = speed;
+        }
+        
         if (IsHitten && coroutine == null)
         {
             coroutine = StartCoroutine(PerteDePv());
@@ -99,18 +109,35 @@ public class EnemyHealthManagement : MonoBehaviour
 
         IEnumerator FreezeDuration()
         {
-            Debug.Log("Couroutine Freeze appelé");
-            ennemi_NavMeshAgent.isStopped = true;
-            Debug.Log("Ennemi gelé ! Enfin je crois...");
-            yield return new WaitForSeconds(FrezzeDuration);
-            ennemi_NavMeshAgent.isStopped = false;
-            ennemi_NavMeshAgent.speed     = 2.5f;
+            if (ennemi_NavMeshAgent != null)
+            {
+                Debug.Log("Couroutine Freeze appelé");
+                ennemi_NavMeshAgent.isStopped = true;
+                Debug.Log("Ennemi gelé ! Enfin je crois...");
+                yield return new WaitForSeconds(FrezzeDuration);
+                ennemi_NavMeshAgent.isStopped = false;
+                ennemi_NavMeshAgent.speed     = 2.5f;
 
-            Debug.Log("Ennemi dégelé ! Normalement...");
-            yield return new WaitForSeconds(1);
-            freezeEnnemi = false;
-            yield return new WaitForSeconds(1);
-            freezeCoroutine = null;
+                Debug.Log("Ennemi dégelé ! Normalement...");
+                yield return new WaitForSeconds(1);
+                freezeEnnemi = false;
+                yield return new WaitForSeconds(1);
+                freezeCoroutine = null;
+            }
+            else
+            {
+                Debug.Log("Couroutine Freeze appelé");
+                speedSeagull = 0;
+                Debug.Log("Ennemi gelé ! Enfin je crois...");
+                yield return new WaitForSeconds(FrezzeDuration);
+                speedSeagull     = 3.5f;
+
+                Debug.Log("Ennemi dégelé ! Normalement...");
+                yield return new WaitForSeconds(1);
+                freezeEnnemi = false;
+                yield return new WaitForSeconds(1);
+                freezeCoroutine = null;
+            }
         }
 
         IEnumerator HitByGlowStick()
