@@ -4,12 +4,12 @@ public class WarningArrow : MonoBehaviour
 {
     public bool timeIsRunning;
     public float time = 2;
-    public SeagullAI parentSeagullScript;
+    public SeagullAIV2 parentSeagullScript;
     public SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        parentSeagullScript = transform.parent.gameObject.GetComponent<SeagullAI>();
+        parentSeagullScript = transform.parent.gameObject.GetComponent<SeagullAIV2>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     

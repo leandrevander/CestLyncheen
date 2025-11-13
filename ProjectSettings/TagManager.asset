@@ -18,8 +18,8 @@ TagManager:
   - Ennemi
   - Obstacle
   - Offside
-  - 
-  - 
+  - Seagull
+  - WallMap
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
     locked: 0
   - name: Obstacles
     uniqueID: 2698418595
+    locked: 0
+  - name: Seagull
+    uniqueID: 1792647809
     locked: 0
   m_RenderingLayers:
   - Default
