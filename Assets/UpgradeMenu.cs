@@ -60,6 +60,8 @@ public class UpgradeMenu : MonoBehaviour
     public EventSystem eventSystem;
     private GameObject firstButtonInUpgradeMenu;
     public  GameObject upgradeCase1;
+    public  GameObject upgradeCase2;
+    public  GameObject upgradeCase3;
     
     
     
@@ -116,11 +118,11 @@ public class UpgradeMenu : MonoBehaviour
 
        {
            randomUpgradeCase1 = Random.Range(0, mesUpgradesList.Count);
-           upgradeCase1 = Instantiate(mesUpgradesList[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
+           upgradeCase1       = Instantiate(mesUpgradesList[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
            randomUpgradeCase2 = Random.Range(0, mesUpgradesList.Count);
-           Instantiate(mesUpgradesList[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
+           upgradeCase2       = Instantiate(mesUpgradesList[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
            randomUpgradeCase3 = Random.Range(0, mesUpgradesList.Count);
-           Instantiate(mesUpgradesList[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
+           upgradeCase3       = Instantiate(mesUpgradesList[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
        }
        firstButtonInUpgradeMenu = upgradeCase1.transform.GetChild(0).gameObject;
        eventSystem.SetSelectedGameObject(firstButtonInUpgradeMenu);
@@ -136,6 +138,10 @@ public class UpgradeMenu : MonoBehaviour
    {
        upgradeMenu.SetActive(false);
        Time.timeScale = 1f;
+       
+       Destroy(upgradeCase1);
+       Destroy(upgradeCase2);
+       Destroy(upgradeCase3);
       
       
 

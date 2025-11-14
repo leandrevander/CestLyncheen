@@ -44,6 +44,7 @@ public class WeaponsManager : MonoBehaviour
     public EventSystem eventSystem;
     public GameObject buttonBulbDescription;
     public GameObject buttonCameraDescription;
+    public GameObject buttonGlowstickDescription;
 
     
 
@@ -67,6 +68,7 @@ public class WeaponsManager : MonoBehaviour
        {
            AppareillePhoto.SetActive(true);
            nombreAppareillePhoto += 1;
+           eventSystem.SetSelectedGameObject(buttonCameraDescription);
            Debug.Log("Vous avez d�bloquer l'appareil photo !");
            cameraDescription.SetActive(true);
            Time.timeScale = 0f;
@@ -108,11 +110,21 @@ public class WeaponsManager : MonoBehaviour
        {
            ampoule.SetActive(true);
            nombreAmpoule += 1;
+           eventSystem.SetSelectedGameObject(buttonBulbDescription);
            Debug.Log("Vous avez d�bloquer l'ampoule !");
           
 
 
        }
+       
+   }
+
+   public void UnlockGlowstick()
+   {
+       glowStickDescription.SetActive(true);
+       eventSystem.SetSelectedGameObject(buttonGlowstickDescription);
+       Time.timeScale                = 0f;
+       GlowStickRecup = true;
    }
    public IEnumerator GlowStickSpwanlvl1()
    {

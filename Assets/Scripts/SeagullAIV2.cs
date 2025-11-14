@@ -79,11 +79,15 @@ public class SeagullAIV2 : MonoBehaviour
         {
             coroutine = StartCoroutine(PerteDePv());
         }
+
+        if (player != null)
+        {
+            if (player.transform.position.x - gameObject.transform.position.x > 0f)
+                spriteRenderer.flipX = false;
+            else if (player.transform.position.x - gameObject.transform.position.x < 0f)
+                spriteRenderer.flipX = true;
+        }
         
-        if (player.transform.position.x - gameObject.transform.position.x > 0f)
-            spriteRenderer.flipX = false;
-        else if (player.transform.position.x - gameObject.transform.position.x < 0f)
-            spriteRenderer.flipX = true;
 
         if (enemyHealthManagement.freezeEnnemi == true)
         {
@@ -215,15 +219,11 @@ public class SeagullAIV2 : MonoBehaviour
         dashTarget = transform.GetChild(1).gameObject; 
         //Debug.Log("cible est " + dashTarget);
         
-        if (warningOver)
+        if (warningOver && player != null)
         {
-            
-            if (player != null)
-            {
-                rb.linearVelocity = Vector2.zero; 
-                Vector2 dashVecteur = (dashTarget.transform.position - transform.position).normalized;
-                rb.AddForce(dashVecteur * dashSpeed, ForceMode2D.Impulse);
-            }
+            rb.linearVelocity = Vector2.zero; 
+            Vector2 dashVecteur = (dashTarget.transform.position - transform.position).normalized;
+            rb.AddForce(dashVecteur * dashSpeed, ForceMode2D.Impulse);
             
             float distance = Vector3.Distance(player.transform.position, transform.position);
 

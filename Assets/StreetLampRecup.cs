@@ -3,19 +3,20 @@ using UnityEngine;
 public class StreetLampRecup : MonoBehaviour
 {
     public WeaponsManager weaponsManager;
+    public GameObject     player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        weaponsManager = player.GetComponent<WeaponsManager>();
 
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            weaponsManager.glowStickDescription.SetActive(true);
-            Time.timeScale = 0f;
-            weaponsManager.GlowStickRecup = true;
+            weaponsManager.UnlockGlowstick();
             Destroy(gameObject);
             
         }
