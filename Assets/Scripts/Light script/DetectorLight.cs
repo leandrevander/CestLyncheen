@@ -1,17 +1,20 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 
 public class DetectorLight : MonoBehaviour
 {
-    private Transform     cibleZombie;
-    public  GameObject    player;
-    private float         zombieDistance;
-    private float         distance;
-    EnemyHealthManagement enemyHealth;
-    public  LayerMask     raycastMask;
+    private Transform             cibleZombie;
+    public  GameObject            player;
+    private float                 zombieDistance;
+    private float                 distance;
+    private EnemyHealthManagement enemyHealth;
+    public  LayerMask             raycastMask;
+    private WeaponsManager        weaponsManager;
+    public  Light2D               flashlightLight;
+    public  PolygonCollider2D     flashlightCollider;
     
-    
-
+    [SerializeField] private Vector2[] flashlightCollider2DArray;
 
 
 
@@ -20,7 +23,6 @@ public class DetectorLight : MonoBehaviour
     {
         Physics2D.queriesHitTriggers = true;
         player = GameObject.FindGameObjectWithTag("Player");
-        
     }
 
     // Update is called once per frame
@@ -49,20 +51,41 @@ public class DetectorLight : MonoBehaviour
                 enemyHealth = cibleZombie.GetComponent<EnemyHealthManagement>();
 
                 Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE DIEU MERCI");
-                enemyHealth.IsHitten = true;
+                enemyHealth.isHittenByFlashlight = true;
                 
                 
             }
             else
             {
-                enemyHealth          = cibleZombie.GetComponent<EnemyHealthManagement>();
-                enemyHealth.IsHitten = false;
+                enemyHealth                         = cibleZombie.GetComponent<EnemyHealthManagement>();
+                enemyHealth.isHittenByFlashlight = false;
                 
             }
                
                
         }
     }
+    
+
+    // Flashlight level 4 upgrade : Range
+    public void FlashlightLevel3()
+    {
+        
+        flashlightLight.pointLightOuterRadius = 13;
+        flashlightLight.falloffIntensity      = 0.3f;
+
+        if (flashlightCollider2DArray == null || flashlightCollider2DArray.Length == 0)
+        {
+            Debug.LogError("flashlightCollider2DArray n'a pas été assigné dans l'inspecteur !");
+            return;
+        }
+
+        flashlightCollider.SetPath(0, flashlightCollider2DArray);
+    }
+
+
+
+
 
 }
 

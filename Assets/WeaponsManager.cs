@@ -40,6 +40,9 @@ public class WeaponsManager : MonoBehaviour
     public GameObject   glowStickDescription;
     
     
+    [Header("Flashlight")]
+    public int hitByFlashlight = 2;
+    
     [Header("UI")]
     public EventSystem eventSystem;
     public GameObject buttonBulbDescription;
