@@ -48,7 +48,7 @@ public class DetectorLight : MonoBehaviour
 
                 enemyHealth = cibleZombie.GetComponent<EnemyHealthManagement>();
 
-                Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE LOL CACA PROUT DIEU MERCI");
+                Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE DIEU MERCI");
                 enemyHealth.IsHitten = true;
                 
                 
