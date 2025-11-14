@@ -345,13 +345,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8ebaac4c838cc4e9f6988bf5f7da76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ampoule: {fileID: 0}
+  ampoule: {fileID: 3442398829883951785}
   ampouleScript: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
   recupAmpoule: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
   nombreAmpoule: 0
   AppareillePhoto: {fileID: 4445761912371658993}
   nombreAppareillePhoto: 0
-  RecupAppareillePhoto: {fileID: 0}
+  RecupAppareillePhoto: {fileID: 4445761912371658993}
   PrefabEnnemi: {fileID: 0}
   ennemi_Rigidbody2D: {fileID: 0}
   freezeDuration: 2
@@ -372,6 +372,7 @@ MonoBehaviour:
   cameraDescription: {fileID: 0}
   bulbDescription: {fileID: 0}
   glowStickDescription: {fileID: 0}
+  hitByFlashlight: 2
   eventSystem: {fileID: 0}
   buttonBulbDescription: {fileID: 0}
   buttonCameraDescription: {fileID: 0}
@@ -430,14 +431,14 @@ MonoBehaviour:
   generatorsNumber: 4
   totalPercentage: 0
   lightPhareSpeed: 0
-  level1: 16
-  level2: 12
-  level3: 8
-  level4: 4
-  phareRespawnLevel1: 8
-  phareRespawnLevel2: 6
-  phareRespawnLevel3: 4
-  phareRespawnLevel4: 2
+  level1: 50
+  level2: 150
+  level3: 200
+  level4: 300
+  phareRespawnLevel1: 12
+  phareRespawnLevel2: 8
+  phareRespawnLevel3: 6
+  phareRespawnLevel4: 4
   phareRotation: {fileID: 7294565760469124734}
 --- !u!114 &3003899973437894648
 MonoBehaviour:
@@ -506,7 +507,7 @@ MonoBehaviour:
   rotationSpeed: 45
   targetZ: 95
   lighthouseTimer: 0.2
-  lighthouseRespawnDelay: 3
+  lighthouseRespawnDelay: 1
 --- !u!60 &8753884500100449962
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -877,6 +878,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3224023966224693393, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4101343009230987545}
+    - targetCorrespondingSourceObject: {fileID: 3224023966224693393, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5861004878593039348}
   m_SourcePrefab: {fileID: 100100000, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
 --- !u!1 &4445761912371658993 stripped
 GameObject:
@@ -899,6 +903,32 @@ MonoBehaviour:
   raycastMask:
     serializedVersion: 2
     m_Bits: 768
+--- !u!114 &5861004878593039348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445761912371658993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a639f6e4a4564f996700b12f8e5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightCamera: {fileID: 5096950948866306053}
+  multiplierFactorX: 1.4
+  multiplierFactorY: 1.5
+--- !u!114 &5096950948866306053 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6318706075934705765, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
+  m_PrefabInstance: {fileID: 1228511076290984032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445761912371658993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9164967811718791079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7943239210362193863, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}

@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 public class EnemyHealthManagement : MonoBehaviour
 {
-    public  bool           IsHitten     = false;
+    public  bool           isHittenByFlashlight     = false;
     public bool IsHittenByBull = false;
     public bool IsHitByGlowStick = false;
     public bool freezeEnnemi = false;
@@ -28,7 +28,6 @@ public class EnemyHealthManagement : MonoBehaviour
     public  float          FrezzeDuration   = 2f;
     public  Coroutine      lighthouseCoroutine;
     public  float          speedSeagull = 3.5f;
-
 
 
 
@@ -57,7 +56,7 @@ public class EnemyHealthManagement : MonoBehaviour
             ennemi_NavMeshAgent.speed = speed;
         }
         
-        if (IsHitten && coroutine == null)
+        if (isHittenByFlashlight == true && coroutine == null)
         {
             coroutine = StartCoroutine(PerteDePv());
         }
@@ -91,18 +90,16 @@ public class EnemyHealthManagement : MonoBehaviour
         {
 
 
-            HealthZombie = HealthZombie - pvperdu;
+            HealthZombie = HealthZombie - weaponsManager.hitByFlashlight;
             if (HealthZombie <= 0)
             {
                 Destroy(gameObject);
                 Instantiate(experiencepointPrefab, transform.position, transform.rotation);
             }
-
-
-            Debug.Log("PV perdu");
+            
             yield return new WaitForSeconds(1);
             coroutine = null;
-            IsHitten  = false;
+            isHittenByFlashlight  = false;
 
             
         }

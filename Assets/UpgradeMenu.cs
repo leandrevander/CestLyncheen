@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 public class UpgradeMenu : MonoBehaviour
 {
-   public CameraUpgrade cameraUpgradeScript;
+   public CameraUpgrade         cameraUpgradeScript;
    public TMP_Text              Upgrade1;
    public TMP_Text              Upgrade2;
    public TMP_Text              Upgrade3;
@@ -55,12 +55,14 @@ public class UpgradeMenu : MonoBehaviour
    public GameObject            bulbUpgrade;
    public GameObject            cameraUpgrade;
    public GameObject            glowstickupgrade;
+   public GameObject            flashlightUpgradeObject;
     
     [Header("Flashlight")]
-    public TMP_Text upgrade5;
     public Button upgrade5Button;
-    public TMP_Text levelUpgrade5;
+    public TMP_Text levelUpgrade5Name;
+    public int levelupgrade5;
     public TMP_Text describeLevel5;
+    private DetectorLight detectorLight;
     
     [Header("UI")]
     public EventSystem eventSystem;
@@ -77,6 +79,7 @@ public class UpgradeMenu : MonoBehaviour
      void Start()
    {
        mesUpgradesList.Add(speedUpgrade);
+       mesUpgradesList.Add(flashlightUpgradeObject);
        emplacement1       = Case1.transform.position;
        emplacement2       = Case2.transform.position;
        emplacement3       = Case3.transform.position;
@@ -179,15 +182,16 @@ public class UpgradeMenu : MonoBehaviour
            UpgradeMenuClose();
        }
    }
+
    public void BulbUpgrade()
    {
        if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
        {
-          
-           describleTextUpgrade2.text = "Increase damage to your enemies.";
+
+           describleTextUpgrade2.text = "Increase bulb damages to your enemies.";
            levelupgrade2++;
            weaponsManager.hitByBulb = 2;
-           LevelUpgrade2.text = "Level :" + levelupgrade2;
+           LevelUpgrade2.text       = "Level :" + levelupgrade2;
            UpgradeMenuClose();
        }
        else if ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
@@ -200,10 +204,10 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 2) && (weaponsManager.nombreAmpoule > 0))
        {
-           describleTextUpgrade2.text = "Increase damage to your enemies.";
+           describleTextUpgrade2.text = "Increase bulb damages to your enemies.";
            levelupgrade2++;
            weaponsManager.hitByBulb = 3;
-           LevelUpgrade2.text = "Level :" + levelupgrade2;
+           LevelUpgrade2.text       = "Level :" + levelupgrade2;
            UpgradeMenuClose();
        }
        else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
@@ -216,12 +220,61 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 4) && (weaponsManager.nombreAmpoule > 0))
        {
-           LevelUpgrade2.text = "Max Level";
+           LevelUpgrade2.text          = "Max Level";
            upgrade2button.interactable = false;
            UpgradeMenuClose();
        }
-      
-      
+   }
+
+
+
+
+
+
+
+
+
+
+   public void FlashlightUpgrade()
+   {
+       if (levelupgrade5 == 0)
+       {
+           describeLevel5.text            = "Increase Flashlight damages to your enemies.(2>3)";
+           levelupgrade5                  = levelupgrade5 + 1;
+           weaponsManager.hitByFlashlight = 3;
+           levelUpgrade5Name.text         = "Level :" + levelupgrade5;
+           UpgradeMenuClose();
+       }
+       else if (levelupgrade5 == 1)
+       {
+           describeLevel5.text            = "Increase Flashlights damages to your enemies.(3>4)";
+           weaponsManager.hitByFlashlight = 4;
+           levelupgrade5                  = levelupgrade5 + 1;
+           levelUpgrade5Name.text         = "Level :"     + levelupgrade5;
+           UpgradeMenuClose();
+       }
+       else if (levelupgrade5 == 2)
+       {
+           describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
+           weaponsManager.hitByFlashlight = 5;
+           levelupgrade5                  = levelupgrade5 + 1;
+           levelUpgrade5Name.text         = "Level :"     + levelupgrade5;
+           UpgradeMenuClose();
+       }
+       else if (levelupgrade5 == 3)
+       {
+           describeLevel5.text = "Increase the flashlight's range.";
+           levelupgrade5       = levelupgrade5 + 1;
+           detectorLight.FlashlightLevel3();
+           levelUpgrade5Name.text = "Level :" + levelupgrade5;
+           UpgradeMenuClose();
+       }
+       else if (levelupgrade5 == 4)
+       {
+           levelUpgrade5Name.text      = "Max Level";
+           upgrade5Button.interactable = false;
+           UpgradeMenuClose();
+       }
    }
 
 
