@@ -135,6 +135,13 @@ public class UpgradeMenu : MonoBehaviour
        }
        firstButtonInUpgradeMenu = upgradeCase1.transform.GetChild(0).gameObject;
        eventSystem.SetSelectedGameObject(firstButtonInUpgradeMenu);
+       
+       speedUpgrade.SetActive(false);
+       bulbUpgrade.SetActive(false);
+       cameraUpgrade.SetActive(false);
+       glowstickupgrade.SetActive(false);
+       flashlightUpgradeObject.SetActive(false);
+       
 
 
 
@@ -151,6 +158,12 @@ public class UpgradeMenu : MonoBehaviour
        Destroy(upgradeCase1);
        Destroy(upgradeCase2);
        Destroy(upgradeCase3);
+       
+       speedUpgrade.SetActive(true);
+       bulbUpgrade.SetActive(true);
+       cameraUpgrade.SetActive(true);
+       glowstickupgrade.SetActive(true);
+       flashlightUpgradeObject.SetActive(true);
       
       
 
