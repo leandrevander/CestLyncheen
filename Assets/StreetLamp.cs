@@ -16,6 +16,7 @@ public class StreetLamp : MonoBehaviour
         {
             enemyHealthManagement = other.GetComponent<EnemyHealthManagement>();
             enemyHealthManagement.IsHitByGlowStick = true;
+            
             Debug.Log("Lampadaire");
 
         }
