@@ -760,6 +760,16 @@ MonoBehaviour:
   raycastMask:
     serializedVersion: 2
     m_Bits: 768
+  flashlightLight: {fileID: 401780408686118195}
+  flashlightCollider: {fileID: 5778645605717843550}
+  flashlightCollider2DArray:
+  - {x: 4, y: 12.5}
+  - {x: 0, y: 13}
+  - {x: -4, y: 12.5}
+  - {x: -6, y: 11.5}
+  - {x: -0.008881927, y: 0.04675329}
+  - {x: 0.18507, y: 0.1222622}
+  - {x: 6, y: 11.5}
 --- !u!60 &5778645605717843550
 PolygonCollider2D:
   m_ObjectHideFlags: 0
