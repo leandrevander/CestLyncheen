@@ -19,32 +19,65 @@ public class LightPhare : MonoBehaviour
     private Light2D          light;
     
 
-    public float level1 = 16f;
-    public float level2 = 12f;
-    public float level3 = 8f;
-    public float level4 = 4f;
+    public float level1 = 50f;
+    public float level2 = 150f;
+    public float level3 = 200f;
+    public float level4 = 300f;
+    
+    public float phareRespawnLevel1 = 8f;
+    public float phareRespawnLevel2 = 6f;
+    public float phareRespawnLevel3 = 4f;
+    public float phareRespawnLevel4 = 2f;
+
     
     public PhareRotation phareRotation;
-    
-    
 
 
     private void Awake()
     {
         rb         = GetComponent<Rigidbody2D>();
         light      = gameObject.GetComponent<Light2D>();
-        level1 = 10 * generatorsNumber;
-        level2 = 25 * generatorsNumber;
-        level3 = 50 * generatorsNumber;
-        level4 = 82 * generatorsNumber;
     }
 
     // Update is called once per frame
+    
+    
     void Update()
     {
         totalPercentage = generator1.percentage +  generator2.percentage + generator3.percentage + generator4.percentage;
+        Debug.Log($"total percentage = {totalPercentage}");
+
+
+        if (totalPercentage >= level4)
+        {
+            phareRotation.lighthouseRespawnDelay = phareRespawnLevel4;
+            return;
+        }
+
+        if (totalPercentage >= level3)
+        {
+            phareRotation.lighthouseRespawnDelay = phareRespawnLevel3;
+            return;
+        }
+
+        if (totalPercentage >= level2)
+        {
+            phareRotation.lighthouseRespawnDelay = phareRespawnLevel2;
+            return;
+        }
 
         if (totalPercentage >= level1)
+        {
+            phareRotation.lighthouseRespawnDelay = phareRespawnLevel1;
+            return;
+        }
+        else
+        {
+            light.enabled                        = false;
+            phareRotation.lighthouseRespawnDelay = 1000f;
+        }
+        
+        /*if (totalPercentage >= level1)
         {
             if (totalPercentage >= level2)
             {
@@ -53,20 +86,19 @@ public class LightPhare : MonoBehaviour
                     if (totalPercentage >= level4)
                     {
                         //Debug.Log("Phare niveau 4");
-                        phareRotation.lighthouseRespawnDelay = level4;
-
+                        phareRotation.lighthouseRespawnDelay = phareRespawnLevel4;
+                       
                     }
                     else
                     {
                         //Debug.Log("Phare niveau 3");
-                        phareRotation.lighthouseRespawnDelay = level3;
-                        
+                        phareRotation.lighthouseRespawnDelay = phareRespawnLevel3;
                     }
                 }
                 else
                 {
                     //Debug.Log("Phare niveau 2");
-                    phareRotation.lighthouseRespawnDelay = level2;
+                    phareRotation.lighthouseRespawnDelay = phareRespawnLevel2;
                     
                 }
             }
@@ -74,7 +106,7 @@ public class LightPhare : MonoBehaviour
             {
                 //Debug.Log("Phare niveau 1");
                 light.enabled                        = true;
-                phareRotation.lighthouseRespawnDelay = level1;
+                phareRotation.lighthouseRespawnDelay = phareRespawnLevel1;
                 
             }
             
@@ -84,6 +116,7 @@ public class LightPhare : MonoBehaviour
             //Debug.Log("Phare niveau 0");
             light.enabled                        = false;
             phareRotation.lighthouseRespawnDelay = 1000f;
-        }
+        }*/
+        
     }
 }
