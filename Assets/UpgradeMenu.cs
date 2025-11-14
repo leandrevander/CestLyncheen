@@ -7,9 +7,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using System.Collections.Generic;
 
 public class UpgradeMenu : MonoBehaviour
 {
+    public CameraUpgrade cameraUpgradeScript;
     public TMP_Text              Upgrade1;
     public TMP_Text              Upgrade2;
     public TMP_Text              Upgrade3;
@@ -41,39 +43,30 @@ public class UpgradeMenu : MonoBehaviour
     public GameObject            Case1;
     public GameObject            Case2;
     public GameObject            Case3;
-    public GameObject            upgradeCase1;
-    public GameObject            upgradeCase2;
-    public GameObject            upgradeCase3;
     public PlayerControl         playerControl;
     public float                 Multiplier = 1.2f;
     public Bulb                  bulbScript;
     public Light2D               bulb;
     public WeaponsManager        weaponsManager;
     public EnemyHealthManagement enemyHealthManagement;
-    
-    [Header("UI")]
-    public EventSystem eventSystem;
-    public GameObject speedUpgrade;
-    public GameObject bulbUpgrade;
-    public GameObject cameraUpgrade;
-    public GameObject glowstickUpgrade;
-    private GameObject firstButtonInUpgradeMenu;
-    
-    
-    
+    public List<GameObject>      mesUpgradesList = new List<GameObject>();
+    public GameObject            speedUpgrade;
+    public GameObject            bulbUpgrade;
+    public GameObject            cameraUpgrade;
+    public GameObject            glowstickupgrade;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        emplacement1 = Case1.transform.position;
-        emplacement2 = Case2.transform.position;
-        emplacement3 = Case3.transform.position;
+        mesUpgradesList.Add(speedUpgrade);
+        emplacement1       = Case1.transform.position;
+        emplacement2       = Case2.transform.position;
+        emplacement3       = Case3.transform.position;
         LevelUpgrade1.text = "Level " + levelupgrade1;
-        LevelUpgrade2.text = "Locked";
-        LevelUpgrade3.text = "Locked";
-        LevelUpgrade4.text = "Locked";
-        UpgradeMenuClose();
+        LevelUpgrade2.text = "Level " + levelupgrade2;
+        LevelUpgrade3.text = "Level " + levelupgrade3;
+        LevelUpgrade4.text = "Level " + levelupgrade4;
     }
 
     // Update is called once per frame
@@ -84,6 +77,21 @@ public class UpgradeMenu : MonoBehaviour
             UpgradeMenuClose();
         }
 
+        if (weaponsManager.haveCamera == true && !mesUpgradesList.Contains(cameraUpgrade))
+        {
+            mesUpgradesList.Add(cameraUpgrade);
+        }
+
+        if ((weaponsManager.nombreAmpoule) > 0&& !mesUpgradesList.Contains(bulbUpgrade))
+        {
+            mesUpgradesList.Add(bulbUpgrade);
+        }
+
+        if (weaponsManager.GlowStickRecup == true&& !mesUpgradesList.Contains(glowstickupgrade))
+        {
+            mesUpgradesList.Add(glowstickupgrade);
+        }
+       
 
     }
     public void UpgradeMenuOpen()
@@ -92,25 +100,18 @@ public class UpgradeMenu : MonoBehaviour
         Time.timeScale = 0f;
 
         {
-            randomUpgradeCase1 = Random.Range(0, mesUpgrades.Length);
-            upgradeCase1 = Instantiate(mesUpgrades[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
-            randomUpgradeCase2 = Random.Range(0, mesUpgrades.Length);
-            upgradeCase2 = Instantiate(mesUpgrades[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
-            randomUpgradeCase3 = Random.Range(0, mesUpgrades.Length);
-            upgradeCase3 = Instantiate(mesUpgrades[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
-            speedUpgrade.SetActive(false);
-            bulbUpgrade.SetActive(false);
-            cameraUpgrade.SetActive(false);
-            glowstickUpgrade.SetActive(false);
-            firstButtonInUpgradeMenu = upgradeCase1.transform.GetChild(0).gameObject;
-            eventSystem.SetSelectedGameObject(firstButtonInUpgradeMenu);
-
+            randomUpgradeCase1 = Random.Range(0, mesUpgradesList.Count);
+            Instantiate(mesUpgradesList[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
+            randomUpgradeCase2 = Random.Range(0, mesUpgradesList.Count);
+            Instantiate(mesUpgradesList[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
+            randomUpgradeCase3 = Random.Range(0, mesUpgradesList.Count);
+            Instantiate(mesUpgradesList[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
         }
 
 
-        Debug.Log(mesUpgrades[randomUpgradeCase1]);
-        Debug.Log(mesUpgrades[randomUpgradeCase2]);
-        Debug.Log(mesUpgrades[randomUpgradeCase3]);
+        Debug.Log(mesUpgradesList[randomUpgradeCase1]);
+        Debug.Log(mesUpgradesList[randomUpgradeCase2]);
+        Debug.Log(mesUpgradesList[randomUpgradeCase3]);
     }
     public void UpgradeMenuClose()
     {
@@ -126,11 +127,11 @@ public class UpgradeMenu : MonoBehaviour
         glowstickUpgrade.SetActive(true);
 
     }
-
+    
 
     public void SpeedUpgrade()
     {
-        if (levelupgrade1 >= 3)
+        if (levelupgrade1 >= 4)
         {
             LevelUpgrade1.text = "Max Level";
             upgrade1button.interactable = false;
@@ -151,6 +152,7 @@ public class UpgradeMenu : MonoBehaviour
     {
         if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
         {
+            
             describleTextUpgrade2.text = "Increase damage to your enemies.";
             levelupgrade2++;
             weaponsManager.hitByBulb = 2;
@@ -188,11 +190,7 @@ public class UpgradeMenu : MonoBehaviour
             UpgradeMenuClose();
         }
         
-        else if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) <= 0))
-        {
-            LevelUpgrade2.text = "Locked";
-
-        }
+        
     }
 
 
@@ -213,10 +211,11 @@ public class UpgradeMenu : MonoBehaviour
     {
         if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
         {
+            
             LevelUpgrade3.text = "Level :" + levelupgrade3;
-            describleTextUpgrade3.text = "Being the camera�s range.";
+            describleTextUpgrade3.text = "Being the camera's range.";
             levelupgrade3++;
-            // augmente la port� de l'appareil photo ( le raycast )
+            cameraUpgradeScript.CameraLevel1();
             
             UpgradeMenuClose();
 
@@ -224,7 +223,7 @@ public class UpgradeMenu : MonoBehaviour
         else if ((levelupgrade3 == 1) && (weaponsManager.haveCamera == true))
         {
             describleTextUpgrade3.text = "Increase the duration of the stun.";
-            enemyHealthManagement.FrezzeDuration = 3f;
+            weaponsManager.freezeDuration = 3f;
             LevelUpgrade3.text = "Level :" + levelupgrade3;
             // augmente la dur�e du Stun
             levelupgrade3++;
@@ -234,11 +233,10 @@ public class UpgradeMenu : MonoBehaviour
         }
         else if ((levelupgrade3 == 2) && (weaponsManager.haveCamera == true))
         {
-            describleTextUpgrade3.text = "Being the camera�s range.";
-            // Agmente la port� de l'appareil photo ( le raycast )
+            describleTextUpgrade3.text = "Being the camera's range.";
             LevelUpgrade3.text = "Level :" + levelupgrade3;
             levelupgrade3++;
-            
+            cameraUpgradeScript.CameraLevel3();
            
             UpgradeMenuClose();
         }
@@ -247,7 +245,7 @@ public class UpgradeMenu : MonoBehaviour
             describleTextUpgrade3.text = "Increase the duration of the stun.";
             LevelUpgrade3.text = "Level :" + levelupgrade3;
             levelupgrade3++;
-            enemyHealthManagement.FrezzeDuration = 4f; // augmente la dur�e du Stun
+            weaponsManager.freezeDuration = 4f; // augmente la dur�e du Stun
             UpgradeMenuClose();
         }
         else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
@@ -256,11 +254,7 @@ public class UpgradeMenu : MonoBehaviour
             upgrade3button.interactable = false;
             UpgradeMenuClose();
         }
-        else if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == false)))
-        {
-            LevelUpgrade3.text = "Locked";
-
-        }
+        
     }
 
 
@@ -295,6 +289,7 @@ public class UpgradeMenu : MonoBehaviour
     {
         if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
         {
+            
             describleTextUpgrade4.text = "Place 2 GlowSticks instead of 1.";
             LevelUpgrade4.text = "Level :" + levelupgrade4;
             levelupgrade4++;
@@ -338,10 +333,6 @@ public class UpgradeMenu : MonoBehaviour
             upgrade4button.interactable = false;
             UpgradeMenuClose();
         }
-        else if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == false)))
-        {
-            LevelUpgrade4.text = "Locked";
-
-        }
+        
     }
 }

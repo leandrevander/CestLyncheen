@@ -7,6 +7,7 @@ public class AmpouleRecupScript : MonoBehaviour
     public Bulb ampouleScript;
     public GameObject recupAmpoule;
     public int nombreAmpoule = 0;
+    public UpgradeMenu  upgradeMenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +20,7 @@ public class AmpouleRecupScript : MonoBehaviour
             ampoule.SetActive(true);
             weaponsManager.UpgradeAmpoule();
             weaponsManager.bulbDescription.SetActive(true);
+            upgradeMenu.mesUpgradesList.Add(upgradeMenu.bulbUpgrade);
             Time.timeScale = 0f;
             Destroy(gameObject);
         }

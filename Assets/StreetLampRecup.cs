@@ -3,6 +3,7 @@ using UnityEngine;
 public class StreetLampRecup : MonoBehaviour
 {
     public WeaponsManager weaponsManager;
+    public UpgradeMenu upgradeMenu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +17,7 @@ public class StreetLampRecup : MonoBehaviour
             weaponsManager.glowStickDescription.SetActive(true);
             Time.timeScale = 0f;
             weaponsManager.GlowStickRecup = true;
+            upgradeMenu.mesUpgradesList.Add(upgradeMenu.glowstickupgrade);
             Destroy(gameObject);
             
         }

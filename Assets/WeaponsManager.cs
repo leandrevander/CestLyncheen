@@ -9,40 +9,33 @@ using UnityEngine.UI;
 
 public class WeaponsManager : MonoBehaviour
 {
-    public   GameObject   ampoule;
-    public   Bulb         ampouleScript;
-    public   GameObject   recupAmpoule;
-    public   int          nombreAmpoule = 0;
-    public   GameObject   AppareillePhoto;
-    public   int          nombreAppareillePhoto = 0;
-    public   float        cameraDuration        = 2f;
-    public   GameObject   RecupAppareillePhoto;
-    public   GameObject   PrefabEnnemi;
-    public   Rigidbody2D  ennemi_Rigidbody2D;
-    public   float        freezeDuration = 20f;
-    public   NavMeshAgent ennemi_NavMesh;
-    public   bool         GlowStickRecup = false;
-    public   GameObject   prefabGlowStick;
-    public   Coroutine    GlowStickCoroutine;
-    public   int          numberOfGlowStick = 0;
-    public   StreetLamp   glowStickScript;
-    public   UpgradeMenu  upgradeMenu;
-    public   bool         haveCamera = false;
-    public   GameObject   glowStickDestroy;
-    public   GameObject   glowStickDestroy2;
-    public   GameObject   glowStickDestroy3;
-      public int          hitpoint          = 1;
-    public   int          hitByBulb         = 0;
-    public   float        GlowStickDuration = 10f;
-    public   GameObject   cameraDescription;
-    public   GameObject   bulbDescription;
-    public   GameObject   glowStickDescription;
-    public int hitByLighthouse = 1;
-    
-    [Header("UI")]
-    public EventSystem eventSystem;
-    public GameObject buttonBulbDescription;
-    public GameObject buttonCameraDescription;
+    public GameObject   ampoule;
+    public Bulb         ampouleScript;
+    public GameObject   recupAmpoule;
+    public int          nombreAmpoule = 0;
+    public GameObject   AppareillePhoto;
+    public int          nombreAppareillePhoto = 0;
+    public GameObject   RecupAppareillePhoto;
+    public GameObject   PrefabEnnemi;
+    public Rigidbody2D  ennemi_Rigidbody2D;
+    public float        freezeDuration = 2f;
+    public NavMeshAgent ennemi_NavMesh;
+    public bool         GlowStickRecup = false;
+    public GameObject   prefabGlowStick;
+    public Coroutine    GlowStickCoroutine;
+    public int          numberOfGlowStick = 0;
+    public StreetLamp   glowStickScript;
+    public UpgradeMenu upgradeMenu;
+    public bool         haveCamera = false;
+    public GameObject   glowStickDestroy;
+    public GameObject glowStickDestroy2;
+    public GameObject glowStickDestroy3;
+      public int hitpoint = 1;
+    public int hitByBulb = 1;
+    public float       GlowStickDuration = 10f;
+    public GameObject cameraDescription;
+    public GameObject bulbDescription;
+    public GameObject glowStickDescription;
 
     
 

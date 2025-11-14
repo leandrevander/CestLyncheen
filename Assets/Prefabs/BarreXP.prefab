@@ -337,6 +337,8 @@ MonoBehaviour:
   CurrentLevelText: {fileID: 1027573031925579752}
   expSlider: {fileID: 5142092675874390839}
   upgradeMenu: {fileID: 7077009212689007985}
+  barAnimation: {fileID: 0}
+  fillAnimation: {fileID: 0}
 --- !u!114 &7077009212689007985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,12 +359,19 @@ MonoBehaviour:
   upgrade1button: {fileID: 3096830944153894069}
   upgrade2button: {fileID: 754563436689977186}
   upgrade3button: {fileID: 4305769793135378354}
+  upgrade4button: {fileID: 0}
+  LevelUpgrade4: {fileID: 0}
   LevelUpgrade1: {fileID: 4892352657698827438}
   LevelUpgrade2: {fileID: 1644945815316021088}
   LevelUpgrade3: {fileID: 2822207251099808692}
+  describleTextUpgrade1: {fileID: 0}
+  describleTextUpgrade2: {fileID: 0}
+  describleTextUpgrade3: {fileID: 0}
+  describleTextUpgrade4: {fileID: 0}
   levelupgrade1: 0
   levelupgrade2: 0
   levelupgrade3: 0
+  levelupgrade4: 1
   randomUpgradeCase1: 0
   randomUpgradeCase2: 0
   randomUpgradeCase3: 0
@@ -379,7 +388,13 @@ MonoBehaviour:
   Multiplier: 1.2
   bulbScript: {fileID: 0}
   bulb: {fileID: 0}
-  weaponsManager: {fileID: 0}
+  weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
+  enemyHealthManagement: {fileID: 8503354195457008611, guid: c89e841bfe3ee524ca6baeedfe3d238e, type: 3}
+  mesUpgradesList: []
+  speedUpgrade: {fileID: 0}
+  bulbUpgrade: {fileID: 0}
+  cameraUpgrade: {fileID: 0}
+  glowstickupgrade: {fileID: 0}
 --- !u!1 &1626608788402799041
 GameObject:
   m_ObjectHideFlags: 0
