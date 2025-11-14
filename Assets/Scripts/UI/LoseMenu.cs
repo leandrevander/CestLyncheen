@@ -15,7 +15,8 @@ public class LoseMenu : MonoBehaviour
     void Start()
     { 
         loseMenuUI.SetActive(false);
-        player = GameObject.FindGameObjectWithTag("Player");
+        player         = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // Update is called once per frame
