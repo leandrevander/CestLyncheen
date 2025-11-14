@@ -4,15 +4,18 @@ using Player_Scripts;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class SeagullAI : MonoBehaviour
+public class SeagullAIV2 : MonoBehaviour
 {
-    public GameObject player;
-    public NavMeshAgent agent;
-    public Animator animator;
-    public GameObject proximityLight;
-    private SeagullSpawner spawner;
-    public GameObject experiencepointPrefab;
-    public SpriteRenderer spriteRenderer;
+    public  GameObject            player;
+    public  Animator              animator;
+    public  GameObject            proximityLight;
+    private SeagullSpawner        spawner;
+    public  GameObject            experiencepointPrefab;
+    public  SpriteRenderer        spriteRenderer;
+    public  float                 speed      = 3.5f;
+    public  float                 speedReset = 3.5f;
+    public  Rigidbody2D           rb;
+    public  EnemyHealthManagement enemyHealthManagement;
     
     [Header("Damage To Seagull")]
     public bool IsHitten = false;
@@ -38,15 +41,13 @@ public class SeagullAI : MonoBehaviour
 
     [Header("Attack State")] 
     public GameObject warningArrow;
-    private bool arrowInstantiated;
-    public bool warningOver;
-    private Vector2 freezePosition;
-    public GameObject dashTarget;
-    public float dashSpeed = 22f;
-    public float dashAcceleration = 22f;
-    public float agentSpeedReset = 3.5f;
-    public float agentAccelerationReset = 8;
-    public float endDashDistance = 10f;
+    private bool       arrowInstantiated;
+    public  bool       warningOver;
+    private Vector2    freezePosition;
+    public  GameObject dashTarget;
+    public  float      dashSpeed              = 1f;
+    public  float      dashSpeedReset              = 1f;
+    public  float      endDashDistance        = 10f;
     
     
     enum SeagullState {Chasing, Waiting, Attacking}
@@ -57,10 +58,7 @@ public class SeagullAI : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
-        agent = GetComponent<NavMeshAgent>();
         spawner = GameObject.FindWithTag("Player").GetComponent<SeagullSpawner>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
         playerHealth = player.GetComponent<PlayerHealth>();
         
     }
@@ -81,12 +79,27 @@ public class SeagullAI : MonoBehaviour
         {
             coroutine = StartCoroutine(PerteDePv());
         }
+
+        if (player != null)
+        {
+            if (player.transform.position.x - gameObject.transform.position.x > 0f)
+                spriteRenderer.flipX = false;
+            else if (player.transform.position.x - gameObject.transform.position.x < 0f)
+                spriteRenderer.flipX = true;
+        }
         
-        if (player.transform.position.x - gameObject.transform.position.x > 0f)
-            spriteRenderer.flipX = false;
-        else if (player.transform.position.x - gameObject.transform.position.x < 0f)
-            spriteRenderer.flipX = true;
-        
+
+        if (enemyHealthManagement.freezeEnnemi == true)
+        {
+
+            rb.bodyType = RigidbodyType2D.Static;
+            
+        }
+        else
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+
     }
 
     void SelectState()
@@ -135,9 +148,9 @@ public class SeagullAI : MonoBehaviour
 
     void UpdateChasing()
     {
-        if (player != null && agent.isOnNavMesh)
+        if (player != null)
         {
-            agent.destination = player.transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 
         }
                             
@@ -206,17 +219,11 @@ public class SeagullAI : MonoBehaviour
         dashTarget = transform.GetChild(1).gameObject; 
         //Debug.Log("cible est " + dashTarget);
         
-        if (warningOver)
+        if (warningOver && player != null)
         {
-            agent.speed = dashSpeed;
-            agent.acceleration = dashAcceleration;
-            agent.autoBraking = false;
-            Debug.Log("la c cense dasheeee");
-            
-            if (player != null && agent.isOnNavMesh)
-            {
-                agent.destination = dashTarget.transform.position;
-            }
+            rb.linearVelocity = Vector2.zero; 
+            Vector2 dashVecteur = (dashTarget.transform.position - transform.position).normalized;
+            rb.AddForce(dashVecteur * dashSpeed, ForceMode2D.Impulse);
             
             float distance = Vector3.Distance(player.transform.position, transform.position);
 
@@ -231,15 +238,14 @@ public class SeagullAI : MonoBehaviour
 
     void endAttack()
     {
+        rb.linearVelocity = Vector2.zero;
         animator.Play("Flying");
         proximityLight.SetActive(false);
         arrowInstantiated = false;
         warningOver = false;
         attackTimerIsOver =  false;
         attackTimer = attackTimerReset;
-        agent.speed = agentSpeedReset;
-        agent.acceleration = agentAccelerationReset;
-        agent.autoBraking = true;
+        speed = speedReset;
         Destroy(transform.GetChild(1).gameObject);
         
         stateComplete = true;

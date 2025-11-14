@@ -16,12 +16,14 @@ public class freezeEnnemi : MonoBehaviour
     public void Start()
     {
         ennemi_NavMeshAgent = GetComponent<NavMeshAgent>();
-        ennemi_NavMeshAgent.speed = speed;
+        if (ennemi_NavMeshAgent != null)
+        {
+            ennemi_NavMeshAgent.speed = speed;
+        }
         
     }
     
     public IEnumerator FreezeDuration()
-
     {
         Debug.Log("Couroutine Freeze appelé");
         speed                     = 0f;
@@ -39,6 +41,10 @@ public class freezeEnnemi : MonoBehaviour
 
     void Update()
     {
-        ennemi_NavMeshAgent.speed = speed;
+        if (ennemi_NavMeshAgent != null)
+        {
+            ennemi_NavMeshAgent.speed = speed;
+        }
+        
     }
 }

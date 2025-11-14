@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 4
   invincible: 0
-  playerhitten: 0
+  playerhitten: 1
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2d7d02fd5c14a4ab6a8a7a98bc1530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 6917319842684498884, guid: 4a94ddd0974c01d4884f1eaaef30c09a, type: 3}
+  enemyprefab: {fileID: 6917319842684498884, guid: a7f18f2a136035046995aacafabc0270, type: 3}
   spawnTimer: 0
   spawnInterval: 4
   minDistance: 15
@@ -351,7 +351,6 @@ MonoBehaviour:
   nombreAmpoule: 0
   AppareillePhoto: {fileID: 4445761912371658993}
   nombreAppareillePhoto: 0
-  cameraDuration: 2
   RecupAppareillePhoto: {fileID: 0}
   PrefabEnnemi: {fileID: 0}
   ennemi_Rigidbody2D: {fileID: 0}
@@ -368,11 +367,15 @@ MonoBehaviour:
   glowStickDestroy3: {fileID: 0}
   hitpoint: 1
   hitByBulb: 1
+  hitByLighthouse: 1
   GlowStickDuration: 10
   cameraDescription: {fileID: 0}
   bulbDescription: {fileID: 0}
   glowStickDescription: {fileID: 0}
-  hitByLighthouse: 1
+  eventSystem: {fileID: 0}
+  buttonBulbDescription: {fileID: 0}
+  buttonCameraDescription: {fileID: 0}
+  buttonGlowstickDescription: {fileID: 0}
 --- !u!1 &7355422586337619962
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +434,10 @@ MonoBehaviour:
   level2: 12
   level3: 8
   level4: 4
+  phareRespawnLevel1: 8
+  phareRespawnLevel2: 6
+  phareRespawnLevel3: 4
+  phareRespawnLevel4: 2
   phareRotation: {fileID: 7294565760469124734}
 --- !u!114 &3003899973437894648
 MonoBehaviour:
