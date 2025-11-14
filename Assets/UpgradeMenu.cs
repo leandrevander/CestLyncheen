@@ -59,6 +59,7 @@ public class UpgradeMenu : MonoBehaviour
     [Header("UI")]
     public EventSystem eventSystem;
     private GameObject firstButtonInUpgradeMenu;
+    public  GameObject upgradeCase1;
     
     
     
@@ -115,12 +116,13 @@ public class UpgradeMenu : MonoBehaviour
 
        {
            randomUpgradeCase1 = Random.Range(0, mesUpgradesList.Count);
-           Instantiate(mesUpgradesList[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
+           upgradeCase1 = Instantiate(mesUpgradesList[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
            randomUpgradeCase2 = Random.Range(0, mesUpgradesList.Count);
            Instantiate(mesUpgradesList[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
            randomUpgradeCase3 = Random.Range(0, mesUpgradesList.Count);
            Instantiate(mesUpgradesList[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
        }
+       firstButtonInUpgradeMenu = upgradeCase1.transform.GetChild(0).gameObject;
        eventSystem.SetSelectedGameObject(firstButtonInUpgradeMenu);
 
 

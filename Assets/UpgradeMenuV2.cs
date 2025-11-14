@@ -1,6 +1,7 @@
 ﻿using Player_Scripts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
@@ -45,6 +46,7 @@ namespace DefaultNamespace
     public Light2D bulb;
     public WeaponsManager weaponsManager;
     public EnemyHealthManagement enemyHealthManagement;
+    
 
 
 
@@ -76,13 +78,14 @@ namespace DefaultNamespace
         Time.timeScale = 0f;
 
         {
-            randomUpgradeCase1 = Random.Range(0, mesUpgrades.Length);
+            randomUpgradeCase1 = Random.Range(0, mesUpgrades.Length); 
             Instantiate(mesUpgrades[randomUpgradeCase1], emplacement1, Quaternion.identity, upgradeMenu.transform);
             randomUpgradeCase2 = Random.Range(0, mesUpgrades.Length);
-            Instantiate(mesUpgrades[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
+             Instantiate(mesUpgrades[randomUpgradeCase2], emplacement2, Quaternion.identity, upgradeMenu.transform);
             randomUpgradeCase3 = Random.Range(0, mesUpgrades.Length);
-            Instantiate(mesUpgrades[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
+             Instantiate(mesUpgrades[randomUpgradeCase3], emplacement3, Quaternion.identity, upgradeMenu.transform);
         }
+        
 
 
         Debug.Log(mesUpgrades[randomUpgradeCase1]);
