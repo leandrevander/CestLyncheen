@@ -43,6 +43,10 @@ public class WeaponsManager : MonoBehaviour
     public EventSystem eventSystem;
     public GameObject buttonBulbDescription;
     public GameObject buttonCameraDescription;
+    
+    [Header("Flashlight")]
+    public  int hitByFlashlight = 10;
+    
 
     
 
@@ -51,6 +55,11 @@ public class WeaponsManager : MonoBehaviour
     {
         ennemi_Rigidbody2D = PrefabEnnemi.GetComponent<Rigidbody2D>();
     }
+    
+    
+    
+    
+    
     public void AgmentationDuNiveauAppareillePhoto()
     {
 
@@ -72,6 +81,8 @@ public class WeaponsManager : MonoBehaviour
             StartCoroutine(Flash());
         }
     }
+    
+    
     public IEnumerator Flash()
     
         {
@@ -124,6 +135,7 @@ public class WeaponsManager : MonoBehaviour
         GlowStickCoroutine = null;
 
     }
+    
     public IEnumerator GlowStickSpwanlvl2()
     {
         glowStickDestroy = Instantiate(prefabGlowStick, transform.position, transform.rotation);

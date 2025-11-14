@@ -51,6 +51,12 @@ public class UpgradeMenu : MonoBehaviour
     public WeaponsManager        weaponsManager;
     public EnemyHealthManagement enemyHealthManagement;
     
+    [Header("Flashlight")]
+    public TMP_Text upgrade5;
+    public Button upgrade5Button;
+    public TMP_Text levelUpgrade5;
+    public TMP_Text describeLevel5;
+    
     [Header("UI")]
     public EventSystem eventSystem;
     public GameObject speedUpgrade;

@@ -9,7 +9,7 @@ public class DetectorLight : MonoBehaviour
     private float         distance;
     EnemyHealthManagement enemyHealth;
     public  LayerMask     raycastMask;
-    
+    private WeaponsManager weaponsManager;
     
 
 
@@ -49,20 +49,39 @@ public class DetectorLight : MonoBehaviour
                 enemyHealth = cibleZombie.GetComponent<EnemyHealthManagement>();
 
                 Debug.Log("LE RAYCAST TOUCHE LE ZOMBIE DIEU MERCI");
-                enemyHealth.IsHitten = true;
+                enemyHealth.isHittenByFlashlight = true;
                 
                 
             }
             else
             {
                 enemyHealth          = cibleZombie.GetComponent<EnemyHealthManagement>();
-                enemyHealth.IsHitten = false;
+                enemyHealth.isHittenByFlashlight = false;
                 
             }
                
                
         }
     }
+
+    void FlashlightLevel2()
+    {
+        weaponsManager.hitByFlashlight = 3;
+
+    }
+
+
+    void FlashlightLevel3()
+    {
+        weaponsManager.hitByFlashlight = 5;
+        
+        
+        
+    }
+
+
+
+
 
 }
 

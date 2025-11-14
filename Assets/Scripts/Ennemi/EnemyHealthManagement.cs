@@ -7,12 +7,11 @@ using UnityEngine.AI;
 
 public class EnemyHealthManagement : MonoBehaviour
 {
-    public  bool           IsHitten     = false;
+    public  bool           isHittenByFlashlight     = false;
     public bool IsHittenByBull = false;
     public bool IsHitByGlowStick = false;
     public bool freezeEnnemi = false;
     public  int            HealthZombie = 5;
-    public  int            pvperdu;
     public bool IsHittenByLighthouse = false;
   
     public  Coroutine      coroutine;
@@ -28,8 +27,7 @@ public class EnemyHealthManagement : MonoBehaviour
     public  float          FrezzeDuration   = 2f;
     public Coroutine      lighthouseCoroutine;
 
-
-
+    
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,7 +45,7 @@ public class EnemyHealthManagement : MonoBehaviour
     void Update()
     {
         ennemi_NavMeshAgent.speed = speed;
-        if (IsHitten && coroutine == null)
+        if (isHittenByFlashlight && coroutine == null)
         {
             coroutine = StartCoroutine(PerteDePv());
         }
@@ -81,7 +79,7 @@ public class EnemyHealthManagement : MonoBehaviour
         {
 
 
-            HealthZombie = HealthZombie - pvperdu;
+            HealthZombie = HealthZombie - weaponsManager.hitByFlashlight;
             if (HealthZombie <= 0)
             {
                 Destroy(gameObject);
@@ -92,7 +90,7 @@ public class EnemyHealthManagement : MonoBehaviour
             Debug.Log("PV perdu");
             yield return new WaitForSeconds(1);
             coroutine = null;
-            IsHitten  = false;
+            isHittenByFlashlight  = false;
 
             
         }
