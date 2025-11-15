@@ -30,10 +30,10 @@ public class UpgradeMenu : MonoBehaviour
    public TMP_Text              describleTextUpgrade2;
    public TMP_Text              describleTextUpgrade3;
    public TMP_Text              describleTextUpgrade4;
-   public int                   levelupgrade1 = 1;
-   public int                   levelupgrade2 = 1;
-   public int                   levelupgrade3 = 1;
-   public int                   levelupgrade4 = 1;
+   public int                   levelupgrade1 = 0;
+   public int                   levelupgrade2 = 0;
+   public int                   levelupgrade3 = 0;
+   public int                   levelupgrade4 = 0;
    public int                   randomUpgradeCase1;
    public int                   randomUpgradeCase2;
    public int                   randomUpgradeCase3;
@@ -59,10 +59,14 @@ public class UpgradeMenu : MonoBehaviour
     
     [Header("Flashlight")]
     public Button upgrade5Button;
-    public TMP_Text levelUpgrade5Name;
-    public int levelupgrade5;
-    public TMP_Text describeLevel5;
-    private DetectorLight detectorLight;
+    public                   TMP_Text          levelUpgrade5Name;
+    public                   int               levelupgrade5 = 0;
+    public                   TMP_Text          describeLevel5;
+    private                  DetectorLight     detectorLight;
+    public                   Light2D           flashlightLight;
+    public                   PolygonCollider2D flashlightCollider;
+    [SerializeField] private Vector2[]         flashlightCollider2DArray;
+
     
     [Header("UI")]
     public EventSystem eventSystem;
@@ -70,6 +74,7 @@ public class UpgradeMenu : MonoBehaviour
     public  GameObject upgradeCase1;
     public  GameObject upgradeCase2;
     public  GameObject upgradeCase3;
+    
     
     
     
@@ -253,33 +258,53 @@ public class UpgradeMenu : MonoBehaviour
        if (levelupgrade5 == 0)
        {
            describeLevel5.text            = "Increase Flashlight damages to your enemies.(2>3)";
-           levelupgrade5                  = levelupgrade5 + 1;
+           levelupgrade5++;
+           levelUpgrade5Name.text         = "Level : 1";
+           
            weaponsManager.hitByFlashlight = 3;
-           levelUpgrade5Name.text         = "Level :" + levelupgrade5;
+           Debug.Log("Flashlight est ameliorer " + levelupgrade5);
+
            UpgradeMenuClose();
        }
        else if (levelupgrade5 == 1)
        {
            describeLevel5.text            = "Increase Flashlights damages to your enemies.(3>4)";
+           levelupgrade5++;
+           levelUpgrade5Name.text         = "Level : 2";
+           
            weaponsManager.hitByFlashlight = 4;
-           levelupgrade5                  = levelupgrade5 + 1;
-           levelUpgrade5Name.text         = "Level :"     + levelupgrade5;
+           Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
+
+
            UpgradeMenuClose();
        }
        else if (levelupgrade5 == 2)
        {
-           describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
-           weaponsManager.hitByFlashlight = 5;
-           levelupgrade5                  = levelupgrade5 + 1;
-           levelUpgrade5Name.text         = "Level :"     + levelupgrade5;
+           describeLevel5.text = "Increase the flashlight's range.";
+           levelupgrade5++;
+           levelUpgrade5Name.text                = "Level : 3";
+           
+           flashlightLight.pointLightOuterRadius = 13;
+           flashlightLight.falloffIntensity      = 0.3f;
+           flashlightCollider.SetPath(0, flashlightCollider2DArray);
+           Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
+
+           
            UpgradeMenuClose();
+
+           
        }
        else if (levelupgrade5 == 3)
        {
-           describeLevel5.text = "Increase the flashlight's range.";
-           levelupgrade5       = levelupgrade5 + 1;
-           detectorLight.FlashlightLevel3();
-           levelUpgrade5Name.text = "Level :" + levelupgrade5;
+           describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
+           levelupgrade5++;
+           levelUpgrade5Name.text         = "Level : 4";
+
+           weaponsManager.hitByFlashlight = 5;
+           Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
+
+           
+           
            UpgradeMenuClose();
        }
        else if (levelupgrade5 == 4)
