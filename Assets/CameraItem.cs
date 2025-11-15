@@ -3,12 +3,14 @@ using UnityEngine;
 public class CameraItem : MonoBehaviour
 
 {
+    public GameObject     player;
     public WeaponsManager weaponsManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        player         = GameObject.FindGameObjectWithTag("Player");
+        weaponsManager = GameObject.FindWithTag("Player").GetComponent<WeaponsManager>();
     }
     private void OnCollisionEnter2D(Collision2D other)
     {

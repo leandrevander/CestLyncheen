@@ -56,6 +56,8 @@ public class WeaponsManager : MonoBehaviour
    {
        ennemi_Rigidbody2D = PrefabEnnemi.GetComponent<Rigidbody2D>();
    }
+
+   
    public void AgmentationDuNiveauAppareillePhoto()
    {
 
@@ -201,6 +203,8 @@ public class WeaponsManager : MonoBehaviour
        {
            GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl4());
        }
+       recupAmpoule = GameObject.FindGameObjectWithTag("RecupAmpoule");
+       RecupAppareillePhoto = GameObject.FindGameObjectWithTag("RecupAppareilPhoto");
    }
 
 

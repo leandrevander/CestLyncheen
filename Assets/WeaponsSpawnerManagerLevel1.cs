@@ -6,37 +6,50 @@ using Random = UnityEngine.Random;
 public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
 {
     [Header("Spawner")]
-    public Transform spawnPoint1;
-
-    public Transform spawnPoint2;
-    public Transform spawnPoint3;
-    public Transform spawnPoint4;
+    
 
     [Header("RecupWeapons")]
-    public GameObject bulbRecup;
-
-    public GameObject cameraRecup;
-    public GameObject glowstickRecup;
+   
 
     public List<Transform>  SpawnerList  = new List<Transform>();
     public List<GameObject> RecupWeapons = new List<GameObject>();
     public int              radomWeapons;
-    public GameObject       WeaponsSpwaner;
     public int              randomSpawner;
     public GameObject       Weapons1;
+
+    [Header("Timers")]
+    public float timer;
+
+    public float spawnInterval;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        RecupWeapons.Add(bulbRecup);
-        RecupWeapons.Add(cameraRecup);
-        RecupWeapons.Add(glowstickRecup);
-        SpawnerList.Add(spawnPoint1);
-        SpawnerList.Add(spawnPoint2);
-        SpawnerList.Add(spawnPoint3);
-        SpawnerList.Add(spawnPoint4);
-        StartCoroutine(Spawn()); 
+        
+        
 
+    }
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= spawnInterval && RecupWeapons.Count >= 1)
+        {
+            timer = 0;
+            SpawnWeapon();
+        }
+    }
+
+    public void SpawnWeapon()
+    {
+        radomWeapons  = Random.Range(0, RecupWeapons.Count);
+        randomSpawner = Random.Range(0, SpawnerList.Count);
+        Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        RecupWeapons.Remove(RecupWeapons[radomWeapons]);
+        SpawnerList.Remove(SpawnerList[randomSpawner]);
+        
+        
+        
     }
 
     public IEnumerator Spawn()
