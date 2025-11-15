@@ -30,10 +30,10 @@ public class UpgradeMenu : MonoBehaviour
    public TMP_Text              describleTextUpgrade2;
    public TMP_Text              describleTextUpgrade3;
    public TMP_Text              describleTextUpgrade4;
-   public int                   levelupgrade1 = 1;
-   public int                   levelupgrade2 = 1;
-   public int                   levelupgrade3 = 1;
-   public int                   levelupgrade4 = 1;
+   public int                   levelupgrade1 = 0;
+   public int                   levelupgrade2 = 0;
+   public int                   levelupgrade3 = 0;
+   public int                   levelupgrade4 = 0;
    public int                   randomUpgradeCase1;
    public int                   randomUpgradeCase2;
    public int                   randomUpgradeCase3;

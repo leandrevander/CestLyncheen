@@ -35,7 +35,7 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
         SpawnerList.Add(spawnPoint2);
         SpawnerList.Add(spawnPoint3);
         SpawnerList.Add(spawnPoint4);
-        Spawn();
+        StartCoroutine(Spawn()); 
 
     }
 
@@ -47,36 +47,31 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
         Debug.Log(randomSpawner);
         Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
-        RecupWeapons.Remove(Weapons1);
+        RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         radomWeapons = Random.Range(0, RecupWeapons.Count);
         Debug.Log(radomWeapons);
         randomSpawner = Random.Range(0, SpawnerList.Count);
         Debug.Log(randomSpawner);
         Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
-        RecupWeapons.Remove(Weapons1);
+        RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         radomWeapons = Random.Range(0, RecupWeapons.Count);
         Debug.Log(radomWeapons);
         randomSpawner = Random.Range(0, SpawnerList.Count);
         Debug.Log(randomSpawner);
         Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
-        RecupWeapons.Remove(Weapons1);
+        RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
-        yield return new WaitForSeconds(10);
-        radomWeapons = Random.Range(0, RecupWeapons.Count);
-        Debug.Log(radomWeapons);
-        randomSpawner = Random.Range(0, SpawnerList.Count);
-        Debug.Log(randomSpawner);
-        Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
-        Debug.Log("Un objet est apparu .");
-        RecupWeapons.Remove(Weapons1);
-        SpawnerList.Remove(SpawnerList[randomSpawner]);
-        
+        yield return new WaitForSeconds(5);
+
+
+
+
     }
 }
 

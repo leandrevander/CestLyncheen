@@ -348,9 +348,9 @@ MonoBehaviour:
   ampoule: {fileID: 3442398829883951785}
   ampouleScript: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
   recupAmpoule: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-  nombreAmpoule: 0
+  nombreAmpoule: 1
   AppareillePhoto: {fileID: 4445761912371658993}
-  nombreAppareillePhoto: 0
+  nombreAppareillePhoto: 2
   RecupAppareillePhoto: {fileID: 4445761912371658993}
   PrefabEnnemi: {fileID: 0}
   ennemi_Rigidbody2D: {fileID: 0}
@@ -361,7 +361,7 @@ MonoBehaviour:
   numberOfGlowStick: 0
   glowStickScript: {fileID: 8940694495901544124, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
   upgradeMenu: {fileID: 0}
-  haveCamera: 0
+  haveCamera: 1
   glowStickDestroy: {fileID: 0}
   glowStickDestroy2: {fileID: 0}
   glowStickDestroy3: {fileID: 0}
@@ -838,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3224023966224693393, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7943239210362193863, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_LocalPosition.x
