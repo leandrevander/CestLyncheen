@@ -44,6 +44,13 @@ namespace Player_Scripts
                 coroutine = null;
                 StopCoroutine(Damage());
         }
+
+
+        public void GainHealth()
+        {
+            playerHealth++;
+            UpdateHealth();
+        }
          
 
         
