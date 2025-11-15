@@ -45,7 +45,7 @@ public class LightPhare : MonoBehaviour
     void Update()
     {
         totalPercentage = generator1.percentage +  generator2.percentage + generator3.percentage + generator4.percentage;
-        Debug.Log($"total percentage = {totalPercentage}");
+        //Debug.Log($"total percentage = {totalPercentage}");
 
 
         if (totalPercentage >= level4)

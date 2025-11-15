@@ -74,12 +74,6 @@ public class DetectorLight : MonoBehaviour
         flashlightLight.pointLightOuterRadius = 13;
         flashlightLight.falloffIntensity      = 0.3f;
 
-        if (flashlightCollider2DArray == null || flashlightCollider2DArray.Length == 0)
-        {
-            Debug.LogError("flashlightCollider2DArray n'a pas été assigné dans l'inspecteur !");
-            return;
-        }
-
         flashlightCollider.SetPath(0, flashlightCollider2DArray);
     }
 
