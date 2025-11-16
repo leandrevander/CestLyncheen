@@ -26,5 +26,9 @@ public class WinMenu : MonoBehaviour
             winMenuUI.SetActive(true);
             eventSystem.SetSelectedGameObject(retryButton);
         }
+        if (win && (Input.GetKeyDown(KeyCode.JoystickButton1)))
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            }
     }
 }

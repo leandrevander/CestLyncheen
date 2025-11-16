@@ -352,8 +352,6 @@ MonoBehaviour:
   AppareillePhoto: {fileID: 4445761912371658993}
   nombreAppareillePhoto: 2
   RecupAppareillePhoto: {fileID: 4445761912371658993}
-  PrefabEnnemi: {fileID: 0}
-  ennemi_Rigidbody2D: {fileID: 0}
   freezeDuration: 2
   ennemi_NavMesh: {fileID: 0}
   GlowStickRecup: 0
@@ -460,7 +458,7 @@ MonoBehaviour:
   m_Intensity: 3.07
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000a399d6a0
+  m_ApplyToSortingLayers: 00000000a399d6a081a2d96a
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -699,7 +697,7 @@ MonoBehaviour:
   m_Intensity: 7
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000081a2d96a
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -839,6 +837,14 @@ PrefabInstance:
     - target: {fileID: 3224023966224693393, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318706075934705765, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318706075934705765, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: 1792647809
       objectReference: {fileID: 0}
     - target: {fileID: 7943239210362193863, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1045,6 +1051,14 @@ PrefabInstance:
     - target: {fileID: 1424538326097015079, guid: 8b442033bd85db9498171858df981593, type: 3}
       propertyPath: m_Name
       value: Ampoule
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634811695313054905, guid: 8b442033bd85db9498171858df981593, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634811695313054905, guid: 8b442033bd85db9498171858df981593, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: 1792647809
       objectReference: {fileID: 0}
     - target: {fileID: 7527199246214434206, guid: 8b442033bd85db9498171858df981593, type: 3}
       propertyPath: m_LocalPosition.x

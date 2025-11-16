@@ -1,7 +1,6 @@
 using System.Collections;
 using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
-using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
@@ -17,8 +16,8 @@ public class WeaponsManager : MonoBehaviour
     public GameObject   AppareillePhoto;
     public int          nombreAppareillePhoto = 0;
     public GameObject   RecupAppareillePhoto;
-    public GameObject   PrefabEnnemi;
-    public Rigidbody2D  ennemi_Rigidbody2D;
+    
+    
     public float        freezeDuration = 2f;
     public NavMeshAgent ennemi_NavMesh;
     public bool         GlowStickRecup = false;
@@ -54,7 +53,7 @@ public class WeaponsManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
      void Start()
    {
-       ennemi_Rigidbody2D = PrefabEnnemi.GetComponent<Rigidbody2D>();
+       
    }
 
    

@@ -73,8 +73,8 @@ public class LightPhare : MonoBehaviour
         }
         else
         {
-            light.enabled                        = false;
-            phareRotation.lighthouseRespawnDelay = 1000f;
+            //light.enabled                        = false;
+            phareRotation.lighthouseRespawnDelay = 30f;
         }
         
         /*if (totalPercentage >= level1)

@@ -19,12 +19,12 @@ public class MenuScenemanager : MonoBehaviour
     }
     public void StartLevel1()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("ProtoLevel1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
     }
     
     public void StartLevel2()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("ProtoLevel2");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level2");
     }
     public void QuitGame()
     {

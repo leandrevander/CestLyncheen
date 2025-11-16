@@ -265,7 +265,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
            levelUpgrade5Name.text         = "Level : 1";
            
-           weaponsManager.hitByFlashlight = 3;
+           weaponsManager.hitByFlashlight = 2;
            Debug.Log("Flashlight est ameliorer " + levelupgrade5);
 
            UpgradeMenuClose();
@@ -276,7 +276,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
            levelUpgrade5Name.text         = "Level : 2";
            
-           weaponsManager.hitByFlashlight = 4;
+           weaponsManager.hitByFlashlight = 3;
            Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
 
 
@@ -304,7 +304,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
            levelUpgrade5Name.text         = "Level : 4";
 
-           weaponsManager.hitByFlashlight = 5;
+           weaponsManager.hitByFlashlight = 4;
            Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
 
            

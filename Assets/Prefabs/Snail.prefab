@@ -352,7 +352,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000a399d6a0
+  m_ApplyToSortingLayers: 00000000a399d6a081a2d96a
   m_ShapePath:
   - {x: -0.66821146, y: -0.02368766, z: 0}
   - {x: -0.66821146, y: 0.7963123, z: 0}
@@ -397,15 +397,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsHitten: 0
+  isHittenByFlashlight: 0
   IsHittenByBull: 0
   IsHitByGlowStick: 0
   freezeEnnemi: 0
-  HealthZombie: 4
+  HealthZombie: 6
   pvperdu: 2
+  IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   ennemi_NavMeshAgent: {fileID: 0}
   speed: 2.5
   FrezzeDuration: 2
+  speedSeagull: 3.5

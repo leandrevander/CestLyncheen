@@ -28,5 +28,9 @@ public class LoseMenu : MonoBehaviour
             loseMenuUI.SetActive(true);
             eventSystem.SetSelectedGameObject(retryButton);
         }
+        if (player == null && (Input.GetKeyDown(KeyCode.JoystickButton1)))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        }
     }
 }

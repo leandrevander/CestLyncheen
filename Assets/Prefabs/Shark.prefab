@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 605525104347999854}
   - component: {fileID: 9128184689915839147}
   - component: {fileID: 4158459981722930259}
+  - component: {fileID: 481268912240967491}
   m_Layer: 8
   m_Name: Shark
   m_TagString: Ennemi
@@ -333,7 +334,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsHitten: 0
-  HealthZombie: 5
+  isHittenByFlashlight: 0
+  IsHittenByBull: 0
+  IsHitByGlowStick: 0
+  freezeEnnemi: 0
+  HealthZombie: 7
   pvperdu: 2
+  IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
+  scriptFreeze: {fileID: 0}
+  weaponsManager: {fileID: 0}
+  ennemi_NavMeshAgent: {fileID: 0}
+  speed: 2.5
+  FrezzeDuration: 2
+  speedSeagull: 3.5
+--- !u!114 &481268912240967491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6962682548767142865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000a399d6a081a2d96a
+  m_ShapePath:
+  - {x: -1.150323, y: -0.19004726, z: 0}
+  - {x: -1.150323, y: 0.7699528, z: 0}
+  - {x: 1.1996768, y: 0.7699528, z: 0}
+  - {x: 1.1996768, y: -0.19004726, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 2400152055168417616}
+  m_ShadowShape2DProvider:
+    rid: 5553545646294433867
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.019683838, y: 0.26995087, z: 0}
+      m_Extent: {x: 1.0299988, y: 0.37999725, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.04
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.04
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: -1
+  m_PreviousShadowCastingSource: -1
+  m_PreviousShadowShape2DSource: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5553545646294433867
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 

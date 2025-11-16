@@ -97,9 +97,11 @@ GameObject:
   - component: {fileID: 7865937502728289964}
   - component: {fileID: 38854493517883167}
   - component: {fileID: 1279043993538721403}
+  - component: {fileID: 6745666710813871722}
+  - component: {fileID: -5088818103015261822}
   m_Layer: 0
   m_Name: Dolphin
-  m_TagString: Untagged
+  m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,8 +197,8 @@ MonoBehaviour:
   proximityLight: {fileID: 1901449579610029103}
   proximity: 4
   IsHitten: 0
-  HealthZombie: 5
-  pvperdu: 0
+  HealthZombie: 7
+  pvperdu: 2
   dashRight: 0
   dashLeft: 0
   dashSpeed: 6
@@ -268,3 +270,82 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6745666710813871722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459664343219561911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000a399d6a081a2d96a
+  m_ShapePath:
+  - {x: -0.5757947, y: -0.34173557, z: 0}
+  - {x: -0.5757947, y: 1.0082645, z: 0}
+  - {x: 1.0942053, y: 1.0082645, z: 0}
+  - {x: 1.0942053, y: -0.34173557, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 4026370330636517229}
+  m_ShadowShape2DProvider:
+    rid: 5553545646294433866
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.2692032, y: 0.3332672, z: 0}
+      m_Extent: {x: 0.7049942, y: 0.5549927, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.04
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.09
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: -1
+  m_PreviousShadowCastingSource: -1
+  m_PreviousShadowShape2DSource: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5553545646294433866
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
+--- !u!114 &-5088818103015261822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459664343219561911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHittenByFlashlight: 0
+  IsHittenByBull: 0
+  IsHitByGlowStick: 0
+  freezeEnnemi: 0
+  HealthZombie: 7
+  pvperdu: 2
+  IsHittenByLighthouse: 0
+  experiencepointPrefab: {fileID: 0}
+  scriptFreeze: {fileID: 0}
+  weaponsManager: {fileID: 0}
+  ennemi_NavMeshAgent: {fileID: 0}
+  speed: 2.5
+  FrezzeDuration: 2
+  speedSeagull: 3.5

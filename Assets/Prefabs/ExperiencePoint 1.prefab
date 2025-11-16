@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarreXp: {fileID: 2205915853364284268, guid: 700f4e47f8ffe9043851802696cc58af, type: 3}
-  ExpReward: 3
+  ExpReward: 1
 --- !u!95 &6479517876674856992
 Animator:
   serializedVersion: 7
