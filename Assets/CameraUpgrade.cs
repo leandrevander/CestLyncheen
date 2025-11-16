@@ -13,7 +13,7 @@ public class CameraUpgrade : MonoBehaviour
 	float ActualScaleX;
 	float ActualScaleY;
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
-	void start()
+	void Start()
 	{
 		Transform currentTransform = this.transform;
 

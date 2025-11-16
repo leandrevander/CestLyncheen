@@ -74,6 +74,7 @@ public class UpgradeMenu : MonoBehaviour
     public  GameObject upgradeCase1;
     public  GameObject upgradeCase2;
     public  GameObject upgradeCase3;
+    public  GameObject closeButtonUpgradeMenu;
     
     
     
@@ -83,6 +84,7 @@ public class UpgradeMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
      void Start()
    {
+       closeButtonUpgradeMenu.SetActive(false);
        mesUpgradesList.Add(speedUpgrade);
        mesUpgradesList.Add(flashlightUpgradeObject);
        emplacement1       = Case1.transform.position;
@@ -98,7 +100,7 @@ public class UpgradeMenu : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
-       if (Input.GetKeyDown(KeyCode.Tab))
+       if (Input.GetKeyDown(KeyCode.JoystickButton1))
        {
            UpgradeMenuClose();
        }
@@ -126,6 +128,7 @@ public class UpgradeMenu : MonoBehaviour
    }
    public void UpgradeMenuOpen()
    {
+       closeButtonUpgradeMenu.SetActive(true);
        upgradeMenu.SetActive(true);
        Time.timeScale = 0f;
 
@@ -157,6 +160,7 @@ public class UpgradeMenu : MonoBehaviour
    }
    public void UpgradeMenuClose()
    {
+       closeButtonUpgradeMenu.SetActive(false);
        upgradeMenu.SetActive(false);
        Time.timeScale = 1f;
        
