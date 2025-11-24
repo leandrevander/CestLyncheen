@@ -9,34 +9,42 @@ using UnityEngine.UI;
 
 public class WeaponsManager : MonoBehaviour
 {
-    public GameObject   ampoule;
-    public Bulb         ampouleScript;
-    public GameObject   recupAmpoule;
-    public int          nombreAmpoule = 0;
-    public GameObject   AppareillePhoto;
-    public int          nombreAppareillePhoto = 0;
-    public GameObject   RecupAppareillePhoto;
-    
-    
-    public float        freezeDuration = 2f;
     public NavMeshAgent ennemi_NavMesh;
-    public bool         GlowStickRecup = false;
-    public GameObject   prefabGlowStick;
-    public Coroutine    GlowStickCoroutine;
-    public int          numberOfGlowStick = 0;
-    public StreetLamp   glowStickScript;
     public UpgradeMenu  upgradeMenu;
-    public bool         haveCamera = false;
-    public GameObject   glowStickDestroy;
-    public GameObject   glowStickDestroy2;
-    public GameObject   glowStickDestroy3;
-    public int          hitpoint          = 1;
-    public int          hitByBulb         = 1;
     public int          hitByLighthouse   = 1;
-    public float        GlowStickDuration = 10f;
-    public GameObject   cameraDescription;
-    public GameObject   bulbDescription;
-    public GameObject   glowStickDescription;
+    
+    [Header("Bulb")]
+    
+    public int        nombreAmpoule = 0;
+    public int        hitByBulb     = 1;
+    public GameObject bulbDescription;
+    public GameObject ampoule;
+    public GameObject recupAmpoule;
+    public Bulb       ampouleScript;
+    
+    
+    [Header("Camera")]
+    
+    
+    public int        nombreAppareillePhoto = 0;
+    public float      freezeDuration = 2f;
+    public bool       haveCamera     = false;
+    public GameObject cameraDescription;
+    public GameObject AppareillePhoto;
+    public GameObject RecupAppareillePhoto;
+    
+    [Header("GlowStick")]
+    public bool         GlowStickRecup = false;
+    public Coroutine  GlowStickCoroutine;
+    public int        numberOfGlowStick = 0;
+    public int        hitpoint          = 1;
+    public float      GlowStickDuration = 10f;
+    public GameObject glowStickDescription;
+    public GameObject prefabGlowStick;
+    public GameObject glowStickDestroy;
+    public GameObject glowStickDestroy2;
+    public GameObject glowStickDestroy3;
+    public StreetLamp glowStickScript;
     
     
     [Header("Flashlight")]

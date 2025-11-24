@@ -12,61 +12,89 @@ using System.Collections.Generic;
 
 public class UpgradeMenu : MonoBehaviour
 {
-   public CameraUpgrade         cameraUpgradeScript;
-   public TMP_Text              Upgrade1;
-   public TMP_Text              Upgrade2;
-   public TMP_Text              Upgrade3;
-   public Experience            experience;
-   public GameObject            upgradeMenu;
-   public Button                upgrade1button;
-   public Button                upgrade2button;
-   public Button                upgrade3button;
-   public Button                upgrade4button;
-   public TMP_Text              LevelUpgrade4;
-   public TMP_Text              LevelUpgrade1;
-   public TMP_Text              LevelUpgrade2;
-   public TMP_Text              LevelUpgrade3;
-   public TMP_Text              describleTextUpgrade1;
-   public TMP_Text              describleTextUpgrade2;
-   public TMP_Text              describleTextUpgrade3;
-   public TMP_Text              describleTextUpgrade4;
-   public int                   levelupgrade1 = 0;
-   public int                   levelupgrade2 = 0;
-   public int                   levelupgrade3 = 0;
-   public int                   levelupgrade4 = 0;
-   public int                   randomUpgradeCase1;
-   public int                   randomUpgradeCase2;
-   public int                   randomUpgradeCase3;
-   public GameObject[]          mesUpgrades;
-   public Vector2               emplacement1;
-   public Vector2               emplacement2;
-   public Vector2               emplacement3;
-   public GameObject            Case1;
-   public GameObject            Case2;
-   public GameObject            Case3;
+    
+    [Header("Script")]
    public PlayerControl         playerControl;
    public float                 Multiplier = 1.2f;
-   public Bulb                  bulbScript;
-   public Light2D               bulb;
    public WeaponsManager        weaponsManager;
    public EnemyHealthManagement enemyHealthManagement;
-   public List<GameObject>      mesUpgradesList = new List<GameObject>();
-   public GameObject            speedUpgrade;
-   public GameObject            bulbUpgrade;
-   public GameObject            cameraUpgrade;
-   public GameObject            glowstickupgrade;
-   public GameObject            flashlightUpgradeObject;
-    
+   public Experience            experience;
+   
+   
+   
+   
+   
+   [Header("Menu")]
+   public int        randomUpgradeCase1;
+   public int randomUpgradeCase2;
+   public int randomUpgradeCase3;
+   public GameObject       Case1;
+   public GameObject       Case2;
+   public GameObject       Case3;
+   public GameObject       upgradeMenu;
+   public List<GameObject> mesUpgradesList = new List<GameObject>();
+   public TMP_Text         Upgrade1;
+   public TMP_Text         Upgrade2;
+   public TMP_Text         Upgrade3;
+   public Vector2          emplacement1;
+   public Vector2          emplacement2;
+   public Vector2          emplacement3;
+   
+  
+   
+   
+   
+   
+   
+   [Header("Speed")]
+   public Button                upgrade1button;
+   public int        levelupgrade1 = 0;
+   public GameObject speedUpgrade;
+   public TMP_Text   LevelUpgrade1;
+   public TMP_Text   describleTextUpgrade1;
+   
+   
+   
+   
+   [Header("Bulb")]
+   public Button   upgrade2button;
+   public Bulb       bulbScript;
+   public int        levelupgrade2 = 0;
+   public GameObject bulbUpgrade;
+   public Light2D    bulb;
+   public TMP_Text LevelUpgrade2;
+   public TMP_Text describleTextUpgrade2;
+   
+   [Header("Camera")]
+   public int                   levelupgrade3 = 0;
+   public Button        upgrade3button;
+   public CameraUpgrade cameraUpgradeScript;
+   public GameObject    cameraUpgrade;
+   public TMP_Text      describleTextUpgrade3;
+   public TMP_Text      LevelUpgrade3;
+   
+   
+   [Header("GlowStick")]
+   
+   public int      levelupgrade4 = 0;
+   public Button     upgrade4button;
+   public GameObject glowstickupgrade;
+   public TMP_Text   describleTextUpgrade4;
+   public TMP_Text   LevelUpgrade4;
+   
+   
+   
     [Header("Flashlight")]
-    public Button upgrade5Button;
-    public                   TMP_Text          levelUpgrade5Name;
     public                   int               levelupgrade5 = 0;
+    public  Button        upgrade5Button;
+    private DetectorLight detectorLight;
+    public  GameObject    flashlightUpgradeObject;
+    public  Light2D       flashlightLight;
+    public  TMP_Text      levelUpgrade5Name;
     public                   TMP_Text          describeLevel5;
-    private                  DetectorLight     detectorLight;
-    public                   Light2D           flashlightLight;
     public                   PolygonCollider2D flashlightCollider;
     [SerializeField] private Vector2[]         flashlightCollider2DArray;
-
+    
     
     [Header("UI")]
     public EventSystem eventSystem;
