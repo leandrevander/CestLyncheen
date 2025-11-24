@@ -30,9 +30,8 @@ public class EnemyHealthManagement : MonoBehaviour
     public  float          speedSeagull = 3.5f;
 
     public GameObject freezeEffect;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject damageEffect;
+    
     void Start()
     {
         player         = GameObject.FindGameObjectWithTag("Player");
@@ -45,9 +44,7 @@ public class EnemyHealthManagement : MonoBehaviour
 
         }
     }
-
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (ennemi_NavMeshAgent != null)
@@ -87,8 +84,6 @@ public class EnemyHealthManagement : MonoBehaviour
 
         IEnumerator PerteDePv()
         {
-
-
             HealthZombie = HealthZombie - weaponsManager.hitByFlashlight;
             if (HealthZombie <= 0)
             {
@@ -96,10 +91,11 @@ public class EnemyHealthManagement : MonoBehaviour
                 Instantiate(experiencepointPrefab, transform.position, transform.rotation);
             }
             
+            damageEffect.SetActive(true);
             yield return new WaitForSeconds(1);
+            damageEffect.SetActive(false);
             coroutine = null;
             isHittenByFlashlight  = false;
-
             
         }
 
@@ -153,7 +149,9 @@ public class EnemyHealthManagement : MonoBehaviour
 
                 Debug.Log("PV Lampadaire");
                 IsHitByGlowStick = false;
+                damageEffect.SetActive(true);
                 yield return new WaitForSeconds(1);
+                damageEffect.SetActive(false);
                 glowStickCoroutine = null;
 
             }
@@ -173,7 +171,9 @@ public class EnemyHealthManagement : MonoBehaviour
 
                 Debug.Log("PV perdu");
                 IsHittenByBull = false;
+                damageEffect.SetActive(true);
                 yield return new WaitForSeconds(1);
+                damageEffect.SetActive(false);
                 bulbCoroutine = null;
             }
         }
@@ -190,7 +190,9 @@ public class EnemyHealthManagement : MonoBehaviour
                 }
    
                 IsHittenByLighthouse = false;
+                damageEffect.SetActive(true);
                 yield return new WaitForSeconds(1);
+                damageEffect.SetActive(false);
                 lighthouseCoroutine = null;
             }
         }
