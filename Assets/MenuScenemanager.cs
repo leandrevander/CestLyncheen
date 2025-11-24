@@ -26,6 +26,11 @@ public class MenuScenemanager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Level2");
     }
+    
+    public void StartLEANDRE3()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LEANDRE3");
+    }
     public void QuitGame()
     {
         Application.Quit();
