@@ -29,7 +29,7 @@ public class EnemyHealthManagement : MonoBehaviour
     public  Coroutine      lighthouseCoroutine;
     public  float          speedSeagull = 3.5f;
 
-
+    public GameObject freezeEffect;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,7 +44,6 @@ public class EnemyHealthManagement : MonoBehaviour
             ennemi_NavMeshAgent.speed = speed;
 
         }
-        
     }
 
 
@@ -106,6 +105,7 @@ public class EnemyHealthManagement : MonoBehaviour
 
         IEnumerator FreezeDuration()
         {
+            freezeEffect.SetActive(true);
             if (ennemi_NavMeshAgent != null)
             {
                 Debug.Log("Couroutine Freeze appelé");
@@ -118,6 +118,7 @@ public class EnemyHealthManagement : MonoBehaviour
                 Debug.Log("Ennemi dégelé ! Normalement...");
                 yield return new WaitForSeconds(1);
                 freezeEnnemi = false;
+                freezeEffect.SetActive(false);
                 yield return new WaitForSeconds(1);
                 freezeCoroutine = null;
             }
@@ -132,6 +133,7 @@ public class EnemyHealthManagement : MonoBehaviour
                 Debug.Log("Ennemi dégelé ! Normalement...");
                 yield return new WaitForSeconds(1);
                 freezeEnnemi = false;
+                freezeEffect.SetActive(false);
                 yield return new WaitForSeconds(1);
                 freezeCoroutine = null;
             }

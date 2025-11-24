@@ -122,6 +122,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2600920929648922492}
+  - {fileID: 4442828998365519469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2400152055168417616
@@ -348,6 +349,7 @@ MonoBehaviour:
   speed: 2.5
   FrezzeDuration: 2
   speedSeagull: 3.5
+  freezeEffect: {fileID: 7141467082396470248}
 --- !u!114 &481268912240967491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +365,7 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_Priority: 0
   m_ComponentVersion: 5
-  m_HasRenderer: 0
+  m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
@@ -389,15 +391,86 @@ MonoBehaviour:
     m_TrimEdge: 0.04
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.04
+    m_InitialTrim: 0
   m_CastingOption: 1
-  m_PreviousTrimEdge: 0
-  m_PreviousEdgeProcessing: -1
-  m_PreviousShadowCastingSource: -1
-  m_PreviousShadowShape2DSource: {fileID: 0}
+  m_PreviousTrimEdge: 0.04
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 2400152055168417616}
   references:
     version: 2
     RefIds:
     - rid: 5553545646294433867
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!1001 &3285054518741456939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5322122053243600985}
+    m_Modifications:
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_Name
+      value: Freeze Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+--- !u!4 &4442828998365519469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+  m_PrefabInstance: {fileID: 3285054518741456939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7141467082396470248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+  m_PrefabInstance: {fileID: 3285054518741456939}
+  m_PrefabAsset: {fileID: 0}

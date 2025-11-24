@@ -120,6 +120,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3345576036348441120}
+  - {fileID: 7810244066331103427}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4026370330636517229
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_Priority: 0
   m_ComponentVersion: 5
-  m_HasRenderer: 0
+  m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
@@ -306,17 +307,17 @@ MonoBehaviour:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
       m_Center: {x: 0.2692032, y: 0.3332672, z: 0}
-      m_Extent: {x: 0.7049942, y: 0.5549927, z: 0}
+      m_Extent: {x: 0.75499725, y: 0.6049957, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0.04
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.09
+    m_InitialTrim: 0
   m_CastingOption: 1
-  m_PreviousTrimEdge: 0
-  m_PreviousEdgeProcessing: -1
-  m_PreviousShadowCastingSource: -1
-  m_PreviousShadowShape2DSource: {fileID: 0}
+  m_PreviousTrimEdge: 0.04
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 4026370330636517229}
   references:
     version: 2
     RefIds:
@@ -349,3 +350,75 @@ MonoBehaviour:
   speed: 2.5
   FrezzeDuration: 2
   speedSeagull: 3.5
+  freezeEffect: {fileID: 3661427112151483718}
+--- !u!1001 &8961403875278280325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6499683571864265360}
+    m_Modifications:
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_Name
+      value: Freeze Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+--- !u!1 &3661427112151483718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+  m_PrefabInstance: {fileID: 8961403875278280325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7810244066331103427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1170587088891004486, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+  m_PrefabInstance: {fileID: 8961403875278280325}
+  m_PrefabAsset: {fileID: 0}
