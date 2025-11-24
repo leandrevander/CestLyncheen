@@ -199,14 +199,14 @@ public class WeaponsManager : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
-       if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 == 1)
+       if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 == 0)
        {
            GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl1());
        }
-       else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0 ) && (upgradeMenu.levelupgrade4 == 2 || upgradeMenu.levelupgrade4 == 3))
+       else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0 ) && (upgradeMenu.levelupgrade4 == 1 || upgradeMenu.levelupgrade4 == 2))
        {             GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl2());
        }
-       else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 >= 4)
+       else if (GlowStickRecup == true && GlowStickCoroutine == null && (numberOfGlowStick == 0) && upgradeMenu.levelupgrade4 >= 3)
        {
            GlowStickCoroutine = StartCoroutine(GlowStickSpwanlvl4());
        }
