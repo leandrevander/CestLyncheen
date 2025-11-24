@@ -9,6 +9,7 @@ TagManager:
   - RecupAppareilPhoto
   - RecupAmpoule
   - GlowStickRecup
+  - FreezeEffect
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Offside
   - Seagull
   - WallMap
-  - 
+  - Status Effects
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: Seagull
     uniqueID: 1792647809
+    locked: 0
+  - name: Status Effects
+    uniqueID: 921339795
     locked: 0
   m_RenderingLayers:
   - Default
