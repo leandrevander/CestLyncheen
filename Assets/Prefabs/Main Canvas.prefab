@@ -5903,6 +5903,142 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7504114375251742435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8789327296992770028}
+  - component: {fileID: 2374475128060000551}
+  - component: {fileID: 6809257448983859494}
+  m_Layer: 5
+  m_Name: Phare Bonus Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8789327296992770028
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504114375251742435}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5455031601593009268}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 31, y: 281}
+  m_SizeDelta: {x: 300.3011, y: 75.0754}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2374475128060000551
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504114375251742435}
+  m_CullTransparentMesh: 1
+--- !u!114 &6809257448983859494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504114375251742435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9f1ca2392d992e14397dfc2ffbae1e23, type: 2}
+  m_sharedMaterial: {fileID: 189218050828240813, guid: 9f1ca2392d992e14397dfc2ffbae1e23, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -436.11218, y: 0, z: -440.16882, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8028375472863626568
 GameObject:
   m_ObjectHideFlags: 0
@@ -6501,6 +6637,7 @@ RectTransform:
   - {fileID: 1903501944307839582}
   - {fileID: 7459620738864470706}
   - {fileID: 1343770890387296796}
+  - {fileID: 8789327296992770028}
   - {fileID: 8257038762182126913}
   - {fileID: 4199651233137373971}
   m_Father: {fileID: 0}
@@ -7518,55 +7655,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16729fdc3e9db943b1771a31aebb16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraUpgradeScript: {fileID: 0}
-  Upgrade1: {fileID: 5436018528988996529}
-  Upgrade2: {fileID: 4889060593352281603}
-  Upgrade3: {fileID: 3661786783170442595}
+  playerControl: {fileID: 0}
+  Multiplier: 1.2
+  weaponsManager: {fileID: 0}
+  enemyHealthManagement: {fileID: 0}
   experience: {fileID: 5919143079991787319}
-  upgradeMenu: {fileID: 1173817053402720931}
-  upgrade1button: {fileID: 4351579294214251352}
-  upgrade2button: {fileID: 1160324155372177579}
-  upgrade3button: {fileID: 1188042189849284874}
-  upgrade4button: {fileID: 6013780362791035976}
-  LevelUpgrade4: {fileID: 7606844438783508447}
-  LevelUpgrade1: {fileID: 7587589323643111196}
-  LevelUpgrade2: {fileID: 4507206608741711749}
-  LevelUpgrade3: {fileID: 7018909796713404497}
-  describleTextUpgrade1: {fileID: 184127641069532309}
-  describleTextUpgrade2: {fileID: 2795755589372102178}
-  describleTextUpgrade3: {fileID: 2806823720936732185}
-  describleTextUpgrade4: {fileID: 1813781494150980089}
-  levelupgrade1: 1
-  levelupgrade2: 1
-  levelupgrade3: 1
-  levelupgrade4: 1
   randomUpgradeCase1: 0
   randomUpgradeCase2: 0
   randomUpgradeCase3: 0
-  mesUpgrades: []
-  emplacement1: {x: 0, y: 0}
-  emplacement2: {x: 0, y: 0}
-  emplacement3: {x: 0, y: 0}
   Case1: {fileID: 3890179242288207768}
   Case2: {fileID: 2464584958417004095}
   Case3: {fileID: 7197946001123752221}
-  playerControl: {fileID: 0}
-  Multiplier: 1.2
-  bulbScript: {fileID: 0}
-  bulb: {fileID: 0}
-  weaponsManager: {fileID: 0}
-  enemyHealthManagement: {fileID: 0}
+  upgradeMenu: {fileID: 1173817053402720931}
   mesUpgradesList: []
+  Upgrade1: {fileID: 5436018528988996529}
+  Upgrade2: {fileID: 4889060593352281603}
+  Upgrade3: {fileID: 3661786783170442595}
+  emplacement1: {x: 0, y: 0}
+  emplacement2: {x: 0, y: 0}
+  emplacement3: {x: 0, y: 0}
+  upgrade1button: {fileID: 4351579294214251352}
+  levelupgrade1: 1
   speedUpgrade: {fileID: 4750423637823883213}
+  LevelUpgrade1: {fileID: 7587589323643111196}
+  describleTextUpgrade1: {fileID: 184127641069532309}
+  upgrade2button: {fileID: 1160324155372177579}
+  bulbScript: {fileID: 0}
+  levelupgrade2: 1
   bulbUpgrade: {fileID: 4809562595696744868}
+  bulb: {fileID: 0}
+  LevelUpgrade2: {fileID: 4507206608741711749}
+  describleTextUpgrade2: {fileID: 2795755589372102178}
+  levelupgrade3: 1
+  upgrade3button: {fileID: 1188042189849284874}
+  cameraUpgradeScript: {fileID: 0}
   cameraUpgrade: {fileID: 3481284674574801891}
+  describleTextUpgrade3: {fileID: 2806823720936732185}
+  LevelUpgrade3: {fileID: 7018909796713404497}
+  levelupgrade4: 1
+  upgrade4button: {fileID: 6013780362791035976}
   glowstickupgrade: {fileID: 4243818746027559235}
-  flashlightUpgradeObject: {fileID: 8028375472863626568}
-  upgrade5Button: {fileID: 2856563547234528042}
-  levelUpgrade5Name: {fileID: 4691364058495393194}
+  describleTextUpgrade4: {fileID: 1813781494150980089}
+  LevelUpgrade4: {fileID: 7606844438783508447}
   levelupgrade5: 0
-  describeLevel5: {fileID: 7063862696268533767}
+  upgrade5Button: {fileID: 2856563547234528042}
+  flashlightUpgradeObject: {fileID: 8028375472863626568}
   flashlightLight: {fileID: 0}
+  levelUpgrade5Name: {fileID: 4691364058495393194}
+  describeLevel5: {fileID: 7063862696268533767}
   flashlightCollider: {fileID: 0}
   flashlightCollider2DArray: []
   eventSystem: {fileID: 0}
