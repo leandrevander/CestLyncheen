@@ -10,6 +10,9 @@ namespace Player_Scripts
         public bool invincible ;
         public bool playerhitten;
         private Coroutine coroutine;
+        private Coroutine coroutine2;
+        public GameObject playerDamageOverlay;
+        public SpriteRenderer playerSpriteRenderer;
         
 
         [SerializeField] private Animator[] hearts;
@@ -34,15 +37,40 @@ namespace Player_Scripts
 
         public IEnumerator Damage()
         {
+            
+                if (coroutine2 == null)
+                {
+                    coroutine2 = StartCoroutine(InvincibleFeedback());
+                }
+                
+                playerDamageOverlay.SetActive(true);
                 invincible = true;
                 playerHealth--;
                 print(playerHealth);
                 UpdateHealth();
                 yield return new WaitForSeconds(1);
+                playerDamageOverlay.SetActive(false);
                 invincible = false;
                 playerhitten = false;
                 coroutine = null;
                 StopCoroutine(Damage());
+        }
+
+        public IEnumerator InvincibleFeedback()
+        {
+            playerSpriteRenderer.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+            playerSpriteRenderer.enabled = true;
+            yield return new WaitForSeconds(0.2f);
+            playerSpriteRenderer.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+            playerSpriteRenderer.enabled = true;
+            yield return new WaitForSeconds(0.2f);
+            playerSpriteRenderer.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+            playerSpriteRenderer.enabled = true;
+            coroutine2 = null;
+            StopCoroutine(InvincibleFeedback());
         }
 
 

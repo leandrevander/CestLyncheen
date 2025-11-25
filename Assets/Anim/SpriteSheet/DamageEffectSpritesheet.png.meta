@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: cebec762db9c3e743bce797b1fe4d014
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -920190449259726043
+    second: DamageEffectSpritesheet_0
+  - first:
+      213: -9104844974481358512
+    second: DamageEffectSpritesheet_1
+  - first:
+      213: -399418271643774074
+    second: DamageEffectSpritesheet_2
+  - first:
+      213: 9015787634545584706
+    second: DamageEffectSpritesheet_3
+  - first:
+      213: -1564757837515724789
+    second: DamageEffectSpritesheet_4
+  - first:
+      213: -4632169137011207908
+    second: DamageEffectSpritesheet_5
+  - first:
+      213: -4685409862081522639
+    second: DamageEffectSpritesheet_6
+  - first:
+      213: 5665417091238939388
+    second: DamageEffectSpritesheet_7
+  - first:
+      213: 75816762205919960
+    second: DamageEffectSpritesheet_8
+  - first:
+      213: 682732901447241125
+    second: DamageEffectSpritesheet_9
+  - first:
+      213: -8021600071042250061
+    second: DamageEffectSpritesheet_10
+  - first:
+      213: 8097398958678383877
+    second: DamageEffectSpritesheet_11
+  - first:
+      213: 789138873695994413
+    second: DamageEffectSpritesheet_12
+  - first:
+      213: -7789830861157670980
+    second: DamageEffectSpritesheet_13
+  - first:
+      213: 5201383074323417972
+    second: DamageEffectSpritesheet_14
+  - first:
+      213: 1162381498611996534
+    second: DamageEffectSpritesheet_15
+  - first:
+      213: 1456243378669217260
+    second: DamageEffectSpritesheet_16
+  - first:
+      213: -7483490248806565786
+    second: DamageEffectSpritesheet_17
+  - first:
+      213: -294545911969600065
+    second: DamageEffectSpritesheet_18
+  - first:
+      213: -5173224909125691307
+    second: DamageEffectSpritesheet_19
+  - first:
+      213: 2420803758538779291
+    second: DamageEffectSpritesheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 199
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bba2a69a3da33f0800000000000000
+      internalID: -920190449259726043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 199
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051c9093cb715a180800000000000000
+      internalID: -9104844974481358512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 199
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6835fd9b23bf47af0800000000000000
+      internalID: -399418271643774074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 39
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ae27ff5138e1d70800000000000000
+      internalID: 9015787634545584706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 39
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08ed57890dd84ae0800000000000000
+      internalID: -1564757837515724789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamageEffectSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 39
+        width: 146
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45903882, y: 0.17037559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c115be056ba37bfb0800000000000000
+      internalID: -4632169137011207908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 82320fadd09433444958c3bc6ce68aa8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DamageEffectSpritesheet_0: -920190449259726043
+      DamageEffectSpritesheet_1: -9104844974481358512
+      DamageEffectSpritesheet_10: -8021600071042250061
+      DamageEffectSpritesheet_11: 8097398958678383877
+      DamageEffectSpritesheet_12: 789138873695994413
+      DamageEffectSpritesheet_13: -7789830861157670980
+      DamageEffectSpritesheet_14: 5201383074323417972
+      DamageEffectSpritesheet_15: 1162381498611996534
+      DamageEffectSpritesheet_16: 1456243378669217260
+      DamageEffectSpritesheet_17: -7483490248806565786
+      DamageEffectSpritesheet_18: -294545911969600065
+      DamageEffectSpritesheet_19: -5173224909125691307
+      DamageEffectSpritesheet_2: -399418271643774074
+      DamageEffectSpritesheet_20: 2420803758538779291
+      DamageEffectSpritesheet_3: 9015787634545584706
+      DamageEffectSpritesheet_4: -1564757837515724789
+      DamageEffectSpritesheet_5: -4632169137011207908
+      DamageEffectSpritesheet_6: -4685409862081522639
+      DamageEffectSpritesheet_7: 5665417091238939388
+      DamageEffectSpritesheet_8: 75816762205919960
+      DamageEffectSpritesheet_9: 682732901447241125
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
