@@ -3,58 +3,129 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     public  float      spawnTimer;
-    private GameObject player;
+    public  Timer      timer;
+    public Transform playerPosition;
+    public  float      remainingTime;
+
+    
+    [Header("Mob to spawn")]
+    public GameObject snailPrefab;
+    public GameObject sharkPrefab;
+    public GameObject dolphinPrefab;
+    public GameObject seagullPrefab;
+    public bool snailSpawn = false;
+    public bool sharkSpawn = false;
+    public bool dolphinSpawn = false;
+    public bool seagullSpawn = false;
+    
+    [Header("Distance")]
+    public float minDistance;
+    public float maxDistance;
 
     [Header("Insert cooldowns of enemies spawners")]
-    public float activationSnailSpawner;
-    public float activationSharkSpawner;
-    public float activationDolphinSpawner;
-    public float activationSeagullSpawner;
+    public float snailSpawnInterval;
+    public float sharkSpawnInterval;
+    public float dolphinSpawnInterval;
+    public float seagullSpawnInterval;
 
-    [Header("Put Spawner's GameObject")]
-    public SnailSpawner snailSpawner;
-    public SharkSpawner sharkSpawner;
-    public DolphinSpawner dolphinSpawner;
-    public SeagullSpawner seagullSpawner;
-
-    [Header("Select the spawners that you want to activate")]
-    public bool activateSnailSpawner = true;
-    public bool activateSharkSpawner = true;
-    public bool activateDolphinSpawner = true;
-    public bool activateSeagullSpawner = true;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        snailSpawner = GameObject.FindWithTag("Player").GetComponent<SnailSpawner>();
-        sharkSpawner = GameObject.FindWithTag("Player").GetComponent<SharkSpawner>();
-        dolphinSpawner = GameObject.FindWithTag("Player").GetComponent<DolphinSpawner>();
-        seagullSpawner = GameObject.FindWithTag("Player").GetComponent<SeagullSpawner>();
-        player       = GameObject.FindWithTag("Player");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         spawnTimer += Time.deltaTime;
-        if (spawnTimer >= activationSnailSpawner && activateSnailSpawner && player != null)
+        if (remainingTime > 0)
         {
-            snailSpawner.enabled = true;
+            remainingTime -= Time.deltaTime;
         }
         
-        if (spawnTimer >= activationSharkSpawner &&  activateSharkSpawner && player != null)
+        int minutes = Mathf.FloorToInt(remainingTime / 60);
+        int seconds = Mathf.FloorToInt(remainingTime % 60);
+        
+        
+        //-------------------Les conditions du spawn--------------
+
+        if (snailSpawn && (spawnTimer >= snailSpawnInterval) )
         {
-            sharkSpawner.enabled = true;
+            spawnTimer = 0;
+            SpawnSnail();
         }
         
-        if (spawnTimer >= activationDolphinSpawner && activateDolphinSpawner && player != null)
+        if (sharkSpawn && (spawnTimer >= sharkSpawnInterval))
         {
-            dolphinSpawner.enabled = true;
+            spawnTimer = 0;
+            SpawnShark();
         }
         
-        if (spawnTimer >= activationSeagullSpawner && activateSeagullSpawner && player != null)
+        if (dolphinSpawn && (spawnTimer >= dolphinSpawnInterval))
         {
-            seagullSpawner.enabled = true;
+            spawnTimer = 0;
+            SpawnDolphin();
+        }
+
+        if (seagullSpawn && (spawnTimer >= seagullSpawnInterval))
+        {
+            spawnTimer = 0;
+            SpawnSeagull();
+        }
+        
+        //----------------------Les Temps de spawns------------------
+        if (remainingTime >= 590f)
+        {
+            snailSpawn = true;
+            return;
+        }
+        
+        if (remainingTime >= 580f)
+        {
+            snailSpawn = false;
+            sharkSpawn = true;
+            return;
         }
         
     }
+    
+    //-------------------Les fonctions de spawner-------------------------
+    void SpawnSnail()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(snailPrefab, SpawnPosition, Quaternion.identity);
+    }
+
+    void SpawnShark()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(sharkPrefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSeagull()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(seagullPrefab, SpawnPosition, Quaternion.identity);
+    }
+    void SpawnDolphin()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(dolphinPrefab, SpawnPosition, Quaternion.identity);
+    }
+    
 }

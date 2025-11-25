@@ -100,7 +100,6 @@ public class GeneratorSystem : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            //Debug.Log("pipipuepue");
             playerOnZone = false;
             sliderGO.SetActive(false);
 
