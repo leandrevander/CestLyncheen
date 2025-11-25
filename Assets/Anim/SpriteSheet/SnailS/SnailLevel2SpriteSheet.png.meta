@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 07704236c9c9a0e46b9394c7d9ba055c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1133753723277071776
+    second: SnailLevel2SpriteSheet_0
+  - first:
+      213: 7136995228854010793
+    second: SnailLevel2SpriteSheet_1
+  - first:
+      213: -3277275164903773202
+    second: SnailLevel2SpriteSheet_2
+  - first:
+      213: -6404888108649492688
+    second: SnailLevel2SpriteSheet_3
+  - first:
+      213: 2515576593924850134
+    second: SnailLevel2SpriteSheet_4
+  - first:
+      213: -8838133840584467688
+    second: SnailLevel2SpriteSheet_5
+  - first:
+      213: 5363492175350222015
+    second: SnailLevel2SpriteSheet_6
+  - first:
+      213: 5328796504775187626
+    second: SnailLevel2SpriteSheet_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 49
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5d4b22107ebbf00800000000000000
+      internalID: 1133753723277071776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 49
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a34083e853bb0360800000000000000
+      internalID: 7136995228854010793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 49
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb63bce997c482d0800000000000000
+      internalID: -3277275164903773202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 49
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fc2d123344d17a0800000000000000
+      internalID: -6404888108649492688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 289
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d18d26859f19e220800000000000000
+      internalID: 2515576593924850134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 289
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b9a923914a85580800000000000000
+      internalID: -8838133840584467688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 289
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc465b67b3fe6a40800000000000000
+      internalID: 5363492175350222015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnailLevel2SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 284
+        width: 247
+        height: 149
+      alignment: 9
+      pivot: {x: 0.51418144, y: 0.47625467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacd77b1030b3f940800000000000000
+      internalID: 5328796504775187626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8362878e034049c4c8274741c4c64872
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SnailLevel2SpriteSheet_0: 1133753723277071776
+      SnailLevel2SpriteSheet_1: 7136995228854010793
+      SnailLevel2SpriteSheet_2: -3277275164903773202
+      SnailLevel2SpriteSheet_3: -6404888108649492688
+      SnailLevel2SpriteSheet_4: 2515576593924850134
+      SnailLevel2SpriteSheet_5: -8838133840584467688
+      SnailLevel2SpriteSheet_6: 5363492175350222015
+      SnailLevel2SpriteSheet_7: 5328796504775187626
+      SnailLevel2SpriteSheet_8: -1494331770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
