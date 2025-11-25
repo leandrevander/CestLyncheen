@@ -9990,6 +9990,8 @@ MonoBehaviour:
   maxDistance: 15
   snailSpawnInterval: 2
   sharkSpawnInterval: 2
+  dolphinSpawnInterval: 4
+  seagullSpawnInterval: 4
 --- !u!4 &670361993
 Transform:
   m_ObjectHideFlags: 0
