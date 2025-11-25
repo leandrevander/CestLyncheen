@@ -1467,7 +1467,7 @@ RectTransform:
   m_GameObject: {fileID: 3481284674574801891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1503, y: 1.2509513, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1677190080908922289}
@@ -2132,7 +2132,7 @@ RectTransform:
   m_GameObject: {fileID: 4243818746027559235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1503, y: 1.2509513, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 299036964316137948}
@@ -2690,7 +2690,7 @@ RectTransform:
   m_GameObject: {fileID: 4750423637823883213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1503, y: 1.2509513, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2861912120977946262}
@@ -2768,7 +2768,7 @@ RectTransform:
   m_GameObject: {fileID: 4809562595696744868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1503, y: 1.2509513, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5403167838698590382}
@@ -5452,7 +5452,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5134148670905116351}
         m_TargetAssemblyTypeName: DescriptionItem, Assembly-CSharp
-        m_MethodName: CloseBulbDescription
+        m_MethodName: CloseGlowStickDescription
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5930,7 +5930,7 @@ RectTransform:
   m_GameObject: {fileID: 8028375472863626568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1503, y: 1.2509513, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5446304467593925379}
@@ -6748,7 +6748,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5134148670905116351}
         m_TargetAssemblyTypeName: DescriptionItem, Assembly-CSharp
-        m_MethodName: CloseBulbDescription
+        m_MethodName: CloseCameraDescription
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
