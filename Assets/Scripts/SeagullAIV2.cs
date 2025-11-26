@@ -216,7 +216,7 @@ public class SeagullAIV2 : MonoBehaviour
            arrowInstantiated = true; 
         }
 
-        dashTarget = transform.GetChild(1).gameObject; 
+        dashTarget = transform.GetChild(3).gameObject; 
         //Debug.Log("cible est " + dashTarget);
         
         if (warningOver && player != null)
@@ -246,7 +246,7 @@ public class SeagullAIV2 : MonoBehaviour
         attackTimerIsOver =  false;
         attackTimer = attackTimerReset;
         speed = speedReset;
-        Destroy(transform.GetChild(1).gameObject);
+        Destroy(transform.GetChild(3).gameObject);
         
         stateComplete = true;
     }
