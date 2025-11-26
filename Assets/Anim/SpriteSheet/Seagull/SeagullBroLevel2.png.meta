@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 70b94247b8e0de14d9b0ba66103bedac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2391378332167359818
+    second: SeagullBroLevel2_0
+  - first:
+      213: 6152494569804342747
+    second: SeagullBroLevel2_1
+  - first:
+      213: 8649765228889141698
+    second: SeagullBroLevel2_2
+  - first:
+      213: 3239322753935322350
+    second: SeagullBroLevel2_3
+  - first:
+      213: 6108179980350097848
+    second: SeagullBroLevel2_4
+  - first:
+      213: -3906831871560602334
+    second: SeagullBroLevel2_5
+  - first:
+      213: 4378011877947866252
+    second: SeagullBroLevel2_6
+  - first:
+      213: -3094269412253699923
+    second: SeagullBroLevel2_7
+  - first:
+      213: 2957180911020953521
+    second: SeagullBroLevel2_8
+  - first:
+      213: -6203806740553410201
+    second: SeagullBroLevel2_9
+  - first:
+      213: -6816972189019274311
+    second: SeagullBroLevel2_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeagullBroLevel2_0
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 559
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b23993b31e10ded0800000000000000
+      internalID: -2391378332167359818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_1
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 559
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd525b3c63d026550800000000000000
+      internalID: 6152494569804342747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 559
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c17672b5a32a0870800000000000000
+      internalID: 8649765228889141698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 559
+        width: 242
+        height: 106
+      alignment: 9
+      pivot: {x: 0.706582, y: 0.4340446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeca72dc1e264fc20800000000000000
+      internalID: 3239322753935322350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 719
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b98be0645d94c450800000000000000
+      internalID: 6108179980350097848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 719
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22da472bc1528c9c0800000000000000
+      internalID: -3906831871560602334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_6
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 719
+        width: 289
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7092266, y: 0.43385574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf5877b92d1cc30800000000000000
+      internalID: 4378011877947866252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullBroLevel2_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 719
+        width: 242
+        height: 106
+      alignment: 9
+      pivot: {x: 0.706582, y: 0.4340446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0f24b1d52fe05d0800000000000000
+      internalID: -3094269412253699923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6865b1b13d3ed7240b7afca68fe53797
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SeagullBroLevel2_0: -2391378332167359818
+      SeagullBroLevel2_1: 6152494569804342747
+      SeagullBroLevel2_10: -6816972189019274311
+      SeagullBroLevel2_2: 8649765228889141698
+      SeagullBroLevel2_3: 3239322753935322350
+      SeagullBroLevel2_4: 6108179980350097848
+      SeagullBroLevel2_5: -3906831871560602334
+      SeagullBroLevel2_6: 4378011877947866252
+      SeagullBroLevel2_7: -3094269412253699923
+      SeagullBroLevel2_8: 2957180911020953521
+      SeagullBroLevel2_9: -6203806740553410201
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
