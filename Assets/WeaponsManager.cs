@@ -100,9 +100,9 @@ public class WeaponsManager : MonoBehaviour
        {
            AppareillePhoto.SetActive(true);
            nombreAppareillePhoto += 1;
+           cameraDescription.SetActive(true);
            eventSystem.SetSelectedGameObject(buttonCameraDescription);
            Debug.Log("Vous avez d�bloquer l'appareil photo !");
-           cameraDescription.SetActive(true);
            Time.timeScale = 0f;
            StartCoroutine(Flash());
        }
