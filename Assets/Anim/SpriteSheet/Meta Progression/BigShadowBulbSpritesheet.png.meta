@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: d45a49bc93a53cf4b94a9ad7046a7716
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8744232847198168828
+    second: BigShadowBulbSpritesheet_0
+  - first:
+      213: -5037157274853048525
+    second: BigShadowBulbSpritesheet_1
+  - first:
+      213: 106454237235476652
+    second: BigShadowBulbSpritesheet_2
+  - first:
+      213: 5853120255361738622
+    second: BigShadowBulbSpritesheet_3
+  - first:
+      213: -890894723115627644
+    second: BigShadowBulbSpritesheet_4
+  - first:
+      213: -5335169125881855984
+    second: BigShadowBulbSpritesheet_5
+  - first:
+      213: -7129210227723263007
+    second: BigShadowBulbSpritesheet_6
+  - first:
+      213: 6035020901139902574
+    second: BigShadowBulbSpritesheet_7
+  - first:
+      213: -2959229057697142010
+    second: BigShadowBulbSpritesheet_8
+  - first:
+      213: -8770878990987797953
+    second: BigShadowBulbSpritesheet_9
+  - first:
+      213: -4972506957363214628
+    second: BigShadowBulbSpritesheet_10
+  - first:
+      213: 5272921344438375590
+    second: BigShadowBulbSpritesheet_11
+  - first:
+      213: 1912319843973892978
+    second: BigShadowBulbSpritesheet_12
+  - first:
+      213: -2008326145550295898
+    second: BigShadowBulbSpritesheet_13
+  - first:
+      213: 8698613272898381581
+    second: BigShadowBulbSpritesheet_14
+  - first:
+      213: -2099158918342114417
+    second: BigShadowBulbSpritesheet_15
+  - first:
+      213: -4867266261440932775
+    second: BigShadowBulbSpritesheet_16
+  - first:
+      213: -1794884562086994462
+    second: BigShadowBulbSpritesheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 410
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409537ded8e36a680800000000000000
+      internalID: -8744232847198168828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 425
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ffb92852c681ab0800000000000000
+      internalID: -5037157274853048525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 430
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8714390933a7100800000000000000
+      internalID: 106454237235476652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 80
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77ea707cd57a3150800000000000000
+      internalID: 5853120255361738622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 85
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b4c6038f7e2a3f0800000000000000
+      internalID: -890894723115627644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShadowBulbSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 85
+        width: 425
+        height: 278
+      alignment: 9
+      pivot: {x: 0.162126, y: 0.15270305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0104e2b62fba5f5b0800000000000000
+      internalID: -5335169125881855984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a450a5f85ea534a44b302f425163bade
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BigShadowBulbSpritesheet_0: -8744232847198168828
+      BigShadowBulbSpritesheet_1: -5037157274853048525
+      BigShadowBulbSpritesheet_10: -4972506957363214628
+      BigShadowBulbSpritesheet_11: 5272921344438375590
+      BigShadowBulbSpritesheet_12: 1912319843973892978
+      BigShadowBulbSpritesheet_13: -2008326145550295898
+      BigShadowBulbSpritesheet_14: 8698613272898381581
+      BigShadowBulbSpritesheet_15: -2099158918342114417
+      BigShadowBulbSpritesheet_16: -4867266261440932775
+      BigShadowBulbSpritesheet_17: -1794884562086994462
+      BigShadowBulbSpritesheet_2: 106454237235476652
+      BigShadowBulbSpritesheet_3: 5853120255361738622
+      BigShadowBulbSpritesheet_4: -890894723115627644
+      BigShadowBulbSpritesheet_5: -5335169125881855984
+      BigShadowBulbSpritesheet_6: -7129210227723263007
+      BigShadowBulbSpritesheet_7: 6035020901139902574
+      BigShadowBulbSpritesheet_8: -2959229057697142010
+      BigShadowBulbSpritesheet_9: -8770878990987797953
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

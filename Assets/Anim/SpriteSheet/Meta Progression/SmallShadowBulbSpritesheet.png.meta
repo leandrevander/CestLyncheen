@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 20c7a1e95a5f5e24da44008733be3427
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4796073993526430289
+    second: SmallShadowBulbSpritesheet_0
+  - first:
+      213: -3491866757382742389
+    second: SmallShadowBulbSpritesheet_1
+  - first:
+      213: -8395701111507186377
+    second: SmallShadowBulbSpritesheet_2
+  - first:
+      213: 8606578522484669990
+    second: SmallShadowBulbSpritesheet_3
+  - first:
+      213: 5487347942502706901
+    second: SmallShadowBulbSpritesheet_4
+  - first:
+      213: -5255657423198027976
+    second: SmallShadowBulbSpritesheet_5
+  - first:
+      213: -7363035405279192609
+    second: SmallShadowBulbSpritesheet_6
+  - first:
+      213: 7090143726358170813
+    second: SmallShadowBulbSpritesheet_7
+  - first:
+      213: -3364407104726677803
+    second: SmallShadowBulbSpritesheet_8
+  - first:
+      213: -1593270641437988006
+    second: SmallShadowBulbSpritesheet_9
+  - first:
+      213: -2203691087528091639
+    second: SmallShadowBulbSpritesheet_10
+  - first:
+      213: 4521556194184032113
+    second: SmallShadowBulbSpritesheet_11
+  - first:
+      213: 1527336246741221197
+    second: SmallShadowBulbSpritesheet_12
+  - first:
+      213: -5405252305607990024
+    second: SmallShadowBulbSpritesheet_13
+  - first:
+      213: 650948593693333428
+    second: SmallShadowBulbSpritesheet_14
+  - first:
+      213: 4719244492329670418
+    second: SmallShadowBulbSpritesheet_15
+  - first:
+      213: -5561634544916719952
+    second: SmallShadowBulbSpritesheet_16
+  - first:
+      213: 6971542987587021694
+    second: SmallShadowBulbSpritesheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dae907a7652834299136beb74705eb
+      internalID: 4796073993526430289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e7ca9c21bda34c8f123f71a5da6ce
+      internalID: -3491866757382742389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6d523d7754ca8488b447155ba23c58
+      internalID: -8395701111507186377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785b1a04976ba264aa79d211e2d09ba4
+      internalID: 8606578522484669990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6849625c733855e44996a44b09e7359b
+      internalID: 5487347942502706901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallShadowBulbSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 229
+        width: 254
+        height: 180
+      alignment: 9
+      pivot: {x: 0.20560455, y: 0.15765856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f44b52cbbc34f6429ac7989f98baa46
+      internalID: -5255657423198027976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a15d9ee867fdb8b45b1498a067ed372d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SmallShadowBulbSpritesheet_0: 4796073993526430289
+      SmallShadowBulbSpritesheet_1: -3491866757382742389
+      SmallShadowBulbSpritesheet_10: -2203691087528091639
+      SmallShadowBulbSpritesheet_11: 4521556194184032113
+      SmallShadowBulbSpritesheet_12: 1527336246741221197
+      SmallShadowBulbSpritesheet_13: -5405252305607990024
+      SmallShadowBulbSpritesheet_14: 650948593693333428
+      SmallShadowBulbSpritesheet_15: 4719244492329670418
+      SmallShadowBulbSpritesheet_16: -5561634544916719952
+      SmallShadowBulbSpritesheet_17: 6971542987587021694
+      SmallShadowBulbSpritesheet_2: -8395701111507186377
+      SmallShadowBulbSpritesheet_3: 8606578522484669990
+      SmallShadowBulbSpritesheet_4: 5487347942502706901
+      SmallShadowBulbSpritesheet_5: -5255657423198027976
+      SmallShadowBulbSpritesheet_6: -7363035405279192609
+      SmallShadowBulbSpritesheet_7: 7090143726358170813
+      SmallShadowBulbSpritesheet_8: -3364407104726677803
+      SmallShadowBulbSpritesheet_9: -1593270641437988006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
