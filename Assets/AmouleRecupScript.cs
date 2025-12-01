@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class AmpouleRecupScript : MonoBehaviour
 {
-    public GameObject     player;
-    public WeaponsManager weaponsManager;
-    public GameObject     ampoule;
-    public Bulb           ampouleScript;
-    public GameObject     recupAmpoule;
-    public int            nombreAmpoule = 0;
+    [SerializeField] AudioSource      recup;
+    public           GameObject     player;
+    public           WeaponsManager weaponsManager;
+    public           GameObject     ampoule;
+    public           Bulb           ampouleScript;
+    public           GameObject     recupAmpoule;
+    public           int            nombreAmpoule = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,7 @@ public class AmpouleRecupScript : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                recup.Play();
                 ampoule.SetActive(true);
                 weaponsManager.UpgradeAmpoule();
                 weaponsManager.bulbDescription.SetActive(true);

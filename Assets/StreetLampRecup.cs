@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class StreetLampRecup : MonoBehaviour
 {
-    public WeaponsManager weaponsManager;
-    public GameObject     player;
-
+    [SerializeField] AudioSource    recup;
+    public           WeaponsManager weaponsManager;
+    public           GameObject     player;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +17,7 @@ public class StreetLampRecup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            recup.Play();
             weaponsManager.UnlockGlowstick();
             Destroy(gameObject);
             

@@ -3,8 +3,9 @@ using UnityEngine;
 public class CameraItem : MonoBehaviour
 
 {
-    public GameObject     player;
-    public WeaponsManager weaponsManager;
+    [SerializeField] AudioSource      recup;
+    public           GameObject     player;
+    public           WeaponsManager weaponsManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +17,7 @@ public class CameraItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            
+            recup.Play();
             weaponsManager.AgmentationDuNiveauAppareillePhoto();
             Destroy(gameObject);
             weaponsManager.haveCamera = true;

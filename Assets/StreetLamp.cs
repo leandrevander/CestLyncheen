@@ -7,7 +7,8 @@ using UnityEngine.AI;
 using UnityEngine.Rendering.Universal;
 public class StreetLamp : MonoBehaviour
 {
-    public EnemyHealthManagement enemyHealthManagement;
+    
+    public           EnemyHealthManagement enemyHealthManagement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is create
     public void OnTriggerStay2D(Collider2D other)

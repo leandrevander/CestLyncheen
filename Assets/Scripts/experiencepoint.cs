@@ -6,6 +6,7 @@ using TMPro;
 
 public class experiencepoint : MonoBehaviour
 {
+    [SerializeField] AudioSource experiencepointSound;
     public Slider BarreXp;
     public int ExpReward = 3;
 
@@ -25,6 +26,7 @@ public class experiencepoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            experiencepointSound.Play();
             OnEnnemiDefeated(ExpReward);
             Destroy(gameObject);
         }
