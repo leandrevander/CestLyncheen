@@ -3,20 +3,29 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     public  float      spawnTimer;
-    public  Timer      timer;
     public Transform playerPosition;
     public  float      remainingTime;
 
     
     [Header("Mob to spawn")]
     public GameObject snailPrefab;
+    public GameObject snailHordePrefab;
+    public GameObject snailLevel2Prefab;
+    public GameObject snailLevel3Prefab;
     public GameObject sharkPrefab;
     public GameObject dolphinPrefab;
     public GameObject seagullPrefab;
+    
+    [Header("Active spawn")]
     public bool snailSpawn = false;
+    public bool snailHordeSpawn = false;
+    public bool snailLevel2Spawn = false;
+    public bool snailLevel3Spawn = false;
     public bool sharkSpawn = false;
     public bool dolphinSpawn = false;
     public bool seagullSpawn = false;
+    
+    
     
     [Header("Distance")]
     public float minDistance;
@@ -24,6 +33,7 @@ public class SpawnerManager : MonoBehaviour
 
     [Header("Insert cooldowns of enemies spawners")]
     public float snailSpawnInterval;
+    public float snailHordeSpawnInterval;
     public float sharkSpawnInterval;
     public float dolphinSpawnInterval;
     public float seagullSpawnInterval;
@@ -53,6 +63,24 @@ public class SpawnerManager : MonoBehaviour
             spawnTimer = 0;
             SpawnSnail();
         }
+
+        if (snailHordeSpawn && (spawnTimer >= snailHordeSpawnInterval))
+        {
+            spawnTimer = 0;
+            SpawnSnailHorde();
+        }
+
+        if (snailLevel2Spawn && (spawnTimer >= snailSpawnInterval) )
+        {
+            spawnTimer = 0;
+            SpawnSnailLevel2();
+        }
+        
+        if (snailLevel3Spawn && (spawnTimer >= snailSpawnInterval) )
+        {
+            spawnTimer = 0;
+            SpawnSnailLevel3();
+        }
         
         if (sharkSpawn && (spawnTimer >= sharkSpawnInterval))
         {
@@ -75,17 +103,43 @@ public class SpawnerManager : MonoBehaviour
         //----------------------Les Temps de spawns------------------
         if (remainingTime >= 590f)
         {
-            snailSpawn = true;
+            snailSpawn      = true;
+            snailHordeSpawn = true;
             return;
         }
         
-        if (remainingTime >= 580f)
+        if (remainingTime >= 540f)
         {
-            snailSpawn = false;
-            sharkSpawn = true;
+            snailSpawn = true;
+            snailHordeSpawn = true;
+            return;
+        }
+
+        if (remainingTime >= 480f)
+        {
+            snailSpawn       = false;
+            snailLevel2Spawn = true;
             return;
         }
         
+        if (remainingTime >= 420f)
+        {
+            snailLevel2Spawn = true;
+            sharkSpawn       = true;
+            return;
+        }
+        
+        if (remainingTime >= 380f)
+        {
+            
+            return;
+        }
+        
+        if (remainingTime >= 320f)
+        {
+            
+            return;
+        }
     }
     
     //-------------------Les fonctions de spawner-------------------------
@@ -97,6 +151,36 @@ public class SpawnerManager : MonoBehaviour
         Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
         Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
         Instantiate(snailPrefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSnailHorde()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(snailHordePrefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSnailLevel2()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(snailLevel2Prefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSnailLevel3()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(snailLevel3Prefab, SpawnPosition, Quaternion.identity);
     }
 
     void SpawnShark()
