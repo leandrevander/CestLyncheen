@@ -8,11 +8,16 @@ public class AmpouleRecupScript : MonoBehaviour
     public Bulb           ampouleScript;
     public GameObject     recupAmpoule;
     public int            nombreAmpoule = 0;
+    public UpgradeMenu upgradeMenu;
+
+    public GameObject barreEXPGO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player         = GameObject.FindWithTag("Player");
         weaponsManager = player.GetComponent<WeaponsManager>();
+        barreEXPGO = GameObject.FindWithTag("BarreEXP");
+        upgradeMenu    = barreEXPGO.GetComponent<UpgradeMenu>();
 
     }
     public void OnCollisionEnter2D(Collision2D other)
@@ -21,10 +26,17 @@ public class AmpouleRecupScript : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                ampoule.SetActive(true);
-                weaponsManager.UpgradeAmpoule();
-                weaponsManager.bulbDescription.SetActive(true);
-                Time.timeScale = 0f;
+                if (weaponsManager.nombreAmpoule == 0)
+                {
+                    ampoule.SetActive(true);
+                    weaponsManager.UpgradeAmpoule();
+                    weaponsManager.bulbDescription.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+                else
+                {
+                    upgradeMenu.BulbUpgrade();
+                }
                 Destroy(gameObject); 
             }
             
