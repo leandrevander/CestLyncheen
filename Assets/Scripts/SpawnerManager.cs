@@ -95,7 +95,7 @@ public class SpawnerManager : MonoBehaviour
             SpawnSnailLevel3();
         }
         
-        if (snailLevel3HordeSpawn && (spawnTimer >= snailSpawnInterval) )
+        if (snailLevel3HordeSpawn && (spawnTimer >= snailHordeSpawnInterval) )
         {
             spawnTimer = 0;
             SpawnSnailLevel3Horde();
@@ -146,31 +146,73 @@ public class SpawnerManager : MonoBehaviour
         
         if (remainingTime >= 540f)
         {
+            seagullSpawn = true;
             return;
         }
 
         if (remainingTime >= 480f)
         {
-            snailSpawn       = false;
-            snailLevel2Spawn = true;
+            seagullSpawn    = false;
+            snailHordeSpawn = true;
+            sharkSpawn      = true;
             return;
         }
         
         if (remainingTime >= 420f)
         {
-
+            snailSpawn = false;
+            snailHordeSpawn = false;
+            sharkSpawn    = false;
+            snailLevel2Spawn = true;
             return;
         }
         
         if (remainingTime >= 380f)
         {
-            
+            snailLevel2HordeSpawn = true;
+            seagullLevel2Spawn    = true;
             return;
         }
         
         if (remainingTime >= 320f)
         {
-            
+            dolphinSpawn = true;
+            return;
+        }
+        
+        if (remainingTime >= 280f)
+        {
+            seagullLevel2Spawn = false;
+            dolphinLevel2Spawn = false;
+            sharkLevel2Spawn   = true;
+            return;
+        }
+        
+        if (remainingTime >= 220f)
+        {
+            snailLevel2Spawn      = false;
+            snailLevel2HordeSpawn = false;
+            snailLevel3Spawn    = true;
+            return;
+        }
+        
+        if (remainingTime >= 180f)
+        {
+            sharkLevel2Spawn      = false;
+            snailLevel3HordeSpawn = true;
+            seagullLevel2Spawn    = true;
+            return;
+        }
+        
+        if (remainingTime >= 120f)
+        {
+            sharkLevel2Spawn = true;
+            return;
+        }
+        
+        if (remainingTime >= 60f)
+        {
+            dolphinLevel2Spawn = true;
             return;
         }
     }
