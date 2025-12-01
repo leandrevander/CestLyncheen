@@ -1,0 +1,549 @@
+fileFormatVersion: 2
+guid: baf10100ef3826349b4769f2ace45c3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7922222487988770577
+    second: SharkLevel2Spritesheet_0
+  - first:
+      213: 954945000918136636
+    second: SharkLevel2Spritesheet_1
+  - first:
+      213: 7333273919073166952
+    second: SharkLevel2Spritesheet_2
+  - first:
+      213: 8321974311124011255
+    second: SharkLevel2Spritesheet_3
+  - first:
+      213: -2710019030575032804
+    second: SharkLevel2Spritesheet_4
+  - first:
+      213: 3930131203875639641
+    second: SharkLevel2Spritesheet_5
+  - first:
+      213: 7712422999438333294
+    second: SharkLevel2Spritesheet_6
+  - first:
+      213: -4515751625858704412
+    second: SharkLevel2Spritesheet_7
+  - first:
+      213: -7693667654769643918
+    second: SharkLevel2Spritesheet_8
+  - first:
+      213: 8784483343949853783
+    second: SharkLevel2Spritesheet_9
+  - first:
+      213: 6824151875478612422
+    second: SharkLevel2Spritesheet_10
+  - first:
+      213: -7279414055934725268
+    second: SharkLevel2Spritesheet_11
+  - first:
+      213: -9012943056361675815
+    second: SharkLevel2Spritesheet_12
+  - first:
+      213: 4265659510055142189
+    second: SharkLevel2Spritesheet_13
+  - first:
+      213: 8752780941246661462
+    second: SharkLevel2Spritesheet_14
+  - first:
+      213: 7500633268167185678
+    second: SharkLevel2Spritesheet_15
+  - first:
+      213: -16534404922959712
+    second: SharkLevel2Spritesheet_16
+  - first:
+      213: -7895789087904712791
+    second: SharkLevel2Spritesheet_17
+  - first:
+      213: 7771614552858001955
+    second: SharkLevel2Spritesheet_18
+  - first:
+      213: -2804593849118830853
+    second: SharkLevel2Spritesheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1093
+        width: 230
+        height: 96
+      alignment: 9
+      pivot: {x: 0.33481166, y: 0.22928238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1179e2c016361fd60800000000000000
+      internalID: 7922222487988770577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1093
+        width: 230
+        height: 96
+      alignment: 9
+      pivot: {x: 0.33481166, y: 0.22928238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37b2c73b65a04d00800000000000000
+      internalID: 954945000918136636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1093
+        width: 230
+        height: 96
+      alignment: 9
+      pivot: {x: 0.33481166, y: 0.22928238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8662efaa6c505c560800000000000000
+      internalID: 7333273919073166952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1093
+        width: 230
+        height: 96
+      alignment: 9
+      pivot: {x: 0.33481166, y: 0.22928238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f809745b879d7370800000000000000
+      internalID: 8321974311124011255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 769
+        width: 269
+        height: 159
+      alignment: 9
+      pivot: {x: 0.36808136, y: 0.25797257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16d60ccc04146ad0800000000000000
+      internalID: -2710019030575032804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 769
+        width: 269
+        height: 159
+      alignment: 9
+      pivot: {x: 0.36808136, y: 0.25797257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9519fa7d181aa8630800000000000000
+      internalID: 3930131203875639641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 914
+        width: 269
+        height: 159
+      alignment: 9
+      pivot: {x: 0.36808136, y: 0.25797257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6513171bd7080b60800000000000000
+      internalID: 7712422999438333294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 769
+        width: 269
+        height: 159
+      alignment: 9
+      pivot: {x: 0.36808136, y: 0.25797257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb9cce52d3d451c0800000000000000
+      internalID: -4515751625858704412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 774
+        width: 269
+        height: 159
+      alignment: 9
+      pivot: {x: 0.36808136, y: 0.25797257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eea81e70a9a3590800000000000000
+      internalID: -7693667654769643918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 237
+        width: 388
+        height: 216
+      alignment: 9
+      pivot: {x: 0.45617896, y: 0.24525735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75477732f01c8e970800000000000000
+      internalID: 8784483343949853783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 577
+        width: 388
+        height: 216
+      alignment: 9
+      pivot: {x: 0.45617896, y: 0.24525735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9e73f89f144be50800000000000000
+      internalID: 6824151875478612422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 567
+        width: 388
+        height: 216
+      alignment: 9
+      pivot: {x: 0.45617896, y: 0.24525735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63760feb735afa90800000000000000
+      internalID: -7279414055934725268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 232
+        width: 388
+        height: 216
+      alignment: 9
+      pivot: {x: 0.45617896, y: 0.24525735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d32db8fa089be280800000000000000
+      internalID: -9012943056361675815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 17
+        width: 388
+        height: 216
+      alignment: 9
+      pivot: {x: 0.45617896, y: 0.24525735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d238a9559baa23b30800000000000000
+      internalID: 4265659510055142189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 36
+        width: 292
+        height: 185
+      alignment: 9
+      pivot: {x: 0.45243752, y: 0.23706582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65301df44ef187970800000000000000
+      internalID: 8752780941246661462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkLevel2Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 36
+        width: 292
+        height: 185
+      alignment: 9
+      pivot: {x: 0.45243752, y: 0.23706582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e051593a73a971860800000000000000
+      internalID: 7500633268167185678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ccc9540c6c86c6c48b1c1627519843f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SharkLevel2Spritesheet_0: 7922222487988770577
+      SharkLevel2Spritesheet_1: 954945000918136636
+      SharkLevel2Spritesheet_10: 6824151875478612422
+      SharkLevel2Spritesheet_11: -7279414055934725268
+      SharkLevel2Spritesheet_12: -9012943056361675815
+      SharkLevel2Spritesheet_13: 4265659510055142189
+      SharkLevel2Spritesheet_14: 8752780941246661462
+      SharkLevel2Spritesheet_15: 7500633268167185678
+      SharkLevel2Spritesheet_16: -16534404922959712
+      SharkLevel2Spritesheet_17: -7895789087904712791
+      SharkLevel2Spritesheet_18: 7771614552858001955
+      SharkLevel2Spritesheet_19: -2804593849118830853
+      SharkLevel2Spritesheet_2: 7333273919073166952
+      SharkLevel2Spritesheet_3: 8321974311124011255
+      SharkLevel2Spritesheet_4: -2710019030575032804
+      SharkLevel2Spritesheet_5: 3930131203875639641
+      SharkLevel2Spritesheet_6: 7712422999438333294
+      SharkLevel2Spritesheet_7: -4515751625858704412
+      SharkLevel2Spritesheet_8: -7693667654769643918
+      SharkLevel2Spritesheet_9: 8784483343949853783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
