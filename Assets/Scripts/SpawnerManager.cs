@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class SpawnerManager : MonoBehaviour
 {
-    public  float      spawnTimer;
     public Transform playerPosition;
     public  float      remainingTime;
-        
+    
+    private float snailSpawnTimer;
+    private float snailHordeSpawnTimer;
+    private float sharkSpawnTimer;
+    private float dolphinSpawnTimer;
+    private float seagullSpawnTimer;
+
+
     [Header("Distance")]
     public float minDistance;
     public float maxDistance;
@@ -53,7 +59,11 @@ public class SpawnerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnTimer += Time.deltaTime;
+        snailSpawnTimer      += Time.deltaTime;
+        snailHordeSpawnTimer += Time.deltaTime;
+        sharkSpawnTimer      += Time.deltaTime;
+        dolphinSpawnTimer    += Time.deltaTime;
+        seagullSpawnTimer    += Time.deltaTime;
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
@@ -65,75 +75,75 @@ public class SpawnerManager : MonoBehaviour
         
         //-------------------Les conditions du spawn--------------
 
-        if (snailSpawn && (spawnTimer >= snailSpawnInterval) )
+        if (snailSpawn && (snailSpawnTimer >= snailSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailSpawnTimer = 0;
             SpawnSnail();
         }
         
-        if (snailHordeSpawn && (spawnTimer >= snailHordeSpawnInterval) )
+        if (snailHordeSpawn && (snailHordeSpawnTimer >= snailHordeSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailHordeSpawnTimer = 0;
             SpawnSnailHorde();
         }
         
-        if (snailLevel2Spawn && (spawnTimer >= snailSpawnInterval) )
+        if (snailLevel2Spawn && (snailSpawnTimer >= snailSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailSpawnTimer = 0;
             SpawnSnailLevel2();
         }
         
-        if (snailLevel2HordeSpawn && (spawnTimer >= snailHordeSpawnInterval) )
+        if (snailLevel2HordeSpawn && (snailHordeSpawnTimer >= snailHordeSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailHordeSpawnTimer = 0;
             SpawnSnailLevel2Horde();
         }
         
-        if (snailLevel3Spawn && (spawnTimer >= snailSpawnInterval) )
+        if (snailLevel3Spawn && (snailSpawnTimer >= snailSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailSpawnTimer = 0;
             SpawnSnailLevel3();
         }
         
-        if (snailLevel3HordeSpawn && (spawnTimer >= snailHordeSpawnInterval) )
+        if (snailLevel3HordeSpawn && (snailHordeSpawnTimer >= snailHordeSpawnInterval) )
         {
-            spawnTimer = 0;
+            snailHordeSpawnTimer = 0;
             SpawnSnailLevel3Horde();
         }
         
-        if (sharkSpawn && (spawnTimer >= sharkSpawnInterval))
+        if (sharkSpawn && (sharkSpawnTimer >= sharkSpawnInterval))
         {
-            spawnTimer = 0;
+            sharkSpawnTimer = 0;
             SpawnShark();
         }
         
-        if (sharkLevel2Spawn && (spawnTimer >= sharkSpawnInterval))
+        if (sharkLevel2Spawn && (sharkSpawnTimer >= sharkSpawnInterval))
         {
-            spawnTimer = 0;
+            sharkSpawnTimer = 0;
             SpawnSharkLevel2();
         }
         
-        if (dolphinSpawn && (spawnTimer >= dolphinSpawnInterval))
+        if (dolphinSpawn && (dolphinSpawnTimer >= dolphinSpawnInterval))
         {
-            spawnTimer = 0;
+            dolphinSpawnTimer = 0;
             SpawnDolphin();
         }
         
-        if (dolphinLevel2Spawn && (spawnTimer >= dolphinSpawnInterval))
+        if (dolphinLevel2Spawn && (dolphinSpawnTimer >= dolphinSpawnInterval))
         {
-            spawnTimer = 0;
+            dolphinSpawnTimer = 0;
             SpawnDolphinLevel2();
         }
 
-        if (seagullSpawn && (spawnTimer >= seagullSpawnInterval))
+        if (seagullSpawn && (seagullSpawnTimer >= seagullSpawnInterval))
         {
-            spawnTimer = 0;
+            seagullSpawnTimer = 0;
             SpawnSeagull();
         }
         
-        if (seagullLevel2Spawn && (spawnTimer >= seagullSpawnInterval))
+        if (seagullLevel2Spawn && (seagullSpawnTimer >= seagullSpawnInterval))
         {
-            spawnTimer = 0;
+            seagullSpawnTimer = 0;
             SpawnSeagullLevel2();
         }
         
@@ -141,79 +151,58 @@ public class SpawnerManager : MonoBehaviour
         if (remainingTime >= 590f)
         {
             snailSpawn = true;
-            return;
         }
-        
-        if (remainingTime >= 540f)
+        else if (remainingTime >= 540f)
         {
             seagullSpawn = true;
-            return;
         }
-
-        if (remainingTime >= 480f)
+        else if (remainingTime >= 480f)
         {
             seagullSpawn    = false;
             snailHordeSpawn = true;
             sharkSpawn      = true;
-            return;
         }
-        
-        if (remainingTime >= 420f)
+        else if (remainingTime >= 420f)
         {
             snailSpawn = false;
             snailHordeSpawn = false;
             sharkSpawn    = false;
             snailLevel2Spawn = true;
-            return;
         }
-        
-        if (remainingTime >= 380f)
+        else if (remainingTime >= 380f)
         {
             snailLevel2HordeSpawn = true;
             seagullLevel2Spawn    = true;
-            return;
         }
-        
-        if (remainingTime >= 320f)
+        else if (remainingTime >= 320f)
         {
             dolphinSpawn = true;
-            return;
         }
-        
-        if (remainingTime >= 280f)
+        else if (remainingTime >= 280f)
         {
             seagullLevel2Spawn = false;
             dolphinLevel2Spawn = false;
             sharkLevel2Spawn   = true;
-            return;
         }
-        
-        if (remainingTime >= 220f)
+        else if (remainingTime >= 220f)
         {
             snailLevel2Spawn      = false;
             snailLevel2HordeSpawn = false;
             snailLevel3Spawn    = true;
-            return;
         }
-        
-        if (remainingTime >= 180f)
+        else if (remainingTime >= 180f)
         {
             sharkLevel2Spawn      = false;
             snailLevel3HordeSpawn = true;
             seagullLevel2Spawn    = true;
-            return;
         }
-        
-        if (remainingTime >= 120f)
+        else if (remainingTime >= 120f)
         {
             sharkLevel2Spawn = true;
-            return;
         }
-        
-        if (remainingTime >= 60f)
+        else if (remainingTime >= 60f)
         {
             dolphinLevel2Spawn = true;
-            return;
         }
     }
     
@@ -300,6 +289,7 @@ public class SpawnerManager : MonoBehaviour
     
     void SpawnSeagull()
     {
+        Debug.Log("La mouette a pop");
         float   angleDegre    = Random.Range(0f, 360f);
         float   angleRad      = angleDegre * Mathf.Deg2Rad;
         float   distanceSpawn = Random.Range(minDistance, maxDistance);
@@ -320,6 +310,7 @@ public class SpawnerManager : MonoBehaviour
     
     void SpawnDolphin()
     {
+        Debug.Log("Flipper a pop");
         float   angleDegre    = Random.Range(0f, 360f);
         float   angleRad      = angleDegre * Mathf.Deg2Rad;
         float   distanceSpawn = Random.Range(minDistance, maxDistance);
