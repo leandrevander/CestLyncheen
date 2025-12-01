@@ -16,10 +16,6 @@ GameObject:
   - component: {fileID: 7063967934696157699}
   - component: {fileID: 4900357394354545773}
   - component: {fileID: 7085620555468675193}
-  - component: {fileID: 6173067243619725415}
-  - component: {fileID: 557723251424640034}
-  - component: {fileID: 9109803538789591313}
-  - component: {fileID: 1260202817415598146}
   - component: {fileID: 1744457959565130628}
   m_Layer: 6
   m_Name: Playerv3
@@ -45,7 +41,6 @@ Transform:
   - {fileID: 2934396766536896951}
   - {fileID: 6191080784604797478}
   - {fileID: 9164967811718791079}
-  - {fileID: 6733478292311594298}
   - {fileID: 3041697602553725017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,7 +136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 4
   invincible: 0
-  playerhitten: 1
+  playerhitten: 0
+  playerDamageOverlay: {fileID: 0}
+  playerSpriteRenderer: {fileID: 4900357394354545773}
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -261,78 +258,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.064026654, y: 1.1059418}
   m_Size: {x: 1.2975501, y: 1.6791077}
   m_Direction: 0
---- !u!114 &6173067243619725415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5917718945100678893}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e6a2ab59fad6c4eaa64c6abc1b943a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 3342766363712070149, guid: c89e841bfe3ee524ca6baeedfe3d238e, type: 3}
-  spawnTimer: 0
-  spawnInterval: 1
-  minDistance: 5
-  maxDistance: 5
-  distanceSpawn: 0
---- !u!114 &557723251424640034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5917718945100678893}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c75138e34971cf4ab5e65ce82540b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 6962682548767142865, guid: fed25f5bf6b7e1d45b390527890f848e, type: 3}
-  spawnTimer: 0
-  spawnInterval: 4
-  minDistance: 15
-  maxDistance: 15
-  distanceSpawn: 0
---- !u!114 &9109803538789591313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5917718945100678893}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abfea99d4384c3499ea308ed1f9ff09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 4459664343219561911, guid: c34d10029269345429df90227bf8dcff, type: 3}
-  spawnTimer: 0
-  spawnInterval: 3
-  minDistance: 15
-  maxDistance: 15
-  distanceSpawn: 0
---- !u!114 &1260202817415598146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5917718945100678893}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2d7d02fd5c14a4ab6a8a7a98bc1530, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyprefab: {fileID: 6917319842684498884, guid: a7f18f2a136035046995aacafabc0270, type: 3}
-  spawnTimer: 0
-  spawnInterval: 4
-  minDistance: 15
-  maxDistance: 15
-  distanceSpawn: 0
 --- !u!114 &1744457959565130628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,31 +270,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8ebaac4c838cc4e9f6988bf5f7da76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ampoule: {fileID: 3442398829883951785}
-  ampouleScript: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
-  recupAmpoule: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-  nombreAmpoule: 1
-  AppareillePhoto: {fileID: 4445761912371658993}
-  nombreAppareillePhoto: 2
-  RecupAppareillePhoto: {fileID: 4445761912371658993}
-  freezeDuration: 2
   ennemi_NavMesh: {fileID: 0}
-  GlowStickRecup: 0
-  prefabGlowStick: {fileID: 3507916467900487534, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
-  numberOfGlowStick: 0
-  glowStickScript: {fileID: 8940694495901544124, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
   upgradeMenu: {fileID: 0}
-  haveCamera: 1
+  hitByLighthouse: 1
+  nombreAmpoule: 0
+  hitByBulb: 1
+  bulbDescription: {fileID: 0}
+  ampoule: {fileID: 3442398829883951785}
+  recupAmpoule: {fileID: 0}
+  ampouleScript: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
+  nombreAppareillePhoto: 0
+  freezeDuration: 2
+  haveCamera: 0
+  cameraDescription: {fileID: 0}
+  AppareillePhoto: {fileID: 4445761912371658993}
+  RecupAppareillePhoto: {fileID: 0}
+  GlowStickRecup: 0
+  numberOfGlowStick: 0
+  hitpoint: 1
+  GlowStickDuration: 10
+  glowStickDescription: {fileID: 0}
+  prefabGlowStick: {fileID: 3507916467900487534, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
   glowStickDestroy: {fileID: 0}
   glowStickDestroy2: {fileID: 0}
   glowStickDestroy3: {fileID: 0}
-  hitpoint: 1
-  hitByBulb: 1
-  hitByLighthouse: 1
-  GlowStickDuration: 10
-  cameraDescription: {fileID: 0}
-  bulbDescription: {fileID: 0}
-  glowStickDescription: {fileID: 0}
+  glowStickScript: {fileID: 8940694495901544124, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
   hitByFlashlight: 2
   eventSystem: {fileID: 0}
   buttonBulbDescription: {fileID: 0}
@@ -438,6 +363,14 @@ MonoBehaviour:
   phareRespawnLevel3: 6
   phareRespawnLevel4: 4
   phareRotation: {fileID: 7294565760469124734}
+  phareBonusText: {fileID: 0}
+  phareBonusTextGO: {fileID: 0}
+  timer: 0
+  timerInterval: 120
+  metaDataLVL4: 40
+  metaDataLVL3: 30
+  metaDataLVL2: 20
+  metaDataLVL1: 10
 --- !u!114 &3003899973437894648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,8 +407,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.32405, y: -0.06099999, z: 0}
-    m_Extent: {x: 3.7625499, y: 1.4756, z: 0}
+    m_Center: {x: 3.28095, y: -0.9149, z: 0}
+    m_Extent: {x: 3.71945, y: 2.3291, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -487,7 +420,7 @@ MonoBehaviour:
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -0.039015673, y: 0.044825833, z: 0}
-  - {x: 6.6867886, y: -1.1378404, z: 0}
+  - {x: 6.571197, y: -2.8449361, z: 0}
   - {x: 6.601403, y: 1.0138155, z: 0}
   - {x: -0.040113777, y: 0.04820924, z: 0}
 --- !u!114 &7294565760469124734
@@ -502,8 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b874f059fa8d2154aad19a063830ddd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 45
-  targetZ: 95
+  rotationSpeed: 30
+  targetZ: 115
   lighthouseTimer: 0.2
   lighthouseRespawnDelay: 1
 --- !u!60 &8753884500100449962
@@ -554,8 +487,8 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 4.388491, y: 0.6807596}
       - {x: -0.030241251, y: 0.045811683}
-      - {x: 4.42002, y: -0.7264817}
-      - {x: 6.659647, y: -1.1321692}
+      - {x: 3.9205854, y: -1.7468051}
+      - {x: 6.684619, y: -2.9392483}
       - {x: 6.589078, y: 1.0063989}
   m_UseDelaunayMesh: 0
 --- !u!1 &7663034145965627516
@@ -757,7 +690,7 @@ MonoBehaviour:
   player: {fileID: 0}
   raycastMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 2816
   flashlightLight: {fileID: 401780408686118195}
   flashlightCollider: {fileID: 5778645605717843550}
   flashlightCollider2DArray:
@@ -836,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3224023966224693393, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6318706075934705765, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
@@ -918,7 +851,7 @@ MonoBehaviour:
   player: {fileID: 5917718945100678893}
   raycastMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 2816
 --- !u!114 &5861004878593039348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,96 +883,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7943239210362193863, guid: 4ef94db3782b8774eb1a190bde40d901, type: 3}
   m_PrefabInstance: {fileID: 1228511076290984032}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3857698140996576594
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8189756765440489749}
-    m_Modifications:
-    - target: {fileID: 1336773383681818516, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: ampoule
-      value: 
-      objectReference: {fileID: 3442398829883951785}
-    - target: {fileID: 1336773383681818516, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: ampouleScript
-      value: 
-      objectReference: {fileID: 4727659504918199445}
-    - target: {fileID: 1336773383681818516, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: weaponsManager
-      value: 
-      objectReference: {fileID: 1744457959565130628}
-    - target: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_Name
-      value: RecupAmpoule
-      objectReference: {fileID: 0}
-    - target: {fileID: 4437829149449620560, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.624405
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.8793585
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7775979839963297366, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_Color.b
-      value: 0.114587024
-      objectReference: {fileID: 0}
-    - target: {fileID: 7775979839963297366, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9716981
-      objectReference: {fileID: 0}
-    - target: {fileID: 7775979839963297366, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8879134
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
---- !u!4 &6733478292311594298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7564731060538339432, guid: 6cedfc78c948df7458730db618e568ca, type: 3}
-  m_PrefabInstance: {fileID: 3857698140996576594}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4323773882600602510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1051,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 1424538326097015079, guid: 8b442033bd85db9498171858df981593, type: 3}
       propertyPath: m_Name
       value: Ampoule
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424538326097015079, guid: 8b442033bd85db9498171858df981593, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6634811695313054905, guid: 8b442033bd85db9498171858df981593, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
@@ -1110,17 +957,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1424538326097015079, guid: 8b442033bd85db9498171858df981593, type: 3}
   m_PrefabInstance: {fileID: 4323773882600602510}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4727659504918199445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9051430638688716571, guid: 8b442033bd85db9498171858df981593, type: 3}
-  m_PrefabInstance: {fileID: 4323773882600602510}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3442398829883951785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced59475118966346bf3f33ae77cba69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6085729400596608528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7527199246214434206, guid: 8b442033bd85db9498171858df981593, type: 3}

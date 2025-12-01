@@ -148,59 +148,61 @@ public class SpawnerManager : MonoBehaviour
         }
         
         //----------------------Les Temps de spawns------------------
-        if (remainingTime >= 590f)
+
+        if (remainingTime >= 540f)
         {
             snailSpawn = true;
         }
-        else if (remainingTime >= 540f)
-        {
+        else if (remainingTime >= 480f)
+        { 
             seagullSpawn = true;
         }
-        else if (remainingTime >= 480f)
+        else if (remainingTime >= 420f)
         {
             seagullSpawn    = false;
             snailHordeSpawn = true;
             sharkSpawn      = true;
         }
-        else if (remainingTime >= 420f)
+        else if (remainingTime >= 380f)
         {
-            snailSpawn = false;
-            snailHordeSpawn = false;
-            sharkSpawn    = false;
+            snailSpawn       = false;
+            snailHordeSpawn  = false;
+            sharkSpawn       = false;
             snailLevel2Spawn = true;
         }
-        else if (remainingTime >= 380f)
+        else if (remainingTime >= 320f)
         {
             snailLevel2HordeSpawn = true;
             seagullLevel2Spawn    = true;
         }
-        else if (remainingTime >= 320f)
+        else if (remainingTime >= 280f)
         {
             dolphinSpawn = true;
         }
-        else if (remainingTime >= 280f)
+        else if (remainingTime >= 220f)
         {
             seagullLevel2Spawn = false;
             dolphinLevel2Spawn = false;
             sharkLevel2Spawn   = true;
         }
-        else if (remainingTime >= 220f)
+        else if (remainingTime >= 180f)
         {
             snailLevel2Spawn      = false;
             snailLevel2HordeSpawn = false;
-            snailLevel3Spawn    = true;
+            snailLevel3Spawn      = true;
         }
-        else if (remainingTime >= 180f)
+        else if (remainingTime >= 120f)
         {
             sharkLevel2Spawn      = false;
             snailLevel3HordeSpawn = true;
             seagullLevel2Spawn    = true;
+            
         }
-        else if (remainingTime >= 120f)
+        else if (remainingTime >= 60f)
         {
             sharkLevel2Spawn = true;
         }
-        else if (remainingTime >= 60f)
+        else if (remainingTime >= 0f)
         {
             dolphinLevel2Spawn = true;
         }
