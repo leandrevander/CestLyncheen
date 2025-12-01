@@ -8,44 +8,45 @@ using UnityEngine.UI;
 namespace DefaultNamespace
 {
 	public class UpgradeMenuV2 : MonoBehaviour
-	{
-		public TMP_Text Upgrade1;
-    public TMP_Text Upgrade2;
-    public TMP_Text Upgrade3;
-    public Experience experience;
-    public GameObject upgradeMenu;
-    public Button upgrade1button;
-    public Button upgrade2button;
-    public Button upgrade3button;
-    public Button upgrade4button;
-    public TMP_Text LevelUpgrade4;
-    public TMP_Text LevelUpgrade1;
-    public TMP_Text LevelUpgrade2;
-    public TMP_Text LevelUpgrade3;
-    public TMP_Text describleTextUpgrade1;
-    public TMP_Text describleTextUpgrade2;
-    public TMP_Text describleTextUpgrade3;
-    public TMP_Text describleTextUpgrade4;
-    public int levelupgrade1 = 1;
-    public int levelupgrade2 = 1;
-    public int levelupgrade3 = 1;
-    public int levelupgrade4 = 1;
-    public int randomUpgradeCase1;
-    public int randomUpgradeCase2;
-    public int randomUpgradeCase3;
-    public GameObject[] mesUpgrades;
-    public Vector2 emplacement1;
-    public Vector2 emplacement2;
-    public Vector2 emplacement3;
-    public GameObject Case1;
-    public GameObject Case2;
-    public GameObject Case3;
-    public PlayerControl playerControl;
-    public float Multiplier = 1.2f;
-    public Bulb bulbScript;
-    public Light2D bulb;
-    public WeaponsManager weaponsManager;
-    public EnemyHealthManagement enemyHealthManagement;
+    {
+        [SerializeField] AudioClip             select;
+		public           TMP_Text              Upgrade1;
+    public               TMP_Text              Upgrade2;
+    public               TMP_Text              Upgrade3;
+    public               Experience            experience;
+    public               GameObject            upgradeMenu;
+    public               Button                upgrade1button;
+    public               Button                upgrade2button;
+    public               Button                upgrade3button;
+    public               Button                upgrade4button;
+    public               TMP_Text              LevelUpgrade4;
+    public               TMP_Text              LevelUpgrade1;
+    public               TMP_Text              LevelUpgrade2;
+    public               TMP_Text              LevelUpgrade3;
+    public               TMP_Text              describleTextUpgrade1;
+    public               TMP_Text              describleTextUpgrade2;
+    public               TMP_Text              describleTextUpgrade3;
+    public               TMP_Text              describleTextUpgrade4;
+    public               int                   levelupgrade1 = 1;
+    public               int                   levelupgrade2 = 1;
+    public               int                   levelupgrade3 = 1;
+    public               int                   levelupgrade4 = 1;
+    public               int                   randomUpgradeCase1;
+    public               int                   randomUpgradeCase2;
+    public               int                   randomUpgradeCase3;
+    public               GameObject[]          mesUpgrades;
+    public               Vector2               emplacement1;
+    public               Vector2               emplacement2;
+    public               Vector2               emplacement3;
+    public               GameObject            Case1;
+    public               GameObject            Case2;
+    public               GameObject            Case3;
+    public               PlayerControl         playerControl;
+    public               float                 Multiplier = 1.2f;
+    public               Bulb                  bulbScript;
+    public               Light2D               bulb;
+    public               WeaponsManager        weaponsManager;
+    public               EnemyHealthManagement enemyHealthManagement;
     
 
 
@@ -112,7 +113,7 @@ namespace DefaultNamespace
         }
         else
         {
-
+            AudioSource.PlayClipAtPoint(select, transform.position);
             levelupgrade1++;
             playerControl.moveSpeed = Mathf.RoundToInt(playerControl.moveSpeed * Multiplier);
             LevelUpgrade1.text = "Level " + levelupgrade1;
@@ -123,6 +124,7 @@ namespace DefaultNamespace
     {
         if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade2.text = "Increase damage to your enemies.";
             levelupgrade2++;
             weaponsManager.hitByBulb = 2;
@@ -131,6 +133,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade2.text = "Increase the bulb's range.";
             levelupgrade2++;
             LevelUpgrade2.text = "Level :" + levelupgrade2;
@@ -139,6 +142,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade2 == 2) && (weaponsManager.nombreAmpoule > 0))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade2.text = "Increase damage to your enemies.";
             levelupgrade2++;
             weaponsManager.hitByBulb = 3;
@@ -147,6 +151,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade2.text = "Increase the bulb's range.";
             levelupgrade2++;
             bulbScript.BulbLevel5();
@@ -155,6 +160,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade2 == 4) && (weaponsManager.nombreAmpoule > 0))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             LevelUpgrade2.text = "Max Level";
             upgrade2button.interactable = false;
             UpgradeMenuClose();
@@ -185,6 +191,7 @@ namespace DefaultNamespace
     {
         if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             LevelUpgrade3.text = "Level :" + levelupgrade3;
             describleTextUpgrade3.text = "Being the camera�s range.";
             levelupgrade3++;
@@ -195,6 +202,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade3 == 1) && (weaponsManager.haveCamera == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade3.text = "Increase the duration of the stun.";
             enemyHealthManagement.FrezzeDuration = 3f;
             LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -206,6 +214,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade3 == 2) && (weaponsManager.haveCamera == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade3.text = "Being the camera�s range.";
             // Agmente la port� de l'appareil photo ( le raycast )
             LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -216,6 +225,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade3.text = "Increase the duration of the stun.";
             LevelUpgrade3.text = "Level :" + levelupgrade3;
             levelupgrade3++;
@@ -224,6 +234,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             LevelUpgrade3.text = "Max Level";
             upgrade3button.interactable = false;
             UpgradeMenuClose();
@@ -267,6 +278,7 @@ namespace DefaultNamespace
     {
         if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade4.text = "Place 2 GlowSticks instead of 1.";
             LevelUpgrade4.text = "Level :" + levelupgrade4;
             levelupgrade4++;
@@ -274,6 +286,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade4 == 1) && (weaponsManager.GlowStickRecup == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
             weaponsManager.GlowStickDuration = 12.5f;// augmente la dur�e des glowstick
             LevelUpgrade4.text = "Level :" + levelupgrade4;
@@ -282,6 +295,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade4 == 2) && (weaponsManager.GlowStickRecup == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade4.text = "Place 3 GlowSticks instead of 1.";
             // d�pose 3 glowstick au lieu de 1
             LevelUpgrade4.text = "Level :" + levelupgrade4;
@@ -290,6 +304,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade4 == 3) && (weaponsManager.GlowStickRecup == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
             weaponsManager.GlowStickDuration = 15f; // augmente la dur�e des glowstick
             LevelUpgrade4.text = "Level :" + levelupgrade4;
@@ -298,6 +313,7 @@ namespace DefaultNamespace
         }
         else if ((levelupgrade4 == 4) && (weaponsManager.GlowStickRecup == true))
         {
+            AudioSource.PlayClipAtPoint(select, transform.position);
             describleTextUpgrade4.text = "Increase damage of the glowStick.";
             weaponsManager.hitpoint = 2; // augmente les d�gats des glowstick
             LevelUpgrade4.text = "Level :" + levelupgrade4;
