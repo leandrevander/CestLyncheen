@@ -37,6 +37,8 @@ public class ArrowTargetWeapon : MonoBehaviour
         target          = weaponsLocation.weapon1;
         targetchildren = target.transform.GetChild(0).gameObject;
         //targetposition.position = weaponsLocation.weapon1.transform.position;
+        imagePointeur.enabled = false;
+
     }
 
 

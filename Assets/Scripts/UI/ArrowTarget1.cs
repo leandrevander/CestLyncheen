@@ -37,6 +37,7 @@ public class ArrowTargetHP : MonoBehaviour
         target               = healthLocation.healthItem;
         targetchildren       = target.transform.GetChild(0).gameObject;
         //targetposition.position = weaponsLocation.weapon1.transform.position;
+        imagePointeur.enabled = false;
     }
 
 
