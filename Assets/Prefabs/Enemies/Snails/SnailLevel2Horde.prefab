@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4618107391866382133}
+  - component: {fileID: -1859906902800854500}
   m_Layer: 0
   m_Name: SnailLevel2Horde
   m_TagString: Untagged
@@ -35,6 +36,19 @@ Transform:
   - {fileID: 1870473639183418973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1859906902800854500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926293502870151016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd36d8b50b2f46a4794a0ce280a9e180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector: {fileID: 0}
 --- !u!1001 &734267539090381897
 PrefabInstance:
   m_ObjectHideFlags: 0
