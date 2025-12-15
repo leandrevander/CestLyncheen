@@ -13,6 +13,8 @@ TagManager:
   - ShadowBubble
   - BarreEXP
   - Detector
+  - WeaponSpawnerManager
+  - HealthSpawnerManager
   layers:
   - Default
   - TransparentFX
