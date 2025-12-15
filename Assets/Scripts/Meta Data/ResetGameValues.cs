@@ -12,6 +12,9 @@ public class ResetGameValues : MonoBehaviour
     { 
         Debug.Log("Reset Game Values");
         metaDataSystem.SetMetaData(0);
+        metaDataSystem.SetUnlockedGlowstick(0);
+        metaDataSystem.SetUnlockedBulb(0);
+        metaDataSystem.SetUnlockedCamera(0);
     }
 
     // Update is called once per frame

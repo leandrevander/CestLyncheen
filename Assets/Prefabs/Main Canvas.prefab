@@ -7521,6 +7521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarreXP v2
       objectReference: {fileID: 0}
+    - target: {fileID: 8577676061862585255, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
+      propertyPath: m_TagString
+      value: BarreEXP
+      objectReference: {fileID: 0}
     - target: {fileID: 8589299941156879319, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       propertyPath: upgradeMenu
       value: 
