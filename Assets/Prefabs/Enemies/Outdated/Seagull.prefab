@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2873556452400675857}
   - component: {fileID: 370224863039234518}
   - component: {fileID: 6233807531265403916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Seagull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,6 +237,7 @@ MonoBehaviour:
   agentSpeedReset: 3.5
   agentAccelerationReset: 8
   endDashDistance: 11
+  state: 0
 --- !u!195 &7484838000335732666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -317,15 +318,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e25e551aec2bb47b1c6f2a90afcce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsHitten: 0
+  isHittenByFlashlight: 0
+  IsHittenByBull: 0
+  IsHitByGlowStick: 0
+  freezeEnnemi: 0
   HealthZombie: 5
   pvperdu: 2
+  IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  freezeEnnemi: 0
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 0}
   ennemi_NavMeshAgent: {fileID: 0}
   speed: 2.5
+  FrezzeDuration: 2
+  speedSeagull: 3.5
+  freezeEffect: {fileID: 0}
+  damageEffect: {fileID: 0}
 --- !u!114 &6233807531265403916
 MonoBehaviour:
   m_ObjectHideFlags: 0

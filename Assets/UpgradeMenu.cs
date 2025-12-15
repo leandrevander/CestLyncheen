@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 public class UpgradeMenu : MonoBehaviour
 {
-    [SerializeField] private  AudioSource select;
+    
     [Header("Script")]
    public PlayerControl         playerControl;
    public float                 Multiplier = 1.2f;
@@ -25,6 +25,7 @@ public class UpgradeMenu : MonoBehaviour
    
    
    [Header("Menu")]
+   [SerializeField] AudioSource    select ;
    public int        randomUpgradeCase1;
    public int randomUpgradeCase2;
    public int randomUpgradeCase3;
@@ -213,6 +214,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if (levelupgrade1 >= 4)
        {
+           select.Play();
            LevelUpgrade1.text = "Max Level";
            upgrade1button.interactable = false;
 
@@ -225,7 +227,7 @@ public class UpgradeMenu : MonoBehaviour
        else
        {
 
-           select.Play();
+
            levelupgrade1++;
            playerControl.moveSpeed = Mathf.RoundToInt(playerControl.moveSpeed * Multiplier);
            LevelUpgrade1.text = "Level " + levelupgrade1;
@@ -273,7 +275,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 4) && (weaponsManager.nombreAmpoule > 0))
        {
-           
            LevelUpgrade2.text          = "Max Level";
            upgrade2button.interactable = false;
            UpgradeMenuClose();
@@ -420,7 +421,6 @@ public class UpgradeMenu : MonoBehaviour
        else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
        {
            select.Play();
-           
            levelupgrade3++;
            describleTextUpgrade3.text = "Max Level";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -429,6 +429,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
        {
+          
            LevelUpgrade3.text = "Max Level";
            upgrade3button.interactable = false;
            UpgradeMenuClose();
@@ -497,7 +498,6 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
        {
-           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
            LevelUpgrade4.text = "Level :" + levelupgrade4;
@@ -506,8 +506,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 1) && (weaponsManager.GlowStickRecup == true))
        {
-           select.Play();
-
            levelupgrade4++;
            describleTextUpgrade4.text = "Place 3 GlowSticks instead of 1.";
            weaponsManager.GlowStickDuration = 12.5f;// augmente la dur�e des glowstick
@@ -517,8 +515,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 2) && (weaponsManager.GlowStickRecup == true))
        {
-           select.Play();
-
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
            // d�pose 3 glowstick au lieu de 1
@@ -528,7 +524,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 3) && (weaponsManager.GlowStickRecup == true))
        {
-           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase damage of the glowStick.";
            weaponsManager.GlowStickDuration = 15f; // augmente la dur�e des glowstick
@@ -538,7 +533,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 4) && (weaponsManager.GlowStickRecup == true))
        {
-           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Max Level";
            weaponsManager.hitpoint = 2; // augmente les d�gats des glowstick
@@ -548,7 +542,6 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 5) && (weaponsManager.GlowStickRecup == true))
        {
-           
            LevelUpgrade4.text = "Max Level";
            upgrade4button.interactable = false;
            UpgradeMenuClose();

@@ -653,6 +653,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8300000, guid: b15481eca4bee7343a1cf8ec118c9895, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1173817053402720931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,6 +5474,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8300000, guid: b15481eca4bee7343a1cf8ec118c9895, type: 3}
+        m_TargetAssemblyTypeName: DescriptionItem, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6885873812065031095
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +6744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5006310077365207131}
   - component: {fileID: 5134148670905116351}
+  - component: {fileID: 1608528997926147262}
   m_Layer: 6
   m_Name: UnlockItem
   m_TagString: Untagged
@@ -6761,7 +6786,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1867d2d30fb9f624da355fa468e15128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  select: {fileID: 1608528997926147262}
   weaponsManager: {fileID: 0}
+--- !u!82 &1608528997926147262
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602598561266171642}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b15481eca4bee7343a1cf8ec118c9895, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8609902554844928100
 GameObject:
   m_ObjectHideFlags: 0
@@ -7526,6 +7649,10 @@ PrefabInstance:
       value: BarreEXP
       objectReference: {fileID: 0}
     - target: {fileID: 8589299941156879319, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
+      propertyPath: levelUp
+      value: 
+      objectReference: {fileID: 139147752348996069}
+    - target: {fileID: 8589299941156879319, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       propertyPath: upgradeMenu
       value: 
       objectReference: {fileID: 6770148154023648018}
@@ -7533,10 +7660,6 @@ PrefabInstance:
       propertyPath: barAnimation
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 8589299941156879319, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
-      propertyPath: levelUpSound
-      value: 
-      objectReference: {fileID: 2120931755543496727}
     - target: {fileID: 8589299941156879319, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       propertyPath: fillAnimation
       value: 
@@ -7550,10 +7673,10 @@ PrefabInstance:
       addedObject: {fileID: 6770148154023648018}
     - targetCorrespondingSourceObject: {fileID: 8577676061862585255, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3125463220685942842}
+      addedObject: {fileID: 139147752348996069}
     - targetCorrespondingSourceObject: {fileID: 8577676061862585255, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2120931755543496727}
+      addedObject: {fileID: 1058131885503032824}
     - targetCorrespondingSourceObject: {fileID: 182216189791247110, guid: 82951295c5e943544a1a8c20e5123a5d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3532648834637786505}
@@ -7669,12 +7792,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16729fdc3e9db943b1771a31aebb16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  select: {fileID: 3125463220685942842}
   playerControl: {fileID: 0}
   Multiplier: 1.2
   weaponsManager: {fileID: 0}
   enemyHealthManagement: {fileID: 0}
   experience: {fileID: 5919143079991787319}
+  select: {fileID: 1058131885503032824}
   randomUpgradeCase1: 0
   randomUpgradeCase2: 0
   randomUpgradeCase3: 0
@@ -7725,7 +7848,7 @@ MonoBehaviour:
   upgradeCase2: {fileID: 0}
   upgradeCase3: {fileID: 0}
   closeButtonUpgradeMenu: {fileID: 4316519571067575599}
---- !u!82 &3125463220685942842
+--- !u!82 &139147752348996069
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7736,9 +7859,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b15481eca4bee7343a1cf8ec118c9895, type: 3}
+  m_Resource: {fileID: 8300000, guid: a0ebe704ef247ea4fa1695d8b0c7f523, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7822,7 +7945,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &2120931755543496727
+--- !u!82 &1058131885503032824
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7833,7 +7956,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a0ebe704ef247ea4fa1695d8b0c7f523, type: 3}
+  m_Resource: {fileID: 8300000, guid: b15481eca4bee7343a1cf8ec118c9895, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

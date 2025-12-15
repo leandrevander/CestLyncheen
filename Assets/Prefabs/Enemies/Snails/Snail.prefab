@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 5312053910916296469}
   - component: {fileID: 1635789006161524969}
   - component: {fileID: 8503354195457008611}
+  - component: {fileID: 1649180309231324018}
   m_Layer: 8
   m_Name: Snail
   m_TagString: Ennemi
@@ -415,6 +416,19 @@ MonoBehaviour:
   speedSeagull: 3.5
   freezeEffect: {fileID: 2529131321271652144}
   damageEffect: {fileID: 4751938850068838709}
+--- !u!114 &1649180309231324018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342766363712070149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd36d8b50b2f46a4794a0ce280a9e180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector: {fileID: 0}
 --- !u!1001 &7177829004798270997
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,6 +3,8 @@ using UnityEngine;
 public class CameraItem : MonoBehaviour
 
 {
+    [SerializeField] private AudioSource recup;
+
     public GameObject     player;
     public WeaponsManager weaponsManager;
     
@@ -24,6 +26,7 @@ public class CameraItem : MonoBehaviour
         {
             if (weaponsManager.nombreAppareillePhoto == 0)
             {
+                recup.Play();
                 weaponsManager.AgmentationDuNiveauAppareillePhoto();
                 weaponsManager.haveCamera = true;
 
@@ -33,7 +36,7 @@ public class CameraItem : MonoBehaviour
             {
               upgradeMenu.CameraUpgrade();  
             }
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
             
         }
 

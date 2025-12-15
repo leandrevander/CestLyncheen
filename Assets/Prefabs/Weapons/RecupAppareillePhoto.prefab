@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bcd387337aff84aa4b7640a430d2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recup: {fileID: 8300000, guid: 6d2fa8473faced44ebbe2cf7630be63b, type: 3}
   player: {fileID: 0}
   weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   upgradeMenu: {fileID: 0}

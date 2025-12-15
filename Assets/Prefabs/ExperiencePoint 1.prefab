@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1518913293188995153}
   - component: {fileID: 6479517876674856992}
   - component: {fileID: 3544193681880175416}
-  - component: {fileID: 7042379324465792595}
+  - component: {fileID: 4593977684417404090}
   m_Layer: 0
   m_Name: ExperiencePoint 1
   m_TagString: Untagged
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e059a994cbbc34182c206e2bda2bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experiencepointSound: {fileID: 7042379324465792595}
+  experiencepointSound: {fileID: 4593977684417404090}
   BarreXp: {fileID: 2205915853364284268, guid: 700f4e47f8ffe9043851802696cc58af, type: 3}
   ExpReward: 1
 --- !u!95 &6479517876674856992
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6479517876674856992}
---- !u!82 &7042379324465792595
+--- !u!82 &4593977684417404090
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,7 +341,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 309d48b92c360dc489006ce6124e8ee2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

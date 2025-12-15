@@ -4,7 +4,8 @@ using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
+    [SerializeField] AudioSource select ;
+    public           GameObject  pauseMenuUI;
     [Header("UI")]
     public EventSystem eventSystem;
     public GameObject resumeButton;
@@ -28,16 +29,19 @@ public class PauseMenu : MonoBehaviour
     }
     public void ResumeGame()
     {
+        select.Play();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }
     public void RetryGame()
     {
+        select.Play();
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
     public void ReturnToMenu()
     {
+        select.Play();
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }

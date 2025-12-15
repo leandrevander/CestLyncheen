@@ -6,7 +6,8 @@ public class GeneratorSystem : MonoBehaviour
 {
     [SerializeField] private AudioClip generateurOn;
     [SerializeField] private AudioClip generateurOff;
-    public int percentage = 100;
+    
+    public                   int         percentage = 100;
 
     public int            percentageWin = 3;
     public int            percentageLost  = 1;
@@ -49,20 +50,20 @@ public class GeneratorSystem : MonoBehaviour
     
     void Update()
     {
-        if (playerOnZone && coroutineW == null)
-        { 
-            
+        if (playerOnZone && coroutineW == null )
+        {
             AudioSource.PlayClipAtPoint(generateurOn, transform.position);
             coroutineW    = StartCoroutine(CoroutineW());
             sprite.color  = Color.green;
             
+            
+                
 
         }
         else if  (!playerOnZone && coroutineL == null)
         {
             coroutineL      = StartCoroutine(CoroutineL());
             sprite.color    = Color.red;
-
             if (percentage == 0)
             {
                 AudioSource.PlayClipAtPoint(generateurOff, transform.position);
@@ -76,6 +77,7 @@ public class GeneratorSystem : MonoBehaviour
     {
         if (other.gameObject == player)
         {
+            
             playerOnZone = true;
             sliderGO.SetActive(true);
             if (percentage >= 25)

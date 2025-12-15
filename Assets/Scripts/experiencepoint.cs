@@ -7,8 +7,8 @@ using TMPro;
 public class experiencepoint : MonoBehaviour
 {
     [SerializeField] AudioSource experiencepointSound;
-    public Slider BarreXp;
-    public int ExpReward = 3;
+    public           Slider      BarreXp;
+    public           int         ExpReward = 3;
 
     public delegate void EnnemiDefeated(int exp);
     public static event EnnemiDefeated OnEnnemiDefeated;
@@ -28,7 +28,7 @@ public class experiencepoint : MonoBehaviour
         {
             experiencepointSound.Play();
             OnEnnemiDefeated(ExpReward);
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
         }
 
 

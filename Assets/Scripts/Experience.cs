@@ -7,17 +7,17 @@ using TMPro;
 
 public class Experience : MonoBehaviour
 {
-    [SerializeField] private AudioSource levelUpSound;
-    public int level = 1;
-    public int CurrentExp;
-    public int XpToNextLevel = 10;
-    public GameObject experiencepointPrefab;
-    public float ExpGrowMultiplier = 1.2f;
-    public TMP_Text CurrentLevelText;
-    public Slider  expSlider;
-    public UpgradeMenu upgradeMenu;
-    public Animator barAnimation;
-    public Animator fillAnimation;
+    [SerializeField] AudioSource levelUp;
+    public           int         level = 1;
+    public           int         CurrentExp;
+    public           int         XpToNextLevel = 10;
+    public           GameObject  experiencepointPrefab;
+    public           float       ExpGrowMultiplier = 1.2f;
+    public           TMP_Text    CurrentLevelText;
+    public           Slider      expSlider;
+    public           UpgradeMenu upgradeMenu;
+    public           Animator    barAnimation;
+    public           Animator    fillAnimation;
   
 
 
@@ -42,7 +42,7 @@ public class Experience : MonoBehaviour
 
     private void LevelUp()
     {
-        levelUpSound.Play();
+        levelUp.Play();
         level++;
         Debug.Log("You level up !");
         CurrentExp -=  XpToNextLevel;
