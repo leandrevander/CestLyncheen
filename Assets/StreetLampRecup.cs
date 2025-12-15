@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class StreetLampRecup : MonoBehaviour
 {
-    public WeaponsManager weaponsManager;
-    public GameObject     player;
-    
-    public UpgradeMenu upgradeMenu;
+    [SerializeField] private AudioSource      recup;
+    public                   WeaponsManager weaponsManager;
+    public                   GameObject     player;
+    public                   UpgradeMenu    upgradeMenu;
 
     public GameObject barreEXPGO;
 
@@ -24,6 +24,7 @@ public class StreetLampRecup : MonoBehaviour
         {
             if (weaponsManager.GlowStickRecup == false)
             {
+                recup.Play();
                 weaponsManager.UnlockGlowstick();
  
             }
@@ -31,7 +32,7 @@ public class StreetLampRecup : MonoBehaviour
             {
               upgradeMenu.GlowStickUpgrade();  
             }
-            Destroy(gameObject);
+            Destroy(gameObject,0.1f);
             
         }
 

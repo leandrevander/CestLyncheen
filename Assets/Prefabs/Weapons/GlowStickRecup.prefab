@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3391062381167931693}
   - component: {fileID: 8231196492397999437}
   - component: {fileID: 5728122001357503733}
-  - component: {fileID: 4300879307991495200}
+  - component: {fileID: 8963280027203934578}
   m_Layer: 0
   m_Name: GlowStickRecupChild
   m_TagString: GlowStickRecup
@@ -177,9 +177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4863cf84765e88e49913c54ca501c820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recup: {fileID: 4300879307991495200}
+  recup: {fileID: 8963280027203934578}
   weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
+  upgradeMenu: {fileID: 0}
+  barreEXPGO: {fileID: 0}
 --- !u!95 &5728122001357503733
 Animator:
   serializedVersion: 7
@@ -202,7 +204,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!82 &4300879307991495200
+--- !u!82 &8963280027203934578
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

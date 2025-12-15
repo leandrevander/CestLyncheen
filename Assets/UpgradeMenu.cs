@@ -25,6 +25,7 @@ public class UpgradeMenu : MonoBehaviour
    
    
    [Header("Menu")]
+   [SerializeField] AudioSource    select ;
    public int        randomUpgradeCase1;
    public int randomUpgradeCase2;
    public int randomUpgradeCase3;
@@ -213,6 +214,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if (levelupgrade1 >= 4)
        {
+           select.Play();
            LevelUpgrade1.text = "Max Level";
            upgrade1button.interactable = false;
 
@@ -420,7 +422,6 @@ public class UpgradeMenu : MonoBehaviour
        else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
        {
            select.Play();
-           
            levelupgrade3++;
            describleTextUpgrade3.text = "Max Level";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -429,6 +430,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
        {
+          
            LevelUpgrade3.text = "Max Level";
            upgrade3button.interactable = false;
            UpgradeMenuClose();
