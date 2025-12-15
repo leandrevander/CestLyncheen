@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class AmpouleRecupScript : MonoBehaviour
 {
-    public GameObject     player;
-    public WeaponsManager weaponsManager;
-    public GameObject     ampoule;
-    public Bulb           ampouleScript;
-    public GameObject     recupAmpoule;
-    public int            nombreAmpoule = 0;
-    public UpgradeMenu upgradeMenu;
+    [SerializeField] private AudioSource    recup;
+    public                   GameObject     player;
+    public                   WeaponsManager weaponsManager;
+    public                   GameObject     ampoule;
+    public                   Bulb           ampouleScript;
+    public                   GameObject     recupAmpoule;
+    public                   int            nombreAmpoule = 0;
+    public                   UpgradeMenu    upgradeMenu;
 
     public GameObject barreEXPGO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +29,7 @@ public class AmpouleRecupScript : MonoBehaviour
             {
                 if (weaponsManager.nombreAmpoule == 0)
                 {
+                    recup.Play();
                     ampoule.SetActive(true);
                     weaponsManager.UpgradeAmpoule();
                     weaponsManager.bulbDescription.SetActive(true);
@@ -37,7 +39,7 @@ public class AmpouleRecupScript : MonoBehaviour
                 {
                     upgradeMenu.BulbUpgrade();
                 }
-                Destroy(gameObject); 
+                Destroy(gameObject,1); 
             }
             
             

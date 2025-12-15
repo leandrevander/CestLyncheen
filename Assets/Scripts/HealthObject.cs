@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HealthObject : MonoBehaviour
 {
-    public GameObject player;
-    public PlayerHealth playerHealth;
+    [SerializeField] private AudioClip    recup;
+    public                   GameObject   player;
+    public                   PlayerHealth playerHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +26,7 @@ public class HealthObject : MonoBehaviour
         {
             if (playerHealth.playerHealth < 4)
             {
+                AudioSource.PlayClipAtPoint(recup, transform.position);
                 playerHealth.GainHealth();
                 Destroy(gameObject);  
             }

@@ -9,10 +9,11 @@ using UnityEngine.UI;
 
 public class WeaponsManager : MonoBehaviour
 {
-    public NavMeshAgent ennemi_NavMesh;
-    public UpgradeMenu  upgradeMenu;
-    public PlayerData playerData;
-    public int          hitByLighthouse   = 1;
+    
+    public           NavMeshAgent ennemi_NavMesh;
+    public           UpgradeMenu  upgradeMenu;
+    public           PlayerData   playerData;
+    public           int          hitByLighthouse   = 1;
     
     [Header("Bulb")]
     
@@ -26,7 +27,7 @@ public class WeaponsManager : MonoBehaviour
     
     [Header("Camera")]
     
-    
+    [SerializeField] AudioSource  flash ;
     public int        nombreAppareillePhoto = 0;
     public float      freezeDuration = 2f;
     public bool       haveCamera     = false;
@@ -112,6 +113,7 @@ public class WeaponsManager : MonoBehaviour
        {
            while (nombreAppareillePhoto >= 1)
            {
+               flash.Play();
                Debug.Log("Flash !");
                AppareillePhoto.SetActive(false);
                Debug.Log("L'appareil photo est en recharge...");

@@ -25,6 +25,7 @@ public class UpgradeMenu : MonoBehaviour
    
    
    [Header("Menu")]
+   [SerializeField] AudioSource    select ;
    public int        randomUpgradeCase1;
    public int randomUpgradeCase2;
    public int randomUpgradeCase3;
@@ -213,6 +214,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if (levelupgrade1 >= 4)
        {
+           select.Play();
            LevelUpgrade1.text = "Max Level";
            upgrade1button.interactable = false;
 
@@ -237,6 +239,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase the bulb's range.";
            weaponsManager.hitByBulb   = 2;
@@ -245,6 +248,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase bulb damages to your enemies.";
            LevelUpgrade2.text         = "Level :" + levelupgrade2;
@@ -253,6 +257,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 2) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase the bulb's range.";
            weaponsManager.hitByBulb = 3;
@@ -261,6 +266,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Max Level";
            bulbScript.BulbLevel5();
@@ -288,6 +294,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if (levelupgrade5 == 0)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlight damages to your enemies.(2>3)";
            levelUpgrade5Name.text         = "Level : 1";
@@ -298,6 +305,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 1)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlights damages to your enemies.(3>4)";
          
@@ -311,6 +319,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 2)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text = "Increase the flashlight's range.";
            levelUpgrade5Name.text                = "Level : 3";
@@ -326,7 +335,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 3)
        {
-           
+           select.Play();
            describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
            levelUpgrade5Name.text         = "Level : 4";
            weaponsManager.hitByFlashlight = 4;
@@ -375,6 +384,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
        {
+           select.Play();
            levelupgrade3++;
            LevelUpgrade3.text = "Level :" + levelupgrade3;
            describleTextUpgrade3.text = "Increase the duration of the stun.";
@@ -387,6 +397,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 1) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
            levelupgrade3++;
            describleTextUpgrade3.text = "Being the camera's range.";
            weaponsManager.freezeDuration = 3f;
@@ -399,6 +410,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 2) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
            levelupgrade3++;
            describleTextUpgrade3.text = "Increase the duration of the stun.";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -408,6 +420,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
            levelupgrade3++;
            describleTextUpgrade3.text = "Max Level";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -416,6 +429,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 4) && (weaponsManager.haveCamera == true))
        {
+          
            LevelUpgrade3.text = "Max Level";
            upgrade3button.interactable = false;
            UpgradeMenuClose();

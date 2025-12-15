@@ -6,13 +6,14 @@ namespace Player_Scripts
 {
     public class PlayerHealth : MonoBehaviour
     {
-        public int playerHealth;
-        public bool invincible ;
-        public bool playerhitten;
-        private Coroutine coroutine;
-        private Coroutine coroutine2;
-        public GameObject playerDamageOverlay;
-        public SpriteRenderer playerSpriteRenderer;
+        [SerializeField] AudioSource    playerHitten;
+        public           int            playerHealth;
+        public           bool           invincible ;
+        public           bool           playerhitten;
+        private          Coroutine      coroutine;
+        private          Coroutine      coroutine2;
+        public           GameObject     playerDamageOverlay;
+        public           SpriteRenderer playerSpriteRenderer;
         
 
         [SerializeField] private Animator[] hearts;
@@ -42,7 +43,8 @@ namespace Player_Scripts
                 {
                     coroutine2 = StartCoroutine(InvincibleFeedback());
                 }
-                
+
+                playerHitten.Play();
                 playerDamageOverlay.SetActive(true);
                 invincible = true;
                 playerHealth--;
