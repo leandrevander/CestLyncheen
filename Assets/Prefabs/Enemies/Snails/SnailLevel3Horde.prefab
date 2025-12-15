@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detector: {fileID: 0}
+  player: {fileID: 5917718945100678893, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
 --- !u!1001 &1434907484301648320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,6 +96,10 @@ PrefabInstance:
     - target: {fileID: 7161016602024123478, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316107399311713769, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
+      propertyPath: player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8713598063655341068, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
       propertyPath: m_Name
@@ -158,6 +163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8316107399311713769, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8713598063655341068, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
       propertyPath: m_Name
       value: SnailLevel3 (1)
@@ -219,6 +228,10 @@ PrefabInstance:
     - target: {fileID: 7161016602024123478, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316107399311713769, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
+      propertyPath: player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8713598063655341068, guid: fe7fdb39012c5cb47b5147027d05734f, type: 3}
       propertyPath: m_Name
