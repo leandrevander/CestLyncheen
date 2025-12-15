@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: f9202cc5e205e734f88aa554b6fb699b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -275128940446784110
+    second: Brick Terrain Dark_0
+  - first:
+      213: 377373354117647508
+    second: Brick Terrain Dark_1
+  - first:
+      213: 1214466992171745891
+    second: Brick Terrain Dark_2
+  - first:
+      213: -564801106066944343
+    second: Brick Terrain Dark_3
+  - first:
+      213: 8633144396915323908
+    second: Brick Terrain Dark_4
+  - first:
+      213: 1097310628616959140
+    second: Brick Terrain Dark_5
+  - first:
+      213: 1464067417950981879
+    second: Brick Terrain Dark_6
+  - first:
+      213: 2872782127948759728
+    second: Brick Terrain Dark_7
+  - first:
+      213: -6214150750957310279
+    second: Brick Terrain Dark_8
+  - first:
+      213: -4628994694461987109
+    second: Brick Terrain Dark_9
+  - first:
+      213: -6012404054348191202
+    second: Brick Terrain Dark_10
+  - first:
+      213: -390604713803919163
+    second: Brick Terrain Dark_11
+  - first:
+      213: 2782015939165934239
+    second: Brick Terrain Dark_12
+  - first:
+      213: -1221856076463651968
+    second: Brick Terrain Dark_13
+  - first:
+      213: 5080937554455205107
+    second: Brick Terrain Dark_14
+  - first:
+      213: -5512895336068393790
+    second: Brick Terrain Dark_15
+  - first:
+      213: 9159089210568141331
+    second: Brick Terrain Dark_16
+  - first:
+      213: -714107716398943693
+    second: Brick Terrain Dark_17
+  - first:
+      213: -7594598012886712744
+    second: Brick Terrain Dark_18
+  - first:
+      213: -896938632223241580
+    second: Brick Terrain Dark_19
+  - first:
+      213: -7778507120793533939
+    second: Brick Terrain Dark_20
+  - first:
+      213: -2386064079490470474
+    second: Brick Terrain Dark_21
+  - first:
+      213: 1748511837149888737
+    second: Brick Terrain Dark_22
+  - first:
+      213: 2090678175163219731
+    second: Brick Terrain Dark_23
+  - first:
+      213: 1245133966327828659
+    second: Brick Terrain Dark_24
+  - first:
+      213: -440553493675694247
+    second: Brick Terrain Dark_25
+  - first:
+      213: 6392563787929959784
+    second: Brick Terrain Dark_26
+  - first:
+      213: -2748182548919427645
+    second: Brick Terrain Dark_27
+  - first:
+      213: 2068357008425523318
+    second: Brick Terrain Dark_28
+  - first:
+      213: 7668865097173553243
+    second: Brick Terrain Dark_29
+  - first:
+      213: 6048392989363227380
+    second: Brick Terrain Dark_30
+  - first:
+      213: -6175123967245768393
+    second: Brick Terrain Dark_31
+  - first:
+      213: 4688484596301341078
+    second: Brick Terrain Dark_32
+  - first:
+      213: -3279347380706538731
+    second: Brick Terrain Dark_33
+  - first:
+      213: -367916635575031289
+    second: Brick Terrain Dark_34
+  - first:
+      213: -5693893987541404294
+    second: Brick Terrain Dark_35
+  - first:
+      213: -1409943779032864704
+    second: Brick Terrain Dark_36
+  - first:
+      213: 3364587881451497379
+    second: Brick Terrain Dark_37
+  - first:
+      213: -76454188622564640
+    second: Brick Terrain Dark_38
+  - first:
+      213: -3705181015554850527
+    second: Brick Terrain Dark_39
+  - first:
+      213: -7409760672471729013
+    second: Brick Terrain Dark_40
+  - first:
+      213: -2536586240531846391
+    second: Brick Terrain Dark_41
+  - first:
+      213: -5835611497731611106
+    second: Brick Terrain Dark_42
+  - first:
+      213: -5343971509115988658
+    second: Brick Terrain Dark_43
+  - first:
+      213: -8777006558359136780
+    second: Brick Terrain Dark_44
+  - first:
+      213: -49656826154861961
+    second: Brick Terrain Dark_45
+  - first:
+      213: -7440229556854202319
+    second: Brick Terrain Dark_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brick Terrain Dark_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 463
+        width: 217
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2956d35bfab8e2cf0800000000000000
+      internalID: -275128940446784110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 298
+        width: 194
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c41efe013bc3500800000000000000
+      internalID: 377373354117647508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 57
+        width: 169
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36285db7b47aad010800000000000000
+      internalID: 1214466992171745891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 71
+        width: 205
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aec120f26c6928f0800000000000000
+      internalID: -564801106066944343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 290
+        width: 220
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404bac0b6171fc770800000000000000
+      internalID: 8633144396915323908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 479
+        width: 199
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a479f2f33e6a3f00800000000000000
+      internalID: 1097310628616959140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_6
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 454
+        width: 156
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe01364f89615410800000000000000
+      internalID: 1464067417950981879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_7
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 273
+        width: 180
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b20a7def1c2ed720800000000000000
+      internalID: 2872782127948759728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_8
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 65
+        width: 169
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be6674e0d6e2c9a0800000000000000
+      internalID: -6214150750957310279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_9
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 72
+        width: 192
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6ec61d9d182cfb0800000000000000
+      internalID: -4628994694461987109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_10
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 262
+        width: 165
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a257e1e56af8ca0800000000000000
+      internalID: -6012404054348191202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Dark_11
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 477
+        width: 177
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0df12151b449af0800000000000000
+      internalID: -390604713803919163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3ea089378040d394ca2b4305e6b235a5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brick Terrain Dark_0: -275128940446784110
+      Brick Terrain Dark_1: 377373354117647508
+      Brick Terrain Dark_10: -6012404054348191202
+      Brick Terrain Dark_11: -390604713803919163
+      Brick Terrain Dark_12: 2782015939165934239
+      Brick Terrain Dark_13: -1221856076463651968
+      Brick Terrain Dark_14: 5080937554455205107
+      Brick Terrain Dark_15: -5512895336068393790
+      Brick Terrain Dark_16: 9159089210568141331
+      Brick Terrain Dark_17: -714107716398943693
+      Brick Terrain Dark_18: -7594598012886712744
+      Brick Terrain Dark_19: -896938632223241580
+      Brick Terrain Dark_2: 1214466992171745891
+      Brick Terrain Dark_20: -7778507120793533939
+      Brick Terrain Dark_21: -2386064079490470474
+      Brick Terrain Dark_22: 1748511837149888737
+      Brick Terrain Dark_23: 2090678175163219731
+      Brick Terrain Dark_24: 1245133966327828659
+      Brick Terrain Dark_25: -440553493675694247
+      Brick Terrain Dark_26: 6392563787929959784
+      Brick Terrain Dark_27: -2748182548919427645
+      Brick Terrain Dark_28: 2068357008425523318
+      Brick Terrain Dark_29: 7668865097173553243
+      Brick Terrain Dark_3: -564801106066944343
+      Brick Terrain Dark_30: 6048392989363227380
+      Brick Terrain Dark_31: -6175123967245768393
+      Brick Terrain Dark_32: 4688484596301341078
+      Brick Terrain Dark_33: -3279347380706538731
+      Brick Terrain Dark_34: -367916635575031289
+      Brick Terrain Dark_35: -5693893987541404294
+      Brick Terrain Dark_36: -1409943779032864704
+      Brick Terrain Dark_37: 3364587881451497379
+      Brick Terrain Dark_38: -76454188622564640
+      Brick Terrain Dark_39: -3705181015554850527
+      Brick Terrain Dark_4: 8633144396915323908
+      Brick Terrain Dark_40: -7409760672471729013
+      Brick Terrain Dark_41: -2536586240531846391
+      Brick Terrain Dark_42: -5835611497731611106
+      Brick Terrain Dark_43: -5343971509115988658
+      Brick Terrain Dark_44: -8777006558359136780
+      Brick Terrain Dark_45: -49656826154861961
+      Brick Terrain Dark_46: -7440229556854202319
+      Brick Terrain Dark_5: 1097310628616959140
+      Brick Terrain Dark_6: 1464067417950981879
+      Brick Terrain Dark_7: 2872782127948759728
+      Brick Terrain Dark_8: -6214150750957310279
+      Brick Terrain Dark_9: -4628994694461987109
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
