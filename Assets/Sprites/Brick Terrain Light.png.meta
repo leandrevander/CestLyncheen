@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 98bf2b3a045d9db499ec04aaedea4646
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7593190541339225414
+    second: Brick Terrain Light_0
+  - first:
+      213: 2190817525753005646
+    second: Brick Terrain Light_1
+  - first:
+      213: -8449284712556777426
+    second: Brick Terrain Light_2
+  - first:
+      213: -8970232981544418091
+    second: Brick Terrain Light_3
+  - first:
+      213: -4473718958532979596
+    second: Brick Terrain Light_4
+  - first:
+      213: 3446230791445788133
+    second: Brick Terrain Light_5
+  - first:
+      213: 292036248706689265
+    second: Brick Terrain Light_6
+  - first:
+      213: -3471053187195372116
+    second: Brick Terrain Light_7
+  - first:
+      213: 5145645298496034367
+    second: Brick Terrain Light_8
+  - first:
+      213: 5749305856589860738
+    second: Brick Terrain Light_9
+  - first:
+      213: 247322295888395544
+    second: Brick Terrain Light_10
+  - first:
+      213: -2597924874158200555
+    second: Brick Terrain Light_11
+  - first:
+      213: 1442470191075278863
+    second: Brick Terrain Light_12
+  - first:
+      213: 5243222353368647210
+    second: Brick Terrain Light_13
+  - first:
+      213: -6252636065836642704
+    second: Brick Terrain Light_14
+  - first:
+      213: 4461580473204145522
+    second: Brick Terrain Light_15
+  - first:
+      213: -3156840595316742636
+    second: Brick Terrain Light_16
+  - first:
+      213: -2868150748201126860
+    second: Brick Terrain Light_17
+  - first:
+      213: -127708665712588293
+    second: Brick Terrain Light_18
+  - first:
+      213: -7155886025029533041
+    second: Brick Terrain Light_19
+  - first:
+      213: -4027947377599944521
+    second: Brick Terrain Light_20
+  - first:
+      213: 4765541660865570959
+    second: Brick Terrain Light_21
+  - first:
+      213: 5326038437657482692
+    second: Brick Terrain Light_22
+  - first:
+      213: -4034094893299966697
+    second: Brick Terrain Light_23
+  - first:
+      213: 6067564416016776065
+    second: Brick Terrain Light_24
+  - first:
+      213: 8547218095455712558
+    second: Brick Terrain Light_25
+  - first:
+      213: 5754685332815303610
+    second: Brick Terrain Light_26
+  - first:
+      213: -6047162998596096089
+    second: Brick Terrain Light_27
+  - first:
+      213: 3031506925313181680
+    second: Brick Terrain Light_28
+  - first:
+      213: 8758414417529069130
+    second: Brick Terrain Light_29
+  - first:
+      213: -1554176215646225744
+    second: Brick Terrain Light_30
+  - first:
+      213: 7906744075603379743
+    second: Brick Terrain Light_31
+  - first:
+      213: -2825324960435158542
+    second: Brick Terrain Light_32
+  - first:
+      213: 1320976418517667721
+    second: Brick Terrain Light_33
+  - first:
+      213: -5195585951839489287
+    second: Brick Terrain Light_34
+  - first:
+      213: 1931016660009416872
+    second: Brick Terrain Light_35
+  - first:
+      213: 9022102150229415935
+    second: Brick Terrain Light_36
+  - first:
+      213: -5567771710212112866
+    second: Brick Terrain Light_37
+  - first:
+      213: -6940852920427463884
+    second: Brick Terrain Light_38
+  - first:
+      213: 5711040208698747668
+    second: Brick Terrain Light_39
+  - first:
+      213: -8417283060367007970
+    second: Brick Terrain Light_40
+  - first:
+      213: -229024581508660592
+    second: Brick Terrain Light_41
+  - first:
+      213: -2163174047618137791
+    second: Brick Terrain Light_42
+  - first:
+      213: 8387411784502881279
+    second: Brick Terrain Light_43
+  - first:
+      213: 4380819503063309596
+    second: Brick Terrain Light_44
+  - first:
+      213: 125757735360835911
+    second: Brick Terrain Light_45
+  - first:
+      213: -7064446306948761693
+    second: Brick Terrain Light_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brick Terrain Light_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 470
+        width: 207
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab29e9fde619f9690800000000000000
+      internalID: -7593190541339225414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 295
+        width: 186
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e464536aee8576e10800000000000000
+      internalID: 2190817525753005646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 58
+        width: 166
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e203ae5f15c1eba80800000000000000
+      internalID: -8449284712556777426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_3
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 470
+        width: 206
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d44d8e21a4538380800000000000000
+      internalID: -8970232981544418091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 293
+        width: 220
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47416bb5f482ae1c0800000000000000
+      internalID: -4473718958532979596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 65
+        width: 194
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5b32a55a873df20800000000000000
+      internalID: 3446230791445788133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_6
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 65
+        width: 187
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f823b1cb658d0400800000000000000
+      internalID: 292036248706689265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_7
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 272
+        width: 169
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad7bb4448754dfc0800000000000000
+      internalID: -3471053187195372116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_8
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 452
+        width: 150
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36d30dd221096740800000000000000
+      internalID: 5145645298496034367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_9
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 469
+        width: 180
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f8c172733a9cf40800000000000000
+      internalID: 5749305856589860738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_10
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 258
+        width: 167
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d3677515aae6300800000000000000
+      internalID: 247322295888395544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Light_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 69
+        width: 205
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51926a2671152fbd0800000000000000
+      internalID: -2597924874158200555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 135b2dca7d2eba84487adc3f579098f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brick Terrain Light_0: -7593190541339225414
+      Brick Terrain Light_1: 2190817525753005646
+      Brick Terrain Light_10: 247322295888395544
+      Brick Terrain Light_11: -2597924874158200555
+      Brick Terrain Light_12: 1442470191075278863
+      Brick Terrain Light_13: 5243222353368647210
+      Brick Terrain Light_14: -6252636065836642704
+      Brick Terrain Light_15: 4461580473204145522
+      Brick Terrain Light_16: -3156840595316742636
+      Brick Terrain Light_17: -2868150748201126860
+      Brick Terrain Light_18: -127708665712588293
+      Brick Terrain Light_19: -7155886025029533041
+      Brick Terrain Light_2: -8449284712556777426
+      Brick Terrain Light_20: -4027947377599944521
+      Brick Terrain Light_21: 4765541660865570959
+      Brick Terrain Light_22: 5326038437657482692
+      Brick Terrain Light_23: -4034094893299966697
+      Brick Terrain Light_24: 6067564416016776065
+      Brick Terrain Light_25: 8547218095455712558
+      Brick Terrain Light_26: 5754685332815303610
+      Brick Terrain Light_27: -6047162998596096089
+      Brick Terrain Light_28: 3031506925313181680
+      Brick Terrain Light_29: 8758414417529069130
+      Brick Terrain Light_3: -8970232981544418091
+      Brick Terrain Light_30: -1554176215646225744
+      Brick Terrain Light_31: 7906744075603379743
+      Brick Terrain Light_32: -2825324960435158542
+      Brick Terrain Light_33: 1320976418517667721
+      Brick Terrain Light_34: -5195585951839489287
+      Brick Terrain Light_35: 1931016660009416872
+      Brick Terrain Light_36: 9022102150229415935
+      Brick Terrain Light_37: -5567771710212112866
+      Brick Terrain Light_38: -6940852920427463884
+      Brick Terrain Light_39: 5711040208698747668
+      Brick Terrain Light_4: -4473718958532979596
+      Brick Terrain Light_40: -8417283060367007970
+      Brick Terrain Light_41: -229024581508660592
+      Brick Terrain Light_42: -2163174047618137791
+      Brick Terrain Light_43: 8387411784502881279
+      Brick Terrain Light_44: 4380819503063309596
+      Brick Terrain Light_45: 125757735360835911
+      Brick Terrain Light_46: -7064446306948761693
+      Brick Terrain Light_5: 3446230791445788133
+      Brick Terrain Light_6: 292036248706689265
+      Brick Terrain Light_7: -3471053187195372116
+      Brick Terrain Light_8: 5145645298496034367
+      Brick Terrain Light_9: 5749305856589860738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
