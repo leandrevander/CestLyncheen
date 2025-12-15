@@ -11,6 +11,7 @@ public class WeaponsManager : MonoBehaviour
 {
     public NavMeshAgent ennemi_NavMesh;
     public UpgradeMenu  upgradeMenu;
+    public PlayerData playerData;
     public int          hitByLighthouse   = 1;
     
     [Header("Bulb")]
@@ -25,7 +26,7 @@ public class WeaponsManager : MonoBehaviour
     
     [Header("Camera")]
     
-    
+    [SerializeField]    AudioClip flash;
     public int        nombreAppareillePhoto = 0;
     public float      freezeDuration = 2f;
     public bool       haveCamera     = false;
@@ -61,6 +62,25 @@ public class WeaponsManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
      void Start()
    {
+       if (playerData.unlockedBulbDef == 1)
+       {
+           nombreAmpoule += 1;
+           ampoule.SetActive(true); 
+       }
+       
+
+       if (playerData.unlockedGlowstickDef == 1)
+       {
+           GlowStickRecup = true;
+       }
+       
+
+       if (playerData.unlockedCameraDef == 1)
+       {
+           AppareillePhoto.SetActive(true);
+           nombreAppareillePhoto += 1;
+           StartCoroutine(Flash());
+       }
        
    }
 
@@ -80,9 +100,9 @@ public class WeaponsManager : MonoBehaviour
        {
            AppareillePhoto.SetActive(true);
            nombreAppareillePhoto += 1;
+           cameraDescription.SetActive(true);
            eventSystem.SetSelectedGameObject(buttonCameraDescription);
            Debug.Log("Vous avez d�bloquer l'appareil photo !");
-           cameraDescription.SetActive(true);
            Time.timeScale = 0f;
            StartCoroutine(Flash());
        }
@@ -92,6 +112,7 @@ public class WeaponsManager : MonoBehaviour
        {
            while (nombreAppareillePhoto >= 1)
            {
+               AudioSource.PlayClipAtPoint(flash, transform.position);
                Debug.Log("Flash !");
                AppareillePhoto.SetActive(false);
                Debug.Log("L'appareil photo est en recharge...");
@@ -111,7 +132,7 @@ public class WeaponsManager : MonoBehaviour
 
    public void UpgradeAmpoule()
    {
-       if  (nombreAmpoule > 1)
+       if  (nombreAmpoule >= 1)
        {
           
            nombreAmpoule += 1;
@@ -122,6 +143,8 @@ public class WeaponsManager : MonoBehaviour
        {
            ampoule.SetActive(true);
            nombreAmpoule += 1;
+           bulbDescription.SetActive(true);
+           Time.timeScale = 0f;
            eventSystem.SetSelectedGameObject(buttonBulbDescription);
            Debug.Log("Vous avez d�bloquer l'ampoule !");
           

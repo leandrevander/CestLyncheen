@@ -5,6 +5,7 @@ namespace Player_Scripts
 {
     public class PlayerControl : MonoBehaviour
     {
+        [SerializeField] AudioSource moveSound;
         public Rigidbody2D rb;
         public float moveSpeed;
         private Vector2 _moveDirection;
@@ -24,6 +25,7 @@ namespace Player_Scripts
         
         private void OnEnable()
         {
+            
             move.action.Enable();
             look.action.Enable();
         }
@@ -36,6 +38,7 @@ namespace Player_Scripts
         
         private void Update()
         {
+            
             _moveDirection = move.action.ReadValue<Vector2>();
             animatorPlayer.SetFloat("Velocity", _moveDirection.magnitude);
             
@@ -44,6 +47,7 @@ namespace Player_Scripts
 
             if (_moveDirection.x > 0.01f)
             {
+                
                 spriteRenderer.flipX   = false;
                 cameraGO.localRotation = Quaternion.Euler(0.0f, 0.0f, -90f);
             }
@@ -55,7 +59,9 @@ namespace Player_Scripts
                 spriteRenderer.flipX   = true;
                 cameraGO.localRotation = Quaternion.Euler(0.0f, 0.0f, 90f);
             }
-            
+
+           
+                
         }
 
         private void FixedUpdate()

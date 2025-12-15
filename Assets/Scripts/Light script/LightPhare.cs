@@ -112,47 +112,6 @@ public class LightPhare : MonoBehaviour
             phareRotation.lighthouseRespawnDelay = 30f;
         }
 
-        /*if (totalPercentage >= level1)
-        {
-            if (totalPercentage >= level2)
-            {
-                if (totalPercentage >= level3)
-                {
-                    if (totalPercentage >= level4)
-                    {
-                        //Debug.Log("Phare niveau 4");
-                        phareRotation.lighthouseRespawnDelay = phareRespawnLevel4;
-
-                    }
-                    else
-                    {
-                        //Debug.Log("Phare niveau 3");
-                        phareRotation.lighthouseRespawnDelay = phareRespawnLevel3;
-                    }
-                }
-                else
-                {
-                    //Debug.Log("Phare niveau 2");
-                    phareRotation.lighthouseRespawnDelay = phareRespawnLevel2;
-
-                }
-            }
-            else
-            {
-                //Debug.Log("Phare niveau 1");
-                light.enabled                        = true;
-                phareRotation.lighthouseRespawnDelay = phareRespawnLevel1;
-
-            }
-
-        }
-        else
-        {
-            //Debug.Log("Phare niveau 0");
-            light.enabled                        = false;
-            phareRotation.lighthouseRespawnDelay = 1000f;
-        }*/
-
     }
 
     public IEnumerator checkBonus()

@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 public class UpgradeMenu : MonoBehaviour
 {
-    
+    [SerializeField] private  AudioSource select;
     [Header("Script")]
    public PlayerControl         playerControl;
    public float                 Multiplier = 1.2f;
@@ -225,7 +225,7 @@ public class UpgradeMenu : MonoBehaviour
        else
        {
 
-
+           select.Play();
            levelupgrade1++;
            playerControl.moveSpeed = Mathf.RoundToInt(playerControl.moveSpeed * Multiplier);
            LevelUpgrade1.text = "Level " + levelupgrade1;
@@ -237,6 +237,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase the bulb's range.";
            weaponsManager.hitByBulb   = 2;
@@ -245,6 +246,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 1) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase bulb damages to your enemies.";
            LevelUpgrade2.text         = "Level :" + levelupgrade2;
@@ -253,6 +255,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 2) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Increase the bulb's range.";
            weaponsManager.hitByBulb = 3;
@@ -261,6 +264,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))
        {
+           select.Play();
            levelupgrade2++;
            describleTextUpgrade2.text = "Max Level";
            bulbScript.BulbLevel5();
@@ -269,6 +273,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade2 == 4) && (weaponsManager.nombreAmpoule > 0))
        {
+           
            LevelUpgrade2.text          = "Max Level";
            upgrade2button.interactable = false;
            UpgradeMenuClose();
@@ -288,6 +293,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if (levelupgrade5 == 0)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlight damages to your enemies.(2>3)";
            levelUpgrade5Name.text         = "Level : 1";
@@ -298,6 +304,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 1)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlights damages to your enemies.(3>4)";
          
@@ -311,6 +318,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 2)
        {
+           select.Play();
            levelupgrade5++;
            describeLevel5.text = "Increase the flashlight's range.";
            levelUpgrade5Name.text                = "Level : 3";
@@ -326,7 +334,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if (levelupgrade5 == 3)
        {
-           
+           select.Play();
            describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
            levelUpgrade5Name.text         = "Level : 4";
            weaponsManager.hitByFlashlight = 4;
@@ -375,6 +383,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
        {
+           select.Play();
            levelupgrade3++;
            LevelUpgrade3.text = "Level :" + levelupgrade3;
            describleTextUpgrade3.text = "Increase the duration of the stun.";
@@ -387,6 +396,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 1) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
            levelupgrade3++;
            describleTextUpgrade3.text = "Being the camera's range.";
            weaponsManager.freezeDuration = 3f;
@@ -399,6 +409,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 2) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
            levelupgrade3++;
            describleTextUpgrade3.text = "Increase the duration of the stun.";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -408,6 +419,8 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade3 == 3) && (weaponsManager.haveCamera == true))
        {
+           select.Play();
+           
            levelupgrade3++;
            describleTextUpgrade3.text = "Max Level";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
@@ -484,6 +497,7 @@ public class UpgradeMenu : MonoBehaviour
    {
        if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
        {
+           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
            LevelUpgrade4.text = "Level :" + levelupgrade4;
@@ -492,6 +506,8 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 1) && (weaponsManager.GlowStickRecup == true))
        {
+           select.Play();
+
            levelupgrade4++;
            describleTextUpgrade4.text = "Place 3 GlowSticks instead of 1.";
            weaponsManager.GlowStickDuration = 12.5f;// augmente la dur�e des glowstick
@@ -501,6 +517,8 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 2) && (weaponsManager.GlowStickRecup == true))
        {
+           select.Play();
+
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
            // d�pose 3 glowstick au lieu de 1
@@ -510,6 +528,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 3) && (weaponsManager.GlowStickRecup == true))
        {
+           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase damage of the glowStick.";
            weaponsManager.GlowStickDuration = 15f; // augmente la dur�e des glowstick
@@ -519,6 +538,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 4) && (weaponsManager.GlowStickRecup == true))
        {
+           select.Play();
            levelupgrade4++;
            describleTextUpgrade4.text = "Max Level";
            weaponsManager.hitpoint = 2; // augmente les d�gats des glowstick
@@ -528,6 +548,7 @@ public class UpgradeMenu : MonoBehaviour
        }
        else if ((levelupgrade4 == 5) && (weaponsManager.GlowStickRecup == true))
        {
+           
            LevelUpgrade4.text = "Max Level";
            upgrade4button.interactable = false;
            UpgradeMenuClose();

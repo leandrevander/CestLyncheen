@@ -6,6 +6,8 @@ namespace Player_Scripts
 {
     public class PlayerHealth : MonoBehaviour
     {
+        [SerializeField] private AudioSource loose;
+        [SerializeField] private AudioSource damage;
         public int playerHealth;
         public bool invincible ;
         public bool playerhitten;
@@ -29,6 +31,7 @@ namespace Player_Scripts
         {
             if (playerhitten && coroutine == null && invincible == false)
             {
+                
                 coroutine = StartCoroutine(Damage());
                 Debug.Log("les conditions sont reunies");
             }
@@ -46,6 +49,7 @@ namespace Player_Scripts
                 playerDamageOverlay.SetActive(true);
                 invincible = true;
                 playerHealth--;
+                damage.Play();
                 print(playerHealth);
                 UpdateHealth();
                 yield return new WaitForSeconds(1);
@@ -88,6 +92,7 @@ namespace Player_Scripts
         {
             if (playerHealth <= 0)
             {
+                loose.Play();
                Destroy(gameObject); 
             }
             
