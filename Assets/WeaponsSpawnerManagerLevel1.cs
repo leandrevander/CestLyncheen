@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
@@ -12,23 +13,20 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
    
 
     public List<Transform>  SpawnerList  = new List<Transform>();
-    public List<GameObject> RecupWeapons = new List<GameObject>();
-    public int              radomWeapons;
-    public int              randomSpawner;
-    public GameObject       Weapons1;
+    public                  List<GameObject> RecupWeapons = new List<GameObject>();
+    public                  int              radomWeapons;
+    public                  int              randomSpawner;
+    [HideInInspector]public GameObject       weapon1;
+    public                  GameObject       arrowPrefab;
+    public                  GameObject       mainCanvas;
 
     [Header("Timers")]
     public float timer;
 
     public float spawnInterval;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-        
-
-    }
+    
+    
+    
 
     void Update()
     {
@@ -38,13 +36,16 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
             timer = 0;
             SpawnWeapon();
         }
+        
+        
     }
 
     public void SpawnWeapon()
     {
-        radomWeapons  = Random.Range(0, RecupWeapons.Count);
-        randomSpawner = Random.Range(0, SpawnerList.Count);
-        Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        radomWeapons            = Random.Range(0, RecupWeapons.Count);
+        randomSpawner           = Random.Range(0, SpawnerList.Count);
+        weapon1                 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        Instantiate(arrowPrefab, mainCanvas.transform);
         RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
         
@@ -58,7 +59,7 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
         Debug.Log(radomWeapons);
         randomSpawner = Random.Range(0, SpawnerList.Count);
         Debug.Log(randomSpawner);
-        Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        weapon1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
         RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
@@ -67,7 +68,7 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
         Debug.Log(radomWeapons);
         randomSpawner = Random.Range(0, SpawnerList.Count);
         Debug.Log(randomSpawner);
-        Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        weapon1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
         RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);
@@ -76,7 +77,7 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
         Debug.Log(radomWeapons);
         randomSpawner = Random.Range(0, SpawnerList.Count);
         Debug.Log(randomSpawner);
-        Weapons1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+        weapon1 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
         Debug.Log("Un objet est apparu .");
         RecupWeapons.Remove(RecupWeapons[radomWeapons]);
         SpawnerList.Remove(SpawnerList[randomSpawner]);

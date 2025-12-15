@@ -9,6 +9,12 @@ public class HealthSpawner : MonoBehaviour
     public float timer;
 
     public float spawningInterval;
+
+    public GameObject arrowPrefab;
+    
+    public GameObject mainCanvas;
+
+    [HideInInspector]public GameObject healthItem;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +35,8 @@ public class HealthSpawner : MonoBehaviour
     void SpawnHealth()
     {
         int random =Random.Range(0, HealthSpawnerLocation.Count);
-        Instantiate(healthprefab, HealthSpawnerLocation[random].transform.position, Quaternion.identity);
+        healthItem =Instantiate(healthprefab, HealthSpawnerLocation[random].transform.position, Quaternion.identity);
+        Instantiate(arrowPrefab,  mainCanvas.transform);
+        //HealthSpawnerLocation.Remove(HealthSpawnerLocation[random]);
     }
 }

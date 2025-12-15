@@ -12,6 +12,8 @@ TagManager:
   - FreezeEffect
   - ShadowBubble
   - BarreEXP
+  - WeaponSpawnerManager
+  - HealthSpawnerManager
   layers:
   - Default
   - TransparentFX
