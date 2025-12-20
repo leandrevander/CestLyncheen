@@ -7,6 +7,7 @@ using TMPro;
 
 public class Experience : MonoBehaviour
 {
+    [SerializeField] private AudioSource levelUpSound;
     public int level = 1;
     public int CurrentExp;
     public int XpToNextLevel = 10;
@@ -41,6 +42,7 @@ public class Experience : MonoBehaviour
 
     private void LevelUp()
     {
+        levelUpSound.Play();
         level++;
         Debug.Log("You level up !");
         CurrentExp -=  XpToNextLevel;

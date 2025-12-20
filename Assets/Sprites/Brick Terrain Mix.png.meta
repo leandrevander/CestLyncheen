@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: f1ff5ff0ff560d0499d95ad35cf39ca3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2374661076985982772
+    second: Brick Terrain Mix_0
+  - first:
+      213: -8674052464657288293
+    second: Brick Terrain Mix_1
+  - first:
+      213: -770550039044851992
+    second: Brick Terrain Mix_2
+  - first:
+      213: -8684984473002702290
+    second: Brick Terrain Mix_3
+  - first:
+      213: -3049661873517542588
+    second: Brick Terrain Mix_4
+  - first:
+      213: 4588507333195011221
+    second: Brick Terrain Mix_5
+  - first:
+      213: 1232797801094415449
+    second: Brick Terrain Mix_6
+  - first:
+      213: -829487772738290040
+    second: Brick Terrain Mix_7
+  - first:
+      213: 1327138730360950147
+    second: Brick Terrain Mix_8
+  - first:
+      213: 6890550440820867915
+    second: Brick Terrain Mix_9
+  - first:
+      213: 2670554091104707762
+    second: Brick Terrain Mix_10
+  - first:
+      213: -5501235524262134669
+    second: Brick Terrain Mix_11
+  - first:
+      213: 3639352700130322981
+    second: Brick Terrain Mix_12
+  - first:
+      213: -7527884812377352434
+    second: Brick Terrain Mix_13
+  - first:
+      213: -952128777460439357
+    second: Brick Terrain Mix_14
+  - first:
+      213: -5552555754647854895
+    second: Brick Terrain Mix_15
+  - first:
+      213: 5287730759463841413
+    second: Brick Terrain Mix_16
+  - first:
+      213: 2060660506926291901
+    second: Brick Terrain Mix_17
+  - first:
+      213: 9034338268805884125
+    second: Brick Terrain Mix_18
+  - first:
+      213: -3717101799555052422
+    second: Brick Terrain Mix_19
+  - first:
+      213: 5283947190610948631
+    second: Brick Terrain Mix_20
+  - first:
+      213: 5371854830772282543
+    second: Brick Terrain Mix_21
+  - first:
+      213: 7445229767949813416
+    second: Brick Terrain Mix_22
+  - first:
+      213: -6803607919016151132
+    second: Brick Terrain Mix_23
+  - first:
+      213: -6502832615940601148
+    second: Brick Terrain Mix_24
+  - first:
+      213: -4415323167129403403
+    second: Brick Terrain Mix_25
+  - first:
+      213: -276979388559565754
+    second: Brick Terrain Mix_26
+  - first:
+      213: 8889378726402750079
+    second: Brick Terrain Mix_27
+  - first:
+      213: -4430494261584523972
+    second: Brick Terrain Mix_28
+  - first:
+      213: -3240143040677371391
+    second: Brick Terrain Mix_29
+  - first:
+      213: -2991199088785630448
+    second: Brick Terrain Mix_30
+  - first:
+      213: -435140176770272458
+    second: Brick Terrain Mix_31
+  - first:
+      213: -128049123981916755
+    second: Brick Terrain Mix_32
+  - first:
+      213: -6639872112143813139
+    second: Brick Terrain Mix_33
+  - first:
+      213: 7482755296980519420
+    second: Brick Terrain Mix_34
+  - first:
+      213: -2874693913320548884
+    second: Brick Terrain Mix_35
+  - first:
+      213: -6271548775636141267
+    second: Brick Terrain Mix_36
+  - first:
+      213: 2651836573954493198
+    second: Brick Terrain Mix_37
+  - first:
+      213: 8551849006672496860
+    second: Brick Terrain Mix_38
+  - first:
+      213: -126830449402512413
+    second: Brick Terrain Mix_39
+  - first:
+      213: -7231490566853127849
+    second: Brick Terrain Mix_40
+  - first:
+      213: 8422116827346786054
+    second: Brick Terrain Mix_41
+  - first:
+      213: -6305593446442598435
+    second: Brick Terrain Mix_42
+  - first:
+      213: 3232434994346947896
+    second: Brick Terrain Mix_43
+  - first:
+      213: 4355091565249720268
+    second: Brick Terrain Mix_44
+  - first:
+      213: 3205207007923692914
+    second: Brick Terrain Mix_45
+  - first:
+      213: -4824567097862439704
+    second: Brick Terrain Mix_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brick Terrain Mix_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 462
+        width: 196
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f22b30bad74f020800000000000000
+      internalID: 2374661076985982772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 298
+        width: 193
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9330019d339f9780800000000000000
+      internalID: -8674052464657288293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 59
+        width: 163
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6711172d47e45f0800000000000000
+      internalID: -770550039044851992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_3
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 71
+        width: 197
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a04e603acb87780800000000000000
+      internalID: -8684984473002702290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 478
+        width: 198
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5941d5ccb17adaf30800000000000000
+      internalID: 4588507333195011221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_6
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 455
+        width: 142
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9548d168117cb1110800000000000000
+      internalID: 1232797801094415449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_7
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 266
+        width: 167
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e7768f3411d74f0800000000000000
+      internalID: -829487772738290040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_8
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 66
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dc3dec4a1fa6210800000000000000
+      internalID: 1327138730360950147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_9
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 71
+        width: 188
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b430a044e1720af50800000000000000
+      internalID: 6890550440820867915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_10
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 253
+        width: 172
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b423c1fbc6bf0520800000000000000
+      internalID: 2670554091104707762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 282
+        width: 229
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d4d918c1b07d64596dfd039d2f7839
+      internalID: -3049661873517542588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick Terrain Mix_11
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 472
+        width: 192
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7738594fec444604ab2a437354fb679b
+      internalID: -5501235524262134669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 34940ed3718b68145a67f0e9b733b7e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brick Terrain Mix_0: 2374661076985982772
+      Brick Terrain Mix_1: -8674052464657288293
+      Brick Terrain Mix_10: 2670554091104707762
+      Brick Terrain Mix_11: -5501235524262134669
+      Brick Terrain Mix_12: 3639352700130322981
+      Brick Terrain Mix_13: -7527884812377352434
+      Brick Terrain Mix_14: -952128777460439357
+      Brick Terrain Mix_15: -5552555754647854895
+      Brick Terrain Mix_16: 5287730759463841413
+      Brick Terrain Mix_17: 2060660506926291901
+      Brick Terrain Mix_18: 9034338268805884125
+      Brick Terrain Mix_19: -3717101799555052422
+      Brick Terrain Mix_2: -770550039044851992
+      Brick Terrain Mix_20: 5283947190610948631
+      Brick Terrain Mix_21: 5371854830772282543
+      Brick Terrain Mix_22: 7445229767949813416
+      Brick Terrain Mix_23: -6803607919016151132
+      Brick Terrain Mix_24: -6502832615940601148
+      Brick Terrain Mix_25: -4415323167129403403
+      Brick Terrain Mix_26: -276979388559565754
+      Brick Terrain Mix_27: 8889378726402750079
+      Brick Terrain Mix_28: -4430494261584523972
+      Brick Terrain Mix_29: -3240143040677371391
+      Brick Terrain Mix_3: -8684984473002702290
+      Brick Terrain Mix_30: -2991199088785630448
+      Brick Terrain Mix_31: -435140176770272458
+      Brick Terrain Mix_32: -128049123981916755
+      Brick Terrain Mix_33: -6639872112143813139
+      Brick Terrain Mix_34: 7482755296980519420
+      Brick Terrain Mix_35: -2874693913320548884
+      Brick Terrain Mix_36: -6271548775636141267
+      Brick Terrain Mix_37: 2651836573954493198
+      Brick Terrain Mix_38: 8551849006672496860
+      Brick Terrain Mix_39: -126830449402512413
+      Brick Terrain Mix_4: -3049661873517542588
+      Brick Terrain Mix_40: -7231490566853127849
+      Brick Terrain Mix_41: 8422116827346786054
+      Brick Terrain Mix_42: -6305593446442598435
+      Brick Terrain Mix_43: 3232434994346947896
+      Brick Terrain Mix_44: 4355091565249720268
+      Brick Terrain Mix_45: 3205207007923692914
+      Brick Terrain Mix_46: -4824567097862439704
+      Brick Terrain Mix_5: 4588507333195011221
+      Brick Terrain Mix_6: 1232797801094415449
+      Brick Terrain Mix_7: -829487772738290040
+      Brick Terrain Mix_8: 1327138730360950147
+      Brick Terrain Mix_9: 6890550440820867915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

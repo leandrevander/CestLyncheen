@@ -26,7 +26,7 @@ public class WeaponsManager : MonoBehaviour
     
     [Header("Camera")]
     
-    
+    [SerializeField]    AudioClip flash;
     public int        nombreAppareillePhoto = 0;
     public float      freezeDuration = 2f;
     public bool       haveCamera     = false;
@@ -112,6 +112,7 @@ public class WeaponsManager : MonoBehaviour
        {
            while (nombreAppareillePhoto >= 1)
            {
+               AudioSource.PlayClipAtPoint(flash, transform.position);
                Debug.Log("Flash !");
                AppareillePhoto.SetActive(false);
                Debug.Log("L'appareil photo est en recharge...");

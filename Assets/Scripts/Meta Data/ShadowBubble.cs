@@ -10,16 +10,10 @@ public class ShadowBubble : MonoBehaviour
     public Coroutine      coroutine;
     public GameObject     metaDataOrb;
     public GameObject     healthGO;
+    public GameObject damageEffect;
 
     int randomNumber;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (isHittenByFlashlight == true && coroutine == null)
@@ -44,7 +38,9 @@ public class ShadowBubble : MonoBehaviour
                 Instantiate(healthGO, transform.position, transform.rotation);
             }
         }
+        damageEffect.SetActive(true);
         yield return new WaitForSeconds(1);
+        damageEffect.SetActive(false);
         coroutine            = null;
         isHittenByFlashlight = false;
     }

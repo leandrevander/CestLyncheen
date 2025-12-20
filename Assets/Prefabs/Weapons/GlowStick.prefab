@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce543580cc9132b4f8acefe84ef1f01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recup: {fileID: 8300000, guid: 6d2fa8473faced44ebbe2cf7630be63b, type: 3}
   enemyHealthManagement: {fileID: 0}
 --- !u!114 &8630325671797685985
 MonoBehaviour:
