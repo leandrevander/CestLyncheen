@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8336597025386653519}
   - component: {fileID: 4935951867408011228}
   - component: {fileID: 3053212626737184558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flower Triangle Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1596548701
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 230248190536666868, guid: 42890ac07e0685a4e93103f60b73908c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
