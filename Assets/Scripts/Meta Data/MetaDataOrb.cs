@@ -4,6 +4,7 @@ public class MetaDataOrb : MonoBehaviour
 {
     MetaDataSystem metaDataSystem;
     PlayerData playerData;
+    public Animation metaDataText;
 
     public int metaData;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,11 +23,13 @@ public class MetaDataOrb : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("MetaData"))
         {
             playerData.metaData += 10;
             metaDataSystem.SetMetaData(playerData.metaData);
-            Destroy(gameObject);
+            //Instantiate(metaDataText, transform.position, Quaternion.identity);
+            metaDataText.Play();
+            Destroy(other.gameObject);
         }
 
 
