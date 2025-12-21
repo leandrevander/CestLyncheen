@@ -10,10 +10,17 @@ public class ShadowBubble : MonoBehaviour
     public Coroutine      coroutine;
     public GameObject     metaDataOrb;
     public GameObject     healthGO;
-    public GameObject damageEffect;
+    public GameObject     damageEffect;
+    public GameObject     spawnLocation;
+    GameObject            player;
+    public GameObject     ShadowBubbleGO;
 
     int randomNumber;
-    
+
+    void Start()
+    {
+        weaponsManager = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponsManager>();
+    }
     void Update()
     {
         if (isHittenByFlashlight == true && coroutine == null)
@@ -27,15 +34,16 @@ public class ShadowBubble : MonoBehaviour
         HealthZombie = HealthZombie - weaponsManager.hitByFlashlight;
         if (HealthZombie <= 0)
         {
-            Destroy(gameObject);
-            randomNumber  = Random.Range(0, 2);
+            Destroy(ShadowBubbleGO);
+            //randomNumber  = Random.Range(0, 2);
+            randomNumber = 1;
             if (randomNumber == 1)
             {
-                Instantiate(metaDataOrb, transform.position, transform.rotation);
+                Instantiate(metaDataOrb, spawnLocation.transform.position, transform.rotation);
             }
             else
             {
-                Instantiate(healthGO, transform.position, transform.rotation);
+                Instantiate(healthGO, spawnLocation.transform.position, transform.rotation);
             }
         }
         damageEffect.SetActive(true);

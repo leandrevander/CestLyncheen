@@ -1,5 +1,94 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1320141735760168968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5283467295178160828}
+  - component: {fileID: 8977540792665195352}
+  - component: {fileID: 7925231629785345469}
+  m_Layer: 8
+  m_Name: Spawn Location
+  m_TagString: ShadowBubble
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5283467295178160828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320141735760168968}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.502, y: 0.46, z: 0}
+  m_LocalScale: {x: 0.44782296, y: 0.44782296, z: 0.44782296}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8119882407814838390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8977540792665195352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320141735760168968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321eb7f2feec0314383f0d90d7a16a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthZombie: 5
+  weaponsManager: {fileID: 0}
+  isHittenByFlashlight: 0
+  metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}
+  healthGO: {fileID: 0}
+  damageEffect: {fileID: 758959192688513150}
+  spawnLocation: {fileID: 1320141735760168968}
+  ShadowBubbleGO: {fileID: 4593120247144032208}
+--- !u!58 &7925231629785345469
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320141735760168968}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.037827134, y: 1.0591395}
+  m_Radius: 1.8995779
 --- !u!1 &4593120247144032208
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,13 +99,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8119882407814838390}
   - component: {fileID: 2889881822356331712}
-  - component: {fileID: 4916730591771709461}
-  - component: {fileID: 2692427132215863809}
   - component: {fileID: 3934082680333864036}
   - component: {fileID: 679802807811510337}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Big Shadow Bulb
-  m_TagString: ShadowBubble
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,11 +117,12 @@ Transform:
   m_GameObject: {fileID: 4593120247144032208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.97, y: -15.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.2330253, y: 2.2330253, z: 2.2330253}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1434449835802677123}
+  - {fileID: 5283467295178160828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2889881822356331712
@@ -92,60 +180,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4916730591771709461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4593120247144032208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321eb7f2feec0314383f0d90d7a16a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthZombie: 5
-  weaponsManager: {fileID: 0}
-  isHittenByFlashlight: 0
-  metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}
-  healthGO: {fileID: 3789591271085771751, guid: 895b9a26b6b91054d92e4560222cf9f2, type: 3}
-  damageEffect: {fileID: 758959192688513150}
---- !u!58 &2692427132215863809
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4593120247144032208}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 1.5105746, y: 0.90182036}
-  m_Radius: 0.9139801
 --- !u!50 &3934082680333864036
 Rigidbody2D:
   serializedVersion: 5
@@ -172,7 +206,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &679802807811510337
 Animator:
   serializedVersion: 7
