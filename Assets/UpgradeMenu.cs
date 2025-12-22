@@ -241,7 +241,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade2++;
-           describleTextUpgrade2.text = "Increase the bulb's range.";
+           describleTextUpgrade2.text = "Increase Bulb's range.";
            weaponsManager.hitByBulb   = 2;
            LevelUpgrade2.text         = "Level :" + levelupgrade2;
            UpgradeMenuClose();
@@ -250,7 +250,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade2++;
-           describleTextUpgrade2.text = "Increase bulb damages to your enemies.";
+           describleTextUpgrade2.text = "Increase Bulb's damages to your enemies.";
            LevelUpgrade2.text         = "Level :" + levelupgrade2;
            bulbScript.BulbLevel3();
            UpgradeMenuClose();
@@ -259,7 +259,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade2++;
-           describleTextUpgrade2.text = "Increase the bulb's range.";
+           describleTextUpgrade2.text = "Increase bulb's range.";
            weaponsManager.hitByBulb = 3;
            LevelUpgrade2.text       = "Level :" + levelupgrade2;
            UpgradeMenuClose();
@@ -296,7 +296,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade5++;
-           describeLevel5.text            = "Increase Flashlight damages to your enemies.(2>3)";
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.(2>3)";
            levelUpgrade5Name.text         = "Level : 1";
            weaponsManager.hitByFlashlight = 2;
            Debug.Log("Flashlight est ameliorer " + levelupgrade5);
@@ -307,7 +307,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade5++;
-           describeLevel5.text            = "Increase Flashlights damages to your enemies.(3>4)";
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.(3>4)";
          
            levelUpgrade5Name.text         = "Level : 2";
            
@@ -321,7 +321,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade5++;
-           describeLevel5.text = "Increase the flashlight's range.";
+           describeLevel5.text = "Increase Flashlight's range.";
            levelUpgrade5Name.text                = "Level : 3";
            flashlightLight.pointLightOuterRadius = 13;
            flashlightLight.falloffIntensity      = 0.3f;
@@ -336,7 +336,7 @@ public class UpgradeMenu : MonoBehaviour
        else if (levelupgrade5 == 3)
        {
            select.Play();
-           describeLevel5.text            = "Increase Flashlights damages to your enemies.(4>5)";
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.(4>5)";
            levelUpgrade5Name.text         = "Level : 4";
            weaponsManager.hitByFlashlight = 4;
            Debug.Log("Flashlight est ameliorer AU DESSUS " + levelupgrade5);
@@ -387,7 +387,7 @@ public class UpgradeMenu : MonoBehaviour
            select.Play();
            levelupgrade3++;
            LevelUpgrade3.text = "Level :" + levelupgrade3;
-           describleTextUpgrade3.text = "Increase the duration of the stun.";
+           describleTextUpgrade3.text = "Increase stun's duration.";
            
            cameraUpgradeScript.CameraLevel1();
           
@@ -399,7 +399,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade3++;
-           describleTextUpgrade3.text = "Being the camera's range.";
+           describleTextUpgrade3.text = "Increase Camera's range.";
            weaponsManager.freezeDuration = 3f;
            LevelUpgrade3.text = "Level :" + levelupgrade3;
            // augmente la dur�e du Stun
@@ -412,7 +412,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade3++;
-           describleTextUpgrade3.text = "Increase the duration of the stun.";
+           describleTextUpgrade3.text = "Increase stun's duration.";
            LevelUpgrade3.text = "Level :" + levelupgrade3;
            cameraUpgradeScript.CameraLevel3();
          
@@ -499,7 +499,7 @@ public class UpgradeMenu : MonoBehaviour
        if ((levelupgrade4 == 0 && (weaponsManager.GlowStickRecup == true)))
        {
            levelupgrade4++;
-           describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
+           describleTextUpgrade4.text = "Increase Glowstick's duration.";
            LevelUpgrade4.text = "Level :" + levelupgrade4;
            
            UpgradeMenuClose();
@@ -516,7 +516,7 @@ public class UpgradeMenu : MonoBehaviour
        else if ((levelupgrade4 == 2) && (weaponsManager.GlowStickRecup == true))
        {
            levelupgrade4++;
-           describleTextUpgrade4.text = "Increase the duration of the GlowStick.";
+           describleTextUpgrade4.text = "Increase Glowstick's duration.";
            // d�pose 3 glowstick au lieu de 1
            LevelUpgrade4.text = "Level :" + levelupgrade4;
            
@@ -525,7 +525,7 @@ public class UpgradeMenu : MonoBehaviour
        else if ((levelupgrade4 == 3) && (weaponsManager.GlowStickRecup == true))
        {
            levelupgrade4++;
-           describleTextUpgrade4.text = "Increase damage of the glowStick.";
+           describleTextUpgrade4.text = "Increase Glowstick's damage.";
            weaponsManager.GlowStickDuration = 15f; // augmente la dur�e des glowstick
            LevelUpgrade4.text = "Level :" + levelupgrade4;
            

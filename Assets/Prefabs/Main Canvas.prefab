@@ -5286,7 +5286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Incresse speed by 1.2
+  m_text: Increase speed by 1.2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -5872,7 +5872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Being the camera's range.
+  m_text: Increase the camera's range.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}

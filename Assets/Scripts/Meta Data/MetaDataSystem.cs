@@ -6,10 +6,11 @@ using System.Collections.Generic;
 public class MetaDataSystem : MonoBehaviour
 {
     
-    string metaDataKey          = "MetaData";
-    string unlockedBulbDefKey   = "UnlockedBulbDef";
-    string unlockedCameraDefKey = "UnlockedCameraDef";
+    string metaDataKey             = "MetaData";
+    string unlockedBulbDefKey      = "UnlockedBulbDef";
+    string unlockedCameraDefKey    = "UnlockedCameraDef";
     string unlockedGlowstickDefKey = "UnlockedGlowstickDef";
+    string unlockedLevel2DefKey = "UnlockedLevel2Def";
 
     
     public int CurrentMetaData { get; set; }
@@ -17,14 +18,17 @@ public class MetaDataSystem : MonoBehaviour
     
     public int CurrentUnlockedCameraDef { get; set; }
     public int CurrentUnlockedGlowstickDef { get; set; }
+    
+    public int CurrentUnlockedLevel2Def { get; set; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
     {
-        CurrentMetaData          = PlayerPrefs.GetInt(metaDataKey);
-        CurrentUnlockedBulbDef   = PlayerPrefs.GetInt(unlockedBulbDefKey);
-        CurrentUnlockedCameraDef = PlayerPrefs.GetInt(unlockedCameraDefKey);
+        CurrentMetaData             = PlayerPrefs.GetInt(metaDataKey);
+        CurrentUnlockedBulbDef      = PlayerPrefs.GetInt(unlockedBulbDefKey);
+        CurrentUnlockedCameraDef    = PlayerPrefs.GetInt(unlockedCameraDefKey);
         CurrentUnlockedGlowstickDef = PlayerPrefs.GetInt(unlockedGlowstickDefKey);
+        CurrentUnlockedLevel2Def = PlayerPrefs.GetInt(unlockedLevel2DefKey);
         
     }
 
@@ -46,6 +50,11 @@ public class MetaDataSystem : MonoBehaviour
     public void SetUnlockedGlowstick(int unlockedGlowstickDef)
     {
         PlayerPrefs.SetInt(unlockedGlowstickDefKey, unlockedGlowstickDef);
+    }
+    
+    public void SetUnlockedLevel2(int unlockedLevel2Def)
+    {
+        PlayerPrefs.SetInt(unlockedLevel2DefKey, unlockedLevel2Def);
     }
     void Start()
     {

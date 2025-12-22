@@ -42,6 +42,11 @@ public class MenuScenemanager : MonoBehaviour
     public Button unlockBulbButton;
     public Button unlockCameraButton;
     public Button unlockGlowstickButton;
+    
+    [Header("Level 2")]
+    public Button level2Button;
+    public GameObject level2Text;
+
 
 
 
@@ -82,6 +87,7 @@ public class MenuScenemanager : MonoBehaviour
         playPage.SetActive(true);
         upgradePage.SetActive(false);
         eventSystem.SetSelectedGameObject(level1);
+        CheckUnlockLevel2();
     }
 
     public void PressedReturnButton()
@@ -111,8 +117,28 @@ public class MenuScenemanager : MonoBehaviour
 
 
     }
-    
-    
+
+    public void CheckUnlockLevel2()
+    {
+        if (playerData.unlockedLevel2Def == 0)
+        {
+            var level2ButtonColor = level2Button.colors;
+            level2ButtonColor.normalColor = gray;
+            level2Button.colors       = level2ButtonColor;
+            level2Button.interactable = false;
+            level2Text.SetActive(true);
+            
+        }
+        else
+        {
+            var level2ButtonColor = level2Button.colors;
+            level2ButtonColor.normalColor = white;
+            level2Button.colors           = level2ButtonColor;
+            level2Button.interactable     = true;
+            level2Text.SetActive(false);
+
+        }
+    }
     public void PressedUnlockBulbButton()
     {
         if (playerData.unlockedBulbDef == 1)

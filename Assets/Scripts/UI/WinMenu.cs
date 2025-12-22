@@ -15,6 +15,7 @@ public class WinMenu : MonoBehaviour
 
     public bool win;
     bool        giveMetaDataBonus;
+    public bool isLevel1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +40,13 @@ public class WinMenu : MonoBehaviour
                 playerData.metaData += 500;
                 metaDataSystem.SetMetaData(playerData.metaData);
                 giveMetaDataBonus = true;
+            }
+
+            if (isLevel1)
+            {
+                playerData.unlockedLevel2Def = 1;
+                metaDataSystem.SetMetaData(playerData.unlockedLevel2Def);
+                isLevel1 = false;
             }
             
 
