@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class HealthSpawner : MonoBehaviour
 {
-    public GameObject healthprefab;
+    public GameObject       healthprefab;
     public List<GameObject> HealthSpawnerLocation = new List<GameObject>();
+    public List<GameObject> AvailableLocation = new List<GameObject>();
 
     public float timer;
 
@@ -18,7 +19,7 @@ public class HealthSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        ResetLocation();
     }
 
     // Update is called once per frame
@@ -27,16 +28,26 @@ public class HealthSpawner : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= spawningInterval)
             {
-            timer = 0;
-            SpawnHealth();
+              timer = 0;
+              SpawnHealth();
             }
     }
 
     void SpawnHealth()
     {
-        int random =Random.Range(0, HealthSpawnerLocation.Count);
-        healthItem =Instantiate(healthprefab, HealthSpawnerLocation[random].transform.position, Quaternion.identity);
+        if (AvailableLocation.Count == 0)
+        {
+            ResetLocation();
+        }
+        int random =Random.Range(0, AvailableLocation.Count);
+        healthItem =Instantiate(healthprefab, AvailableLocation[random].transform.position, Quaternion.identity);
         Instantiate(arrowPrefab,  mainCanvas.transform);
-        //HealthSpawnerLocation.Remove(HealthSpawnerLocation[random]);
+        AvailableLocation.RemoveAt(random);
+        
+    }
+
+    void ResetLocation()
+    {
+        AvailableLocation = new List<GameObject>(HealthSpawnerLocation);
     }
 }

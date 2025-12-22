@@ -149,8 +149,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8023377541629906726}
-  - component: {fileID: 2165761103266725151}
   - component: {fileID: 394418992328816077}
+  - component: {fileID: 959871055653531516}
   m_Layer: 8
   m_Name: Spawn Location
   m_TagString: ShadowBubble
@@ -173,26 +173,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8119882407814838390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2165761103266725151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7905818269449157685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321eb7f2feec0314383f0d90d7a16a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthZombie: 5
-  weaponsManager: {fileID: 0}
-  isHittenByFlashlight: 0
-  metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}
-  healthGO: {fileID: 0}
-  damageEffect: {fileID: 1042631675778938157}
-  spawnLocation: {fileID: 7905818269449157685}
-  ShadowBubbleGO: {fileID: 4593120247144032208}
 --- !u!58 &394418992328816077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -229,6 +209,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.19211388, y: 0.6671946}
   m_Radius: 1.1229799
+--- !u!114 &959871055653531516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7905818269449157685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321eb7f2feec0314383f0d90d7a16a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthZombie: 5
+  weaponsManager: {fileID: 0}
+  isHittenByFlashlight: 0
+  metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}
+  bigMetaDataOrb: {fileID: 5977214029452704208, guid: a75ff0aaa1599f24d848267aa7523345, type: 3}
+  healthGO: {fileID: 3789591271085771751, guid: 895b9a26b6b91054d92e4560222cf9f2, type: 3}
+  damageEffect: {fileID: 1042631675778938157}
+  spawnLocation: {fileID: 7905818269449157685}
+  ShadowBubbleGO: {fileID: 4593120247144032208}
+  IsBigBubble: 0
 --- !u!1001 &3176913203546001933
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class MetaDataOrb : MonoBehaviour
 {
-    MetaDataSystem metaDataSystem;
-    PlayerData playerData;
+    MetaDataSystem   metaDataSystem;
+    PlayerData       playerData;
     public Animation metaDataText;
+    public Animation bigMetaDataText;
 
     public int metaData;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +30,15 @@ public class MetaDataOrb : MonoBehaviour
             metaDataSystem.SetMetaData(playerData.metaData);
             //Instantiate(metaDataText, transform.position, Quaternion.identity);
             metaDataText.Play();
+            Destroy(other.gameObject);
+        }
+        
+        if (other.gameObject.CompareTag("BigMetaData"))
+        {
+            playerData.metaData += 25;
+            metaDataSystem.SetMetaData(playerData.metaData);
+            //Instantiate(metaDataText, transform.position, Quaternion.identity);
+            bigMetaDataText.Play();
             Destroy(other.gameObject);
         }
 

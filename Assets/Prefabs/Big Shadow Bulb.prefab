@@ -49,10 +49,12 @@ MonoBehaviour:
   weaponsManager: {fileID: 0}
   isHittenByFlashlight: 0
   metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}
-  healthGO: {fileID: 0}
+  bigMetaDataOrb: {fileID: 5977214029452704208, guid: a75ff0aaa1599f24d848267aa7523345, type: 3}
+  healthGO: {fileID: 3789591271085771751, guid: 895b9a26b6b91054d92e4560222cf9f2, type: 3}
   damageEffect: {fileID: 758959192688513150}
   spawnLocation: {fileID: 1320141735760168968}
   ShadowBubbleGO: {fileID: 4593120247144032208}
+  IsBigBubble: 1
 --- !u!58 &7925231629785345469
 CircleCollider2D:
   m_ObjectHideFlags: 0

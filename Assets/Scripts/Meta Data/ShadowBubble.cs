@@ -1,4 +1,5 @@
 using System.Collections;
+using Player_Scripts;
 using UnityEngine;
 
 public class ShadowBubble : MonoBehaviour
@@ -9,13 +10,17 @@ public class ShadowBubble : MonoBehaviour
     public bool           isHittenByFlashlight = false;
     public Coroutine      coroutine;
     public GameObject     metaDataOrb;
+    public GameObject     bigMetaDataOrb;
     public GameObject     healthGO;
     public GameObject     damageEffect;
     public GameObject     spawnLocation;
     GameObject            player;
     public GameObject     ShadowBubbleGO;
+    PlayerHealth          playerHealth;
 
     int randomNumber;
+    
+    public bool IsBigBubble = false;
 
     void Start()
     {
@@ -37,13 +42,19 @@ public class ShadowBubble : MonoBehaviour
             Destroy(ShadowBubbleGO);
             //randomNumber  = Random.Range(0, 2);
             randomNumber = 1;
-            if (randomNumber == 1)
+            playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+            if (IsBigBubble)
             {
-                Instantiate(metaDataOrb, spawnLocation.transform.position, transform.rotation);
+                Instantiate(bigMetaDataOrb, spawnLocation.transform.position, transform.rotation);
+            }
+            else if (playerHealth.playerHealth == 1)
+            {
+                Instantiate(healthGO, spawnLocation.transform.position, transform.rotation);
             }
             else
             {
-                Instantiate(healthGO, spawnLocation.transform.position, transform.rotation);
+                Instantiate(metaDataOrb, spawnLocation.transform.position, transform.rotation);
+ 
             }
         }
         damageEffect.SetActive(true);

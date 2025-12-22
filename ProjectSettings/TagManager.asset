@@ -16,6 +16,7 @@ TagManager:
   - WeaponSpawnerManager
   - HealthSpawnerManager
   - MetaData
+  - BigMetaData
   layers:
   - Default
   - TransparentFX
