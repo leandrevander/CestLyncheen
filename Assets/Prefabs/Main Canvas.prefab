@@ -3606,6 +3606,7 @@ GameObject:
   - component: {fileID: 5688839079023427960}
   - component: {fileID: 5462214100348002015}
   - component: {fileID: 1944971495129803235}
+  - component: {fileID: 6995160052892269583}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -3746,6 +3747,21 @@ MonoBehaviour:
   timerText: {fileID: 5462214100348002015}
   remainingTime: 600
   sceneManager: {fileID: 0}
+--- !u!114 &6995160052892269583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420674885893749095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee4195240864d409fc9ddc4a7e01ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  minutes: 0
+  metaRessourceBonus: 0
 --- !u!1 &5426822488397655003
 GameObject:
   m_ObjectHideFlags: 0

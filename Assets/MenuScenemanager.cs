@@ -133,6 +133,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedBulbDefColor = unlockBulbButton.colors;
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
+            RefreshPriceTexts();
+
         }
         
         if (playerData.metaData < bulbPrice && playerData.unlockedBulbDef == 0)
@@ -165,6 +167,7 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedCameraDefColor = unlockCameraButton.colors;
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
+            RefreshPriceTexts();
         }
         
         if (playerData.metaData < cameraPrice && playerData.unlockedCameraDef == 0)
@@ -198,6 +201,7 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedGlowstickDefColor = unlockGlowstickButton.colors;
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
+            RefreshPriceTexts();
         }
 
         if (playerData.metaData < glowstickPrice && playerData.unlockedGlowstickDef == 0)

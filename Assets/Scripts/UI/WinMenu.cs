@@ -9,12 +9,21 @@ public class WinMenu : MonoBehaviour
     [Header("UI")]
     public EventSystem eventSystem;
     public GameObject retryButton;
+    MetaDataSystem    metaDataSystem;
+    PlayerData      playerData;
+
 
     public bool win;
+    bool        giveMetaDataBonus;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     { 
         winMenuUI.SetActive(false);
+        metaDataSystem = FindObjectOfType<MetaDataSystem>();
+        playerData     = FindObjectOfType<PlayerData>();
+
+
     }
 
     // Update is called once per frame
@@ -25,6 +34,14 @@ public class WinMenu : MonoBehaviour
             Time.timeScale = 0f;
             winMenuUI.SetActive(true);
             eventSystem.SetSelectedGameObject(retryButton);
+            if (giveMetaDataBonus == false)
+            {
+                playerData.metaData += 500;
+                metaDataSystem.SetMetaData(playerData.metaData);
+                giveMetaDataBonus = true;
+            }
+            
+
         }
         if (win && (Input.GetKeyDown(KeyCode.JoystickButton1)))
             {

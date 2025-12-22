@@ -6,15 +6,20 @@ using System.Collections.Generic;
 public class ResetGameValues : MonoBehaviour
 {
     public MetaDataSystem metaDataSystem;
+    public PlayerData playerData;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public void ResetData()
     { 
         Debug.Log("Reset Game Values");
-        metaDataSystem.SetMetaData(0);
-        metaDataSystem.SetUnlockedGlowstick(0);
-        metaDataSystem.SetUnlockedBulb(0);
-        metaDataSystem.SetUnlockedCamera(0);
+        playerData.metaData             = 0;
+        playerData.unlockedBulbDef      = 0;
+        playerData.unlockedCameraDef    = 0;
+        playerData.unlockedGlowstickDef = 0;
+        metaDataSystem.SetMetaData(playerData.metaData);
+        metaDataSystem.SetMetaData(playerData.unlockedBulbDef);
+        metaDataSystem.SetMetaData(playerData.unlockedCameraDef);
+        metaDataSystem.SetMetaData(playerData.unlockedGlowstickDef);
     }
 
     // Update is called once per frame
@@ -26,5 +31,6 @@ public class ResetGameValues : MonoBehaviour
     void Start()
     {
         metaDataSystem = FindObjectOfType<MetaDataSystem>();
+        playerData     = FindObjectOfType<PlayerData>();
     }
 }
