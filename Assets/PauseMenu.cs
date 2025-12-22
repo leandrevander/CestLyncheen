@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     [Header("UI")]
     public EventSystem eventSystem;
     public GameObject resumeButton;
+    public GameObject optionMenu;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,5 +46,16 @@ public class PauseMenu : MonoBehaviour
         select.Play();
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
+    public void OptionMenu()
+    {
+        pauseMenuUI.SetActive(false);
+        optionMenu.SetActive(true);
+    }
+    public void BackButton()
+    {
+        optionMenu.SetActive(false);
+        pauseMenuUI.SetActive(true);
+       
     }
 }
