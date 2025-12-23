@@ -160,6 +160,8 @@ public class MenuScenemanager : MonoBehaviour
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
             RefreshPriceTexts();
+            PlayerPrefs.Save();
+
 
         }
         
@@ -194,6 +196,8 @@ public class MenuScenemanager : MonoBehaviour
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
             RefreshPriceTexts();
+            PlayerPrefs.Save();
+
         }
         
         if (playerData.metaData < cameraPrice && playerData.unlockedCameraDef == 0)
@@ -228,6 +232,8 @@ public class MenuScenemanager : MonoBehaviour
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
             RefreshPriceTexts();
+            PlayerPrefs.Save();
+
         }
 
         if (playerData.metaData < glowstickPrice && playerData.unlockedGlowstickDef == 0)
