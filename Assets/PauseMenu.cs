@@ -12,11 +12,12 @@ public class PauseMenu : MonoBehaviour
     public EventSystem eventSystem;
     public GameObject      resumeButton;
     public GameObject      optionMenu;
+    public GameObject      musicVolume;
     PlayerData             playerData;
     public TextMeshProUGUI metaDataText;
     bool                   isPaused;
     GameObject             player;
-    public WinMenu winMenu;
+    public WinMenu         winMenu;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -71,6 +72,8 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         optionMenu.SetActive(true);
+        //eventSystem.SetSelectedGameObject(musicVolume);
+
     }
     public void BackButton()
     {
