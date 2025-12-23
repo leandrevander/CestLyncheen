@@ -259,9 +259,9 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade2++;
-           describleTextUpgrade2.text = "Increase bulb's range.";
-           weaponsManager.hitByBulb = 3;
-           LevelUpgrade2.text       = "Level :" + levelupgrade2;
+           describleTextUpgrade2.text = "Increase Bulb's range.";
+           weaponsManager.hitByBulb   = 3;
+           LevelUpgrade2.text         = "Level :" + levelupgrade2;
            UpgradeMenuClose();
        }
        else if ((levelupgrade2 == 3) && (weaponsManager.nombreAmpoule > 0))

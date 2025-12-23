@@ -39,7 +39,7 @@ public class AmpouleRecupScript : MonoBehaviour
                 {
                     upgradeMenu.BulbUpgrade();
                 }
-                Destroy(gameObject,1); 
+                Destroy(gameObject); 
             }
             
             
