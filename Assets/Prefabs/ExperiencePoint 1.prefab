@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 4593977684417404090}
   m_Layer: 0
   m_Name: ExperiencePoint 1
-  m_TagString: Untagged
+  m_TagString: EXP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencepointSound: {fileID: 4593977684417404090}
-  BarreXp: {fileID: 2205915853364284268, guid: 700f4e47f8ffe9043851802696cc58af, type: 3}
+  BarreXp: {fileID: 0}
   ExpReward: 1
 --- !u!95 &6479517876674856992
 Animator:

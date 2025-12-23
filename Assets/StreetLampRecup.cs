@@ -22,9 +22,10 @@ public class StreetLampRecup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            recup.Play();
+
             if (weaponsManager.GlowStickRecup == false)
             {
-                recup.Play();
                 weaponsManager.UnlockGlowstick();
  
             }

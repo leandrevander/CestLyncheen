@@ -72,13 +72,15 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         optionMenu.SetActive(true);
-        //eventSystem.SetSelectedGameObject(musicVolume);
+        eventSystem.SetSelectedGameObject(musicVolume);
 
     }
     public void BackButton()
     {
         optionMenu.SetActive(false);
         pauseMenuUI.SetActive(true);
+        eventSystem.SetSelectedGameObject(resumeButton);
+
        
     }
 }

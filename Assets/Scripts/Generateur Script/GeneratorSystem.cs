@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GeneratorSystem : MonoBehaviour
 {
-    [SerializeField] private AudioClip generateurOn;
-    [SerializeField] private AudioClip generateurOff;
+    [SerializeField] private AudioSource generateurOn;
+    [SerializeField] private AudioSource generateurOff;
     
     public                   int         percentage = 100;
 
@@ -31,6 +31,8 @@ public class GeneratorSystem : MonoBehaviour
 
     public Color color;
     
+    public bool canSoundOff = false;
+    
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -52,9 +54,10 @@ public class GeneratorSystem : MonoBehaviour
     {
         if (playerOnZone && coroutineW == null )
         {
-            AudioSource.PlayClipAtPoint(generateurOn, transform.position);
-            coroutineW    = StartCoroutine(CoroutineW());
-            sprite.color  = Color.green;
+            canSoundOff  = true;
+            coroutineW   = StartCoroutine(CoroutineW());
+            sprite.color = Color.green;
+            
             
             
                 
@@ -64,11 +67,22 @@ public class GeneratorSystem : MonoBehaviour
         {
             coroutineL      = StartCoroutine(CoroutineL());
             sprite.color    = Color.red;
-            if (percentage == 0)
-            {
-                AudioSource.PlayClipAtPoint(generateurOff, transform.position);
-            }
+            generateurOn.Stop();
+            
         }
+        
+        if (percentage > 0 && !generateurOn.isPlaying && playerOnZone)
+        {
+            generateurOn.Play();
+            generateurOff.Stop();
+        }
+        
+        if (percentage == 0 && !generateurOff.isPlaying && canSoundOff == true)
+        {
+            generateurOff.Play();
+            canSoundOff = false;
+        }
+        
 
         
     }

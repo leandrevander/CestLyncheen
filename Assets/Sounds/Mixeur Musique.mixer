@@ -6,7 +6,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mixeur principale
+  m_Name: Mixeur Musique
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 8150befab67f09d46b563144a747824d
-    name: MasterVolume
+    name: MusicVol
   m_AudioMixerGroupViews:
   - guids:
     - 014b337fa907f9a44938df677c9846f3
@@ -67,5 +67,5 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 6a8b8dc04cb81e146a709a70b580b561
   m_FloatValues:
-    8150befab67f09d46b563144a747824d: -0.16685188
+    8150befab67f09d46b563144a747824d: -18.757307
   m_TransitionOverrides: {}

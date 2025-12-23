@@ -7840,17 +7840,20 @@ MonoBehaviour:
   bulb: {fileID: 0}
   LevelUpgrade2: {fileID: 4507206608741711749}
   describleTextUpgrade2: {fileID: 2795755589372102178}
+  bulbMaxed: 0
   levelupgrade3: 0
   upgrade3button: {fileID: 1188042189849284874}
   cameraUpgradeScript: {fileID: 0}
   cameraUpgrade: {fileID: 3481284674574801891}
   describleTextUpgrade3: {fileID: 2806823720936732185}
   LevelUpgrade3: {fileID: 7018909796713404497}
+  cameraMaxed: 0
   levelupgrade4: 0
   upgrade4button: {fileID: 6013780362791035976}
   glowstickupgrade: {fileID: 4243818746027559235}
   describleTextUpgrade4: {fileID: 1813781494150980089}
   LevelUpgrade4: {fileID: 7606844438783508447}
+  glowstickMaxed: 0
   levelupgrade5: 0
   upgrade5Button: {fileID: 2856563547234528042}
   flashlightUpgradeObject: {fileID: 8028375472863626568}

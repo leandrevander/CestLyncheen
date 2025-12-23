@@ -6,7 +6,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Environnement mixer
+  m_Name: Mixeur SFX
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 605a71c414e8afa49b59d942aca7c3a4
-    name: EnviroMaster
+    name: SFXVol
   m_AudioMixerGroupViews:
   - guids:
     - 4ea41a76000d8f444b9f7fd1e9b683fd
@@ -66,5 +66,6 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 3660ddf9628782d49abe3cf5c37d4776
-  m_FloatValues: {}
+  m_FloatValues:
+    605a71c414e8afa49b59d942aca7c3a4: -19.928473
   m_TransitionOverrides: {}

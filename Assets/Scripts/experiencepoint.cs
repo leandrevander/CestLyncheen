@@ -28,10 +28,7 @@ public class experiencepoint : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                AudioSource.PlayClipAtPoint(
-                    experiencepointSound.clip,
-                    transform.position
-                );
+                experiencepointSound.Play();
 
                 OnEnnemiDefeated(ExpReward);
                 Destroy(gameObject);

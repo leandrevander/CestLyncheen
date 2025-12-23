@@ -192,6 +192,8 @@ public class UpgradeMenu : MonoBehaviour
    }
    public void UpgradeMenuClose()
    {
+       select.Play();
+
        closeButtonUpgradeMenu.SetActive(false);
        upgradeMenu.SetActive(false);
        Time.timeScale = 1f;

@@ -548,13 +548,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3957739746886377238, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_CastingOption
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
       propertyPath: m_Name
       value: Freeze Effect
       objectReference: {fileID: 0}
     - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660265894165828547, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666856307479089764, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666856307479089764, guid: f600704c9d825c641a79c1cd258c5f4f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1596548701
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
