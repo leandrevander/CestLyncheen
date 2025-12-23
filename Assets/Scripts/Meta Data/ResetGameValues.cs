@@ -16,10 +16,13 @@ public class ResetGameValues : MonoBehaviour
         playerData.unlockedBulbDef      = 0;
         playerData.unlockedCameraDef    = 0;
         playerData.unlockedGlowstickDef = 0;
-        metaDataSystem.SetMetaData(playerData.metaData);
-        metaDataSystem.SetMetaData(playerData.unlockedBulbDef);
-        metaDataSystem.SetMetaData(playerData.unlockedCameraDef);
-        metaDataSystem.SetMetaData(playerData.unlockedGlowstickDef);
+        playerData.unlockedLevel2Def    = 0;
+        metaDataSystem.SetMetaData(0);
+        metaDataSystem.SetUnlockedBulb(0); 
+        metaDataSystem.SetUnlockedCamera(0);
+        metaDataSystem.SetUnlockedGlowstick(0);
+        metaDataSystem.SetUnlockedLevel2(0);
+        PlayerPrefs.Save();
     }
 
     // Update is called once per frame

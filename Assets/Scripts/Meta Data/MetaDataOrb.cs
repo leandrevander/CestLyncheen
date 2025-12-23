@@ -28,6 +28,7 @@ public class MetaDataOrb : MonoBehaviour
         {
             playerData.metaData += 10;
             metaDataSystem.SetMetaData(playerData.metaData);
+            PlayerPrefs.Save();
             //Instantiate(metaDataText, transform.position, Quaternion.identity);
             metaDataText.Play();
             Destroy(other.gameObject);
@@ -37,6 +38,7 @@ public class MetaDataOrb : MonoBehaviour
         {
             playerData.metaData += 25;
             metaDataSystem.SetMetaData(playerData.metaData);
+            PlayerPrefs.Save();
             //Instantiate(metaDataText, transform.position, Quaternion.identity);
             bigMetaDataText.Play();
             Destroy(other.gameObject);

@@ -44,6 +44,7 @@ public class LoseMenu : MonoBehaviour
                 metaDataSystem.SetMetaData(playerData.metaData);
                 metaRessourceText.text = "+" + timerMetaData.metaRessourceBonus;
                 giveMetaDataBonus      = true;
+                PlayerPrefs.Save();
             }
             
         }
