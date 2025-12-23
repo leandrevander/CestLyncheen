@@ -10,12 +10,13 @@ public class LoseMenu : MonoBehaviour
     GameObject         player;
     [Header("UI")]
     public EventSystem eventSystem;
-    public GameObject    retryButton;
-    public TimerMetaData timerMetaData;
-    MetaDataSystem       metaDataSystem;
-    PlayerData          playerData;
-    public TextMeshProUGUI   metaRessourceText;
-    bool giveMetaDataBonus;
+    public GameObject      retryButton;
+    public TimerMetaData   timerMetaData;
+    MetaDataSystem         metaDataSystem;
+    PlayerData             playerData;
+    public TextMeshProUGUI metaRessourceText;
+    bool                   giveMetaDataBonus;
+    bool                   alreadySetSelectedButton;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,7 +37,12 @@ public class LoseMenu : MonoBehaviour
         {
             Time.timeScale = 0f;
             loseMenuUI.SetActive(true);
-            eventSystem.SetSelectedGameObject(retryButton);
+            if (alreadySetSelectedButton == false)
+            {
+                eventSystem.SetSelectedGameObject(retryButton);
+                alreadySetSelectedButton = true;
+
+            }
             if (giveMetaDataBonus == false)
             {
                 playerData.metaData += timerMetaData.metaRessourceBonus;

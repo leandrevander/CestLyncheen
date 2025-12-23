@@ -14,19 +14,23 @@ public class PauseMenu : MonoBehaviour
     public GameObject      optionMenu;
     PlayerData             playerData;
     public TextMeshProUGUI metaDataText;
-    bool isPaused;
+    bool                   isPaused;
+    GameObject             player;
+    public WinMenu winMenu;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerData     = FindObjectOfType<PlayerData>();  
+        playerData = FindObjectOfType<PlayerData>();
+        player     = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetKeyDown(KeyCode.JoystickButton7)))
+        if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetKeyDown(KeyCode.JoystickButton7) && (player != null) && (winMenu.win == false)))
         {
             if (isPaused == false)
             {

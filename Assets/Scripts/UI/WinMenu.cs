@@ -15,6 +15,7 @@ public class WinMenu : MonoBehaviour
 
     public bool win;
     bool        giveMetaDataBonus;
+    bool alreadySetSelectedButton;
     public bool isLevel1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,7 +35,12 @@ public class WinMenu : MonoBehaviour
         {
             Time.timeScale = 0f;
             winMenuUI.SetActive(true);
-            eventSystem.SetSelectedGameObject(retryButton);
+            if (alreadySetSelectedButton == false)
+            {
+                eventSystem.SetSelectedGameObject(retryButton);
+                alreadySetSelectedButton = true;
+
+            }
             if (giveMetaDataBonus == false)
             {
                 playerData.metaData += 500;
