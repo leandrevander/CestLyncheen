@@ -73,11 +73,11 @@ public class LightPhare : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= timerInterval && coroutine == null)
+        /*if (timer >= timerInterval && coroutine == null)
         {
-            coroutine = StartCoroutine(checkBonus());
+            //coroutine = StartCoroutine(checkBonus());
             timer     = 0;
-        }
+        }*/
 
         totalPercentage = generator1.percentage + generator2.percentage + generator3.percentage + generator4.percentage;
         //Debug.Log($"total percentage = {totalPercentage}");

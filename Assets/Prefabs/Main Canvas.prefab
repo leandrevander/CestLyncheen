@@ -302,7 +302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lvl :  0
+  m_text: 'Level : 1
 
 '
   m_isRightToLeft: 0
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lvl :  0
+  m_text: 'Level : 1
 
 '
   m_isRightToLeft: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lvl :  0
+  m_text: 'Level : 1
 
 '
   m_isRightToLeft: 0
@@ -5148,7 +5148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lvl :  0
+  m_text: 'Level : 1
 
 '
   m_isRightToLeft: 0
@@ -5703,7 +5703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lvl :  0
+  m_text: 'Level : 1
 
 '
   m_isRightToLeft: 0
@@ -7829,7 +7829,7 @@ MonoBehaviour:
   emplacement2: {x: 0, y: 0}
   emplacement3: {x: 0, y: 0}
   upgrade1button: {fileID: 4351579294214251352}
-  levelupgrade1: 1
+  levelupgrade1: 0
   speedUpgrade: {fileID: 4750423637823883213}
   LevelUpgrade1: {fileID: 7587589323643111196}
   describleTextUpgrade1: {fileID: 184127641069532309}
@@ -7846,7 +7846,7 @@ MonoBehaviour:
   cameraUpgrade: {fileID: 3481284674574801891}
   describleTextUpgrade3: {fileID: 2806823720936732185}
   LevelUpgrade3: {fileID: 7018909796713404497}
-  levelupgrade4: 1
+  levelupgrade4: 0
   upgrade4button: {fileID: 6013780362791035976}
   glowstickupgrade: {fileID: 4243818746027559235}
   describleTextUpgrade4: {fileID: 1813781494150980089}

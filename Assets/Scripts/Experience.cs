@@ -47,7 +47,10 @@ public class Experience : MonoBehaviour
         Debug.Log("You level up !");
         CurrentExp -=  XpToNextLevel;
         XpToNextLevel = Mathf.RoundToInt(XpToNextLevel * ExpGrowMultiplier);
-        upgradeMenu.UpgradeMenuOpen();
+        if (upgradeMenu.mesUpgradesList.Count >= 1)
+        {
+            upgradeMenu.UpgradeMenuOpen();
+        }
     }
 
     private void OnEnable()

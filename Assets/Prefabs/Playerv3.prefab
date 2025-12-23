@@ -305,7 +305,7 @@ MonoBehaviour:
   glowStickDestroy2: {fileID: 0}
   glowStickDestroy3: {fileID: 0}
   glowStickScript: {fileID: 8940694495901544124, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
-  hitByFlashlight: 2
+  hitByFlashlight: 1
   eventSystem: {fileID: 0}
   buttonBulbDescription: {fileID: 0}
   buttonCameraDescription: {fileID: 0}
