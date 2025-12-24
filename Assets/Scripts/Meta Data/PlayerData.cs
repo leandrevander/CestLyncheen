@@ -7,6 +7,8 @@ public class PlayerData : MonoBehaviour
 	public int unlockedCameraDef;
 	public int unlockedGlowstickDef;
 	public int unlockedLevel2Def;
+	public float musicVol;
+	public float sfxVol;
 
 	MetaDataSystem metaDataSystem;
 	
@@ -18,6 +20,8 @@ public class PlayerData : MonoBehaviour
 		unlockedCameraDef    = metaDataSystem.CurrentUnlockedCameraDef;
 		unlockedGlowstickDef = metaDataSystem.CurrentUnlockedGlowstickDef;
 		unlockedLevel2Def    = metaDataSystem.CurrentUnlockedLevel2Def;
+		musicVol         = metaDataSystem.CurrentMusicVol;
+		sfxVol         = metaDataSystem.CurrentSFXVol;
 
 
 	}

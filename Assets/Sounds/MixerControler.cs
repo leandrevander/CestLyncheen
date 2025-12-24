@@ -16,20 +16,41 @@ public class MixerControler : MonoBehaviour
 
 	public AudioSource select;
 
-	void Update()
+	void Start()
 	{
-		MusicVolSliderValue = MusicVolSlider.value;
-		SFXVolSliderValue   = SFXVolSlider.value;
+		MusicVolSliderValue = PlayerPrefs.GetFloat("musicVol", 0.20f);
+		SFXVolSliderValue   = PlayerPrefs.GetFloat("sfxVol",   0.20f);
+		
+		MusicVolSlider.value = MusicVolSliderValue;
+		SFXVolSlider.value   = SFXVolSliderValue;
 		
 		UpdateMixerVolumes();
+
+	}
+
+	void Update()
+	{
+		if (MusicVolSliderValue != MusicVolSlider.value || SFXVolSliderValue != SFXVolSlider.value)
+		{
+			MusicVolSliderValue = MusicVolSlider.value;
+			SFXVolSliderValue   = SFXVolSlider.value;
+		
+			UpdateMixerVolumes();
+		}
+		
 	}
 
 	
 	void UpdateMixerVolumes()
 	{
 		mixerAudioPrincipale.SetFloat("MusicVol", Mathf.Lerp(-80f, 0f, Mathf.Pow(MusicVolSliderValue, 0.25f)));
+		PlayerPrefs.SetFloat("musicVol", MusicVolSliderValue);
 
 		environementMixer.SetFloat("SFXVol", Mathf.Lerp(-80f, 0f, Mathf.Pow(SFXVolSliderValue, 0.25f)));
+		PlayerPrefs.SetFloat("sfxVol", SFXVolSliderValue);
+		
+		PlayerPrefs.Save();
+
 	}
 
 	public void PlaySoundTest()

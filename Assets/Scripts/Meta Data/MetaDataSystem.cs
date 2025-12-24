@@ -11,6 +11,10 @@ public class MetaDataSystem : MonoBehaviour
     string unlockedCameraDefKey    = "UnlockedCameraDef";
     string unlockedGlowstickDefKey = "UnlockedGlowstickDef";
     string unlockedLevel2DefKey = "UnlockedLevel2Def";
+    
+    string musicVolKey = "musicVol";
+    string sfxVolKey = "sfxVol";
+
 
     
     public int CurrentMetaData { get; set; }
@@ -20,6 +24,12 @@ public class MetaDataSystem : MonoBehaviour
     public int CurrentUnlockedGlowstickDef { get; set; }
     
     public int CurrentUnlockedLevel2Def { get; set; }
+    
+    public int CurrentMusicVol { get; set; }
+    
+    public int CurrentSFXVol { get; set; }
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -29,12 +39,24 @@ public class MetaDataSystem : MonoBehaviour
         CurrentUnlockedCameraDef    = PlayerPrefs.GetInt(unlockedCameraDefKey);
         CurrentUnlockedGlowstickDef = PlayerPrefs.GetInt(unlockedGlowstickDefKey);
         CurrentUnlockedLevel2Def = PlayerPrefs.GetInt(unlockedLevel2DefKey);
+        CurrentMusicVol         = PlayerPrefs.GetInt(musicVolKey);
+        CurrentSFXVol         = PlayerPrefs.GetInt(sfxVolKey);
         
     }
 
     public void SetMetaData(int metaData)
     {
         PlayerPrefs.SetInt(metaDataKey, metaData);
+    }
+
+    public void SetMusicVol(int musicVol)
+    {
+        PlayerPrefs.SetInt(musicVolKey, musicVol);
+    }
+
+    public void SetSFXVol(int sfxVol)
+    {
+        PlayerPrefs.SetInt(sfxVolKey, sfxVol);
     }
     
     public void SetUnlockedBulb(int unlockedBulbDef)
