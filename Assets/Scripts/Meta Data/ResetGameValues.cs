@@ -7,10 +7,13 @@ public class ResetGameValues : MonoBehaviour
 {
     public MetaDataSystem metaDataSystem;
     public PlayerData playerData;
+
+    public AudioSource select;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public void ResetData()
     { 
+        select.Play();
         Debug.Log("Reset Game Values");
         playerData.metaData             = 0;
         playerData.unlockedBulbDef      = 0;
@@ -23,6 +26,21 @@ public class ResetGameValues : MonoBehaviour
         metaDataSystem.SetUnlockedGlowstick(0);
         metaDataSystem.SetUnlockedLevel2(0);
         PlayerPrefs.Save();
+    }
+
+    public void Cheat()
+    {
+        select.Play();
+
+        Debug.Log("Cheat");
+        playerData.metaData             = 9999;
+        metaDataSystem.SetMetaData(9999);
+        
+        playerData.unlockedLevel2Def    = 1;
+        metaDataSystem.SetUnlockedLevel2(1);
+        
+        PlayerPrefs.Save();
+
     }
 
     // Update is called once per frame

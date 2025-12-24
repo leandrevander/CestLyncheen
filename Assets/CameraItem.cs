@@ -33,7 +33,8 @@ public class CameraItem : MonoBehaviour
   
             }
             else
-            {
+            { 
+                recup.Play();
               upgradeMenu.CameraUpgrade();  
             }
             Destroy(gameObject,0.1f);

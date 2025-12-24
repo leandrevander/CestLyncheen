@@ -51,7 +51,7 @@ public class WinMenu : MonoBehaviour
             if (isLevel1)
             {
                 playerData.unlockedLevel2Def = 1;
-                metaDataSystem.SetMetaData(playerData.unlockedLevel2Def);
+                metaDataSystem.SetUnlockedLevel2(playerData.unlockedLevel2Def);;
                 isLevel1 = false;
                 PlayerPrefs.Save();
             }
