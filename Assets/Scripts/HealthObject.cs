@@ -7,6 +7,8 @@ public class HealthObject : MonoBehaviour
     [SerializeField] private AudioClip    recup;
     public                   GameObject   player;
     public                   PlayerHealth playerHealth;
+
+    public AudioSource health;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,13 +22,12 @@ public class HealthObject : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             if (playerHealth.playerHealth < 4)
             {
-                AudioSource.PlayClipAtPoint(recup, transform.position);
                 playerHealth.GainHealth();
                 Destroy(gameObject);  
             }

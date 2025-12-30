@@ -8,6 +8,8 @@ public class MetaDataOrb : MonoBehaviour
     public Animation bigMetaDataText;
 
     public AudioSource experiencePoint;
+    public AudioSource heal;
+
 
     public int metaData;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,6 +51,12 @@ public class MetaDataOrb : MonoBehaviour
         if (other.gameObject.CompareTag("EXP"))
         {
             experiencePoint.Play();
+        }
+        
+        if (other.gameObject.CompareTag("HpItem"))
+        {
+            Debug.Log("pitié");
+            heal.Play();
         }
 
 
