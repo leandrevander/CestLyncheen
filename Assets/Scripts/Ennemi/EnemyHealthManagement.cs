@@ -49,7 +49,7 @@ public class EnemyHealthManagement : MonoBehaviour
     {
         if (ennemi_NavMeshAgent != null)
         {
-            ennemi_NavMeshAgent.speed = speed;
+            //ennemi_NavMeshAgent.speed = speed;
         }
         
         if (isHittenByFlashlight == true && coroutine == null)
@@ -106,10 +106,12 @@ public class EnemyHealthManagement : MonoBehaviour
             {
                 Debug.Log("Couroutine Freeze appelé");
                 ennemi_NavMeshAgent.isStopped = true;
+                ennemi_NavMeshAgent.speed     = 0;
+
                 Debug.Log("Ennemi gelé ! Enfin je crois...");
                 yield return new WaitForSeconds(FrezzeDuration);
                 ennemi_NavMeshAgent.isStopped = false;
-                ennemi_NavMeshAgent.speed     = 2.5f;
+                ennemi_NavMeshAgent.speed     = speed;
 
                 Debug.Log("Ennemi dégelé ! Normalement...");
                 yield return new WaitForSeconds(1);

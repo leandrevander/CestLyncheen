@@ -263,7 +263,7 @@ MonoBehaviour:
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 0}
   ennemi_NavMeshAgent: {fileID: 0}
-  speed: 2.5
+  speed: 2
   FrezzeDuration: 2
   speedSeagull: 3.5
   freezeEffect: {fileID: 4435129910329369096}

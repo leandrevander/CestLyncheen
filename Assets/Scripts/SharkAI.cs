@@ -40,12 +40,12 @@ public class SharkAI : MonoBehaviour
         
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
-        agent = GetComponent<NavMeshAgent>();
-        spawner = GameObject.FindWithTag("Player").GetComponent<SharkSpawner>();
+        player               = GameObject.FindWithTag("Player");
+        agent                = GetComponent<NavMeshAgent>();
+        spawner              = GameObject.FindWithTag("Player").GetComponent<SharkSpawner>();
         agent.updateRotation = false;
-        agent.updateUpAxis = false;
-        playerHealth = player.GetComponent<PlayerHealth>();
+        agent.updateUpAxis   = false;
+        playerHealth         = player.GetComponent<PlayerHealth>();
         
     }
 
@@ -117,7 +117,10 @@ public class SharkAI : MonoBehaviour
                  player.transform.position.x - gameObject.transform.position.x > -waitDistance) && (player.transform.position.y - gameObject.transform.position.y < waitDistance &&
                                                                                                     player.transform.position.y - gameObject.transform.position.y > -waitDistance))
             {
-                stateComplete = true;
+                if (agent.isStopped == false)
+                {
+                    stateComplete = true;
+                }
             }
         }
     }
@@ -129,12 +132,16 @@ public class SharkAI : MonoBehaviour
         
         float x = Mathf.Cos(angle) * waitDistance;
         float y = Mathf.Sin(angle) * waitDistance;
-        
-        transform.position = player.transform.position + new Vector3(x, y, 0);
+
+        if (agent.isStopped == false)
+        {
+            transform.position = player.transform.position + new Vector3(x, y, 0);
+ 
+        }
         
         timerIsRunning = true;
         
-        if (timerIsRunning)
+        if ((timerIsRunning) && (agent.isStopped == false))
         {
             if (attackTimer > 0)
             {
