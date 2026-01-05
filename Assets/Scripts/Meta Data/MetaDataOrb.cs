@@ -42,6 +42,7 @@ public class MetaDataOrb : MonoBehaviour
         
         if (other.gameObject.CompareTag("BigMetaData"))
         {
+            metaDataSound.Play();
             playerData.metaData += 25;
             metaDataSystem.SetMetaData(playerData.metaData);
             PlayerPrefs.Save();
