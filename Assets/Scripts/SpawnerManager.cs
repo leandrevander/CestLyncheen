@@ -149,7 +149,11 @@ public class SpawnerManager : MonoBehaviour
         
         //----------------------Les Temps de spawns------------------
 
-        if (remainingTime >= 540f)
+        if (remainingTime >= 590f)
+        {
+            snailSpawn = false;
+        }
+        else if (remainingTime >= 540f)
         {
             snailSpawn = true;
         }
@@ -160,6 +164,7 @@ public class SpawnerManager : MonoBehaviour
         else if (remainingTime >= 420f)
         {
             seagullSpawn    = false;
+            
             snailHordeSpawn = true;
             sharkSpawn      = true;
         }
@@ -168,6 +173,7 @@ public class SpawnerManager : MonoBehaviour
             snailSpawn       = false;
             snailHordeSpawn  = false;
             sharkSpawn       = false;
+            
             snailLevel2Spawn = true;
         }
         else if (remainingTime >= 320f)
@@ -177,24 +183,26 @@ public class SpawnerManager : MonoBehaviour
         }
         else if (remainingTime >= 280f)
         {
-            dolphinSpawn = true;
+            dolphinSpawn     = true;
+            snailLevel3Spawn = true;
         }
         else if (remainingTime >= 220f)
         {
             seagullLevel2Spawn = false;
-            dolphinLevel2Spawn = false;
+            dolphinSpawn = false;
+            
             sharkLevel2Spawn   = true;
         }
         else if (remainingTime >= 180f)
         {
             snailLevel2Spawn      = false;
             snailLevel2HordeSpawn = false;
-            snailLevel3Spawn      = true;
+            
+            snailLevel3HordeSpawn = true;
         }
         else if (remainingTime >= 120f)
         {
             sharkLevel2Spawn      = false;
-            snailLevel3HordeSpawn = true;
             seagullLevel2Spawn    = true;
             
         }
