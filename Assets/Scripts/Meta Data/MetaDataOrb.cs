@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class MetaDataOrb : MonoBehaviour
 {
-    MetaDataSystem   metaDataSystem;
-    PlayerData       playerData;
-    public Animation metaDataText;
-    public Animation bigMetaDataText;
+    [SerializeField] AudioSource metaDataSound;
+    MetaDataSystem               metaDataSystem;
+    PlayerData                   playerData;
+    public Animation             metaDataText;
+    public Animation             bigMetaDataText;
 
     public AudioSource experiencePoint;
     public AudioSource heal;
@@ -30,6 +31,7 @@ public class MetaDataOrb : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MetaData"))
         {
+            metaDataSound.Play();
             playerData.metaData += 10;
             metaDataSystem.SetMetaData(playerData.metaData);
             PlayerPrefs.Save();
