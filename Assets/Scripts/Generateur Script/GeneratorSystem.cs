@@ -6,6 +6,7 @@ public class GeneratorSystem : MonoBehaviour
 {
     [SerializeField] private AudioSource generateurOn;
     [SerializeField] private AudioSource generateurOff;
+    [SerializeField] private AudioSource inactive;
     
     public                   int         percentage = 100;
 
@@ -69,6 +70,7 @@ public class GeneratorSystem : MonoBehaviour
             sprite.color    = Color.red;
             generateurOn.Stop();
             
+            
         }
         
         if (percentage > 0 && !generateurOn.isPlaying && playerOnZone)
@@ -126,7 +128,8 @@ public class GeneratorSystem : MonoBehaviour
         {
             playerOnZone = false;
             sliderGO.SetActive(false);
-
+            Debug.Log("Sounds played");
+            inactive.Play();
         }
     }
 
