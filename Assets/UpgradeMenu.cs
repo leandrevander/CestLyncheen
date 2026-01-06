@@ -520,7 +520,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            levelupgrade4++;
            describleTextUpgrade4.text = "Max Level";
-           weaponsManager.hitpoint    = 3; // augmente les dégats des glowstick
+           weaponsManager.hitpoint    = 4; // augmente les dégats des glowstick
            LevelUpgrade4.text         = "Level Max";
            glowstickMaxed                = true;
            mesUpgradesList.Remove(glowstickupgrade);

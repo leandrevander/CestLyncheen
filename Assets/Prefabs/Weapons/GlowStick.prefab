@@ -126,8 +126,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.248219, y: 0.29090273}
-  m_Radius: 1.045114
+  m_Offset: {x: 1.2926221, y: 0.2909026}
+  m_Radius: 3.1655679
 --- !u!114 &8940694495901544124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce543580cc9132b4f8acefe84ef1f01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recup: {fileID: 8300000, guid: 6d2fa8473faced44ebbe2cf7630be63b, type: 3}
   enemyHealthManagement: {fileID: 0}
 --- !u!114 &8630325671797685985
 MonoBehaviour:
