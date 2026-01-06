@@ -3980,6 +3980,7 @@ MonoBehaviour:
   unlockMenuButtonGO: {fileID: 545702767}
   musicVolumeSliderGO: {fileID: 742466123}
   select: {fileID: 1218982179}
+  cantSelect: {fileID: 0}
   mainMenuPage: {fileID: 1356334648}
   upgradePage: {fileID: 995407513}
   playPage: {fileID: 924075930}
@@ -7755,7 +7756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unlock weapons
+  m_text: Unlock devices
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -7782,8 +7783,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.19
-  m_fontSizeBase: 4.19
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15751,7 +15752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unlock weapons
+  m_text: Unlock devices
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}

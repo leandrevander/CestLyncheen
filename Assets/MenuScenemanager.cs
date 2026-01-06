@@ -11,6 +11,7 @@ public class MenuScenemanager : MonoBehaviour
     public GameObject  unlockMenuButtonGO;
     public GameObject  musicVolumeSliderGO;
     public AudioSource select;
+    public AudioSource  cantSelect;
     
 
     public GameObject mainMenuPage;
@@ -232,6 +233,7 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedBulbDefColor = unlockBulbButton.colors;
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
+            cantSelect.Play();
         }
         if (playerData.metaData >= bulbPrice &&  playerData.unlockedBulbDef == 0)
         {
@@ -259,6 +261,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedBulbDefColor = unlockBulbButton.colors;
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -271,6 +275,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedCameraDefColor = unlockCameraButton.colors;
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
+            cantSelect.Play();
+
         }
         if (playerData.metaData >= cameraPrice &&  playerData.unlockedCameraDef == 0)
         {
@@ -297,6 +303,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedCameraDefColor = unlockCameraButton.colors;
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -309,6 +317,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedGlowstickDefColor = unlockGlowstickButton.colors;
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
+            cantSelect.Play();
+
         }
 
         if (playerData.metaData >= glowstickPrice && playerData.unlockedGlowstickDef == 0)
@@ -336,6 +346,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedGlowstickDefColor = unlockGlowstickButton.colors;
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -491,6 +503,11 @@ public class MenuScenemanager : MonoBehaviour
 
            eventSystem.SetSelectedGameObject(snailsBackButton);
         }
+        else
+        {
+            cantSelect.Play();
+
+        }
     }
     
     public void PressedSeagullsButton()
@@ -503,6 +520,11 @@ public class MenuScenemanager : MonoBehaviour
             seagullsBackButton.SetActive(true);
 
             eventSystem.SetSelectedGameObject(seagullsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
         }
     }
     
@@ -517,6 +539,11 @@ public class MenuScenemanager : MonoBehaviour
 
             eventSystem.SetSelectedGameObject(sharksBackButton);
         }
+        else
+        {
+            cantSelect.Play();
+
+        }
     }
     
     public void PressedDolphinsButton()
@@ -529,6 +556,11 @@ public class MenuScenemanager : MonoBehaviour
             dolphinsBackButton.SetActive(true);
 
             eventSystem.SetSelectedGameObject(dolphinsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
         }
     }
 
