@@ -14,12 +14,6 @@ public class MetaDataSystem : MonoBehaviour
     
     string musicVolKey = "musicVol";
     string sfxVolKey = "sfxVol";
-    
-    string snailsKilledKey = "SnailsKilledDef";
-    string seagullsKilledKey = "SeagullsKilledDef";
-    string sharksKilledKey = "SharksKilledDef";
-    string dolphinsKilledKey = "DolphinsKilledDef";
-
 
 
     
@@ -34,14 +28,6 @@ public class MetaDataSystem : MonoBehaviour
     public int CurrentMusicVol { get; set; }
     
     public int CurrentSFXVol { get; set; }
-    
-    public int CurrentSnailsKilled { get; set; }
-    
-    public int CurrentSeagullsKilled { get; set; }
-    
-    public int CurrentSharksKilled { get; set; }
-    
-    public int CurrentDolphinsKilled { get; set; }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -55,10 +41,6 @@ public class MetaDataSystem : MonoBehaviour
         CurrentUnlockedLevel2Def = PlayerPrefs.GetInt(unlockedLevel2DefKey);
         CurrentMusicVol         = PlayerPrefs.GetInt(musicVolKey);
         CurrentSFXVol         = PlayerPrefs.GetInt(sfxVolKey);
-        CurrentSnailsKilled      = PlayerPrefs.GetInt(snailsKilledKey);
-        CurrentSharksKilled      = PlayerPrefs.GetInt(sharksKilledKey);
-        CurrentSeagullsKilled    = PlayerPrefs.GetInt(seagullsKilledKey);
-        CurrentDolphinsKilled    = PlayerPrefs.GetInt(dolphinsKilledKey);
         
     }
 
@@ -95,26 +77,6 @@ public class MetaDataSystem : MonoBehaviour
     public void SetUnlockedLevel2(int unlockedLevel2Def)
     {
         PlayerPrefs.SetInt(unlockedLevel2DefKey, unlockedLevel2Def);
-    }
-
-    public void SetSnailsKilled(int snailsKilledDef)
-    {
-        PlayerPrefs.SetInt(snailsKilledKey, snailsKilledDef);
-    }
-
-    public void SetSeagullsKilled(int seagullsKilledDef)
-    {
-        PlayerPrefs.SetInt(seagullsKilledKey, seagullsKilledDef);
-    }
-
-    public void SetSharksKilled(int sharksKilledDef)
-    {
-        PlayerPrefs.SetInt(sharksKilledKey, sharksKilledDef);
-    }
-
-    public void SetDolphinsKilled(int dolphinsKilledDef)
-    {
-        PlayerPrefs.SetInt(dolphinsKilledKey, dolphinsKilledDef);
     }
     void Start()
     {

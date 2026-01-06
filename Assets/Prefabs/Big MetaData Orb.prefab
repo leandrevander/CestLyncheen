@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1153782418979695062}
   - component: {fileID: 2866180615887351745}
   - component: {fileID: 2949850927315504024}
+  - component: {fileID: 318452938940695913}
   - component: {fileID: 7515341114707341303}
   - component: {fileID: -962797563660599183}
   m_Layer: 0
@@ -164,6 +165,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.61756945, y: 0.7124615}
   m_EdgeRadius: 0
+--- !u!114 &318452938940695913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977214029452704208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc8d9aca52720394eaa77205279fcc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  metaDataSound: {fileID: -962797563660599183}
+  metaDataText: {fileID: 0}
+  bigMetaDataText: {fileID: 0}
+  experiencePoint: {fileID: 0}
+  heal: {fileID: 0}
+  metaData: 0
 --- !u!95 &7515341114707341303
 Animator:
   serializedVersion: 7

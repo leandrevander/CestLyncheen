@@ -20,19 +20,11 @@ public class ResetGameValues : MonoBehaviour
         playerData.unlockedCameraDef    = 0;
         playerData.unlockedGlowstickDef = 0;
         playerData.unlockedLevel2Def    = 0;
-        playerData.snailsKilled         = 0;
-        playerData.seagullsKilled       = 0;
-        playerData.sharksKilled         = 0;
-        playerData.dolphinsKilled       = 0;
         metaDataSystem.SetMetaData(0);
         metaDataSystem.SetUnlockedBulb(0); 
         metaDataSystem.SetUnlockedCamera(0);
         metaDataSystem.SetUnlockedGlowstick(0);
         metaDataSystem.SetUnlockedLevel2(0);
-        metaDataSystem.SetSnailsKilled(0);
-        metaDataSystem.SetSeagullsKilled(0);
-        metaDataSystem.SetSharksKilled(0);
-        metaDataSystem.SetDolphinsKilled(0);
         PlayerPrefs.Save();
     }
 
@@ -46,16 +38,6 @@ public class ResetGameValues : MonoBehaviour
         
         playerData.unlockedLevel2Def    = 1;
         metaDataSystem.SetUnlockedLevel2(1);
-        
-        playerData.snailsKilled        = 200;
-        playerData.seagullsKilled      = 150;
-        playerData.sharksKilled        = 100;
-        playerData.dolphinsKilled      = 50;
-        
-        metaDataSystem.SetSnailsKilled(200);
-        metaDataSystem.SetSeagullsKilled(150);
-        metaDataSystem.SetSharksKilled(100);
-        metaDataSystem.SetDolphinsKilled(50);
         
         PlayerPrefs.Save();
 
