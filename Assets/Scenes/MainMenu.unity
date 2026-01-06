@@ -4002,8 +4002,39 @@ MonoBehaviour:
   unlockGlowstickButton: {fileID: 771238762}
   level2Button: {fileID: 271739021}
   level2Text: {fileID: 311007065}
+  shadowsPage: {fileID: 51986789}
+  snailsButton: {fileID: 876345444}
+  seagullsButton: {fileID: 1178785379}
+  sharksButton: {fileID: 190459259}
+  dolphinsButton: {fileID: 1722493491}
+  snailsText: {fileID: 97892494}
+  seagullsText: {fileID: 1987390340}
+  sharksText: {fileID: 789273814}
+  dolphinsText: {fileID: 724437263}
+  snailsTextGO: {fileID: 97892492}
+  seagullsTextGO: {fileID: 1987390338}
+  sharksTextGO: {fileID: 789273812}
+  dolphinsTextGO: {fileID: 724437261}
+  dolphinsTextCount: {fileID: 2064595413}
+  snailsTextCount: {fileID: 1884137391}
+  sharksTextCount: {fileID: 1150829775}
+  seagullsTextCount: {fileID: 759707977}
+  snailsPage: {fileID: 161554455}
+  seagullsPage: {fileID: 1830781707}
+  sharksPage: {fileID: 1425823651}
+  dolphinsPage: {fileID: 1659453868}
+  snailsBackButton: {fileID: 1511738592}
+  seagullsBackButton: {fileID: 542309322}
+  sharksBackButton: {fileID: 34507607}
+  dolphinsBackButton: {fileID: 1501341273}
+  snailsButtonGO: {fileID: 876345442}
+  seagullsButtonGO: {fileID: 1178785377}
+  sharksButtonGO: {fileID: 190459257}
+  dolphinsButtonGO: {fileID: 1722493490}
   gray: {r: 0.60784316, g: 0.60784316, b: 0.60784316, a: 1}
   white: {r: 1, g: 1, b: 1, a: 1}
+  yellowGray: {r: 0.4627451, g: 0.43529412, b: 0.23921569, a: 1}
+  yellow: {r: 0.99215686, g: 0.93333334, b: 0.5294118, a: 1}
 --- !u!114 &482800377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12631,6 +12662,10 @@ MonoBehaviour:
   unlockedLevel2Def: 0
   musicVol: 0
   sfxVol: 0
+  snailsKilled: 0
+  seagullsKilled: 0
+  sharksKilled: 0
+  dolphinsKilled: 0
 --- !u!114 &1816031500
 MonoBehaviour:
   m_ObjectHideFlags: 0
