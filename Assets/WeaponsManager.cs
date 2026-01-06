@@ -39,7 +39,7 @@ public class WeaponsManager : MonoBehaviour
     public bool         GlowStickRecup = false;
     public Coroutine  GlowStickCoroutine;
     public int        numberOfGlowStick = 0;
-    public int        hitpoint          = 2;
+    public int        hitpoint          = 1;
     public float      GlowStickDuration = 10f;
     public GameObject glowStickDescription;
     public GameObject prefabGlowStick;

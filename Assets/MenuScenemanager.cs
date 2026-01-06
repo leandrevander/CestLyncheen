@@ -11,6 +11,7 @@ public class MenuScenemanager : MonoBehaviour
     public GameObject  unlockMenuButtonGO;
     public GameObject  musicVolumeSliderGO;
     public AudioSource select;
+    public AudioSource  cantSelect;
     
 
     public GameObject mainMenuPage;
@@ -49,12 +50,59 @@ public class MenuScenemanager : MonoBehaviour
     [Header("Level 2")]
     public Button level2Button;
     public GameObject level2Text;
+    
+    [Header("Shadows")]
+    public GameObject shadowsPage;
+    public Button snailsButton;
+    public Button          seagullsButton;
+    public Button          sharksButton;
+    public Button          dolphinsButton;
+    
+    public TextMeshProUGUI snailsText;
+    public TextMeshProUGUI seagullsText;
+    public TextMeshProUGUI sharksText;
+    public TextMeshProUGUI dolphinsText;
+    
+    public GameObject snailsTextGO;
+    public GameObject seagullsTextGO;
+    public GameObject sharksTextGO;
+    public GameObject dolphinsTextGO;
+    
+    public TextMeshProUGUI dolphinsTextCount;
+    public TextMeshProUGUI snailsTextCount;
+    public TextMeshProUGUI sharksTextCount;
+    public TextMeshProUGUI seagullsTextCount;
+
+    public GameObject snailsPage;
+    public GameObject seagullsPage;
+    public GameObject sharksPage;
+    public GameObject dolphinsPage;
+
+    public GameObject snailsBackButton;
+    public GameObject seagullsBackButton;
+    public GameObject sharksBackButton;
+    public GameObject dolphinsBackButton;
+    public GameObject snailsButtonGO;
+    public GameObject seagullsButtonGO;
+    public GameObject sharksButtonGO;
+    public GameObject dolphinsButtonGO;
+
+
+
+    
+    
+
+
+
+    
 
 
 
 
     public Color gray;
     public Color white;
+    public Color yellowGray;
+    public Color yellow;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -63,6 +111,16 @@ public class MenuScenemanager : MonoBehaviour
         mainMenuPage.SetActive(true);
         playPage.SetActive(false);
         upgradePage.SetActive(false);
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        shadowsPage.SetActive(false);
+        snailsBackButton.SetActive(false);
+        seagullsBackButton.SetActive(false);
+        sharksBackButton.SetActive(false);
+        dolphinsBackButton.SetActive(false);
+        
         eventSystem.SetSelectedGameObject(play);
     }
     public void StartLevel1()
@@ -117,6 +175,7 @@ public class MenuScenemanager : MonoBehaviour
         playPage.SetActive(false);
         optionsPage.SetActive(false);
         upgradePage.SetActive(false);
+        shadowsPage.SetActive(false);
         eventSystem.SetSelectedGameObject(play);
     }
     
@@ -174,6 +233,7 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedBulbDefColor = unlockBulbButton.colors;
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
+            cantSelect.Play();
         }
         if (playerData.metaData >= bulbPrice &&  playerData.unlockedBulbDef == 0)
         {
@@ -201,6 +261,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedBulbDefColor = unlockBulbButton.colors;
             unlockedBulbDefColor.normalColor = gray;
             unlockBulbButton.colors          = unlockedBulbDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -213,6 +275,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedCameraDefColor = unlockCameraButton.colors;
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
+            cantSelect.Play();
+
         }
         if (playerData.metaData >= cameraPrice &&  playerData.unlockedCameraDef == 0)
         {
@@ -239,6 +303,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedCameraDefColor = unlockCameraButton.colors;
             unlockedCameraDefColor.normalColor = gray;
             unlockCameraButton.colors          = unlockedCameraDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -251,6 +317,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedGlowstickDefColor = unlockGlowstickButton.colors;
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
+            cantSelect.Play();
+
         }
 
         if (playerData.metaData >= glowstickPrice && playerData.unlockedGlowstickDef == 0)
@@ -278,6 +346,8 @@ public class MenuScenemanager : MonoBehaviour
             var unlockedGlowstickDefColor = unlockGlowstickButton.colors;
             unlockedGlowstickDefColor.normalColor = gray;
             unlockGlowstickButton.colors          = unlockedGlowstickDefColor;
+            cantSelect.Play();
+
         }
     }
 
@@ -343,7 +413,228 @@ public class MenuScenemanager : MonoBehaviour
         glowstickPriceText.text = ""+glowstickPrice;
         playerMoneyText.text = "Player's orbs : " + playerData.metaData;
     }
+
+    void RefreshShadowsButtons()
+    {
+        if (playerData.snailsKilled < 200)
+        {
+            snailsTextGO.SetActive(true);
+            var snailsKilledDefColorColor = snailsButton.colors;
+            snailsKilledDefColorColor.normalColor = gray;
+            snailsKilledDefColorColor.selectedColor = yellowGray;
+            snailsButton.colors                   = snailsKilledDefColorColor;
+            snailsTextGO.SetActive(true);
+        }
+        else
+        {
+            snailsTextGO.SetActive(false); 
+            var snailsKilledDefColorColor = snailsButton.colors;
+            snailsKilledDefColorColor.normalColor   = white;
+            snailsKilledDefColorColor.selectedColor = yellow;
+            snailsButton.colors                     = snailsKilledDefColorColor;
+            snailsTextGO.SetActive(false); 
+        }
+        
+        
+        if (playerData.seagullsKilled < 150)
+        {
+            var seagullsKilledDefColorColor = seagullsButton.colors;
+            seagullsKilledDefColorColor.normalColor   = gray;
+            seagullsKilledDefColorColor.selectedColor = yellowGray;
+            seagullsButton.colors                     = seagullsKilledDefColorColor;
+            seagullsTextGO.SetActive(true);
+        }
+        else
+        {
+            var seagullsKilledDefColorColor = seagullsButton.colors;
+            seagullsKilledDefColorColor.normalColor   = white;
+            seagullsKilledDefColorColor.selectedColor = yellow;
+            seagullsButton.colors                     = seagullsKilledDefColorColor;
+            seagullsTextGO.SetActive(false); 
+        }
+        
+        
+        if (playerData.sharksKilled < 100)
+        {
+            var sharksKilledDefColorColor = sharksButton.colors;
+            sharksKilledDefColorColor.normalColor   = gray;
+            sharksKilledDefColorColor.selectedColor = yellowGray;
+            sharksButton.colors                     = sharksKilledDefColorColor;
+            sharksTextGO.SetActive(true);
+        }
+        else
+        {
+            var sharksKilledDefColorColor = sharksButton.colors;
+            sharksKilledDefColorColor.normalColor   = white;
+            sharksKilledDefColorColor.selectedColor = yellow;
+            sharksButton.colors                     = sharksKilledDefColorColor;
+            sharksTextGO.SetActive(false); 
+        }
+        
+        
+        if (playerData.dolphinsKilled < 50)
+        {
+            var dolphinsKilledDefColorColor = dolphinsButton.colors;
+            dolphinsKilledDefColorColor.normalColor   = gray;
+            dolphinsKilledDefColorColor.selectedColor = yellowGray;
+            dolphinsButton.colors                     = dolphinsKilledDefColorColor;
+            dolphinsTextGO.SetActive(true);
+        }
+        else
+        {
+            var dolphinsKilledDefColorColor = dolphinsButton.colors;
+            dolphinsKilledDefColorColor.normalColor   = white;
+            dolphinsKilledDefColorColor.selectedColor = yellow;
+            dolphinsButton.colors                     = dolphinsKilledDefColorColor;
+            dolphinsTextGO.SetActive(false); 
+        }
+        
+        
+    }
+
+    public void PressedSnailsButton()
+    {
+        if (playerData.snailsKilled >= 200)
+        {
+            select.Play();
+
+           snailsPage.SetActive(true);
+           snailsBackButton.SetActive(true);
+
+           eventSystem.SetSelectedGameObject(snailsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
+        }
+    }
     
+    public void PressedSeagullsButton()
+    {
+        if (playerData.seagullsKilled >= 150)
+        {
+            select.Play();
+
+            seagullsPage.SetActive(true);
+            seagullsBackButton.SetActive(true);
+
+            eventSystem.SetSelectedGameObject(seagullsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
+        }
+    }
+    
+    public void PressedSharksButton()
+    {
+        if (playerData.sharksKilled >= 100)
+        {
+            select.Play();
+
+            sharksPage.SetActive(true);
+            sharksBackButton.SetActive(true);
+
+            eventSystem.SetSelectedGameObject(sharksBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
+        }
+    }
+    
+    public void PressedDolphinsButton()
+    {
+        if (playerData.dolphinsKilled >= 50)
+        {
+            select.Play();
+
+            dolphinsPage.SetActive(true);
+            dolphinsBackButton.SetActive(true);
+
+            eventSystem.SetSelectedGameObject(dolphinsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
+        }
+    }
+
+    
+    
+    public void PressedSnailsBackButton()
+    {
+        select.Play();
+
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        snailsBackButton.SetActive(false);
+        eventSystem.SetSelectedGameObject(snailsButtonGO);
+    }
+    
+    public void PressedSharksBackButton()
+    {
+        select.Play();
+
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        sharksBackButton.SetActive(false);
+        eventSystem.SetSelectedGameObject(sharksButtonGO);
+    }
+    
+    public void PressedSeagullsBackButton()
+    {
+        select.Play();
+
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        seagullsBackButton.SetActive(false);
+        eventSystem.SetSelectedGameObject(seagullsButtonGO);
+    }
+    
+    public void PressedDolphinsBackButton()
+    {
+        select.Play();
+
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        dolphinsBackButton.SetActive(false);
+        eventSystem.SetSelectedGameObject(dolphinsButtonGO);
+    }
+
+
+    public void PressedShadowsButton()
+    {
+        select.Play();
+
+        mainMenuPage.SetActive(false);
+        shadowsPage.SetActive(true);
+        snailsBackButton.SetActive(false);
+        seagullsBackButton.SetActive(false);
+        sharksBackButton.SetActive(false);
+        dolphinsBackButton.SetActive(false);
+        RefreshShadowsButtons();
+        eventSystem.SetSelectedGameObject(snailsButtonGO);
+        
+        snailsTextCount.text = playerData.snailsKilled.ToString();
+        seagullsTextCount.text = playerData.seagullsKilled.ToString();
+        sharksTextCount.text = playerData.sharksKilled.ToString();
+        dolphinsTextCount.text = playerData.dolphinsKilled.ToString();
+
+
+    }
     
     // Update is called once per frame
     void Update()
