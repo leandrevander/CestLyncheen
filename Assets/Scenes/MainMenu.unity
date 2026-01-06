@@ -955,7 +955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /200 snails killed
+  m_text: / 200 snails killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -5349,7 +5349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /50 dolphins killed
+  m_text: / 50 dolphins killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -6326,7 +6326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /100 sharks killed
+  m_text: / 100 sharks killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -9840,7 +9840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1356334649
 Transform:
   m_ObjectHideFlags: 0
@@ -14805,7 +14805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /150 seagulls killed
+  m_text: / 150 seagulls killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
