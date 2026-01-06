@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321eb7f2feec0314383f0d90d7a16a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthZombie: 10
+  HealthZombie: 5
   weaponsManager: {fileID: 0}
   isHittenByFlashlight: 0
   metaDataOrb: {fileID: 6414901020905140728, guid: 668f986412041de40b52f57c6904e654, type: 3}

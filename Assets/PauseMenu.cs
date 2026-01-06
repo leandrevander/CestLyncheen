@@ -18,7 +18,6 @@ public class PauseMenu : MonoBehaviour
     bool                   isPaused;
     GameObject             player;
     public WinMenu         winMenu;
-    
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,7 +43,7 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
-                ResumeGame(); 
+                ResumeGame();
             }
         }
 

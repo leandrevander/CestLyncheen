@@ -258,18 +258,17 @@ public class UpgradeMenu : MonoBehaviour
            UpgradeMenuClose();  
        }
        
+       
+       
    }
 
-   
-   
-   
    public void BulbUpgrade()
    {
        if ((levelupgrade2 == 0 && (weaponsManager.nombreAmpoule) > 0))
        {
            select.Play();
            levelupgrade2++;
-           describleTextUpgrade2.text = "Increase Bulb's damages to your enemies.";
+           describleTextUpgrade2.text = "Increase Bulb's range.";
            weaponsManager.hitByBulb   = 2;
            LevelUpgrade2.text         = "Level : 2";
            UpgradeMenuClose();
@@ -401,6 +400,18 @@ public class UpgradeMenu : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
    public void CameraUpgrade()
    {
        if ((levelupgrade3 == 0 && (weaponsManager.haveCamera == true)))
@@ -476,7 +487,46 @@ public class UpgradeMenu : MonoBehaviour
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    public void GlowStickUpgrade()
@@ -511,7 +561,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            levelupgrade4++;
            describleTextUpgrade4.text = "Increase Glowstick's damage.";
-           weaponsManager.GlowStickDuration = 15f; // augmente la durée des glowstick
+           weaponsManager.GlowStickDuration = 15f; // augmente la dur�e des glowstick
            LevelUpgrade4.text = "Final Level";
            
            UpgradeMenuClose();
@@ -520,7 +570,7 @@ public class UpgradeMenu : MonoBehaviour
        {
            levelupgrade4++;
            describleTextUpgrade4.text = "Max Level";
-           weaponsManager.hitpoint    = 3; // augmente les dégats des glowstick
+           weaponsManager.hitpoint    = 2; // augmente les d�gats des glowstick
            LevelUpgrade4.text         = "Level Max";
            glowstickMaxed                = true;
            mesUpgradesList.Remove(glowstickupgrade);
