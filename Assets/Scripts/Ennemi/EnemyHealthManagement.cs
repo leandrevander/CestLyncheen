@@ -17,7 +17,6 @@ public class EnemyHealthManagement : MonoBehaviour
   
     public  Coroutine      coroutine;
     public  GameObject     experiencepointPrefab;
-    public  GameObject     feur;
     public  freezeEnnemi   scriptFreeze;
     public  Coroutine      freezeCoroutine;
     public  WeaponsManager weaponsManager;
@@ -32,11 +31,25 @@ public class EnemyHealthManagement : MonoBehaviour
 
     public GameObject freezeEffect;
     public GameObject damageEffect;
+    public PlayerData playerData;
+    public MetaDataSystem metaDataSystem;
+
+    [Header("Type d'ennemis")]
+    public bool isSnail;
+    public bool isSeagull;
+    public bool isShark;
+    public bool isDolphin;
+
+    
+
     
     void Start()
     {
         player         = GameObject.FindGameObjectWithTag("Player");
         weaponsManager = player.GetComponent<WeaponsManager>();
+        
+        metaDataSystem = FindObjectOfType<MetaDataSystem>();
+        playerData     = FindObjectOfType<PlayerData>();
 
         ennemi_NavMeshAgent       = GetComponent<NavMeshAgent>();
         if (ennemi_NavMeshAgent != null)
@@ -50,9 +63,39 @@ public class EnemyHealthManagement : MonoBehaviour
     {
         if (HealthZombie <= 0)
         {
+            CountEnemyKilled();
             Instantiate(experiencepointPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+    }
+
+    public void CountEnemyKilled()
+    {
+        if (isSnail)
+        {
+            playerData.snailsKilled += 1;
+            metaDataSystem.SetSnailsKilled(playerData.snailsKilled);
+        }
+        
+        if (isSeagull)
+        {
+            playerData.seagullsKilled += 1;
+            metaDataSystem.SetSeagullsKilled(playerData.seagullsKilled);
+        }
+        
+        if (isShark)
+        {
+            playerData.sharksKilled += 1;
+            metaDataSystem.SetSharksKilled(playerData.sharksKilled);
+        }
+        
+        if (isDolphin)
+        {
+            playerData.dolphinsKilled += 1;
+            metaDataSystem.SetDolphinsKilled(playerData.dolphinsKilled);
+        }
+        
+        PlayerPrefs.Save();
     }
     void Update()
     {

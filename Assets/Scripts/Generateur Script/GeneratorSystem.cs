@@ -10,14 +10,15 @@ public class GeneratorSystem : MonoBehaviour
     
     public                   int         percentage = 100;
 
-    public int            percentageWin = 3;
-    public int            percentageLost  = 1;
+    public int            percentageWin  = 3;
+    public int            percentageLost = 1;
     public GameObject     player;
     public bool           playerOnZone = false;
     public Coroutine      coroutineW;
     public Coroutine      coroutineL;
     public int            cooldown = 1;
     public SpriteRenderer sprite;
+    public GameObject     arrow;
     
     
     public GameObject     sliderGO;
@@ -83,6 +84,21 @@ public class GeneratorSystem : MonoBehaviour
         {
             generateurOff.Play();
             canSoundOff = false;
+        }
+
+        if (percentage == 0)
+        {
+            if (!arrow.activeInHierarchy)
+            {
+                arrow.SetActive(true); 
+            } 
+        }
+        else
+        {
+            if (arrow.activeInHierarchy)
+            {
+                arrow.SetActive(false); 
+            }  
         }
         
 

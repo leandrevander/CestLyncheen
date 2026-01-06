@@ -408,6 +408,7 @@ MonoBehaviour:
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
+  feur: {fileID: 0}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   ennemi_NavMeshAgent: {fileID: 0}
@@ -416,6 +417,10 @@ MonoBehaviour:
   speedSeagull: 3.5
   freezeEffect: {fileID: 2529131321271652144}
   damageEffect: {fileID: 4751938850068838709}
+  isSnail: 1
+  isSeagull: 0
+  isShark: 0
+  isDolphin: 0
 --- !u!114 &1649180309231324018
 MonoBehaviour:
   m_ObjectHideFlags: 0

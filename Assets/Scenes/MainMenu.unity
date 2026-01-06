@@ -3981,7 +3981,7 @@ MonoBehaviour:
   unlockMenuButtonGO: {fileID: 545702767}
   musicVolumeSliderGO: {fileID: 742466123}
   select: {fileID: 1218982179}
-  cantSelect: {fileID: 0}
+  cantSelect: {fileID: 1822278802}
   mainMenuPage: {fileID: 1356334648}
   upgradePage: {fileID: 995407513}
   playPage: {fileID: 924075930}
@@ -5753,7 +5753,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Shadow that lets the darkness hover above you, literally.
 
-    
+
 
     These
     shadows will track you, sometimes stopping to sting towards you. '
@@ -7434,10 +7434,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A rare shadow emerges from the ocean.
 
-    
 
-    It moves in a straight
-    line, quickly, bumping into people in its path.'
+
+    It moves in a straight line,
+    quickly, bumping into people in its path.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
   m_sharedMaterial: {fileID: -5514884873730021230, guid: abd226f60499c6a4b98daf86946dc9eb, type: 2}
@@ -8178,10 +8178,10 @@ MonoBehaviour:
   m_text: 'These creatures may seem slow and weak but once in a group they can quickly
     become formidable, hunting you relentlessly.
 
-    
 
-    These small shadows
-    sometimes merge to give a more dangerous one.
+
+    These small shadows sometimes
+    merge to give a more dangerous one.
 
 '
   m_isRightToLeft: 0
@@ -11101,12 +11101,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A dangerous shadow coming from the abyss
 
-    
 
-    It turns around the
-    player before attacking.
 
-    
+    It turns around the player
+    before attacking.
+
+
 
 '
   m_isRightToLeft: 0
@@ -13562,8 +13562,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822278801}
+  - component: {fileID: 1822278802}
   m_Layer: 0
-  m_Name: Sounds
+  m_Name: Sound Cant select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13584,6 +13585,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1822278802
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822278800}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fa8a87f4637661f4182c513c0f6cd3f7, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 61518737c7a46fa43b8209f370b12649, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1828467358
 GameObject:
   m_ObjectHideFlags: 0
@@ -13924,7 +14022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -174.6, y: 0.000061035156}
+  m_AnchoredPosition: {x: -179.8, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1884137391
