@@ -17,6 +17,7 @@ public class EnemyHealthManagement : MonoBehaviour
   
     public  Coroutine      coroutine;
     public  GameObject     experiencepointPrefab;
+    public  GameObject     feur;
     public  freezeEnnemi   scriptFreeze;
     public  Coroutine      freezeCoroutine;
     public  WeaponsManager weaponsManager;
@@ -44,7 +45,15 @@ public class EnemyHealthManagement : MonoBehaviour
 
         }
     }
-    
+
+    public void SpawnExperience()
+    {
+        if (HealthZombie <= 0)
+        {
+            Instantiate(experiencepointPrefab, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         if (ennemi_NavMeshAgent != null)
@@ -79,16 +88,18 @@ public class EnemyHealthManagement : MonoBehaviour
             lighthouseCoroutine = StartCoroutine(HitByLighthouse());
         }
 
-
+        
+        
+        
         return;
 
         IEnumerator PerteDePv()
         {
-            HealthZombie = HealthZombie - weaponsManager.hitByFlashlight;
+            HealthZombie = HealthZombie - weaponsManager.hitByFlashlight  ;
             if (HealthZombie <= 0)
             {
-                Destroy(gameObject);
-                Instantiate(experiencepointPrefab, transform.position, transform.rotation);
+                SpawnExperience();
+               
             }
             
             damageEffect.SetActive(true);
@@ -146,7 +157,8 @@ public class EnemyHealthManagement : MonoBehaviour
                 if (HealthZombie <= 0)
 
                 {
-                    Destroy(gameObject);
+                    
+                    SpawnExperience();
                 }
 
                 Debug.Log("PV Lampadaire");
@@ -168,7 +180,7 @@ public class EnemyHealthManagement : MonoBehaviour
                 HealthZombie = HealthZombie - weaponsManager.hitByBulb;
                 if (HealthZombie <= 0)
                 {
-                    Destroy(gameObject);
+                    SpawnExperience();
                 }
 
                 Debug.Log("PV perdu");
@@ -188,7 +200,7 @@ public class EnemyHealthManagement : MonoBehaviour
                HealthZombie = HealthZombie - weaponsManager.hitByLighthouse;
                 if (HealthZombie <= 0)
                 {
-                    Destroy(gameObject);
+                    SpawnExperience();
                 }
    
                 IsHittenByLighthouse = false;
