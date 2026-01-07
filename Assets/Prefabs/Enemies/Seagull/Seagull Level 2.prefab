@@ -264,7 +264,7 @@ MonoBehaviour:
   IsHittenByBull: 0
   IsHitByGlowStick: 0
   freezeEnnemi: 0
-  HealthZombie: 8
+  HealthZombie: 60
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
@@ -274,6 +274,10 @@ MonoBehaviour:
   speed: 2.5
   FrezzeDuration: 2
   speedSeagull: 3.5
+  waitSpeedSeagull: 1.9
+  attackSpeedShark: 8
+  waitSpeedShark: 0.9
+  dashSpeedDolphin: 6
   freezeEffect: {fileID: 1232120689974291453}
   damageEffect: {fileID: 5830440996014947870}
   playerData: {fileID: 0}

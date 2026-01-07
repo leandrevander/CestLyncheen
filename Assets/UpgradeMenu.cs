@@ -380,7 +380,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlight's damages to your enemies.";
            levelUpgrade5Name.text         = "Level : 6";
-           weaponsManager.hitByFlashlight = 40;
+           weaponsManager.hitByFlashlight = 35;
            Debug.Log("hit dgt 5");
 
            UpgradeMenuClose();
@@ -391,7 +391,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
            describeLevel5.text            = "Increase Flashlight's damages to your enemies.";
            levelUpgrade5Name.text         = "Level : 7";
-           weaponsManager.hitByFlashlight = 50;
+           weaponsManager.hitByFlashlight = 40;
            Debug.Log("hit dgt 6");
 
            UpgradeMenuClose();
@@ -402,7 +402,7 @@ public class UpgradeMenu : MonoBehaviour
            levelupgrade5++;
             describeLevel5.text           = "Level Max.";
            levelUpgrade5Name.text         = "Level : 8";
-           weaponsManager.hitByFlashlight = 7;
+           weaponsManager.hitByFlashlight = 50;
            upgrade5Button.interactable    = false;
            mesUpgradesList.Remove(flashlightUpgradeObject);
            Debug.Log("hit dgt 6");

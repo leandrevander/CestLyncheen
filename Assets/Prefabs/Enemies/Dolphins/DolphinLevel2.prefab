@@ -258,7 +258,7 @@ MonoBehaviour:
   IsHittenByBull: 0
   IsHitByGlowStick: 0
   freezeEnnemi: 0
-  HealthZombie: 8
+  HealthZombie: 90
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 0}
