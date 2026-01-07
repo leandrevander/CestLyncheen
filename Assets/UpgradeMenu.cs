@@ -15,7 +15,7 @@ public class UpgradeMenu : MonoBehaviour
     
     [Header("Script")]
    public PlayerControl         playerControl;
-   public float                 Multiplier = 1.2f;
+   public float                 Multiplier = 1.1f;
    public WeaponsManager        weaponsManager;
    public EnemyHealthManagement enemyHealthManagement;
    public Experience            experience;
