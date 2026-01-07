@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: a2f17ddb729c41240b148f77dcef7402
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2027486531442311017
+    second: SpritesheetBOSS_0
+  - first:
+      213: 2541131479754436044
+    second: SpritesheetBOSS_1
+  - first:
+      213: 4366844755901218687
+    second: SpritesheetBOSS_2
+  - first:
+      213: 5841658325672009774
+    second: SpritesheetBOSS_3
+  - first:
+      213: -7516499931255891978
+    second: SpritesheetBOSS_4
+  - first:
+      213: -7621217187057758994
+    second: SpritesheetBOSS_5
+  - first:
+      213: 4098478486809276959
+    second: SpritesheetBOSS_6
+  - first:
+      213: 8932983627212777881
+    second: SpritesheetBOSS_7
+  - first:
+      213: 8021189854459757548
+    second: SpritesheetBOSS_8
+  - first:
+      213: -5975657964000562875
+    second: SpritesheetBOSS_9
+  - first:
+      213: 6132647004037878606
+    second: SpritesheetBOSS_10
+  - first:
+      213: -782202206340886084
+    second: SpritesheetBOSS_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesheetBOSS_0
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1927
+        width: 782
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5166116, y: 0.025495667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ff18d1244132c10800000000000000
+      internalID: 2027486531442311017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetBOSS_1
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1278
+        width: 782
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5166116, y: 0.025495667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd635a0e99e34320800000000000000
+      internalID: 2541131479754436044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetBOSS_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1268
+        width: 782
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5166116, y: 0.025495667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ff4c04b262a9c30800000000000000
+      internalID: 4366844755901218687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetBOSS_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1947
+        width: 782
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5166116, y: 0.025495667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2022e8fb4db11150800000000000000
+      internalID: 5841658325672009774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63f38712f85718747a7f9fe37dc669bd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpritesheetBOSS_0: 2027486531442311017
+      SpritesheetBOSS_1: 2541131479754436044
+      SpritesheetBOSS_10: 6132647004037878606
+      SpritesheetBOSS_11: -782202206340886084
+      SpritesheetBOSS_2: 4366844755901218687
+      SpritesheetBOSS_3: 5841658325672009774
+      SpritesheetBOSS_4: -7516499931255891978
+      SpritesheetBOSS_5: -7621217187057758994
+      SpritesheetBOSS_6: 4098478486809276959
+      SpritesheetBOSS_7: 8932983627212777881
+      SpritesheetBOSS_8: 8021189854459757548
+      SpritesheetBOSS_9: -5975657964000562875
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
