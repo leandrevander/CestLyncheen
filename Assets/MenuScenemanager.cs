@@ -57,16 +57,20 @@ public class MenuScenemanager : MonoBehaviour
     public Button          seagullsButton;
     public Button          sharksButton;
     public Button          dolphinsButton;
+    public Button bossButton;
     
     public TextMeshProUGUI snailsText;
     public TextMeshProUGUI seagullsText;
     public TextMeshProUGUI sharksText;
     public TextMeshProUGUI dolphinsText;
+    public TextMeshProUGUI bossText;
+
     
     public GameObject snailsTextGO;
     public GameObject seagullsTextGO;
     public GameObject sharksTextGO;
     public GameObject dolphinsTextGO;
+    public GameObject bossTextGO;
     
     public TextMeshProUGUI dolphinsTextCount;
     public TextMeshProUGUI snailsTextCount;
@@ -77,6 +81,7 @@ public class MenuScenemanager : MonoBehaviour
     public GameObject seagullsPage;
     public GameObject sharksPage;
     public GameObject dolphinsPage;
+    public GameObject bossPage;
 
     public GameObject snailsBackButton;
     public GameObject seagullsBackButton;
@@ -86,6 +91,9 @@ public class MenuScenemanager : MonoBehaviour
     public GameObject seagullsButtonGO;
     public GameObject sharksButtonGO;
     public GameObject dolphinsButtonGO;
+    public GameObject bossButtonGO;
+    public GameObject bossBackButton;
+
 
 
 
@@ -489,6 +497,23 @@ public class MenuScenemanager : MonoBehaviour
             dolphinsTextGO.SetActive(false); 
         }
         
+        if (playerData.unlockedLevel2Def == 0)
+        {
+            var bossKilledDefColorColor = bossButton.colors;
+            bossKilledDefColorColor.normalColor   = gray;
+            bossKilledDefColorColor.selectedColor = yellowGray;
+            bossButton.colors                     = bossKilledDefColorColor;
+            bossTextGO.SetActive(true);
+        }
+        else
+        {
+            var bossKilledDefColorColor = bossButton.colors;
+            bossKilledDefColorColor.normalColor   = white;
+            bossKilledDefColorColor.selectedColor = yellow;
+            bossButton.colors                     = bossKilledDefColorColor;
+            bossTextGO.SetActive(false); 
+        }
+        
         
     }
 
@@ -520,6 +545,24 @@ public class MenuScenemanager : MonoBehaviour
             seagullsBackButton.SetActive(true);
 
             eventSystem.SetSelectedGameObject(seagullsBackButton);
+        }
+        else
+        {
+            cantSelect.Play();
+
+        }
+    }
+    
+    public void PressedBossButton()
+    {
+        if (playerData.unlockedLevel2Def == 1)
+        {
+            select.Play();
+
+            bossPage.SetActive(true);
+            bossBackButton.SetActive(true);
+
+            eventSystem.SetSelectedGameObject(bossBackButton);
         }
         else
         {
@@ -613,6 +656,20 @@ public class MenuScenemanager : MonoBehaviour
         dolphinsBackButton.SetActive(false);
         eventSystem.SetSelectedGameObject(dolphinsButtonGO);
     }
+    
+    public void PressedBossBackButton()
+    {
+        select.Play();
+
+        snailsPage.SetActive(false);
+        seagullsPage.SetActive(false);
+        sharksPage.SetActive(false);
+        dolphinsPage.SetActive(false);
+        bossPage.SetActive(false);
+        bossBackButton.SetActive(false);
+        
+        eventSystem.SetSelectedGameObject(bossButtonGO);
+    }
 
 
     public void PressedShadowsButton()
@@ -625,6 +682,7 @@ public class MenuScenemanager : MonoBehaviour
         seagullsBackButton.SetActive(false);
         sharksBackButton.SetActive(false);
         dolphinsBackButton.SetActive(false);
+        bossBackButton.SetActive(false);
         RefreshShadowsButtons();
         eventSystem.SetSelectedGameObject(snailsButtonGO);
         

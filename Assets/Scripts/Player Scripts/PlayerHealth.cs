@@ -58,7 +58,7 @@ namespace Player_Scripts
                 playerHealth--;
                 print(playerHealth);
                 UpdateHealth();
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(2);
                 playerDamageOverlay.SetActive(false);
                 invincible = false;
                 playerhitten = false;
