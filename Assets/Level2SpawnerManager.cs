@@ -10,6 +10,7 @@ public class Level2SpawnerManager : MonoBehaviour
     private float sharkSpawnTimer;
     private float dolphinSpawnTimer;
     private float seagullSpawnTimer;
+    private float seagullHordeSpawnTimer;
     
     private float superShadowSpawnTimer;
     
@@ -33,7 +34,9 @@ public class Level2SpawnerManager : MonoBehaviour
     public GameObject dolphinPrefab;
     public GameObject dolphinLevel2Prefab;
     public GameObject seagullPrefab;
+    public GameObject seagullHordePrefab;
     public GameObject seagullLevel2Prefab;
+    public GameObject seagullHordeLevel2Prefab;
     public GameObject superShadowPrefab;
     
     [Header("Cooldowns of enemies spawners")]
@@ -42,6 +45,7 @@ public class Level2SpawnerManager : MonoBehaviour
     public float sharkSpawnInterval;
     public float dolphinSpawnInterval;
     public float seagullSpawnInterval;
+    public float seagullHordeSpawnInterval;
     public float superShadowSpawnInterval;
     
     [Header("Active spawn")]
@@ -56,7 +60,9 @@ public class Level2SpawnerManager : MonoBehaviour
     public bool dolphinSpawn       = false;
     public bool dolphinLevel2Spawn = false;
     public bool seagullSpawn       = false;
+    public bool seagullHordeSpawn = false;
     public bool seagullLevel2Spawn = false;
+    public bool seagullHordeLevel2Spawn = false;
     public bool superShadowSpawn    = false;
 
     void Start()
@@ -72,6 +78,7 @@ public class Level2SpawnerManager : MonoBehaviour
         sharkSpawnTimer      += Time.deltaTime;
         dolphinSpawnTimer    += Time.deltaTime;
         seagullSpawnTimer    += Time.deltaTime;
+        seagullHordeSpawnTimer += Time.deltaTime;
         superShadowSpawnTimer += Time.deltaTime;
         
         if (remainingTime > 0)
@@ -85,7 +92,7 @@ public class Level2SpawnerManager : MonoBehaviour
         
         //-------------------Les conditions du spawn--------------
 
-        if ( lightPhare.totalPercentage <= lightPhare.level1 && (superShadowSpawnTimer >=  superShadowSpawnInterval) )
+        if ( lightPhare.totalPercentage <= lightPhare.LevelBoss2 && (superShadowSpawnTimer >=  superShadowSpawnInterval) )
         {
             superShadowSpawnTimer = 0;
             SpawnSuperShadow();
@@ -158,10 +165,22 @@ public class Level2SpawnerManager : MonoBehaviour
             SpawnSeagull();
         }
         
+        if (seagullHordeSpawn && (seagullHordeSpawnTimer >= seagullHordeSpawnInterval))
+        {
+            seagullHordeSpawnTimer = 0;
+            SpawnSeagullHorde();
+        }
+        
         if (seagullLevel2Spawn && (seagullSpawnTimer >= seagullSpawnInterval))
         {
             seagullSpawnTimer = 0;
             SpawnSeagullLevel2();
+        }
+        
+        if (seagullHordeLevel2Spawn && (seagullHordeSpawnTimer >= seagullHordeSpawnInterval))
+        {
+            seagullHordeSpawnTimer = 0;
+            SpawnSeagullHordeLevel2();
         }
         
         //----------------------Les Temps de spawns------------------
@@ -176,18 +195,18 @@ public class Level2SpawnerManager : MonoBehaviour
         }
         else if (remainingTime >= 510f)
         {
-            seagullSpawn = true;
+            seagullSpawn    = true;
+            snailHordeSpawn = true;
+
         }
         else if (remainingTime >= 480f)
         {
-            snailHordeSpawn = true;
-
+            sharkSpawn = true;
         }
         else if (remainingTime >= 420f)
         {
             seagullSpawn = false;
             
-            sharkSpawn   = true;
             dolphinSpawn = true;
         }
         else if (remainingTime >= 380f)
@@ -200,6 +219,8 @@ public class Level2SpawnerManager : MonoBehaviour
         else if (remainingTime >= 320f)
         {
             sharkSpawn         = false;
+            
+            snailLevel2HordeSpawn = true;
             seagullLevel2Spawn = true;
             
         }
@@ -208,7 +229,6 @@ public class Level2SpawnerManager : MonoBehaviour
             seagullLevel2Spawn    = false;
             dolphinLevel2Spawn    = false;
             
-            snailLevel2HordeSpawn = true;
             sharkLevel2Spawn      = true;
         }
         else if (remainingTime >= 180f)
@@ -219,6 +239,8 @@ public class Level2SpawnerManager : MonoBehaviour
 
             snailLevel3Spawn      = true;
             snailLevel3HordeSpawn = true;
+            seagullLevel2Spawn    = true;
+
         }
         else if (remainingTime >= 120f)
         {
@@ -324,6 +346,16 @@ public class Level2SpawnerManager : MonoBehaviour
         Instantiate(seagullPrefab, SpawnPosition, Quaternion.identity);
     }
     
+    void SpawnSeagullHorde()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(seagullHordePrefab, SpawnPosition, Quaternion.identity);
+    }
+    
     void SpawnSeagullLevel2()
     {
         float   angleDegre    = Random.Range(0f, 360f);
@@ -332,6 +364,16 @@ public class Level2SpawnerManager : MonoBehaviour
         Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
         Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
         Instantiate(seagullLevel2Prefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSeagullHordeLevel2()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(seagullHordeLevel2Prefab, SpawnPosition, Quaternion.identity);
     }
     
     void SpawnDolphin()

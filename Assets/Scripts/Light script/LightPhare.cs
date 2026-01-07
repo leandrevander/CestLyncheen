@@ -23,7 +23,8 @@ public class LightPhare : MonoBehaviour
 
     public float level1 = 50f;
 
-    public float LevelBoss = 100f;
+    public float LevelBoss  = 100f;
+    public float LevelBoss2 = 125f;
     
     public float level2    = 150f;
     public float level3    = 200f;
