@@ -15,7 +15,8 @@ public class Level2SpawnerManager : MonoBehaviour
     
     public LightPhare lightPhare;
 
-
+    [Header("Sounds")]
+    [SerializeField] AudioSource spawnSound;
 
     [Header("Distance")]
     public float minDistance;
@@ -357,6 +358,8 @@ public class Level2SpawnerManager : MonoBehaviour
     
     void SpawnSuperShadow()
     {
+        spawnSound.Play();
+        lightPhare.bossSpawn = true;
         float   angleDegre    = Random.Range(0f, 360f);
         float   angleRad      = angleDegre * Mathf.Deg2Rad;
         float   distanceSpawn = Random.Range(minDistance, maxDistance);

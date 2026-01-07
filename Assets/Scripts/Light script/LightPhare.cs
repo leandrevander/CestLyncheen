@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class LightPhare : MonoBehaviour
 {
-
+    public AudioSource deathSound;
 
     public GeneratorSystem generator1;
     public GeneratorSystem generator2;
     public GeneratorSystem generator3;
     public GeneratorSystem generator4;
     public int             generatorsNumber;
-
-    public int totalPercentage;
+    public bool            bossSpawn;
+    public int             totalPercentage;
 
     public  int         lightPhareSpeed;
     private Rigidbody2D rb;
@@ -61,8 +61,9 @@ public class LightPhare : MonoBehaviour
 
     private void Awake()
     {
-        rb    = GetComponent<Rigidbody2D>();
-        light = gameObject.GetComponent<Light2D>();
+        bossSpawn = false;
+        rb        = GetComponent<Rigidbody2D>();
+        light     = gameObject.GetComponent<Light2D>();
         
         metaDataSystem = FindObjectOfType<MetaDataSystem>();
         playerData     = FindObjectOfType<PlayerData>();
@@ -113,6 +114,17 @@ public class LightPhare : MonoBehaviour
         {
             //light.enabled                        = false;
             phareRotation.lighthouseRespawnDelay = 30f;
+        }
+
+        if (totalPercentage >= LevelBoss && (bossSpawn = true))
+        {
+            if (!deathSound.isPlaying)
+            {
+                deathSound.Play();
+            }
+            Debug.Log("boss died");
+            bossSpawn = false;
+           
         }
 
     }
