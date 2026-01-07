@@ -351,8 +351,8 @@ public class UpgradeMenu : MonoBehaviour
        {
            select.Play();
            levelupgrade5++;
-           describeLevel5.text = "Increase Flashlight's damages to your enemies.";
-           levelUpgrade5Name.text                = "Final Level";
+           describeLevel5.text                   = "Increase Flashlight's damages to your enemies.";
+           levelUpgrade5Name.text                = "Level : 4";
            flashlightLight.pointLightOuterRadius = 13;
            flashlightLight.falloffIntensity      = 0.3f;
            flashlightCollider.SetPath(0, flashlightCollider2DArray);
@@ -367,21 +367,48 @@ public class UpgradeMenu : MonoBehaviour
        else if (levelupgrade5 == 3)
        {
            select.Play();
-           describeLevel5.text            = "Max Level";
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.";
            levelUpgrade5Name.text         = "Level : 5";
            weaponsManager.hitByFlashlight = 4;
            Debug.Log("hit dgt 4");
            levelupgrade5++;
-           upgrade5Button.interactable = false;
-           mesUpgradesList.Remove(flashlightUpgradeObject);
            UpgradeMenuClose();
        }
        else if (levelupgrade5 == 4)
        {
-           //levelUpgrade5Name.text      = "Max Level";
-           upgrade5Button.interactable = false;
+           select.Play();
+           levelupgrade5++;
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.";
+           levelUpgrade5Name.text         = "Level : 6";
+           weaponsManager.hitByFlashlight = 5;
+           Debug.Log("hit dgt 5");
+
            UpgradeMenuClose();
        }
+       else if  (levelupgrade5 == 5)
+       {
+           select.Play();
+           levelupgrade5++;
+           describeLevel5.text            = "Increase Flashlight's damages to your enemies.";
+           levelUpgrade5Name.text         = "Level : 7";
+           weaponsManager.hitByFlashlight = 6;
+           Debug.Log("hit dgt 6");
+
+           UpgradeMenuClose();
+       }
+       else if (levelupgrade5 == 6)
+       {
+           select.Play();
+           levelupgrade5++;
+            describeLevel5.text           = "Level Max.";
+           levelUpgrade5Name.text         = "Level : 8";
+           weaponsManager.hitByFlashlight = 7;
+           upgrade5Button.interactable    = false;
+           mesUpgradesList.Remove(flashlightUpgradeObject);
+           Debug.Log("hit dgt 6");
+           UpgradeMenuClose();
+       }
+      
    }
 
 
