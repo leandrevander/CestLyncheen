@@ -24,9 +24,12 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
     public float timer;
 
     public float spawnInterval;
-    
-    
-    
+
+
+    void Start()
+    {
+        spawnInterval = 60;
+    }
 
     void Update()
     {
@@ -42,12 +45,41 @@ public class WeaponsSpawnerManagerLevel1 : MonoBehaviour
 
     public void SpawnWeapon()
     {
-        radomWeapons            = Random.Range(0, RecupWeapons.Count);
-        randomSpawner           = Random.Range(0, SpawnerList.Count);
-        weapon1                 = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
-        Instantiate(arrowPrefab, mainCanvas.transform);
-        RecupWeapons.Remove(RecupWeapons[radomWeapons]);
-        SpawnerList.Remove(SpawnerList[randomSpawner]);
+        
+        if (RecupWeapons.Count == 3) 
+        {
+            
+            
+            radomWeapons  = Random.Range(0, RecupWeapons.Count);
+            randomSpawner = Random.Range(0, SpawnerList.Count);
+            weapon1       = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+            Instantiate(arrowPrefab, mainCanvas.transform);
+            RecupWeapons.Remove(RecupWeapons[radomWeapons]);
+            SpawnerList.Remove(SpawnerList[randomSpawner]);
+            spawnInterval         = 90;
+        }
+        else if  (RecupWeapons.Count == 2)
+        {
+            
+            radomWeapons  = Random.Range(0, RecupWeapons.Count);
+            randomSpawner = Random.Range(0, SpawnerList.Count);
+            weapon1       = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+            Instantiate(arrowPrefab, mainCanvas.transform);
+            RecupWeapons.Remove(RecupWeapons[radomWeapons]);
+            SpawnerList.Remove(SpawnerList[randomSpawner]);
+            spawnInterval = 150;
+        }
+        else if  (RecupWeapons.Count == 1)
+        {
+            
+            radomWeapons  = Random.Range(0, RecupWeapons.Count);
+            randomSpawner = Random.Range(0, SpawnerList.Count);
+            weapon1       = Instantiate(RecupWeapons[radomWeapons], SpawnerList[randomSpawner]);
+            Instantiate(arrowPrefab, mainCanvas.transform);
+            RecupWeapons.Remove(RecupWeapons[radomWeapons]);
+            SpawnerList.Remove(SpawnerList[randomSpawner]);
+            spawnInterval = 0;
+        }
         
         
         
