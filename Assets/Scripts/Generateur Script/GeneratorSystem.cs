@@ -18,6 +18,8 @@ public class GeneratorSystem : MonoBehaviour
     public Coroutine      coroutineL;
     public int            cooldown = 1;
     public SpriteRenderer sprite;
+    public Sprite         spriteOn;
+    public Sprite         spriteOff;
     public GameObject     arrow;
     
     
@@ -58,8 +60,11 @@ public class GeneratorSystem : MonoBehaviour
         {
             canSoundOff  = true;
             coroutineW   = StartCoroutine(CoroutineW());
-            sprite.color = Color.green;
             
+            if (sprite.sprite != spriteOn)
+            {
+                sprite.sprite = spriteOn;
+            }
             
             
                 
@@ -67,8 +72,13 @@ public class GeneratorSystem : MonoBehaviour
         }
         else if  (!playerOnZone && coroutineL == null)
         {
-            coroutineL      = StartCoroutine(CoroutineL());
-            sprite.color    = Color.red;
+            coroutineL    = StartCoroutine(CoroutineL());
+            
+            if (sprite.sprite != spriteOff)
+            {
+                sprite.sprite = spriteOff;
+            }
+
             generateurOn.Stop();
             
             
@@ -85,7 +95,7 @@ public class GeneratorSystem : MonoBehaviour
             generateurOff.Play();
             canSoundOff = false;
         }
-
+        
         if (percentage == 0)
         {
             if (!arrow.activeInHierarchy)
@@ -98,8 +108,10 @@ public class GeneratorSystem : MonoBehaviour
             if (arrow.activeInHierarchy)
             {
                 arrow.SetActive(false); 
-            }  
+            }
         }
+
+
         
 
         
