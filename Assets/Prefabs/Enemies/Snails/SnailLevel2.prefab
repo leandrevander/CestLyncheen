@@ -404,19 +404,20 @@ MonoBehaviour:
   IsHittenByBull: 0
   IsHitByGlowStick: 0
   freezeEnnemi: 0
-  HealthZombie: 6
+  HealthZombie: 8
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  feur: {fileID: 0}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 1744457959565130628, guid: 7e1af421f0863a943b4c989e12ae12d4, type: 3}
   ennemi_NavMeshAgent: {fileID: 0}
-  speed: 2.5
+  speed: 2.3
   FrezzeDuration: 2
   speedSeagull: 3.5
   freezeEffect: {fileID: 2851518339385836917}
   damageEffect: {fileID: 361891463077920222}
+  playerData: {fileID: 0}
+  metaDataSystem: {fileID: 0}
   isSnail: 1
   isSeagull: 0
   isShark: 0
