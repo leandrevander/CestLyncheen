@@ -22,9 +22,12 @@ public class LightPhare : MonoBehaviour
 
 
     public float level1 = 50f;
-    public float level2 = 150f;
-    public float level3 = 200f;
-    public float level4 = 300f;
+
+    public float LevelBoss = 100f;
+    
+    public float level2    = 150f;
+    public float level3    = 200f;
+    public float level4    = 300f;
 
     public float phareRespawnLevel1 = 8f;
     public float phareRespawnLevel2 = 6f;

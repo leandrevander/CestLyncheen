@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 7646923151543224386}
   - component: {fileID: 6747203736516741382}
   - component: {fileID: 5074290372709868386}
+  - component: {fileID: 6802654240534252754}
   m_Layer: 8
   m_Name: Boss
   m_TagString: Ennemi
@@ -355,6 +356,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detector: {fileID: 0}
+--- !u!114 &6802654240534252754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336257284202050220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f0d62a743238d49be8123530e67499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightPhare: {fileID: 0}
 --- !u!1 &6518470066261634892
 GameObject:
   m_ObjectHideFlags: 0
