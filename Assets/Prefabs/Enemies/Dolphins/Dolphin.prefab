@@ -195,6 +195,7 @@ MonoBehaviour:
   experiencepointPrefab: {fileID: 0}
   spriteRenderer: {fileID: 4026370330636517229}
   destroyDistance: 80
+  enemyHealthManagement: {fileID: -5088818103015261822}
   animator: {fileID: 1279043993538721403}
   proximityLight: {fileID: 1901449579610029103}
   proximity: 4
@@ -351,6 +352,10 @@ MonoBehaviour:
   speed: 2.5
   FrezzeDuration: 2
   speedSeagull: 3.5
+  waitSpeedSeagull: 1.9
+  attackSpeedShark: 8
+  waitSpeedShark: 0.9
+  dashSpeedDolphin: 6
   freezeEffect: {fileID: 3661427112151483718}
   damageEffect: {fileID: 6273538028574037036}
   playerData: {fileID: 0}

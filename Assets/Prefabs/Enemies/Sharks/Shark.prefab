@@ -220,6 +220,7 @@ MonoBehaviour:
   animator: {fileID: 5314019934948862175}
   proximityLight: {fileID: 886088858263443430}
   experiencepointPrefab: {fileID: 0}
+  enemyHealthManagement: {fileID: 4158459981722930259}
   waitDistance: 5
   angle: 0
   waitSpeed: 0.9
@@ -344,15 +345,20 @@ MonoBehaviour:
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  feur: {fileID: 0}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 0}
   ennemi_NavMeshAgent: {fileID: 0}
   speed: 2
   FrezzeDuration: 2
   speedSeagull: 3.5
+  waitSpeedSeagull: 1.9
+  attackSpeedShark: 8
+  waitSpeedShark: 0.9
+  dashSpeedDolphin: 6
   freezeEffect: {fileID: 7141467082396470248}
   damageEffect: {fileID: 9111021371246871153}
+  playerData: {fileID: 0}
+  metaDataSystem: {fileID: 0}
   isSnail: 0
   isSeagull: 0
   isShark: 1

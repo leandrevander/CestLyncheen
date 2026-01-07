@@ -27,7 +27,13 @@ public class EnemyHealthManagement : MonoBehaviour
     public  Coroutine      bulbCoroutine;
     public  float          FrezzeDuration   = 2f;
     public  Coroutine      lighthouseCoroutine;
-    public  float          speedSeagull = 3.5f;
+    public  float          speedSeagull     = 3.5f;
+    public  float          waitSpeedSeagull = 1.9f;
+    public  float          attackSpeedShark = 8f;
+    public  float          waitSpeedShark   = 0.9f;
+    public  float          dashSpeedDolphin = 6f;
+
+    
 
     public GameObject freezeEffect;
     public GameObject damageEffect;
@@ -168,25 +174,33 @@ public class EnemyHealthManagement : MonoBehaviour
                 ennemi_NavMeshAgent.speed     = speed;
 
                 Debug.Log("Ennemi dégelé ! Normalement...");
-                yield return new WaitForSeconds(1);
+                //yield return new WaitForSeconds(1);
                 freezeEnnemi = false;
                 freezeEffect.SetActive(false);
-                yield return new WaitForSeconds(1);
+                //yield return new WaitForSeconds(1);
                 freezeCoroutine = null;
             }
             else
             {
                 Debug.Log("Couroutine Freeze appelé");
-                speedSeagull = 0;
+                speedSeagull     = 0;
+                waitSpeedSeagull = 0;
+                attackSpeedShark = 0;
+                waitSpeedShark   = 0;
+                dashSpeedDolphin = 0;
                 Debug.Log("Ennemi gelé ! Enfin je crois...");
                 yield return new WaitForSeconds(FrezzeDuration);
                 speedSeagull     = 3.5f;
+                waitSpeedSeagull = 1.9f;
+                attackSpeedShark = 8f;
+                waitSpeedShark   = 0.9f;
+                dashSpeedDolphin = 6f;
 
                 Debug.Log("Ennemi dégelé ! Normalement...");
-                yield return new WaitForSeconds(1);
+                //yield return new WaitForSeconds(1);
                 freezeEnnemi = false;
                 freezeEffect.SetActive(false);
-                yield return new WaitForSeconds(1);
+                //yield return new WaitForSeconds(1);
                 freezeCoroutine = null;
             }
         }
