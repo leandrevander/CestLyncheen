@@ -10,6 +10,11 @@ public class SpawnerManager : MonoBehaviour
     private float sharkSpawnTimer;
     private float dolphinSpawnTimer;
     private float seagullSpawnTimer;
+    
+    private float superShadowSpawnTimer;
+    
+    public LightPhare lightPhare;
+
 
 
     [Header("Distance")]
@@ -29,6 +34,7 @@ public class SpawnerManager : MonoBehaviour
     public GameObject dolphinLevel2Prefab;
     public GameObject seagullPrefab;
     public GameObject seagullLevel2Prefab;
+    public GameObject superShadowPrefab;
     
     [Header("Cooldowns of enemies spawners")]
     public float snailSpawnInterval;
@@ -36,6 +42,7 @@ public class SpawnerManager : MonoBehaviour
     public float sharkSpawnInterval;
     public float dolphinSpawnInterval;
     public float seagullSpawnInterval;
+    public float superShadowSpawnInterval;
     
     [Header("Active spawn")]
     public bool snailSpawn = false;
@@ -50,6 +57,7 @@ public class SpawnerManager : MonoBehaviour
     public bool dolphinLevel2Spawn = false;
     public bool seagullSpawn       = false;
     public bool seagullLevel2Spawn = false;
+    public bool superShadowSpawn    = false;
 
     void Start()
     {
@@ -64,6 +72,8 @@ public class SpawnerManager : MonoBehaviour
         sharkSpawnTimer      += Time.deltaTime;
         dolphinSpawnTimer    += Time.deltaTime;
         seagullSpawnTimer    += Time.deltaTime;
+        superShadowSpawnTimer += Time.deltaTime;
+        
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
@@ -75,6 +85,13 @@ public class SpawnerManager : MonoBehaviour
         
         //-------------------Les conditions du spawn--------------
 
+        if ( lightPhare.totalPercentage <= lightPhare.level1 && (superShadowSpawnTimer >=  superShadowSpawnInterval) )
+        {
+            superShadowSpawnTimer = 0;
+            SpawnSuperShadow();
+            Debug.Log("Le super spawn)");
+        }
+        
         if (snailSpawn && (snailSpawnTimer >= snailSpawnInterval) )
         {
             snailSpawnTimer = 0;
@@ -336,6 +353,16 @@ public class SpawnerManager : MonoBehaviour
         Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
         Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
         Instantiate(dolphinLevel2Prefab, SpawnPosition, Quaternion.identity);
+    }
+    
+    void SpawnSuperShadow()
+    {
+        float   angleDegre    = Random.Range(0f, 360f);
+        float   angleRad      = angleDegre * Mathf.Deg2Rad;
+        float   distanceSpawn = Random.Range(minDistance, maxDistance);
+        Vector2 localisation  = new Vector2(Mathf.Cos(angleRad) * distanceSpawn, Mathf.Sin(angleRad)* distanceSpawn);
+        Vector2 SpawnPosition = new Vector2(playerPosition.position.x, playerPosition.position.y) + localisation;
+        Instantiate(superShadowPrefab, SpawnPosition, Quaternion.identity);
     }
     
 }
