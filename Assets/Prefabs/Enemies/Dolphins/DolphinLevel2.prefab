@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7333057030095147248}
   - component: {fileID: 6209280991848337921}
   - component: {fileID: 3653312459650121189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DolphinLevel2
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
@@ -261,7 +261,6 @@ MonoBehaviour:
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 0}
-  feur: {fileID: 0}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 0}
   ennemi_NavMeshAgent: {fileID: 0}
@@ -270,6 +269,8 @@ MonoBehaviour:
   speedSeagull: 3.5
   freezeEffect: {fileID: 2146670583103474250}
   damageEffect: {fileID: 46207830182587255}
+  playerData: {fileID: 0}
+  metaDataSystem: {fileID: 0}
   isSnail: 0
   isSeagull: 0
   isShark: 0
