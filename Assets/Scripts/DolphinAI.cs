@@ -5,11 +5,12 @@ using UnityEngine.AI;
 
 public class DolphinAI : MonoBehaviour
 {
-    public GameObject player;
-    private DolphinSpawner spawner;
-    public GameObject experiencepointPrefab;
-    public SpriteRenderer spriteRenderer;
-    public float destroyDistance = 80f;
+    public  GameObject            player;
+    private DolphinSpawner        spawner;
+    public  GameObject            experiencepointPrefab;
+    public  SpriteRenderer        spriteRenderer;
+    public  float                 destroyDistance = 80f;
+    public  EnemyHealthManagement enemyHealthManagement;
     
     [Header("Warning")]
     public Animator animator;
@@ -43,6 +44,7 @@ public class DolphinAI : MonoBehaviour
 
     void Update()
     {
+        dashSpeed = enemyHealthManagement.dashSpeedDolphin;
         if ((player.transform.position.x - gameObject.transform.position.x < proximity &&
              player.transform.position.x - gameObject.transform.position.x > -proximity) && (player.transform.position.y - gameObject.transform.position.y < proximity &&
                 player.transform.position.y - gameObject.transform.position.y > -proximity))

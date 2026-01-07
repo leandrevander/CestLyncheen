@@ -6,12 +6,13 @@ using UnityEngine.AI;
 
 public class SharkAI : MonoBehaviour
 {
-    public GameObject player;
-    public NavMeshAgent agent;
-    public Animator animator;
-    public GameObject proximityLight;
-    private SharkSpawner spawner;
-    public GameObject experiencepointPrefab;
+    public  GameObject            player;
+    public  NavMeshAgent          agent;
+    public  Animator              animator;
+    public  GameObject            proximityLight;
+    private SharkSpawner          spawner;
+    public  GameObject            experiencepointPrefab;
+    public  EnemyHealthManagement enemyHealthManagement;
     
     
     
@@ -51,6 +52,8 @@ public class SharkAI : MonoBehaviour
 
     void Update()
     {
+        attackSpeed = enemyHealthManagement.attackSpeedShark;
+        waitSpeed   = enemyHealthManagement.waitSpeedShark;
 
         if (stateComplete)
         {

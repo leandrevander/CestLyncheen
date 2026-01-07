@@ -65,6 +65,8 @@ public class SeagullAIV2 : MonoBehaviour
 
     void Update()
     {
+        speed     = enemyHealthManagement.speedSeagull;
+        waitSpeed = enemyHealthManagement.waitSpeedSeagull;
         
         if (stateComplete)
         {
