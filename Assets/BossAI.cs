@@ -4,7 +4,7 @@ using Player_Scripts;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class SnailAI : MonoBehaviour
+public class BossAI : MonoBehaviour
 {
     public GameObject experiencepointPrefab;
     public GameObject player;
@@ -17,8 +17,6 @@ public class SnailAI : MonoBehaviour
     public float proximity;
     public GameObject proximityLight;
     public Bulb ampouleScript;
-    
-    public bool isBoss = false;
    
     
     [SerializeField] private Animator animatorPlayer;
@@ -82,15 +80,8 @@ public class SnailAI : MonoBehaviour
 
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            if (isBoss)
-            {
-                playerHealth.playerhittenByBoss =  true;
-            }
-            else
-            {
-                Debug.Log("ça marche");
-                playerHealth.playerhitten = true;
-            }
+            Debug.Log("ça marche");
+            playerHealth.playerhittenByBoss = true;
 
         }
     }

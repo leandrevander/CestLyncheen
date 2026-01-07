@@ -10,6 +10,7 @@ namespace Player_Scripts
         public           int            playerHealth;
         public           bool           invincible ;
         public           bool           playerhitten;
+        public bool playerhittenByBoss;
         private          Coroutine      coroutine;
         private          Coroutine      coroutine2;
         public           GameObject     playerDamageOverlay;
@@ -24,6 +25,7 @@ namespace Player_Scripts
             UpdateHealth();
             invincible = false;
             playerhitten = false;
+            playerhittenByBoss = false;
         }
 
         void Update()
@@ -31,6 +33,12 @@ namespace Player_Scripts
             if (playerhitten && coroutine == null && invincible == false)
             {
                 coroutine = StartCoroutine(Damage());
+                Debug.Log("les conditions sont reunies");
+            }
+            
+            if (playerhittenByBoss && coroutine == null && invincible == false)
+            {
+                coroutine = StartCoroutine(BossDamage());
                 Debug.Log("les conditions sont reunies");
             }
         }
@@ -56,6 +64,28 @@ namespace Player_Scripts
                 playerhitten = false;
                 coroutine = null;
                 StopCoroutine(Damage());
+        }
+        
+        public IEnumerator BossDamage()
+        {
+            
+            if (coroutine2 == null)
+            {
+                coroutine2 = StartCoroutine(InvincibleFeedback());
+            }
+
+            playerHitten.Play();
+            playerDamageOverlay.SetActive(true);
+            invincible = true;
+            playerHealth = playerHealth - 2;
+            print(playerHealth);
+            UpdateHealth();
+            yield return new WaitForSeconds(1);
+            playerDamageOverlay.SetActive(false);
+            invincible   = false;
+            playerhittenByBoss = false;
+            coroutine    = null;
+            StopCoroutine(Damage());
         }
 
         public IEnumerator InvincibleFeedback()
