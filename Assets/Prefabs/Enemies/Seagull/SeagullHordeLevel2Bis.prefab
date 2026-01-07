@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8355755902079461253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6242035652916579261}
+  m_Layer: 0
+  m_Name: SeagullHordeLevel2Bis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6242035652916579261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355755902079461253}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 25151311689129314}
+  - {fileID: 3333291555977953471}
+  - {fileID: 6987175272121608193}
+  - {fileID: 605923078396374242}
+  - {fileID: 2345696302863295754}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &389108214235402672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6242035652916579261}
+    m_Modifications:
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461417731568174805, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_Name
+      value: Seagull Level 2 Bis (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+--- !u!4 &3333291555977953471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+  m_PrefabInstance: {fileID: 389108214235402672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &840429878477927429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6242035652916579261}
+    m_Modifications:
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461417731568174805, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_Name
+      value: Seagull Level 2 Bis
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+--- !u!4 &2345696302863295754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+  m_PrefabInstance: {fileID: 840429878477927429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2543675130330414573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6242035652916579261}
+    m_Modifications:
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461417731568174805, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_Name
+      value: Seagull Level 2 Bis (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+--- !u!4 &605923078396374242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+  m_PrefabInstance: {fileID: 2543675130330414573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3133663276216192109
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6242035652916579261}
+    m_Modifications:
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461417731568174805, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_Name
+      value: Seagull Level 2 Bis (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+--- !u!4 &25151311689129314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+  m_PrefabInstance: {fileID: 3133663276216192109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5463770397283694862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6242035652916579261}
+    m_Modifications:
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461417731568174805, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+      propertyPath: m_Name
+      value: Seagull Level 2 Bis (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+--- !u!4 &6987175272121608193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3108707334211244303, guid: 24d5b2059f1904f4f820619bad704d35, type: 3}
+  m_PrefabInstance: {fileID: 5463770397283694862}
+  m_PrefabAsset: {fileID: 0}

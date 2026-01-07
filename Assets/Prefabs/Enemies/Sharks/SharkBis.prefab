@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4158459981722930259}
   - component: {fileID: 481268912240967491}
   m_Layer: 8
-  m_Name: Shark
+  m_Name: SharkBis
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   IsHittenByBull: 0
   IsHitByGlowStick: 0
   freezeEnnemi: 0
-  HealthZombie: 80
+  HealthZombie: 100
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
