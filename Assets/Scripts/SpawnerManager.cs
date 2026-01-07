@@ -163,25 +163,26 @@ public class SpawnerManager : MonoBehaviour
         }
         else if (remainingTime >= 480f)
         {
-            sharkSpawn = true;
+            snailHordeSpawn = true;
+
         }
         else if (remainingTime >= 420f)
         {
             seagullSpawn = false;
-            sharkSpawn = false;
             
-            snailHordeSpawn = true;
+            sharkSpawn   = true;
             dolphinSpawn = true;
         }
         else if (remainingTime >= 380f)
         {
-            snailSpawn = false;
+            snailSpawn      = false;
             snailHordeSpawn = false;
 
             snailLevel2Spawn = true;
         }
         else if (remainingTime >= 320f)
         {
+            sharkSpawn         = false;
             seagullLevel2Spawn = true;
             
         }
