@@ -4,6 +4,7 @@ using UnityEngine;
 public class BossHealthManagement : MonoBehaviour
 {
 	public LightPhare lightPhare;
+	
 	void Start()
 	{
 		lightPhare = GameObject.Find ("Phare Light").GetComponent<LightPhare> ();
@@ -12,6 +13,7 @@ public class BossHealthManagement : MonoBehaviour
 	{
 		if (lightPhare.totalPercentage >= lightPhare.LevelBoss)
 		{
+			lightPhare.BossDied();
 			Destroy(gameObject);
 		}
 	}
