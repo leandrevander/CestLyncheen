@@ -93,6 +93,6 @@ MonoBehaviour:
   target: {fileID: 0}
   weaponsLocation: {fileID: 0}
   targetposition: {fileID: 0}
-  edgePadding: 50
+  edgePadding: 200
   targetchildren: {fileID: 0}
   weaponSpawnerManager: {fileID: 0}
