@@ -286,7 +286,7 @@ MonoBehaviour:
   playerData: {fileID: 0}
   hitByLighthouse: 1
   nombreAmpoule: 0
-  hitByBulb: 1
+  hitByBulb: 10
   bulbDescription: {fileID: 0}
   ampoule: {fileID: 3442398829883951785}
   recupAmpoule: {fileID: 0}
@@ -300,7 +300,7 @@ MonoBehaviour:
   RecupAppareillePhoto: {fileID: 0}
   GlowStickRecup: 0
   numberOfGlowStick: 0
-  hitpoint: 1
+  hitpoint: 10
   GlowStickDuration: 10
   glowStickDescription: {fileID: 0}
   prefabGlowStick: {fileID: 3507916467900487534, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
@@ -308,7 +308,7 @@ MonoBehaviour:
   glowStickDestroy2: {fileID: 0}
   glowStickDestroy3: {fileID: 0}
   glowStickScript: {fileID: 8940694495901544124, guid: fb7685a5608b70f45a9154bf871c088a, type: 3}
-  hitByFlashlight: 1
+  hitByFlashlight: 10
   eventSystem: {fileID: 0}
   buttonBulbDescription: {fileID: 0}
   buttonCameraDescription: {fileID: 0}

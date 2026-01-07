@@ -18,7 +18,7 @@ public class WeaponsManager : MonoBehaviour
     [Header("Bulb")]
     
     public int        nombreAmpoule = 0;
-    public int        hitByBulb     = 1;
+    public int        hitByBulb     = 10;
     public GameObject bulbDescription;
     public GameObject ampoule;
     public GameObject recupAmpoule;
@@ -39,7 +39,7 @@ public class WeaponsManager : MonoBehaviour
     public bool         GlowStickRecup = false;
     public Coroutine  GlowStickCoroutine;
     public int        numberOfGlowStick = 0;
-    public int        hitpoint          = 1;
+    public int        hitpoint          = 20;
     public float      GlowStickDuration = 10f;
     public GameObject glowStickDescription;
     public GameObject prefabGlowStick;
@@ -50,7 +50,7 @@ public class WeaponsManager : MonoBehaviour
     
     
     [Header("Flashlight")]
-    public int hitByFlashlight = 2;
+    public int hitByFlashlight = 20;
     
     [Header("UI")]
     public EventSystem eventSystem;
