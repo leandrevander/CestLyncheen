@@ -79,6 +79,7 @@ public class WeaponsManager : MonoBehaviour
        if (playerData.unlockedCameraDef == 1)
        {
            AppareillePhoto.SetActive(true);
+           haveCamera            =  true;
            nombreAppareillePhoto += 1;
            StartCoroutine(Flash());
        }
