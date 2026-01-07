@@ -72,7 +72,14 @@ public class LightPhare : MonoBehaviour
     }
 
     // Update is called once per frame
-
+    public void BossDied()
+    {
+        if (!deathSound.isPlaying)
+        {
+            deathSound.Play();
+        }
+        Debug.Log("boss died");
+    }
 
     void Update()
     {

@@ -13,7 +13,7 @@ public class BossHealthManagement : MonoBehaviour
 	{
 		if (lightPhare.totalPercentage >= lightPhare.LevelBoss)
 		{
-			
+			lightPhare.BossDied();
 			Destroy(gameObject);
 		}
 	}
