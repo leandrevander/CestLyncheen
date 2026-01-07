@@ -169,7 +169,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -5051746288292036885, guid: 31cea850c4f9af744bcf9be155ca09c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -344,7 +344,6 @@ MonoBehaviour:
   pvperdu: 2
   IsHittenByLighthouse: 0
   experiencepointPrefab: {fileID: 6414901020905140728, guid: 931712ceba2bb6243a0c246a4bd0445a, type: 3}
-  feur: {fileID: 0}
   scriptFreeze: {fileID: 0}
   weaponsManager: {fileID: 0}
   ennemi_NavMeshAgent: {fileID: 0}
@@ -353,6 +352,8 @@ MonoBehaviour:
   speedSeagull: 3.5
   freezeEffect: {fileID: 7141467082396470248}
   damageEffect: {fileID: 9111021371246871153}
+  playerData: {fileID: 0}
+  metaDataSystem: {fileID: 0}
   isSnail: 0
   isSeagull: 0
   isShark: 1

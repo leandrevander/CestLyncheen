@@ -157,58 +157,60 @@ public class SpawnerManager : MonoBehaviour
         {
             snailSpawn = true;
         }
-        else if (remainingTime >= 480f)
-        { 
+        else if (remainingTime >= 510f)
+        {
             seagullSpawn = true;
+        }
+        else if (remainingTime >= 480f)
+        {
+            sharkSpawn = true;
         }
         else if (remainingTime >= 420f)
         {
-            seagullSpawn    = false;
+            seagullSpawn = false;
+            sharkSpawn = false;
+            
             snailHordeSpawn = true;
-            sharkSpawn      = true;
+            dolphinSpawn = true;
         }
         else if (remainingTime >= 380f)
         {
-            snailSpawn       = false;
-            snailHordeSpawn  = false;
-            sharkSpawn       = false;
+            snailSpawn = false;
+            snailHordeSpawn = false;
+
             snailLevel2Spawn = true;
         }
         else if (remainingTime >= 320f)
         {
-            snailLevel2HordeSpawn = true;
-            seagullLevel2Spawn    = true;
-        }
-        else if (remainingTime >= 280f)
-        {
-            dolphinSpawn = true;
+            seagullLevel2Spawn = true;
+            
         }
         else if (remainingTime >= 220f)
         {
-            seagullLevel2Spawn = false;
-            dolphinLevel2Spawn = false;
-            sharkLevel2Spawn   = true;
+            seagullLevel2Spawn    = false;
+            dolphinLevel2Spawn    = false;
+            
+            snailLevel2HordeSpawn = true;
+            sharkLevel2Spawn      = true;
         }
         else if (remainingTime >= 180f)
         {
             snailLevel2Spawn      = false;
             snailLevel2HordeSpawn = false;
+            sharkLevel2Spawn      = false;
+
             snailLevel3Spawn      = true;
+            snailLevel3HordeSpawn = true;
         }
         else if (remainingTime >= 120f)
         {
-            sharkLevel2Spawn      = false;
-            snailLevel3HordeSpawn = true;
-            seagullLevel2Spawn    = true;
-            
-        }
-        else if (remainingTime >= 60f)
-        {
-            sharkLevel2Spawn = true;
+            seagullLevel2Spawn = true;
+            dolphinLevel2Spawn = true;
+
         }
         else if (remainingTime >= 0f)
         {
-            dolphinLevel2Spawn = true;
+            sharkLevel2Spawn = true;
         }
     }
     
